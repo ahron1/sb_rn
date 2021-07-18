@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "551864777221",
+    "project_id": "everystore-66312",
+    "storage_bucket": "everystore-66312.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551864777221:android:d5e615b365848a48caba6c",
+        "android_client_info": {
+          "package_name": "com.everystore.android_user_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "551864777221-c3ov3jdrqlilmbi0nrm2diimge3u5326.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOD4cPe9PxJGfgbbVOA_1KeycF29EUr5o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "551864777221-c3ov3jdrqlilmbi0nrm2diimge3u5326.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
