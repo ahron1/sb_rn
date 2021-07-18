@@ -238,7 +238,7 @@ const AllOrdersComponent = ({
         circleColor={colors.color3_4}
         iconColor={colors.color2_4}
         onPress={() => {
-          console.log('in orders component. + pressed');
+          console.log('in orders component. + button pressed');
           if (authState.latitude && authState.longitude) {
             addOrderPressed();
           } else {

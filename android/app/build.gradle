@@ -132,7 +132,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.everystore.android_user_app"
+        applicationId "com.storebhai.android_user_app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

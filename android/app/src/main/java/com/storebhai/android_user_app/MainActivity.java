@@ -1,4 +1,4 @@
-package com.everystore.android_user_app;
+package com.storebhai.android_user_app;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "everystore";
+    return "Storebhai";
   }
 }
