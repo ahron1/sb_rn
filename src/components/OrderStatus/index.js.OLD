@@ -1,0 +1,129 @@
+import React, {useEffect, useState} from 'react';
+import {
+  Image,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
+
+import {useNavigation} from '@react-navigation/native';
+import {
+  responsiveHeight,
+  responsiveWidth,
+  responsiveFontSize,
+} from 'react-native-responsive-dimensions';
+import FloatingRightButton from '../common/FloatingRightButton';
+
+const vw = responsiveWidth;
+const vh = responsiveHeight;
+const fs = responsiveFontSize;
+
+const styles = StyleSheet.create({
+  container: {
+    // paddingTop: 50,
+  },
+  stretch: {
+    width: vw(100),
+    height: vh(100),
+    // resizeMode: 'stretch',
+  },
+});
+
+const OrderStatusComponent = ({orderStatusCode}) => {
+  //full width non scrollable pic. for splash screen etc. ??
+  const FullWidthPicture = () => {
+    const source = require('../../assets/images/pic1.jpg');
+    const image = Image.resolveAssetSource(source);
+    const width = image.width;
+    const height = image.height;
+    const ratio = width / height;
+
+    return (
+      <Image
+        style={{width: '100%', height: undefined, aspectRatio: ratio}}
+        resizeMode="contain"
+        source={require('../../assets/images/pic1.jpg')}
+      />
+    );
+  };
+  console.log(
+    'in order status component. status code is :>> ',
+    orderStatusCode,
+  );
+
+  let statusGraphic;
+
+  switch (orderStatusCode) {
+    case 'status_200_customer_sent':
+      statusGraphic = (
+        <View>
+          <View>
+            <Text>{orderStatusCode}</Text>
+          </View>
+
+          {/* this is for scrollable image */}
+          <ScrollView>
+            <View style={styles.container}>
+              <Image
+                style={styles.stretch}
+                source={require('../../assets/images/pic1.jpg')}
+              />
+            </View>
+          </ScrollView>
+        </View>
+      );
+      break;
+    case 'status_300_store_checked':
+      statusGraphic = (
+        <View>
+          <View>
+            <Text>{orderStatusCode}</Text>
+          </View>
+
+          {/* this is for scrollable image */}
+          <ScrollView>
+            <View style={styles.container}>
+              <Image
+                style={styles.stretch}
+                source={require('../../assets/images/pic1.jpg')}
+              />
+            </View>
+          </ScrollView>
+        </View>
+      );
+      break;
+
+    case 'status_600_payment_made':
+      statusGraphic = (
+        <View>
+          <View>
+            <Text>{orderStatusCode}</Text>
+          </View>
+
+          {/* this is for scrollable image */}
+          <ScrollView>
+            <View style={styles.container}>
+              <Image
+                style={styles.stretch}
+                source={require('../../assets/images/pic1.jpg')}
+              />
+            </View>
+          </ScrollView>
+        </View>
+      );
+      break;
+  }
+
+  return statusGraphic;
+
+  <>
+    {/* this is for horizontally fit image */}
+    {/* <ScrollView style={{flex: 1}}>
+        <FullWidthPicture />
+      </ScrollView> */}
+  </>;
+};
+
+export default OrderStatusComponent;
