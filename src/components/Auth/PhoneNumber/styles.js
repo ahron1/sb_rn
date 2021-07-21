@@ -24,11 +24,16 @@ export default ScaledSheet.create({
     padding: '10@s',
   },
   introText: {
-    fontSize: '20@s',
+    fontSize: '18@s',
+  },
+
+  introTextTitle: {
+    fontSize: '18@s',
+    fontWeight: '700',
   },
   welcomeText: {
     fontSize: '22@s',
-    fontWeight: '600',
+    fontWeight: '700',
     paddingBottom: '10@s',
     textAlign: 'center',
   },

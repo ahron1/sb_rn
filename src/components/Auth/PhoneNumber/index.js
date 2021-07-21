@@ -34,15 +34,16 @@ export default function PhoneNumber() {
             source={require('../../../assets/images/logo3.png')}
             style={styles.logoImage}
           />
-          <Text style={styles.welcomeText}>Welcome to Everystore! </Text>
+          <Text style={styles.welcomeText}>Welcome to Storebhai </Text>
         </View>
         <View style={styles.stepSection}>
+          <Text style={styles.introTextTitle}>Step 1:</Text>
+          <Text style={styles.introText}>Send order to local store.{'\n'}</Text>
+          <Text style={styles.introTextTitle}>Step 2:</Text>
           <Text style={styles.introText}>
-            Step 1: Send your list to your local store{'\n'}
+            Store checks price and availability. {'\n'}
           </Text>
-          <Text style={styles.introText}>
-            Step 2: Store confirms prices and availability {'\n'}
-          </Text>
+          <Text style={styles.introTextTitle}>Step 3:</Text>
           <Text style={styles.introText}>
             Step 3: Pickup or delivery by store.{'\n'}
           </Text>

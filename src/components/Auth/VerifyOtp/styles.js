@@ -16,8 +16,8 @@ export default ScaledSheet.create({
     fontSize: '20@s',
   },
   welcomeText: {
-    fontSize: '25@s',
-    fontWeight: '600',
+    fontSize: '22@s',
+    // fontWeight: '700',
     paddingBottom: '10@s',
     textAlign: 'center',
   },

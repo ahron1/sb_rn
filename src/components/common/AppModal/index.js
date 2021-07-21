@@ -48,7 +48,7 @@ const AppModal = ({
             {/* <Icon type="evil" name="close" /> */}
             <View />
             <View />
-            <Text style={styles.title}>{modalTitle || 'Everystore'} </Text>
+            <Text style={styles.title}>{modalTitle || 'Storebhai'} </Text>
             <Pressable
               onPress={() => {
                 console.log('modal X touched');

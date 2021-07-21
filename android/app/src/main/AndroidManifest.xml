@@ -23,9 +23,9 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
       </activity>
-      <service
-        android:name="Everystore"
-        android:foregroundServiceType="location" />
+      <!-- <service -->
+        <!-- android:name="Storebhai" -->
+        <!-- android:foregroundServiceType="location" /> -->
 
     </application>
 </manifest>

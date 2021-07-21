@@ -33,11 +33,11 @@ export default function VerifyOtp() {
           source={require('../../../assets/images/logo3.png')}
           style={styles.logoImage}
         />
-        <Text style={styles.welcomeText}>OTP code confimnation</Text>
+        <Text style={styles.welcomeText}>Welcome to Storebhai </Text>
       </View>
 
       <View style={styles.numberSection}>
-        <Text style={styles.enterNumber}>Enter your OTP code:</Text>
+        <Text style={styles.enterNumber}>Confirm your OTP code:</Text>
         <AppTextInput
           style={styles.input}
           placeholder="123456"
