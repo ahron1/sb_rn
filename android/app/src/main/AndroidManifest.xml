@@ -20,12 +20,13 @@
         android:windowSoftInputMode="adjustResize">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
+            <action android:name="com.google.firebase.MESSAGING_EVENT" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
       </activity>
-      <!-- <service -->
-        <!-- android:name="Storebhai" -->
-        <!-- android:foregroundServiceType="location" /> -->
+      <!-- <service
+        android:name="Storebhai" 
+        android:foregroundServiceType="location" /> -->
 
     </application>
 </manifest>
