@@ -190,7 +190,7 @@ const ProfileComponent = () => {
             <CustomButtonSmall
               style={styles.button}
               primary
-              title="Update name"
+              title="Edit"
               loading={authState.userNameUpdate.loading}
               disabled={authState.userNameUpdate.loading}
               onPress={() => {
@@ -210,7 +210,7 @@ const ProfileComponent = () => {
               ) : (
                 <View>
                   <Text style={styles.emptySectionText}>
-                    You have not saved your name.{'\n'}Please update your name.
+                    You have not saved your name. Please update your name.
                   </Text>
                 </View>
               )}
@@ -220,7 +220,7 @@ const ProfileComponent = () => {
 
         <View>
           <View style={styles.sectionTitle}>
-            <Text style={styles.titleText}>Mobile number</Text>
+            <Text style={styles.titleText}>Mobile Number</Text>
           </View>
           <View style={styles.sectionBody}>
             <View style={styles.sectionText}>
@@ -247,7 +247,7 @@ const ProfileComponent = () => {
 
             <CustomButtonSmall
               style={styles.loadableButton}
-              title="Update address"
+              title="Edit"
               disabled={loadingEditAddress}
               loading={loadingEditAddress}
               backgroundColor={colors.color4_1_2}
@@ -273,7 +273,7 @@ const ProfileComponent = () => {
               ) : (
                 <View>
                   <Text style={styles.emptySectionText}>
-                    You have no saved address.{'\n'}Please add an address.
+                    You have no saved address. Please add an address.
                   </Text>
                 </View>
               )}

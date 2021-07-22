@@ -26,12 +26,14 @@ const App = () => {
     return unsubscribe;
   }, []);
 
-  // useEffect(async () => {
-  // const fcmToken = await messaging().getToken();
-  // if (fcmToken) {
-  // console.log('fcm token is :> ', fcmToken);
-  // }
-  // }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(async () => {
+    const fcmToken = await messaging().getToken();
+    if (fcmToken) {
+      console.log('fcm token is :> ', fcmToken);
+      console.log('fcm messaging() object is :> ', messaging());
+    }
+  }, []);
 
   useEffect(() => {
     const unsubscribe = () => {
