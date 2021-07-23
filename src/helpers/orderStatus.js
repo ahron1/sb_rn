@@ -49,7 +49,7 @@ const getOrderStatus = order => {
         }
       : status_500_customer_received === true
       ? {
-          orderStatusText: 'Store fulfilled the order',
+          orderStatusText: 'You received the order',
           orderStatusNext: 'Make payment after receiving items',
           orderColorCode: colors.color2_2_4,
           orderStatusCode: 'status_500_customer_received',

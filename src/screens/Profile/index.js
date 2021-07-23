@@ -30,6 +30,7 @@ const Profile = () => {
   const [phoneNumber, setPhoneNumber] = useState(null);
   const [fireBaseUid, setFireBaseUid] = useState(null);
   const [fcmToken, setFcmToken] = useState(null);
+  const [authenticated, setAuthenticated] = useState(false);
 
   useEffect(() => {
     if (auth().currentUser) {
@@ -57,24 +58,22 @@ const Profile = () => {
     }
   }, [auth().currentUser]);
 
-  /*
   // Handle user state changes
-  // function onAuthStateChanged(user) {
-  // if (user) {
-  // console.log('in profile screen. onauthstatechanged. ');
-  // setAuthenticated(true);
-  // } else {
-  // setAuthenticated(false);
-  // }
-  // }
-  //
-  // useEffect(() => {
-  // const subscriber = () => {
-  // auth().onAuthStateChanged(onAuthStateChanged);
-  // };
-  // return subscriber(); // unsubscribe on unmount
-  // }, []);
-  */
+  const onAuthStateChanged = user => {
+    if (user) {
+      console.log('in profile screen. onauthstatechanged. ');
+      setAuthenticated(true);
+    } else {
+      setAuthenticated(false);
+    }
+  };
+
+  useEffect(() => {
+    const subscriber = () => {
+      auth().onAuthStateChanged(onAuthStateChanged);
+    };
+    return subscriber(); // unsubscribe on unmount
+  }, []);
 
   useEffect(() => {
     if (fireBaseUid && phoneNumber && fcmToken) {
@@ -141,9 +140,10 @@ const Profile = () => {
   }
 
   if (numberAuthenticated) {
-    // if (authenticated) {
-    // console.log('in profile screen');
-    return <ProfileComponent />;
+    if (authenticated) {
+      // console.log('in profile screen');
+      return <ProfileComponent />;
+    }
   }
   if (numberChecked) {
     return <VerifyOtp />;

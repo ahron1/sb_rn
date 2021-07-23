@@ -17,6 +17,7 @@ export default ScaledSheet.create({
   wrapper: {},
   dashboard: {
     paddingHorizontal: '10@s',
+    borderWidth: '1.25@s',
     paddingVertical: '10@s',
     // minHeight: '100@s',
     backgroundColor: colors.color2_4,

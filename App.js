@@ -27,13 +27,13 @@ const App = () => {
   }, []);
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  useEffect(async () => {
-    const fcmToken = await messaging().getToken();
-    if (fcmToken) {
-      console.log('fcm token is :> ', fcmToken);
-      console.log('fcm messaging() object is :> ', messaging());
-    }
-  }, []);
+  // useEffect(async () => {
+  // const fcmToken = await messaging().getToken();
+  // if (fcmToken) {
+  // console.log('fcm token is :> ', fcmToken);
+  // console.log('fcm messaging() object is :> ', messaging());
+  // }
+  // }, []);
 
   useEffect(() => {
     const unsubscribe = () => {

@@ -259,7 +259,6 @@ const ProfileComponent = () => {
           </View>
           <View style={styles.sectionBody}>
             <View style={styles.sectionText}>
-              {/* {storedAddress !== null ? ( */}
               {addressAvailable !== null ? (
                 <View>
                   <View>
