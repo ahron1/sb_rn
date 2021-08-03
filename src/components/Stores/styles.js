@@ -122,4 +122,12 @@ export default ScaledSheet.create({
     paddingHorizontal: '100@s',
     paddingBottom: '10@s',
   },
+  checkMark: {
+    color: colors.color4_1,
+    fontSize: '24@s',
+  },
+  crossMark: {
+    color: colors.color3_1,
+    fontSize: '24@s',
+  },
 });

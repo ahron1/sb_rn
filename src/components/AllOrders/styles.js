@@ -8,14 +8,27 @@ export default ScaledSheet.create({
     borderWidth: '1.25@s',
     paddingVertical: '10@s',
     // minHeight: '100@s',
-    backgroundColor: colors.color2_4,
+    backgroundColor: colors.color1_3,
   },
   dashboardItem: {
     flexDirection: 'column',
+    paddingVertical: '5@s',
+    paddingHorizontal: '5@s',
   },
+  dashboardSubItem: {
+    paddingBottom: '7@s',
+  },
+
   dashboardItemTitle: {
     fontSize: '14@s',
+    color: colors.white,
   },
+  dashboardItemTitleItalic: {
+    fontSize: '14@s',
+    color: colors.white,
+    fontStyle: 'italic',
+  },
+
   dashboardItemText: {
     // flex: 1,
     fontSize: '18@s',

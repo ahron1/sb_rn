@@ -17,7 +17,11 @@ const AddItem = ({orderId, modalVisibleAddItem, setModalVisibleAddItem}) => {
   const onSubmitAddItem = ({name, value, isRequired}) => {
     if (!formAddItem.itemName) {
       setFormErrorsAddItem(prev => {
-        return {...prev, itemName: 'Please enter the item name'};
+        return {
+          ...prev,
+          itemName:
+            'Please enter the item name and details (brand, model, etc.)',
+        };
       });
     }
     if (!formAddItem.itemQuantity) {
@@ -79,8 +83,8 @@ const AddItem = ({orderId, modalVisibleAddItem, setModalVisibleAddItem}) => {
           </View>
           <View>
             <AppTextInput
-              label="Item Name: "
-              placeholder="Example: Rice"
+              label="Item Name (brand, model, etc.): "
+              placeholder="Example: India Gate Tibar Rice"
               maxLength={30}
               value={formAddItem.itemName || ''}
               onChangeText={value => {

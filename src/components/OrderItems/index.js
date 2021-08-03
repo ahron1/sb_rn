@@ -110,6 +110,7 @@ const OrderItemsComponent = ({
     });
   };
 
+  //todo - move to helper function
   const OrderItemsButtons = () => {
     console.log(
       'in order items component. orderstatuscode is:>> ',
@@ -218,8 +219,37 @@ const OrderItemsComponent = ({
         buttons = (
           <View>
             <View>
-              <FloatingCenterButton
-                buttonText="Check status"
+              <FloatingLeftButton
+                buttonText="Add item"
+                iconType="materialCommunity"
+                // iconName="cart-arrow-down"
+                iconName="cart-plus"
+                circleColor={colors.color2_2_4}
+                iconColor={colors.color1_3}
+                onPress={() => {
+                  console.log('in order items component. + pressed');
+                  setModalVisibleAddItem(true);
+                }}
+              />
+
+              <FloatingRightButton
+                buttonText="Status"
+                iconType="ant"
+                iconName="questioncircle"
+                iconColor={colors.color2_4}
+                circleColor={colors.color4_2}
+                onPress={() => {
+                  console.log(
+                    'in order items component. check status pressed. order status code is:>> ',
+                    orderStatusCode,
+                  );
+                  navigateOrderStatus();
+                }}
+              />
+            </View>
+            <View>
+              <FloatingRightButton
+                buttonText="Status"
                 iconType="ant"
                 iconName="questioncircle"
                 iconColor={colors.color2_4}
