@@ -79,7 +79,7 @@ const orderItemsReducer = (state, {type, payload}) => {
       };
 
     case DELETE_ORDERITEM_LOADING:
-      console.log('in reducers delete order item. now dispatching loading. ');
+      // console.log('in reducers delete order item. now dispatching loading. ');
       return {
         ...state,
         deleteOrderItem: {
@@ -88,10 +88,10 @@ const orderItemsReducer = (state, {type, payload}) => {
         },
       };
     case DELETE_ORDERITEM_SUCCESS:
-      console.log(
-        'in reducers delete order item. now dispatching success. order item id:>> ',
-        payload,
-      );
+      // console.log(
+      // 'in reducers delete order item. now dispatching success. order item id:>> ',
+      // payload,
+      // );
       return {
         ...state,
         deleteOrderItem: {

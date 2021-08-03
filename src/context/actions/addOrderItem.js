@@ -20,7 +20,7 @@ const addOrderItem =
         quantity: formAddItem.itemQuantity,
       })
       .then(res => {
-        console.log('in action add order item. got response >> ', res.data);
+        // console.log('in action add order item. got response >> ', res.data);
         dispatch({
           type: ADD_ORDERITEM_SUCCESS,
           payload: {
@@ -37,7 +37,7 @@ const addOrderItem =
         onSuccess();
       })
       .catch(err => {
-        console.log('in action add order item. fail.. error is >> ', err);
+        // console.log('in action add order item. fail.. error is >> ', err);
         dispatch({
           type: ADD_ORDERITEM_FAIL,
           payload: err,

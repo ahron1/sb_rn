@@ -11,7 +11,7 @@ const OrderStatus = ({navigation}) => {
   const {setOptions, toggleDrawer} = useNavigation();
 
   const route = useRoute();
-  console.log('in order status screen. params are:>> ', route.params);
+  // console.log('in order status screen. params are:>> ', route.params);
   const {
     orderStatusCode,
     orderColorCode,

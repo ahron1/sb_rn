@@ -7,11 +7,11 @@ import {
 const phoneNumberOtpSubmit =
   ({otpCode, confirmationMethod}) =>
   dispatch => {
-    console.log('in phonenumberotpsubmit. dispatch loading');
+    // console.log('in phonenumberotpsubmit. dispatch loading');
     dispatch({
       type: PHONENUMBER_OTP_SUBMIT_LOADING,
     });
-    console.log('in phonenumberotpsubmit. dispatched loading');
+    // console.log('in phonenumberotpsubmit. dispatched loading');
 
     confirmationMethod
       .confirm(otpCode)
@@ -19,14 +19,14 @@ const phoneNumberOtpSubmit =
         dispatch({
           type: PHONENUMBER_OTP_SUBMIT_SUCCESS,
         });
-        console.log('received  OTP is okay confirmation from firebase auth  ');
+        // console.log('received  OTP is okay confirmation from firebase auth  ');
         // onSuccess();
       })
       .catch(error => {
-        console.log(
-          'received  error from firebase auth for otp check',
-          JSON.stringify(error),
-        );
+        // console.log(
+        // 'received  error from firebase auth for otp check',
+        // JSON.stringify(error),
+        // );
         dispatch({
           type: PHONENUMBER_OTP_SUBMIT_FAIL,
           payload: error,

@@ -8,7 +8,7 @@ import getDateTime from '../../helpers/dateTimeString';
 import getOrderStatus from '../../helpers/orderStatus';
 
 const addOrder = () => dispatch => onSuccess => {
-  console.log('in action add order dispatch loading . ');
+  // console.log('in action add order dispatch loading . ');
   dispatch({
     type: ADD_ORDER_LOADING,
   });
@@ -16,7 +16,7 @@ const addOrder = () => dispatch => onSuccess => {
   axiosInstance
     .get('/add_order')
     .then(res => {
-      console.log('in action add order . new order is >> ', res.data);
+      // console.log('in action add order . new order is >> ', res.data);
       const order = res.data;
       dispatch({
         type: ADD_ORDER_SUCCESS,
@@ -50,7 +50,7 @@ const addOrder = () => dispatch => onSuccess => {
       );
     })
     .catch(err => {
-      console.log('in action add order . fail.. error is >> ', err);
+      // console.log('in action add order . fail.. error is >> ', err);
       dispatch({
         type: ADD_ORDER_FAIL,
         payload: err,

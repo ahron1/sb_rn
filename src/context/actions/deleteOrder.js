@@ -9,18 +9,18 @@ const deleteOrder =
   ({orderId}) =>
   dispatch =>
   onSuccess => {
-    console.log(
-      'in action delete order . now dispatching loading. order  id:>> ',
-      orderId,
-    );
+    // console.log(
+    // 'in action delete order . now dispatching loading. order  id:>> ',
+    // orderId,
+    // );
     dispatch({
       type: DELETE_ORDER_LOADING,
     });
 
-    console.log(
-      'in action delete order . now dispatching success. order  id:>> ',
-      orderId,
-    );
+    // console.log(
+    // 'in action delete order . now dispatching success. order  id:>> ',
+    // orderId,
+    // );
 
     axiosInstance
       .get('/delete_order', {
@@ -29,7 +29,7 @@ const deleteOrder =
         },
       })
       .then(res => {
-        console.log('in delete order s action. got response :>> ', res);
+        // console.log('in delete order s action. got response :>> ', res);
         dispatch({
           type: DELETE_ORDER_SUCCESS,
           payload: {orderId},
@@ -37,7 +37,7 @@ const deleteOrder =
         onSuccess();
       })
       .catch(err => {
-        console.log('in delete order s action. got error:>> ', err);
+        // console.log('in delete order s action. got error:>> ', err);
         dispatch({
           type: DELETE_ORDER_FAIL,
           payload: err,

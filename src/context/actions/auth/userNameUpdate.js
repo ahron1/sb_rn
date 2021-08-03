@@ -10,11 +10,11 @@ const userNameUpdate =
   ({firebaseUid, userName}) =>
   dispatch =>
   onSuccess => {
-    console.log(
-      'in name update. dispatch loading  with values:>>  ',
-      firebaseUid,
-      userName,
-    );
+    // console.log(
+    // 'in name update. dispatch loading  with values:>>  ',
+    // firebaseUid,
+    // userName,
+    // );
 
     dispatch({
       type: USER_NAME_UPDATE_LOADING,
@@ -25,7 +25,7 @@ const userNameUpdate =
         userName: userName,
       })
       .then(res => {
-        console.log('in user name update. got response >> ', res.data);
+        // console.log('in user name update. got response >> ', res.data);
         dispatch({
           type: USER_NAME_UPDATE_SUCCESS,
           payload: userName,
@@ -33,7 +33,7 @@ const userNameUpdate =
         onSuccess();
       })
       .catch(err => {
-        console.log('in user name update. error is >> ', err);
+        // console.log('in user name update. error is >> ', err);
         dispatch({
           type: USER_NAME_UPDATE_FAIL,
           payload: err,

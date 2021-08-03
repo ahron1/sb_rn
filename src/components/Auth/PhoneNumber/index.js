@@ -20,7 +20,7 @@ export default function PhoneNumber() {
 
   const submitPhoneNumber = () => {
     const phoneNumberWithCode = '+91' + phoneNumber;
-    console.log('submit button touched with number :>> ', phoneNumberWithCode);
+    // console.log('submit button touched with number :>> ', phoneNumberWithCode);
     phoneNumberSignInSubmit(phoneNumberWithCode)(authDispatch);
   };
 

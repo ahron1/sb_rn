@@ -10,12 +10,12 @@ const userAddressUpdate =
   ({userAddress, userCoordinates, geoAccuracy}) =>
   dispatch =>
   onSuccess => {
-    console.log(
-      'in address update. dispatch loading  with values:>>  ',
-      userAddress,
-      userCoordinates,
-      geoAccuracy,
-    );
+    // console.log(
+    // 'in address update. dispatch loading  with values:>>  ',
+    // userAddress,
+    // userCoordinates,
+    // geoAccuracy,
+    // );
 
     dispatch({
       type: USER_ADDRESS_UPDATE_LOADING,
@@ -28,7 +28,7 @@ const userAddressUpdate =
         geoAccuracy: geoAccuracy,
       })
       .then(res => {
-        console.log('in user address update. got response >> ', res.data);
+        // console.log('in user address update. got response >> ', res.data);
         dispatch({
           type: USER_ADDRESS_UPDATE_SUCCESS,
           payload: {userAddress: userAddress, userCoordinates: userCoordinates},
@@ -36,7 +36,7 @@ const userAddressUpdate =
         onSuccess();
       })
       .catch(err => {
-        console.log('in user address update. error is >> ', err);
+        // console.log('in user address update. error is >> ', err);
         dispatch({
           type: USER_ADDRESS_UPDATE_FAIL,
           payload: err,

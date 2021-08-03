@@ -8,7 +8,7 @@ import auth from '@react-native-firebase/auth';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const logOut = () => dispatch => {
-  console.log('in logout. dispatch loading');
+  // console.log('in logout. dispatch loading');
   dispatch({
     type: LOGOUT_LOADING,
   });
@@ -18,13 +18,13 @@ const logOut = () => dispatch => {
       auth()
         .signOut()
         .then(() => {
-          console.log('logout success');
+          // console.log('logout success');
           dispatch({
             type: LOGOUT_SUCCESS,
           });
         })
         .catch(error => {
-          console.log('received  error from firebase auth for logout ');
+          // console.log('received  error from firebase auth for logout ');
           dispatch({
             type: LOGOUT_FAIL,
             payload: error,
@@ -32,10 +32,10 @@ const logOut = () => dispatch => {
         }),
     )
     .catch(error => {
-      console.log(
-        'unable to remove creds from async storage',
-        JSON.stringify(error),
-      );
+      // console.log(
+      // 'unable to remove creds from async storage',
+      // JSON.stringify(error),
+      // );
       dispatch({
         type: LOGOUT_FAIL,
         payload: error,

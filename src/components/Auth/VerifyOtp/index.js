@@ -21,7 +21,7 @@ export default function VerifyOtp() {
   const [otpCode, setOtpCode] = useState('');
 
   const submitOtpCode = () => {
-    console.log('submit button touched with code :>> ', otpCode);
+    // console.log('submit button touched with code :>> ', otpCode);
     phoneNumberOtpSubmit({otpCode, confirmationMethod})(authDispatch);
   };
 

@@ -29,16 +29,16 @@ const AllOrdersComponent = ({
   // console.log('in all orders component. dataallorders is:> ', dataAllOrders);
   const {ordersDispatch, ordersState, authState} = useContext(GlobalContext);
   const {navigate} = useNavigation();
-  console.log('in all orders. auth state is: ', authState);
+  // console.log('in all orders. auth state is: ', authState);
 
   const addOrderPressed = () => {
-    console.log('in all orders component. add order pressed');
+    // console.log('in all orders component. add order pressed');
     // addOrder()(ordersDispatch)(orderId => {
     addOrder()(ordersDispatch)(orderId => {
-      console.log(
-        'add order successfully dispatched. navigate to new order id',
-        orderId,
-      );
+      // console.log(
+      // 'add order successfully dispatched. navigate to new order id',
+      // orderId,
+      // );
       navigate(ORDERITEMS, {orderId});
     });
   };
@@ -240,7 +240,7 @@ const AllOrdersComponent = ({
         circleColor={colors.color3_4}
         iconColor={colors.color2_4}
         onPress={() => {
-          console.log('in orders component. + button pressed');
+          // console.log('in orders component. + button pressed');
           if (authState.latitude && authState.longitude) {
             addOrderPressed();
           } else {

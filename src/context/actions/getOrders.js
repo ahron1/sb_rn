@@ -21,7 +21,7 @@ export default () => dispatch => {
       });
     })
     .catch(err => {
-      console.log('in getorders action error is >> ', err);
+      // console.log('in getorders action error is >> ', err);
       dispatch({
         type: GET_ORDERS_FAIL,
         // payload: dataOrders,

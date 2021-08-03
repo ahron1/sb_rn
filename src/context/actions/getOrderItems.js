@@ -6,7 +6,7 @@ import {
 import axiosInstance from '../../helpers/axiosInterceptor';
 
 const getOrderItems = orderId => dispatch => {
-  console.log('in getordersitems dispathc loading >> ');
+  // console.log('in getordersitems dispathc loading >> ');
   dispatch({
     type: GET_ORDERITEMS_LOADING,
   });
@@ -26,7 +26,7 @@ const getOrderItems = orderId => dispatch => {
       });
     })
     .catch(err => {
-      console.log('in getorderitems error is >> ', err);
+      // console.log('in getorderitems error is >> ', err);
       dispatch({
         type: GET_ORDERITEMS_FAIL,
         // payload: dataOrders,

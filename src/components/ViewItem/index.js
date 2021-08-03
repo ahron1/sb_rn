@@ -31,7 +31,7 @@ const ViewItem = ({
     price: orderItemPrice,
     available: orderItemAvailable,
   } = item;
-  console.log('in view item component. item is:>> ', item);
+  // console.log('in view item component. item is:>> ', item);
   // console.log('in view item component. item price is:>> ', orderItemPrice);
 
   const canDeleteItem = orderStatusCodeNumber > 500 ? false : true;
@@ -42,9 +42,9 @@ const ViewItem = ({
       setModalVisible={setModalVisibleViewItem}
       modalTitle={'Item details'}
       modalFooter={<></>}
-      onShow={() => console.log('modal shown')}
+      // onShow={() => console.log('modal shown')}
       onModalClose={() => {
-        console.log('modal closed');
+        // console.log('modal closed');
       }}
       modalBody={
         <View>
@@ -98,12 +98,12 @@ const ViewItem = ({
               loading={orderItemsState.deleteOrderItem.loading}
               disabled={orderItemsState.deleteOrderItem.loading}
               onPress={() => {
-                console.log(
-                  'custom delete button pressed on item id:>> ',
-                  orderItemId,
-                );
+                // console.log(
+                // 'custom delete button pressed on item id:>> ',
+                // orderItemId,
+                // );
                 deleteOrderItem({orderItemId})(orderItemsDispatch)(() => {
-                  console.log('deleted order item');
+                  // console.log('deleted order item');
                   setModalVisibleViewItem(false);
                 });
               }}

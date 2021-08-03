@@ -61,7 +61,7 @@ const Profile = () => {
   // Handle user state changes
   const onAuthStateChanged = user => {
     if (user) {
-      console.log('in profile screen. onauthstatechanged. ');
+      // console.log('in profile screen. onauthstatechanged. ');
       setAuthenticated(true);
     } else {
       setAuthenticated(false);

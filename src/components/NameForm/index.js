@@ -44,11 +44,11 @@ const NameForm = ({
 
   const storeCurrentName = () => {
     const userName = formAddName.name;
-    console.log(
-      'in name form. update name button touched :>> ',
-      userName,
-      firebaseUid,
-    );
+    // console.log(
+    // 'in name form. update name button touched :>> ',
+    // userName,
+    // firebaseUid,
+    // );
     userNameUpdate({userName, firebaseUid})(authDispatch)(() =>
       setModalVisibleAddName(false),
     );
@@ -66,7 +66,7 @@ const NameForm = ({
     ) {
       storeCurrentName();
     } else {
-      console.log('New name cannot add -errors');
+      // console.log('New name cannot add -errors');
     }
   };
 
@@ -92,10 +92,10 @@ const NameForm = ({
       setModalVisible={setModalVisibleAddName}
       modalTitle={'Name'}
       modalFooter={<></>}
-      onShow={() => console.log('modal shown')}
+      // onShow={() => console.log('modal shown')}
       // onDismiss={() => console.log('modal closed')}
       onModalClose={() => {
-        console.log('modal closed');
+        // console.log('modal closed');
         setFormErrorsAddName({});
         setFormAddName({});
       }}

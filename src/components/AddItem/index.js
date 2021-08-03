@@ -34,14 +34,14 @@ const AddItem = ({orderId, modalVisibleAddItem, setModalVisibleAddItem}) => {
       Object.values(formAddItem).length >= 2 &&
       Object.values(formAddItem).every(x => x.trim().length > 0)
     ) {
-      console.log('A OK, will create new item');
+      // console.log('A OK, will create new item');
       addOrderItem({orderId, formAddItem})(orderItemsDispatch)(() => {
         setFormErrorsAddItem({});
         setFormAddItem({});
         setModalVisibleAddItem(false);
       });
     } else {
-      console.log('New item cannot add -errors');
+      // console.log('New item cannot add -errors');
     }
   };
 
@@ -67,10 +67,10 @@ const AddItem = ({orderId, modalVisibleAddItem, setModalVisibleAddItem}) => {
       setModalVisible={setModalVisibleAddItem}
       modalTitle={'Add item'}
       modalFooter={<></>}
-      onShow={() => console.log('modal shown')}
+      // onShow={() => console.log('modal shown')}
       // onDismiss={() => console.log('modal closed')}
       onModalClose={() => {
-        console.log('modal closed');
+        // console.log('modal closed');
         setFormErrorsAddItem({});
         setFormAddItem({});
       }}

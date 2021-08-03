@@ -37,24 +37,24 @@ const Stores = ({navigation}) => {
 
   useEffect(() => {
     // the navigation in the dep array is to trigger a reload/sort on navigating back to this screen
-    console.log('navigating to stores screen.');
+    // console.log('navigating to stores screen.');
     const unsubscribe = navigation.addListener('focus', () => {
       if (authState.latitude && authState.longitude) {
-        console.log('in stores screen. will call getstores');
+        // console.log('in stores screen. will call getstores');
         getStores()(storesDispatch);
       } else {
-        console.log(
-          'in stores screen. address not updated. will not call getstores',
-        );
+        // console.log(
+        // 'in stores screen. address not updated. will not call getstores',
+        // );
       }
     });
     return unsubscribe;
   }, [navigation]);
 
   if (orderId) {
-    console.log('navigated from order items screen. order id is:>> ', orderId);
+    // console.log('navigated from order items screen. order id is:>> ', orderId);
   } else {
-    console.log('navigated from menu . order id is:>>  ', orderId);
+    // console.log('navigated from menu . order id is:>>  ', orderId);
   }
 
   // useFocusEffect(

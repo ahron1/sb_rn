@@ -20,14 +20,14 @@ const MakePayment = ({
   setModalVisibleMakePayment,
   modalVisibleMakePayment,
 }) => {
-  console.log(
-    'in ordersend component. order details is:>> customer id ',
-    customerId,
-    ' order id ',
-    orderId,
-    ' store id ',
-    storeId,
-  );
+  // console.log(
+  // 'in ordersend component. order details is:>> customer id ',
+  // customerId,
+  // ' order id ',
+  // orderId,
+  // ' store id ',
+  // storeId,
+  // );
   //todo - use storeid and customer id to check payment options for store
   // and if the store offers credit to the customer.
   // right now it is just hardcoded in the frontend.
@@ -80,32 +80,32 @@ const MakePayment = ({
       radioButtons[2].selected
     ) {
       if (radioButtons[0].selected) {
-        console.log(' . cash ');
+        // console.log(' . cash ');
         isPaymentCash = true;
         isPaymentOnline = false;
         isPaymentCredit = false;
       } else if (radioButtons[1].selected) {
-        console.log(' . online ');
+        // console.log(' . online ');
         isPaymentCash = false;
         isPaymentOnline = true;
         isPaymentCredit = false;
       } else if (radioButtons[2].selected) {
-        console.log(' . credit ');
+        // console.log(' . credit ');
         isPaymentCash = false;
         isPaymentOnline = false;
         isPaymentCredit = true;
       }
 
-      console.log(
-        'A OK, will create new order using: >> ',
-        orderId,
-        ' cash ',
-        isPaymentCash,
-        ' credit ',
-        isPaymentCredit,
-        ' online ',
-        isPaymentOnline,
-      );
+      // console.log(
+      // 'A OK, will create new order using: >> ',
+      // orderId,
+      // ' cash ',
+      // isPaymentCash,
+      // ' credit ',
+      // isPaymentCredit,
+      // ' online ',
+      // isPaymentOnline,
+      // );
       orderPayment({
         orderId,
         isPaymentCash,
@@ -113,9 +113,9 @@ const MakePayment = ({
         isPaymentCredit,
         total,
       })(ordersDispatch)(() => {
-        console.log(
-          'in order items components. successfully confirmed order payment. going back to all orders',
-        );
+        // console.log(
+        // 'in order items components. successfully confirmed order payment. going back to all orders',
+        // );
         Alert.alert(
           'Thank you ',
           'Thank you for confirming the payment. \n\nHope you had a good experience. \n\nEnjoy your products. .',
@@ -134,10 +134,10 @@ const MakePayment = ({
       setModalVisible={setModalVisibleMakePayment}
       modalTitle={'Make payment'}
       modalFooter={<></>}
-      onShow={() => console.log('modal shown')}
+      // onShow={() => console.log('modal shown')}
       // onDismiss={() => console.log('modal closed')}
       onModalClose={() => {
-        console.log('modal closed');
+        // console.log('modal closed');
         // setFormErrorsOrderSend({});
         // setFormOrderSend({});
       }}

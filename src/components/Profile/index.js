@@ -48,8 +48,8 @@ const ProfileComponent = () => {
     Geocoder.from(latitude, longitude)
       .then(json => {
         var addressComponent = json.results[0].address_components;
-        addressLog(addressComponent);
-        console.log('address component is:>> ', '\n', addressComponent);
+        // addressLog(addressComponent);
+        // console.log('address component is:>> ', '\n', addressComponent);
         setGeoAddress({});
 
         const setGeoAddressWrapper = (key, value) => {
@@ -63,13 +63,13 @@ const ProfileComponent = () => {
       })
       .catch(error => {
         setLoadingEditAddress(false);
-        console.log('error getting address from coordinates', error);
+        // console.log('error getting address from coordinates', error);
       });
   };
 
   const processLocation = userLocation => {
     if (userLocation) {
-      console.log('current location is ', userLocation);
+      // console.log('current location is ', userLocation);
       var latitude = JSON.parse(JSON.stringify(userLocation)).latitude;
       var longitude = JSON.parse(JSON.stringify(userLocation)).longitude;
       var accuracy = JSON.parse(JSON.stringify(userLocation)).accuracy;
@@ -88,12 +88,12 @@ const ProfileComponent = () => {
 
   const getAndSetLocation = async () => {
     setLoadingEditAddress(true);
-    console.log('in getandsetlocation. getting location now :>> ');
+    // console.log('in getandsetlocation. getting location now :>> ');
     // const userLocation = await RNLocation.getLatestLocation({timeout: 10000});
 
     Geolocation.getCurrentPosition(
       position => {
-        console.log(position);
+        // console.log(position);
         processLocation(position.coords);
         // processLocation({});
       },
@@ -110,7 +110,7 @@ const ProfileComponent = () => {
           ],
         );
 
-        console.log(error.code, error.message);
+        // console.log(error.code, error.message);
       },
       {
         enableHighAccuracy: true,
@@ -123,7 +123,7 @@ const ProfileComponent = () => {
 
   const locationHandler = async () => {
     try {
-      console.log(' in locationhandler. asking for permission ');
+      // console.log(' in locationhandler. asking for permission ');
       const granted = await PermissionsAndroid.request(
         PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
         {
@@ -137,7 +137,7 @@ const ProfileComponent = () => {
         },
       );
       if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-        console.log('just got permission ', granted);
+        // console.log('just got permission ', granted);
         getAndSetLocation();
       } else {
         setLoadingEditAddress(false);
@@ -168,7 +168,7 @@ const ProfileComponent = () => {
       })
       .catch(err => {
         setLoadingEditAddress(false);
-        console.log(
+        console.warn(
           'in RNAndroidLocationEnabler. err is:> ',
           err.code,
           err.message,

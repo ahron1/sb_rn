@@ -209,7 +209,7 @@ const StoresComponent = ({storesLoading, storesData, orderId}) => {
 
       setModalVisibleOrderFinal(true);
     } else {
-      console.log('store details show.', storeName);
+      // console.log('store details show.', storeName);
 
       Alert.alert(
         storeName,

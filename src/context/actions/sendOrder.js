@@ -8,7 +8,7 @@ import axiosInstance from '../../helpers/axiosInterceptor';
 export default ({orderId, storeId, isPickup, isDelivery, formOrderSend}) =>
   dispatch =>
   onSuccess => {
-    console.log('in sendorder action form order is >> ', formOrderSend);
+    // console.log('in sendorder action form order is >> ', formOrderSend);
     dispatch({
       type: SEND_ORDER_LOADING,
     });
@@ -24,7 +24,7 @@ export default ({orderId, storeId, isPickup, isDelivery, formOrderSend}) =>
           : null,
       })
       .then(res => {
-        console.log('in sendorder action got response >> ', res.data);
+        // console.log('in sendorder action got response >> ', res.data);
         dispatch({
           type: SEND_ORDER_SUCCESS,
           // payload: dataOrders,
@@ -33,7 +33,7 @@ export default ({orderId, storeId, isPickup, isDelivery, formOrderSend}) =>
         onSuccess();
       })
       .catch(err => {
-        console.log('in send order action error is >> ', err);
+        // console.log('in send order action error is >> ', err);
         dispatch({
           type: SEND_ORDER_FAIL,
           // payload: dataOrders,

@@ -16,7 +16,7 @@ const OrderItems = ({navigation}) => {
   // const orderStatusDetails = route.params;
   // const {orderId} = orderStatusDetails;
   const orderId = route.params.orderId;
-  console.log('in order items screen. order id is:>> ', orderId);
+  // console.log('in order items screen. order id is:>> ', orderId);
 
   const {setOptions, toggleDrawer} = useNavigation();
   const {orderItemsDispatch, orderItemsState} = useContext(GlobalContext);
@@ -54,10 +54,10 @@ const OrderItems = ({navigation}) => {
 
   //TODO / TOTEST:
   useEffect(() => {
-    console.log(
-      'in order items scree. there are now ',
-      dataGetOrderItems.length + ' items in the order',
-    );
+    // console.log(
+    // 'in order items scree. there are now ',
+    // dataGetOrderItems.length + ' items in the order',
+    // );
   }, [dataGetOrderItems]);
 
   return (

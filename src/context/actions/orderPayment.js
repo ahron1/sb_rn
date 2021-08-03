@@ -15,7 +15,7 @@ export default ({
   }) =>
   dispatch =>
   onSuccess => {
-    console.log('in PAY_ORDER action dispatch loading >> ');
+    // console.log('in PAY_ORDER action dispatch loading >> ');
     dispatch({
       type: PAY_ORDER_LOADING,
     });
@@ -29,7 +29,7 @@ export default ({
         amount: total,
       })
       .then(res => {
-        console.log('in PAY_ORDER action got response >> ', res.data);
+        // console.log('in PAY_ORDER action got response >> ', res.data);
         dispatch({
           type: PAY_ORDER_SUCCESS,
           // payload: dataOrders,
@@ -38,7 +38,7 @@ export default ({
         onSuccess();
       })
       .catch(err => {
-        console.log('in PAY_ORDER action error is >> ', err);
+        // console.log('in PAY_ORDER action error is >> ', err);
         dispatch({
           type: PAY_ORDER_FAIL,
           // payload: dataOrders,

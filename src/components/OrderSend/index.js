@@ -110,29 +110,29 @@ const OrderSend = ({
     let isDelivery;
     if (radioButtons[0].selected || radioButtons[1].selected) {
       if (radioButtons[0].selected) {
-        console.log(' . pickup ');
+        // console.log(' . pickup ');
         isPickup = true;
         isDelivery = false;
       } else if (radioButtons[1].selected) {
-        console.log(' . delivery ');
+        // console.log(' . delivery ');
         isPickup = false;
         isDelivery = true;
       }
-      console.log(
-        'A OK, will create new order using: >> ',
-        orderId,
-        storeId,
-        isPickup,
-        isDelivery,
-        ' comment is : ',
-        formOrderSend.orderComment,
-      );
+      // console.log(
+      // 'A OK, will create new order using: >> ',
+      // orderId,
+      // storeId,
+      // isPickup,
+      // isDelivery,
+      // ' comment is : ',
+      // formOrderSend.orderComment,
+      // );
       sendOrder({orderId, storeId, isPickup, isDelivery, formOrderSend})(
         ordersDispatch,
       )(() => {
-        console.log(
-          'in order items components. successfully sent order. going back to all orders',
-        );
+        // console.log(
+        // 'in order items components. successfully sent order. going back to all orders',
+        // );
         Alert.alert(
           'Order sent!',
           'Your order has been sent to the store.\n\nWait for the store to respond.',
@@ -160,10 +160,10 @@ const OrderSend = ({
       setModalVisible={setModalVisibleOrderFinal}
       modalTitle={'Send order'}
       modalFooter={<></>}
-      onShow={() => console.log('modal shown')}
+      // onShow={() => console.log('modal shown')}
       // onDismiss={() => console.log('modal closed')}
       onModalClose={() => {
-        console.log('modal closed');
+        // console.log('modal closed');
         setFormOrderSend({});
       }}
       modalBody={
