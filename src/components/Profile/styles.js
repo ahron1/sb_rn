@@ -52,6 +52,10 @@ export default ScaledSheet.create({
   logoutButton: {
     backgroundColor: colors.color2_2_0,
   },
+
+  ordersButton: {
+    backgroundColor: colors.color3_3,
+  },
   sectionBody: {
     backgroundColor: colors.color2_3,
   },
@@ -70,6 +74,11 @@ export default ScaledSheet.create({
   buttonSection: {
     paddingHorizontal: '100@s',
     paddingBottom: '10@s',
+  },
+  ordersButtonSection: {
+    marginTop: '30@s',
+    marginBottom: '20@s',
+    paddingHorizontal: '60@s',
   },
   logoutButtonSection: {
     marginTop: '50@s',

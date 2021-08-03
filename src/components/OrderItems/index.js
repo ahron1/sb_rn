@@ -214,57 +214,6 @@ const OrderItemsComponent = ({
         );
         break;
 
-      /*
-      case 'status_400_store_fulfilled':
-      case 'status_300_store_checked':
-        buttons = (
-          <View>
-            <View>
-              <FloatingCenterButton
-                buttonText="Received items"
-                iconType="fa5"
-                iconName="check-circle"
-                circleColor={colors.color4_2}
-                iconColor={colors.color2_4}
-                onPress={() => {
-                  console.log(
-                    'in order items component. order received pressed',
-                  );
-                  setModalVisibleReceivedOrder(true);
-                }}
-              />
-            </View>
-          </View>
-        );
-        break;
-        */
-
-      /*
-      case 'status_300_store_checked':
-        buttons = (
-          <View>
-            <View>
-              <FloatingCenterButton
-                buttonText="Check status"
-                iconType="ant"
-                iconName="questioncircle"
-                circleColor={colors.color4_2}
-                iconColor={colors.color2_4}
-                onPress={() => {
-                  console.log('in order items component. check status pressed');
-                  console.log(
-                    'in order items component. check status pressed. now navigating to order status scren',
-                  );
-                  // navigate(ORDERSTATUS, {orderStatusCode: orderStatusCode});
-                  navigateOrderStatus();
-                }}
-              />
-            </View>
-          </View>
-        );
-        break;
-        */
-
       case 'status_200_customer_sent':
         buttons = (
           <View>

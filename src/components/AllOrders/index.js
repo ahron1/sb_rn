@@ -59,17 +59,17 @@ const AllOrdersComponent = ({
     return (
       <View style={styles.dashboard}>
         <View style={styles.dashboardItem}>
-          <Text style={styles.dashboardItemTitleFreeFlow}>
+          <Text style={styles.dashboardItemTitle}>
             You have a total of {dataAllOrders.length} orders.
           </Text>
           <>
             {dataAllOrders.length > 0 ? (
-              <Text style={styles.dashboardItemTitleFreeFlow}>
+              <Text style={styles.dashboardItemTitle}>
                 Create a new order or touch an order to view its details and
                 take action.
               </Text>
             ) : (
-              <Text style={styles.dashboardItemTitleFreeFlow}>
+              <Text style={styles.dashboardItemTitle}>
                 Create a new order now.
               </Text>
             )}

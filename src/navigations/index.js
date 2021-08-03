@@ -9,6 +9,7 @@ const AppNavContainer = () => {
     <View style={{flex: 1}}>
       <StatusBar
         backgroundColor={colors.color1_1}
+        // backgroundColor="red"
         barStyle="light-content"
         hidden={false}
       />

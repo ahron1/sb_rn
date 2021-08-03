@@ -217,12 +217,23 @@ const StoresComponent = ({storesLoading, storesData, orderId}) => {
 
         [
           {
-            text: 'Call the store',
+            text: 'Order',
+            onPress: () => navigate(ALLORDERS),
+          },
+
+          {
+            text: 'Call',
             onPress: () => Linking.openURL(`tel:${storePhoneNumber}`),
           },
           {
-            text: 'Place an order',
-            onPress: () => navigate(ALLORDERS),
+            text: 'WhatsApp',
+            onPress: () =>
+              Linking.openURL(
+                'whatsapp://send?text=' +
+                  'Hello, I want to check about my order status.. \n\n' +
+                  '&phone=91' +
+                  `${storePhoneNumber}`,
+              ),
           },
         ],
         {cancelable: true},
@@ -244,7 +255,7 @@ const StoresComponent = ({storesLoading, storesData, orderId}) => {
                 </Text>
               </View>
               <View>
-                <Text style={[styles.dashboardItemContentFreeFlow]}>
+                <Text style={[styles.dashboardItemContent]}>
                   {storesData.length}
                 </Text>
               </View>

@@ -65,7 +65,7 @@ const getOrderStatus = order => {
       ? {
           orderStatusText:
             'Store checked availability and will fulfil order soon',
-          orderStatusNext: 'Make payment after receiving items',
+          orderStatusNext: 'Receive items and make payment',
           orderColorCode: colors.color2_2_4,
           orderStatusCode: 'status_300_store_checked',
         }

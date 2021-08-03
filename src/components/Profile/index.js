@@ -9,15 +9,18 @@ import addressLog, {setGeoAddressHelper} from '../../helpers/geoHelpers';
 import AddressForm from '../AddressForm';
 import NameForm from '../NameForm';
 import logOut from '../../context/actions/auth/logOut';
-import credUpdate from '../../context/actions/auth/credUpdate';
+import {useNavigation} from '@react-navigation/native';
 import styles from './styles';
 import Container from '../common/Container';
 import CustomButtonSmall from '../common/CustomButtonSmall';
+import CustomButton from '../common/CustomButton';
 import colors from '../../assets/theme/colors';
+import {ALLORDERS} from '../../constants/routeNames';
 
 Geocoder.init('AIzaSyBw1Ua3oGDMs8WwJyNXLRkpsJSq6Vup0bo'); // use a valid API key
 
 const ProfileComponent = () => {
+  const {navigate} = useNavigation();
   const [modalVisibleAddAddress, setModalVisibleAddAddress] = useState(false);
   const [modalVisibleAddName, setModalVisibleAddName] = useState(false);
   const [loadingEditAddress, setLoadingEditAddress] = useState(false);
@@ -277,6 +280,16 @@ const ProfileComponent = () => {
                 </View>
               )}
             </View>
+          </View>
+        </View>
+
+        <View>
+          <View style={styles.ordersButtonSection}>
+            <CustomButton
+              style={styles.ordersButton}
+              title="Orders"
+              onPress={() => navigate(ALLORDERS)}
+            />
           </View>
         </View>
 
