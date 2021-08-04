@@ -81,7 +81,7 @@ const SideMenu = ({navigation}) => {
         <Image
           height={1}
           width={1}
-          source={require('../../assets/images/logo3.png')}
+          source={require('../../assets/images/logo_storebhai.png')}
           style={styles.logoImage}
         />
         <Text style={styles.sideBarTopBrandText}>Storebhai</Text>
