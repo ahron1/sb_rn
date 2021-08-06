@@ -20,4 +20,8 @@
         <item name="android:textColorPrimary">@color/alert_text</item>
     </style>
 
+    <style name="SplashScreenTheme" parent="SplashScreen_SplashTheme">
+        <item name="colorPrimaryDark">@color/color1_2</item>
+    </style>
+
 </resources>

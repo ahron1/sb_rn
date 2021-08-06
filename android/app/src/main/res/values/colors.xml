@@ -2,4 +2,5 @@
 <resources>
     <color name="alert_background">#ffffff</color>
     <color name="alert_text">#0f2438</color>
+    <color name="color1_2">#2d006b</color>
 </resources>

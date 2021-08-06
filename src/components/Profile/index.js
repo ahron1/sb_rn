@@ -287,7 +287,7 @@ const ProfileComponent = () => {
           <View style={styles.ordersButtonSection}>
             <CustomButton
               style={styles.ordersButton}
-              title="Orders"
+              title="My orders"
               onPress={() => navigate(ALLORDERS)}
             />
           </View>

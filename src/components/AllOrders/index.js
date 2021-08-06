@@ -48,7 +48,7 @@ const AllOrdersComponent = ({
       <View style={styles.emptyListView}>
         <Text style={styles.emptyListText}>
           You don't have any orders.
-          {'\n'}
+          {'\n\n'}
           Touch the "New order" button to create your order.
         </Text>
       </View>
@@ -232,7 +232,7 @@ const AllOrdersComponent = ({
       />
 
       <FloatingCenterButton
-        buttonText="Start new order"
+        buttonText="New order"
         iconType="materialCommunity"
         iconName="playlist-plus"
         loading={ordersState.addOrder.loading}
