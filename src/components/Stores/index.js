@@ -145,7 +145,7 @@ const StoresComponent = ({storesLoading, storesData, orderId}) => {
             onPress={() => {
               Linking.openURL(
                 'whatsapp://send?text=' +
-                  "Hello, I want to refer my favorite local store to you and earn rewards. I am sharing the store's name and number \n\n" +
+                  "Hello Storebhai team, I want to refer my favorite local store to you and earn rewards. I am sharing the store's name and number \n\n" +
                   '&phone=91' +
                   '8883672999',
               );
@@ -177,7 +177,7 @@ const StoresComponent = ({storesLoading, storesData, orderId}) => {
                 onPress={() => {
                   Linking.openURL(
                     'whatsapp://send?text=' +
-                      "Hello, I want to refer my favorite local store to you and earn rewards. I am sharing the store's name and number \n\n" +
+                      "Hello Storebhai team, I want to refer my favorite local store to you and earn rewards. I am sharing the store's name and number \n\n" +
                       '&phone=91' +
                       '8883672999',
                   );

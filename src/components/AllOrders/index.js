@@ -164,14 +164,7 @@ const AllOrdersComponent = ({
                 </View>
               </>
             )}
-            <View style={styles.rowItem}>
-              <Text style={[styles.rowItemTitle, {color: orderColorText}]}>
-                Status Code:{' '}
-              </Text>
-              <Text style={[styles.rowItemContent, {color: orderColorText}]}>
-                {orderStatusCode}
-              </Text>
-            </View>
+
             {orderPrice && (
               <>
                 <View style={styles.rowItem}>
