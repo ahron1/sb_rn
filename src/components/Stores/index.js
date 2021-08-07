@@ -213,17 +213,12 @@ const StoresComponent = ({storesLoading, storesData, orderId}) => {
 
       Alert.alert(
         storeName,
-        storeName + ' is happy to serve you.\n\nPlace an order or call us.',
+        storeName + ' is happy to serve you.\n\nPlace an order or contact us.',
 
         [
           {
-            text: 'Order',
-            onPress: () => navigate(ALLORDERS),
-          },
-
-          {
-            text: 'Call',
-            onPress: () => Linking.openURL(`tel:${storePhoneNumber}`),
+            text: 'Cancel',
+            // onPress: () => Linking.openURL(`tel:${storePhoneNumber}`),
           },
           {
             text: 'WhatsApp',
@@ -234,6 +229,10 @@ const StoresComponent = ({storesLoading, storesData, orderId}) => {
                   '&phone=91' +
                   `${storePhoneNumber}`,
               ),
+          },
+          {
+            text: 'Order',
+            onPress: () => navigate(ALLORDERS),
           },
         ],
         {cancelable: true},

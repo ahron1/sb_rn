@@ -6,76 +6,80 @@
  * @flow strict-local
  */
 
-import React, {useContext, useEffect} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import messaging from '@react-native-firebase/messaging';
 import GlobalProvider, {GlobalContext} from './src/context/Provider';
 import AppNavContainer from './src/navigations';
+import PushNotification from 'react-native-push-notification';
 import {Alert} from 'react-native';
-// import {GlobalContext} from '../../context/Provider';
 
 const App = () => {
-  const {authDispatch, authState} = useContext(GlobalContext);
+  PushNotification.createChannel(
+    {
+      channelId: 'notification_channel_1', // (required)
+      channelName: 'notification_channel_1', // (required)
+      playSound: true, // (optional) default: true
+      soundName: 'default',
+      vibrate: true, // (optional) default: true. Creates the default vibration pattern if true.
+    },
+    // created => console.log(`createChannel returned '${created}'`), // (optional) callback returns whether the channel was created, false means it already existed.
+  );
+
+  const notificationHelper = remoteMessage => {
+    // console.log('FCM Notification', JSON.stringify(remoteMessage));
+
+    if (remoteMessage.data.alert_title && remoteMessage.data.alert_body) {
+      Alert.alert(
+        remoteMessage.data.alert_title,
+        remoteMessage.data.alert_body,
+      );
+    }
+  };
+
+  // assume remoteMessage object contains 1)notification 2)data
+
+  //foreground notification
   useEffect(() => {
     const unsubscribe = messaging().onMessage(async remoteMessage => {
-      Alert.alert(
-        'A new foreground FCM message arrived!',
-        JSON.stringify(remoteMessage.data.data_item1),
-      );
+      PushNotification.localNotification({
+        channelId: 'notification_channel_1',
+        message: remoteMessage.notification.body,
+        title: remoteMessage.notification.title,
+        largeIconUrl: remoteMessage.notification.android.imageUrl,
+      });
+      notificationHelper(remoteMessage);
     });
-
     return unsubscribe;
   }, []);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  // useEffect(async () => {
-  // const fcmToken = await messaging().getToken();
-  // if (fcmToken) {
-  // console.log('fcm token is :> ', fcmToken);
-  // console.log('fcm messaging() object is :> ', messaging());
+  //foreground notification
+  // useEffect(() => {
+  // const unsubscribe = messaging().onMessage(async remoteMessage => {
+  // if (remoteMessage) {
+  // notificationHelper(remoteMessage);
   // }
+  // });
+  //
+  // return unsubscribe;
   // }, []);
 
+  // background notification - from app background state
   useEffect(() => {
-    const unsubscribe = () => {
-      messaging().onTokenRefresh(async token => {
-        Alert.alert('Token was refreshed', JSON.stringify(token));
-      });
-    };
-
-    return unsubscribe;
+    messaging().onNotificationOpenedApp(remoteMessage => {
+      if (remoteMessage) {
+        notificationHelper(remoteMessage);
+      }
+    });
   }, []);
 
+  // initial notification - from app quit state
   useEffect(() => {
-    // Assume a message-notification contains a "type" property in the data payload of the screen to open
-
-    messaging().onNotificationOpenedApp(remoteMessage => {
-      console.log(
-        'Notification caused app to open from background state:',
-        remoteMessage.notification,
-      );
-      console.log(
-        'Notification caused app to open from background state:',
-        remoteMessage.data,
-      );
-      // navigation.navigate(remoteMessage.data.type);
-    });
-
-    // Check whether an initial notification is available
     messaging()
       .getInitialNotification()
       .then(remoteMessage => {
         if (remoteMessage) {
-          console.log(
-            'Notification caused app to open from quit state:',
-            remoteMessage.notification,
-          );
-          console.log(
-            'Notification caused app to open from quit state:',
-            remoteMessage.data,
-          );
-          // setInitialRoute(remoteMessage.data.type); // e.g. "Settings"
+          notificationHelper(remoteMessage);
         }
-        // setLoading(false);
       });
   }, []);
 
