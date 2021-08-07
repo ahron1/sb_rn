@@ -5,9 +5,6 @@ import {
   ADD_ORDER_LOADING,
   ADD_ORDER_SUCCESS,
   ADD_ORDER_FAIL,
-  EDIT_ORDER_LOADING,
-  EDIT_ORDER_SUCCESS,
-  EDIT_ORDER_FAIL,
   SEND_ORDER_LOADING,
   SEND_ORDER_SUCCESS,
   SEND_ORDER_FAIL,
@@ -170,14 +167,6 @@ const ordersReducer = (state, {type, payload}) => {
           loading: false,
           error: null,
         },
-        // getOrders: {
-        // ...state.getOrders,
-        // loading: false,
-        // data: [
-        // ...state.getOrders.data.filter(x => x.order_id !== payload.orderId),
-        // payload,
-        // ],
-        // },
       };
     case PAY_ORDER_FAIL:
       return {

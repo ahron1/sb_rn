@@ -81,7 +81,9 @@ const OrderItemsComponent = ({
     orderColorText: orderColorText,
   } = order ? getOrderStatus(order) : {};
 
-  const currentCodeNumber = Number(orderStatusCode.substr(7, 3));
+  const currentCodeNumber = orderStatusCode
+    ? Number(orderStatusCode.substr(7, 3))
+    : 100;
   // console.log(
   // 'in order items. order status code is :> ',
   // orderStatusCode,

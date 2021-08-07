@@ -1,4 +1,3 @@
-import {roundToNearestPixel} from 'react-native/Libraries/Utilities/PixelRatio';
 import {
   PAY_ORDER_FAIL,
   PAY_ORDER_LOADING,

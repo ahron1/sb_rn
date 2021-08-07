@@ -10,17 +10,17 @@ export default {
     loading: false,
   },
   deleteOrder: {
-    data: [],
+    // data: [],
     error: null,
     loading: false,
   },
   sendOrder: {
-    data: [],
+    // data: [],
     error: null,
     loading: false,
   },
   payOrder: {
-    data: [],
+    // data: [],
     error: null,
     loading: false,
   },

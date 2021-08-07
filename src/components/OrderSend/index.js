@@ -135,7 +135,7 @@ const OrderSend = ({
         // );
         Alert.alert(
           'Order sent!',
-          'Your order has been sent to the store.\n\nWait for the store to respond.',
+          'Your order has been sent to the store.\n\nWait for the store to update prices and availability.',
         );
         navigate(ALLORDERS);
         setModalVisibleOrderFinal(false);

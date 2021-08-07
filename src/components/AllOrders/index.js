@@ -245,8 +245,8 @@ const AllOrdersComponent = ({
             addOrderPressed();
           } else {
             Alert.alert(
-              'Not logged in',
-              'Please log in first to create your order.',
+              'Update address',
+              'Please log in and update your address to create your order.',
 
               [
                 {
