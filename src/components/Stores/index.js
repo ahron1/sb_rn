@@ -226,7 +226,8 @@ const StoresComponent = ({storesLoading, storesData, orderId}) => {
               Linking.openURL(
                 'whatsapp://send?text=' +
                   'Hello, I want to check about my order status.. \n\n' +
-                  '&phone=91' +
+                  // '&phone=91' +
+                  '&phone=' +
                   `${storePhoneNumber}`,
               ),
           },
