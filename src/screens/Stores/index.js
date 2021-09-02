@@ -8,6 +8,7 @@ import NavMenuComponent, {
   NavMenuPressable,
 } from '../../components/common/NavMenu';
 import getStores from '../../context/actions/getStores';
+import getDefaultStore from '../../context/actions/getDefaultStore';
 
 const Stores = ({navigation}) => {
   const {setOptions, toggleDrawer} = useNavigation();
@@ -41,7 +42,16 @@ const Stores = ({navigation}) => {
     const unsubscribe = navigation.addListener('focus', () => {
       if (authState.latitude && authState.longitude) {
         // console.log('in stores screen. will call getstores');
-        getStores()(storesDispatch);
+        if (orderId) {
+          // console.log(
+          // 'navigated from order items screen. order id is:>> ',
+          // orderId,
+          // );
+          getDefaultStore()(storesDispatch);
+        } else {
+          // console.log('navigated from menu . order id is:>>  ', orderId);
+          getStores()(storesDispatch);
+        }
       } else {
         // console.log(
         // 'in stores screen. address not updated. will not call getstores',
@@ -51,28 +61,18 @@ const Stores = ({navigation}) => {
     return unsubscribe;
   }, [navigation]);
 
-  if (orderId) {
-    // console.log('navigated from order items screen. order id is:>> ', orderId);
-  } else {
-    // console.log('navigated from menu . order id is:>>  ', orderId);
-  }
-
-  // useFocusEffect(
-  // React.useCallback(() => {
-  // Do something when the screen is focused
-  // return () => {
-  // Do something when the screen is unfocused
-  // reset parameter so that on navigating back to this screen,
-  // it will work like it had been navigated to from the menu, and not from send order.
-  // navigation.setParams({orderId: null});
-  // };
-  // }, []),
-  // );
-
   return (
     <StoresComponent
-      storesLoading={storesState.getStores.loading}
-      storesData={storesState.getStores.data}
+      // storesLoading={storesState.getStores.loading}
+      storesLoading={
+        orderId
+          ? storesState.getDefaultStore.loading
+          : storesState.getStores.loading
+      }
+      // storesData={storesState.getStores.data}
+      storesData={
+        orderId ? storesState.getDefaultStore.data : storesState.getStores.data
+      }
       orderId={orderId}
     />
   );

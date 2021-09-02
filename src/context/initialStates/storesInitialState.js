@@ -4,4 +4,10 @@ export default {
     error: null,
     loading: false,
   },
+  getDefaultStore: {
+    data: [],
+    error: null,
+    loading: false,
+  },
+
 };
