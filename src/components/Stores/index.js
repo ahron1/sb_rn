@@ -209,7 +209,11 @@ const StoresComponent = ({storesLoading, storesData, orderId}) => {
 
       setModalVisibleOrderFinal(true);
     } else {
-      // console.log('store details show.', storeName);
+      // console.log(
+      // 'store details show. name is ',
+      // storeName,
+      // ' number is ' + storePhoneNumber,
+      // );
 
       Alert.alert(
         storeName,
@@ -232,8 +236,9 @@ const StoresComponent = ({storesLoading, storesData, orderId}) => {
               ),
           },
           {
-            text: 'Order',
-            onPress: () => navigate(ALLORDERS),
+            text: 'Call',
+            // onPress: () => navigate(ALLORDERS),
+            onPress: () => Linking.openURL(`tel:${storePhoneNumber}`),
           },
         ],
         {cancelable: true},
