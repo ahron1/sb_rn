@@ -135,8 +135,8 @@ android {
         applicationId "com.storebhai.android_user_app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 3
-        versionName "1.02"
+        versionCode 4
+        versionName "1.03"
         multiDexEnabled true
     }
     splits {
