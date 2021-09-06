@@ -53,16 +53,16 @@ export default ScaledSheet.create({
     paddingVertical: '12@s',
   },
   rowItemTitle: {
-    fontSize: '18@s',
+    fontSize: '15@s',
     flex: 2.5,
   },
   rowItemContent: {
     flex: 6,
     fontFamily: 'Tillana-Medium',
-    fontSize: '18@s',
+    fontSize: '15@s',
   },
   rowItemTitleBold: {
-    fontSize: '18@s',
+    fontSize: '15@s',
     flex: 2.5,
     fontWeight: '700',
   },

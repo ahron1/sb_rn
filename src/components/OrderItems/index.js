@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import {useState, useEffect} from 'react';
 import {
+  Alert,
   Button,
   FlatList,
   Linking,
@@ -27,6 +28,7 @@ import deleteOrder from '../../context/actions/deleteOrder';
 import getOrderStatus from '../../helpers/orderStatus';
 import LoadingView from '../LoadingView';
 import getDateTime from '../../helpers/dateTimeString';
+import CustomButtonSmall from '../common/CustomButtonSmall';
 
 // const OrderItemsComponent = ({orderStatusDetails, dataOrderItems}) => {
 const OrderItemsComponent = ({
@@ -68,6 +70,7 @@ const OrderItemsComponent = ({
     is_delivery: isDelivery,
     is_pickup: isPickup,
     store_name: storeName,
+    store_number: storeNumber,
     store_id: storeId,
     customer_note: orderComments,
   } = order ? order : {};
@@ -368,6 +371,11 @@ const OrderItemsComponent = ({
   };
 
   const ListHeaderComponent = () => {
+    const message =
+      'Namaskar, ' + storeName
+        ? storeName
+        : '' + '. I want to update about ...';
+
     return (
       <View>
         <View style={[styles.statusboard, {backgroundColor: orderColorCode}]}>
@@ -392,15 +400,56 @@ const OrderItemsComponent = ({
             </Text>
           </View>
           {storeName && (
-            <View style={styles.dashboardItem}>
-              <Text
-                style={[styles.dashboardItemTitle, {color: orderColorText}]}>
-                Store:{' '}
-              </Text>
-              <Text
-                style={[styles.dashboardItemContent, {color: orderColorText}]}>
-                {storeName}
-              </Text>
+            <View>
+              <View style={styles.dashboardItem}>
+                <Text
+                  style={[styles.dashboardItemTitle, {color: orderColorText}]}>
+                  Store:{' '}
+                </Text>
+                <Text
+                  style={[
+                    styles.dashboardItemContent,
+                    {color: orderColorText},
+                  ]}>
+                  {storeName}
+                </Text>
+              </View>
+              {storeNumber && (
+                <View style={styles.dashboardItem}>
+                  <View style={styles.dashboardButton}>
+                    <CustomButtonSmall
+                      style={styles.button}
+                      primary
+                      title="Contact store"
+                      onPress={() => {
+                        // console.log('contact touched ', customerName);
+                        Alert.alert(storeName, 'Number: ' + storeNumber, [
+                          {
+                            text: 'Cancel',
+                          },
+                          {
+                            text: 'Call',
+                            onPress: () => {
+                              Linking.openURL(`tel:${storeNumber}`);
+                            },
+                          },
+                          {
+                            text: 'WhatsApp',
+                            onPress: () => {
+                              Linking.openURL(
+                                'whatsapp://send?text=' +
+                                  message +
+                                  '&phone=' +
+                                  storeNumber,
+                              );
+                            },
+                          },
+                        ]);
+                      }}
+                    />
+                  </View>
+                </View>
+              )}
             </View>
           )}
 

@@ -85,7 +85,7 @@ const AddItem = ({orderId, modalVisibleAddItem, setModalVisibleAddItem}) => {
             <AppTextInput
               label="Item Name (brand, model, etc.): "
               placeholder="Example: India Gate Tibar Rice"
-              maxLength={30}
+              maxLength={40}
               value={formAddItem.itemName || ''}
               onChangeText={value => {
                 onChangeAddItem({name: 'itemName', value, isRequired: true});
@@ -96,7 +96,7 @@ const AddItem = ({orderId, modalVisibleAddItem, setModalVisibleAddItem}) => {
               label="Item Quantity: "
               placeholder="Example: 1 kg"
               value={formAddItem.itemQuantity || ''}
-              maxLength={10}
+              maxLength={15}
               onChangeText={value => {
                 onChangeAddItem({
                   name: 'itemQuantity',
