@@ -1,5 +1,7 @@
 import React, {useContext, useState} from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, StatusBar} from 'react-native';
+import ImagePicker from 'react-native-image-crop-picker';
+import {ImageOrVideo} from 'react-native-image-crop-picker';
 import AppModal from '../common/AppModal';
 // import CustomButton from '../common/CustomButton';
 import CustomButtonMedium from '../common/CustomButtonMedium';
@@ -8,11 +10,19 @@ import addOrderItem from '../../context/actions/addOrderItem';
 import {GlobalContext} from '../../context/Provider';
 import styles from './styles';
 import colors from '../../assets/theme/colors';
+import CustomButtonSmall from '../common/CustomButtonSmall';
+import {Avatar} from '../common/Avatar';
 
 const AddItem = ({orderId, modalVisibleAddItem, setModalVisibleAddItem}) => {
   const {orderItemsDispatch, orderItemsState} = useContext(GlobalContext);
   const [formAddItem, setFormAddItem] = useState({});
   const [formErrorsAddItem, setFormErrorsAddItem] = useState({});
+  var imageSource = '../../assets/images/logo3.png';
+
+  const onAvatarChange = (image: ImageOrVideo) => {
+    console.log('in add item component, image uploaded ', image);
+    // upload image to server here
+  };
 
   const onSubmitAddItem = ({name, value, isRequired}) => {
     if (!formAddItem.itemName) {
@@ -61,6 +71,17 @@ const AddItem = ({orderId, modalVisibleAddItem, setModalVisibleAddItem}) => {
     }
   };
 
+  const uploadPic = () => {
+    console.log('in add item component. upload pic func');
+    ImagePicker.openPicker({
+      width: 300,
+      height: 400,
+      cropping: true,
+    }).then(image => {
+      console.log(image);
+    });
+  };
+
   return (
     <AppModal
       modalVisible={modalVisibleAddItem}
@@ -81,6 +102,15 @@ const AddItem = ({orderId, modalVisibleAddItem, setModalVisibleAddItem}) => {
               Enter the item and quantity you want to order:
             </Text>
           </View>
+
+          <View style={styles.userRow}>
+            <Avatar
+              onChange={onAvatarChange}
+              // source={require('../../assets/images/logo3.png')}
+              source={require(imageSource)}
+            />
+          </View>
+
           <View>
             <AppTextInput
               label="Item Name (brand, model, etc.): "

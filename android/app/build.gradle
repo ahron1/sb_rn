@@ -133,6 +133,7 @@ android {
 
     defaultConfig {
         applicationId "com.storebhai.android_user_app"
+        vectorDrawables.useSupportLibrary = true
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 4

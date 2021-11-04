@@ -18,4 +18,9 @@ export default ScaledSheet.create({
   introSection: {
     marginVertical: '5@s',
   },
+  userRow: {
+    alignItems: 'center',
+    padding: 15,
+    marginTop: 70,
+  },
 });
