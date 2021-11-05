@@ -4,7 +4,7 @@ import {View, Image, ImageProps, Pressable, StyleSheet} from 'react-native';
 import ImagePicker from 'react-native-image-crop-picker';
 import CustomButtonSmall from '../CustomButtonSmall';
 import colors from '../../../assets/theme/colors';
-import ReactNativeZoomableView from 'react-native-zoomable-view';
+import ReactNativeZoomableView from '@dudigital/react-native-zoomable-view/src/ReactNativeZoomableView';
 
 // import colors from '../../assets/theme/colors';
 
@@ -37,13 +37,11 @@ export const Avatar = (props: AvatarProps) => {
   };
   return (
     <View>
-      <ReactNativeZoomableView>
-        <Image
-          style={Styles.avatar}
-          {...props}
-          source={uri ? {uri} : props.source}
-        />
-      </ReactNativeZoomableView>
+      <Image
+        style={Styles.avatar}
+        {...props}
+        source={uri ? {uri} : props.source}
+      />
 
       <CustomButtonSmall
         title="Upload picture"
