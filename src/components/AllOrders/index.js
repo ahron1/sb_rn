@@ -8,7 +8,7 @@ import {
   View,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import {ORDERITEMS, PROFILE} from '../../constants/routeNames';
+import {CATEGORYCHOOSE, ORDERITEMS, PROFILE} from '../../constants/routeNames';
 import ListFooterComponent from '../common/ListFooter';
 import FloatingCenterButton from '../common/FloatingCenterButton';
 import addOrder from '../../context/actions/addOrder';
@@ -34,13 +34,9 @@ const AllOrdersComponent = ({
   const addOrderPressed = () => {
     // console.log('in all orders component. add order pressed');
     // addOrder()(ordersDispatch)(orderId => {
-    addOrder()(ordersDispatch)(orderId => {
-      // console.log(
-      // 'add order successfully dispatched. navigate to new order id',
-      // orderId,
-      // );
-      navigate(ORDERITEMS, {orderId});
-    });
+    //   navigate(ORDERITEMS, {orderId});
+    // });
+    navigate(CATEGORYCHOOSE);
   };
 
   const OrdersListEmptyComponent = () => {

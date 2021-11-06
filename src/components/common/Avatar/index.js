@@ -6,8 +6,6 @@ import CustomButtonSmall from '../CustomButtonSmall';
 import colors from '../../../assets/theme/colors';
 import ReactNativeZoomableView from '@dudigital/react-native-zoomable-view/src/ReactNativeZoomableView';
 
-// import colors from '../../assets/theme/colors';
-
 interface AvatarProps extends ImageProps {
   onChange?: (image: ImageOrVideo) => void;
 }

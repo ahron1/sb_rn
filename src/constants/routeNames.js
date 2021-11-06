@@ -5,5 +5,6 @@ export const REWARDS = 'Rewards';
 export const PROFILE = 'Profile';
 export const STORES = 'Stores';
 export const ORDERSTATUS = 'Order status';
+export const CATEGORYCHOOSE = 'Choose Category';
 
 export const HOME_NAVIGATOR = 'Home';

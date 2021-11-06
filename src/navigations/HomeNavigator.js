@@ -7,6 +7,7 @@ import {
   PROFILE,
   STORES,
   ORDERSTATUS,
+  CATEGORYCHOOSE,
 } from '../constants/routeNames';
 
 import {createStackNavigator, HeaderBackButton} from '@react-navigation/stack';
@@ -17,6 +18,7 @@ import Offers from '../screens/Offers';
 import Rewards from '../screens/Rewards';
 import Stores from '../screens/Stores';
 import OrderStatus from '../screens/OrderStatus';
+import CategoryChoose from '../screens/CategoryChoose';
 
 import colors from '../assets/theme/colors';
 import {Button} from 'react-native';
@@ -47,6 +49,7 @@ const HomeNavigator = ({navigation}) => {
       <HomeStack.Screen name={REWARDS} component={Rewards} />
       <HomeStack.Screen name={STORES} component={Stores} />
       <HomeStack.Screen name={ORDERSTATUS} component={OrderStatus} />
+      <HomeStack.Screen name={CATEGORYCHOOSE} component={CategoryChoose} />
     </HomeStack.Navigator>
   );
 };
