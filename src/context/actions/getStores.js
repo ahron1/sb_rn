@@ -14,7 +14,7 @@ const getStores = () => dispatch => {
   axiosInstance
     .get('/get_stores')
     .then(res => {
-      // console.log('in getstores. server response is >> ', res.data);
+      console.log('in getstores. server response is >> ', res.data);
       dispatch({
         type: GET_STORES_SUCCESS,
         payload: res.data,
