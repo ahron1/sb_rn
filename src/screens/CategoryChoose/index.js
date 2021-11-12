@@ -1,131 +1,101 @@
-import { useNavigation } from '@react-navigation/core';
 import React, {useContext, useEffect} from 'react';
 import {useState} from 'react';
-import {View, FlatList, Text, StyleSheet, Pressable, Image} from 'react-native';
-import { ORDERITEMS } from '../../constants/routeNames';
-import addOrder from '../../context/actions/addOrder';
-import { GlobalContext } from '../../context/Provider';
+import CategoryChooseComponent from '../../components/CategoryChoose';
+import getStores from '../../context/actions/getStores';
+import {GlobalContext} from '../../context/Provider';
 
-const CategoryAvailability = [
-  {
-    category: 'grocery',
-    availability: false,
-  },
-  {
-    category: 'medicines',
-    availability: false,
-  },
-  {
-    category: 'fruits',
-    availability: false,
-  },
-  {
-    category: 'vegetables',
-    availability: true,
-  },
-];
+// this will be fetched from the server
+const CategoryChoose = ({navigation}) => {
+  const {storesDispatch, storesState} = useContext(GlobalContext);
+  /*
+  const StoreServices = [
+    {
+      name: 'store1',
+      categories: {
+        grocery: false,
+        medicines: true,
+        fruits: false,
+        vegetables: false,
+      },
+    },
+    {
+      name: 'store2',
+      categories: {
+        grocery: true,
+        medicines: false,
+        fruits: false,
+        vegetables: true,
+      },
+    },
+  ];
 
-const Categories = [
-  {
-    id: 0,
-    category: 'grocery',
-    text: 'GROCERY',
-    src: require('../../assets/images/pic1.jpg'),
-  },
-  {
-    id: 1,
-    category: 'medicines',
-    text: 'MEDICINES',
-    src: require('../../assets/images/logo3.png'),
-  },
-  {
-    id: 2,
-    category: 'fruits',
-    text: 'FRUITS',
-    src: require('../../assets/images/logo3.png'),
-  },
-  {
-    id: 3,
-    category: 'vegetables',
-    text: 'VEGETABLES',
-    src: require('../../assets/images/logo3.png'),
-  },
-];
+  const CategoryAvailability = [
+    {
+      category: 'grocery',
+      availability:
+        StoreServices.filter(function (store) {
+          return store.categories.grocery == true;
+        }).length > 0
+          ? true
+          : false,
+    },
+    {
+      category: 'medicines',
+      availability:
+        StoreServices.filter(function (store) {
+          return store.categories.medicines == true;
+        }).length > 0
+          ? true
+          : false,
+      // availability: false,
+    },
+    {
+      category: 'fruits',
+      availability:
+        StoreServices.filter(function (store) {
+          return store.categories.fruits == true;
+        }).length > 0
+          ? true
+          : false,
+      // availability: false,
+    },
+    {
+      category: 'vegetables',
+      availability:
+        StoreServices.filter(function (store) {
+          return store.categories.vegetables == true;
+        }).length > 0
+          ? true
+          : false,
+      // availability: true,
+    },
+  ];
 
-const availablityUpdate = category => {
-  category.availability = CategoryAvailability.find(
-    item => item.category == category.category,
-  ).availability;
-};
+  */
 
-Categories.forEach(availablityUpdate);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingHorizontal: 20,
-    paddingVertical: 20,
-    // justifyContent: 'center',
-    // backgroundColor: 'white',
-  },
-  imageThumbnail: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: 130,
-    width: 130,
-    borderRadius: 100,
-    resizeMode: 'cover',
-  },
-  itemView: {
-    flex: 1,
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    margin: 10,
-    height: 200,
-  },
-  labelText: {
-    paddingTop: 5,
-    fontSize: 20,
-    alignItems: 'center',
-    alignSelf: 'center',
-    justifyContent: 'center',
-  },
-});
+  // Categories.forEach(availablityUpdate);
+  const availablityUpdate = category => {
+    category.availability = CategoryAvailability.find(
+      item => item.category == category.category,
+    ).availability;
+  };
 
-const CategoryChoose = () => {
-  const {ordersDispatch, ordersState, authState} = useContext(GlobalContext);
-  const {navigate} = useNavigation();
+
+  useEffect(() => {
+    // the navigation in the dep array is to trigger a reload/sort on navigating back to this screen
+    // console.log('navigating to stores screen.');
+    const unsubscribe = navigation.addListener('focus', () => {
+      getStores()(storesDispatch);
+    });
+    return unsubscribe;
+  }, [navigation]);
+
   return (
-    <View style={styles.container}>
-      <View>
-        <FlatList
-          data={Categories}
-          renderItem={({item}) =>
-            item.availability && (
-              <View style={styles.itemView}>
-                <Pressable
-                  onPress={() => {
-                    console.log('in category choose ' + item.category);
-                    addOrder()(ordersDispatch)(orderId => {
-                      navigate(ORDERITEMS, {orderId});
-                    });
-                    //
-                  }}>
-                  <View>
-                    <Image source={item.src} style={styles.imageThumbnail} />
-                    <Text style={styles.labelText}>{item.text}</Text>
-                  </View>
-                </Pressable>
-              </View>
-            )
-          }
-          //Setting the number of column
-          numColumns={2}
-          keyExtractor={(item, index) => index}
-        />
-      </View>
-    </View>
+    <CategoryChooseComponent
+      storesLoading={storesState.getStores.loading}
+      storesData={(storesState.getStores.data)}
+    />
   );
 };
 
