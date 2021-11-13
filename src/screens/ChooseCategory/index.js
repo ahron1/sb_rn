@@ -1,6 +1,6 @@
 import React, {useContext, useEffect} from 'react';
 import {useState} from 'react';
-import CategoryChooseComponent from '../../components/CategoryChoose';
+import ChooseCategoryComponent from '../../components/ChooseCategory';
 import getStores from '../../context/actions/getStores';
 import {GlobalContext} from '../../context/Provider';
 
@@ -92,7 +92,7 @@ const CategoryChoose = ({navigation}) => {
   }, [navigation]);
 
   return (
-    <CategoryChooseComponent
+    <ChooseCategoryComponent
       storesLoading={storesState.getStores.loading}
       storesData={(storesState.getStores.data)}
     />

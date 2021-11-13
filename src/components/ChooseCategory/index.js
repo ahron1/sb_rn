@@ -7,7 +7,7 @@ import { GlobalContext } from '../../context/Provider';
 import LoadingView from '../LoadingView';
 import styles from './styles';
 
-const CategoryChooseComponent = ({storesLoading, storesData}) => {
+const ChooseCategoryComponent = ({storesLoading, storesData}) => {
   let choiceComponent;
   const {ordersDispatch, ordersState, authState} = useContext(GlobalContext);
   const {navigate} = useNavigation();
@@ -142,4 +142,4 @@ const CategoryChooseComponent = ({storesLoading, storesData}) => {
   return choiceComponent;
 }
 
-export default CategoryChooseComponent;
+export default ChooseCategoryComponent;

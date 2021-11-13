@@ -8,7 +8,7 @@ import {
   View,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import {CATEGORYCHOOSE, ORDERITEMS, PROFILE} from '../../constants/routeNames';
+import {CHOOSECATEGORY, ORDERITEMS, PROFILE} from '../../constants/routeNames';
 import ListFooterComponent from '../common/ListFooter';
 import FloatingCenterButton from '../common/FloatingCenterButton';
 import addOrder from '../../context/actions/addOrder';
@@ -36,7 +36,7 @@ const AllOrdersComponent = ({
     // addOrder()(ordersDispatch)(orderId => {
     //   navigate(ORDERITEMS, {orderId});
     // });
-    navigate(CATEGORYCHOOSE);
+    navigate(CHOOSECATEGORY);
   };
 
   const OrdersListEmptyComponent = () => {
