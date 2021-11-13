@@ -1,7 +1,7 @@
 import {useNavigation} from '@react-navigation/native';
 import React, {useContext} from 'react';
 import { FlatList, Image, Pressable, Text, View } from 'react-native';
-import { ORDERITEMS } from '../../constants/routeNames';
+import { CHOOSESTORE, ORDERITEMS } from '../../constants/routeNames';
 import addOrder from '../../context/actions/addOrder';
 import { GlobalContext } from '../../context/Provider';
 import LoadingView from '../LoadingView';
@@ -113,16 +113,19 @@ const ChooseCategoryComponent = ({storesLoading, storesData}) => {
                 <Pressable
                   onPress={() => {
                     console.log('in category choose ' + item.category);
-                    console.log('in categorychoose. storesdata is ', storesData.filter(
+                    const storesServingCategory = storesData.filter(
                         function (store) {
                             return JSON.parse(store.categories)[item.category] == true;
-                            // return JSON.parse(store.categories).grocery == true;
                         }
-                    ));
-                    addOrder()(ordersDispatch)(orderId => {
+                    );
+                    // console.log('in categorychoose. stores serving category is ', storesServingCategory);
+                  /*  addOrder()(ordersDispatch)(orderId => {
                       navigate(ORDERITEMS, {orderId});
-                    });
-                    //
+                    }); */
+                    navigate(CHOOSESTORE, {
+                      storesServingCategory: storesServingCategory, 
+                      category: item.category,
+                    })
                   }}>
                   <View>
                     <Image source={item.src} style={styles.imageThumbnail} />
