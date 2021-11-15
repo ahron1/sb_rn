@@ -9,7 +9,6 @@ import styles from './styles';
 
 const ChooseCategoryComponent = ({storesLoading, storesData}) => {
   let choiceComponent;
-  const {ordersDispatch, ordersState, authState} = useContext(GlobalContext);
   const {navigate} = useNavigation();
 
   // this is the static list of categories.

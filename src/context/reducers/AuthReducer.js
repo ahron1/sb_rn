@@ -288,6 +288,7 @@ const authReducer = (state, {type, payload}) => {
         pincode: payload.pincode,
         latitude: payload.latitude,
         longitude: payload.longitude,
+        loyalty_code: payload.loyalty_code,
 
         getUserDetails: {
           ...state.getUserDetails,
