@@ -37,8 +37,6 @@ const ChooseStoreComponent = ({storesData }) => {
   const {ordersDispatch, ordersState} = useContext(GlobalContext);
   let viewStoreComponent;
 
-  // console.log('in choose store. stores are ', storesData);
-
   const renderItem = ({item}) => {
     const {
       store_id: storeId,

@@ -277,7 +277,7 @@ const authReducer = (state, {type, payload}) => {
         },
       };
     case GET_USER_DETAILS_SUCCESS:
-      // console.log('auth reducer:got user detail success - ', payload);
+      console.log('auth reducer:got user detail success - ', payload);
       return {
         ...state,
         userName: payload.username,

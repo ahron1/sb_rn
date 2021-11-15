@@ -24,6 +24,7 @@ const CategoryChoose = ({navigation}) => {
     <ChooseCategoryComponent
       storesLoading={storesState.getStores.loading}
       storesData={(storesState.getStores.data)}
+      userLoyaltyCode={authState.loyalty_code}
     />
   );
 };

@@ -7,7 +7,12 @@ import { GlobalContext } from '../../context/Provider';
 import LoadingView from '../LoadingView';
 import styles from './styles';
 
-const ChooseCategoryComponent = ({storesLoading, storesData}) => {
+const ChooseCategoryComponent = ({storesLoading, storesData, userLoyaltyCode}) => {
+
+  // console.log('in choose category. stores are ', storesData);
+  console.log('in choose category. user loyalty code is ', JSON.parse(userLoyaltyCode));
+  console.log('in choose category. store loyalty codes are ', storesData.map(a => a.loyalty_code));
+
   let choiceComponent;
   const {navigate} = useNavigation();
 
@@ -23,19 +28,19 @@ const ChooseCategoryComponent = ({storesLoading, storesData}) => {
     },
     {
       id: 1,
-      category: 'medicines',
+      category: 'medicine',
       text: 'MEDICINES',
       src: require('../../assets/images/logo3.png'),
     },
     {
       id: 2,
-      category: 'fruits',
+      category: 'fruit',
       text: 'FRUITS',
       src: require('../../assets/images/logo3.png'),
     },
     {
       id: 3,
-      category: 'vegetables',
+      category: 'vegetable',
       text: 'VEGETABLES',
       src: require('../../assets/images/logo3.png'),
     },
@@ -46,38 +51,38 @@ const ChooseCategoryComponent = ({storesLoading, storesData}) => {
       category: 'grocery',
       availability:
         storesData.filter(function (store) {
-          return JSON.parse(store.categories).grocery == true;
+          return JSON.parse(store.category).grocery == true;
         }).length > 0
           ? true
           : false,
     },
     {
-      category: 'medicines',
+      category: 'medicine',
       availability:
         storesData.filter(function (store) {
-          return JSON.parse(store.categories).medicines == true;
-          return store.categories.medicines == true;
-        }).length > 0
-          ? true
-          : false,
-      // availability: false,
-    },
-    {
-      category: 'fruits',
-      availability:
-        storesData.filter(function (store) {
-          return JSON.parse(store.categories).fruits == true;
-          return store.categories.fruits == true;
+          return JSON.parse(store.category).medicine == true;
+          // return store.category.medicine == true;
         }).length > 0
           ? true
           : false,
       // availability: false,
     },
     {
-      category: 'vegetables',
+      category: 'fruit',
       availability:
         storesData.filter(function (store) {
-          return JSON.parse(store.categories).vegetables == true;
+          return JSON.parse(store.category).fruit == true;
+          // return store.category.fruit == true;
+        }).length > 0
+          ? true
+          : false,
+      // availability: false,
+    },
+    {
+      category: 'vegetable',
+      availability:
+        storesData.filter(function (store) {
+          return JSON.parse(store.category).vegetable == true;
         }).length > 0
           ? true
           : false,
@@ -96,7 +101,6 @@ const ChooseCategoryComponent = ({storesLoading, storesData}) => {
   };
   Categories.forEach(availablityUpdate);
 
-
   if (storesLoading) {
     choiceComponent= <LoadingView />;
   } else if (!storesLoading) {
@@ -111,18 +115,32 @@ const ChooseCategoryComponent = ({storesLoading, storesData}) => {
               <View style={styles.itemView}>
                 <Pressable
                   onPress={() => {
-                    console.log('in category choose ' + item.category);
+                    console.log('in choosecategory. category choosen is ' + item.category);
                     const storesServingCategory = storesData.filter(
                         function (store) {
-                            return JSON.parse(store.categories)[item.category] == true;
+                            return JSON.parse(store.category)[item.category] == true;
                         }
                     );
+
+                    console.log('in choosecategory. stores servicing category choosen is ' 
+                      + JSON.stringify(storesServingCategory.map(store => store.name)));
+
+                     
+                    const storesServingCategoryLoyalCustomer = userLoyaltyCode.includes(item.category) ? storesServingCategory.filter(
+                        function (store) {
+                            console.log('in choosecategory - matching codes in  ',store.loyalty_code, ' and ', userLoyaltyCode);
+                            console.log('XXXXXX  user loyalty code includes ', item.category, ' ', userLoyaltyCode.includes(item.category));
+                            // return store.loyalty_code[1] == userLoyaltyCode[0];
+                            return store.loyalty_code.filter(code => userLoyaltyCode.includes(code)).length == true
+                        }
+                    ) : storesServingCategory ;
                     // console.log('in categorychoose. stores serving category is ', storesServingCategory);
                   /*  addOrder()(ordersDispatch)(orderId => {
                       navigate(ORDERITEMS, {orderId});
                     }); */
                     navigate(CHOOSESTORE, {
-                      storesServingCategory: storesServingCategory, 
+                      storesServingCategory: storesServingCategoryLoyalCustomer, 
+                      // storesServingCategory: storesServingCategory, 
                       category: item.category,
                     })
                   }}>
