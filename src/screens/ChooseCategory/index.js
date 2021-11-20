@@ -7,7 +7,6 @@ import {GlobalContext} from '../../context/Provider';
 // this will be fetched from the server
 const CategoryChoose = ({navigation}) => {
   const {storesDispatch, storesState} = useContext(GlobalContext);
-  const {authState} = useContext(GlobalContext);
 
   /*
   console.log(
@@ -29,7 +28,6 @@ const CategoryChoose = ({navigation}) => {
     <ChooseCategoryComponent
       storesLoading={storesState.getStores.loading}
       storesData={storesState.getStores.data}
-      userLoyaltyCode={authState.loyalty_code.code}
     />
   );
 };

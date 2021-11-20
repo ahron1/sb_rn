@@ -6,8 +6,11 @@ import {
 
 import axiosInstance from '../../../helpers/axiosInterceptor';
 
-const addLoyaltyCode = (loyaltyCode, category) => dispatch => onSuccess => {
-  /*
+const addLoyaltyCode =
+  ({loyaltyCode, category}) =>
+  dispatch =>
+  onSuccess => {
+    /*
   console.log(
     'in add loyalty code action. dispatch loading  with values:>>  ',
     loyaltyCode,
@@ -15,30 +18,34 @@ const addLoyaltyCode = (loyaltyCode, category) => dispatch => onSuccess => {
     category,
   );
   */
-  dispatch({
-    type: ADD_LOYALTYCODE_LOADING,
-  });
-  axiosInstance
-    .post('/add_loyalty_code_customer', {
-      // category: category,
-      // loyaltyCode: loyaltyCode,
-      object: '{' + '"' + category + '"' + ':' + '"' + loyaltyCode + '"' + '}',
-    })
-    .then(res => {
-      console.log('in add loyalty code action. got response >> ', res.data);
-      dispatch({
-        type: ADD_LOYALTYCODE_SUCCESS,
-        payload: loyaltyCode,
-      });
-      onSuccess();
-    })
-    .catch(err => {
-      console.log('in add loyalty code action. error is >> ', err);
-      dispatch({
-        type: ADD_LOYALTYCODE_FAIL,
-        payload: err,
-      });
+    dispatch({
+      type: ADD_LOYALTYCODE_LOADING,
     });
-};
+    axiosInstance
+      .post('/add_loyalty_code_customer', {
+        // category: category,
+        // loyaltyCode: loyaltyCode,
+        object:
+          '{' + '"' + category + '"' + ':' + '"' + loyaltyCode + '"' + '}',
+      })
+      .then(res => {
+        console.log('in add loyalty code action. got response >> ', res.data);
+        dispatch({
+          type: ADD_LOYALTYCODE_SUCCESS,
+          payload: res.data,
+        });
+        onSuccess();
+      })
+      .catch(err => {
+        console.log(
+          'in add loyalty code action. error is >> ',
+          JSON.stringify(err),
+        );
+        dispatch({
+          type: ADD_LOYALTYCODE_FAIL,
+          payload: err,
+        });
+      });
+  };
 
 export default addLoyaltyCode;

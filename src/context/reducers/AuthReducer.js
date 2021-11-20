@@ -327,20 +327,30 @@ const authReducer = (state, {type, payload}) => {
         },
       };
     case ADD_LOYALTYCODE_SUCCESS:
-      console.log('auth reducer:got user detail success - ', payload);
-      return {
+      // console.log(
+      //   'auth reducer:got user detail success with payload - ',
+      //   payload,
+      // );
+      // console.log('in auth reducer add code success -  old  state is ', state);
+      const foo = {
         ...state,
         loyalty_code: {
           ...state.loyalty_code,
           loading: false,
-          code: payload.loyalty_code,
+          code: JSON.stringify(payload),
           error: null,
         },
       };
+      console.log(
+        'in auth reducer add code success -  updated state is ',
+        state.loyalty_code.code,
+      );
+      return foo;
     case ADD_LOYALTYCODE_FAIL:
       return {
         ...state,
         loyalty_code: {
+          ...state.loyalty_code,
           error: payload ? payload : 'There was an error adding this code',
           loading: false,
         },

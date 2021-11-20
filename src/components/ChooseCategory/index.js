@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
+import {GlobalContext} from '../../context/Provider';
 import {useNavigation} from '@react-navigation/native';
 import {FlatList, Image, Pressable, Text, View} from 'react-native';
 import {CHOOSESTORE} from '../../constants/routeNames';
@@ -9,19 +10,16 @@ import styles from './styles';
 const ChooseCategoryComponent = ({
   storesLoading,
   storesData,
-  userLoyaltyCode,
+  // userLoyaltyCode,
 }) => {
   // console.log('in choose category. stores are ', storesData);
   const {navigate} = useNavigation();
-  console.log(
-    'in choose category. user loyalty code is ',
-    JSON.parse(userLoyaltyCode),
-  );
   /*
   console.log(
     'in choose category. store categories are ',
     storesData.map(a => ({
       name: a.name,
+      id: a.store_id,
       category: a.category,
       loyalty_code: a.loyalty_code,
     })),
@@ -29,9 +27,17 @@ const ChooseCategoryComponent = ({
   */
 
   let choiceComponent;
+  const {authState} = useContext(GlobalContext);
   const [modalVisibleLoyalty, setModalVisibleLoyalty] = useState(false);
   const [chosenCategory, setChosenCategory] = useState(null);
   const [storesList, setStoresList] = useState(null);
+
+  const userLoyaltyCode = authState.loyalty_code.code;
+
+  // console.log(
+  // 'in choose category. user loyalty code is ',
+  // JSON.parse(userLoyaltyCode),
+  // );
 
   // this is the static list of categories.
   // after the list of stores has been fetched, the next function will update this list with available categories
@@ -172,6 +178,27 @@ const ChooseCategoryComponent = ({
                                   userLoyaltyCode.includes(item.category),
                                 );
                                 */
+                                console.log(
+                                  ' zzzzz in choosecategory. store code is ',
+                                  store.loyalty_code,
+                                  ' and user loyalty code is ',
+                                  userLoyaltyCode,
+                                );
+                                console.log(
+                                  'xxxxxx in choosecategory ',
+                                  store.loyalty_code.filter(function (code) {
+                                    console.log(
+                                      'yyyyyyyy store code is ',
+                                      code,
+                                      ' user code ',
+                                      userLoyaltyCode,
+                                      ' includes store code: ',
+                                      userLoyaltyCode.includes(code),
+                                    );
+                                    userLoyaltyCode.includes(code);
+                                  }).length == true,
+                                );
+
                                 return (
                                   store.loyalty_code.filter(code =>
                                     userLoyaltyCode.includes(code),
@@ -180,6 +207,15 @@ const ChooseCategoryComponent = ({
                               })
                             : storesServingCategory;
                         setStoresList(storesServingCategoryLoyalCustomer);
+
+                        console.log(
+                          'in choose category component, stores serving category for all customer are ',
+                          storesServingCategory,
+                        );
+                        console.log(
+                          'in choose category component, stores serving category for loyal customer are ',
+                          storesServingCategoryLoyalCustomer,
+                        );
 
                         if (userLoyaltyCode.includes(item.category)) {
                           /*

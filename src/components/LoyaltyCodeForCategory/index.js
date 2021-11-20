@@ -1,11 +1,10 @@
-import React, {useContext, useState} from 'react';
-import {useNavigation} from '@react-navigation/native';
-import {View, Text} from 'react-native';
+import React, {useContext, useEffect, useState} from 'react';
+import {NavigationContainer, useNavigation} from '@react-navigation/native';
+import {View, Text, Alert} from 'react-native';
 import AppModal from '../common/AppModal';
 // import CustomButton from '../common/CustomButton';
 import CustomButtonMedium from '../common/CustomButtonMedium';
 import AppTextInput from '../common/AppTextInput';
-import addOrderItem from '../../context/actions/addOrderItem';
 import {GlobalContext} from '../../context/Provider';
 import styles from './styles';
 import colors from '../../assets/theme/colors';
@@ -19,24 +18,42 @@ const LoyaltyCodeForCategory = ({
   setModalVisibleLoyalty,
   storesList,
   category,
-  userLoyaltyCode,
+  // userLoyaltyCode,
 }) => {
   const {navigate} = useNavigation();
   const {orderItemsDispatch, orderItemsState} = useContext(GlobalContext);
   const [formCode, setFormCode] = useState({});
   const [formErrorsCode, setFormErrorsCode] = useState({});
   const [enterCode, setEnterCode] = useState(false);
+  const [
+    storesServingCategoryLoyalCustomer,
+    setStoresServingCategoryLoyalCustomer,
+  ] = useState();
   const {authState, authDispatch} = useContext(GlobalContext);
-  // console.log('in loyalty modal, category is ', category);
-  // console.log('in loyalty modal, stores list is ', storesList);
+
+  // the useeffect for updating the list of stores doesn't work
+  /*
+  useEffect(() => {
+    console.log(
+      'updated user loyalty codes in useeffect  ',
+      authState.loyalty_code.code,
+    );
+    const foo = authState.loyalty_code.code.includes(category)
+      ? storesList.filter(function (store) {
+          return (
+            store.loyalty_code.filter(code => {
+              authState.loyalty_code.code.includes(code);
+            }).length == true
+          );
+        })
+      : storesList;
+
+    setStoresServingCategoryLoyalCustomer(foo);
+  }, [authState.loyalty_code.code]);
+   */
 
   const onSubmitCode = ({name, value, isRequired}) => {
-    const code = formCode.codeValue;
-    console.log(
-      'in loyalty code modal. ok clicked with code ',
-      // formCode.codeValue,
-      code,
-    );
+    const loyaltyCode = formCode.codeValue.toUpperCase();
     if (!formCode.codeValue) {
       setFormErrorsCode(prev => {
         return {
@@ -45,67 +62,25 @@ const LoyaltyCodeForCategory = ({
         };
       });
     }
-    // setModalVisibleLoyalty(false);
-    addLoyaltyCode(code, category)(authDispatch)(() =>
-      setModalVisibleLoyalty(false),
-    );
+    addLoyaltyCode({loyaltyCode, category})(authDispatch)(() => {
+      setModalVisibleLoyalty(false);
 
-    /*
-    const temp = {};
-    temp[category] = formCode.codeValue;
-    userLoyaltyCode.push(temp);
+      /*
+      // the useeffect for updating the list of stores doesn't work. 
+      navigate(CHOOSESTORE, {
+        storesServingCategory: storesServingCategoryLoyalCustomer,
+        category: category,
+      });
+      */
 
-    console.log('A OK, will add new code. usercode is now: ', userLoyaltyCode);
-    console.log(
-      'stores matching entered code: ',
-      storesList.filter(function (store) {
-        console.log(
-          'in choosecategory - matching codes in  ',
-          store.loyalty_code,
-          ' and ',
-          userLoyaltyCode,
-        );
-        console.log(
-          'XXXXXX  user loyalty code includes ',
-          category,
-          ' ',
-          userLoyaltyCode.includes(category),
-        );
-        return (
-          store.loyalty_code.filter(code => userLoyaltyCode.includes(code))
-            .length == true
-        );
-      }),
-    );
+      // since the useeffect for updating the list of stores doesn't work, the workaround below is used
+      Alert.alert(
+        'Your code has been entered. \nPlease select the category again to activate the code',
+      );
+      navigate.goBack();
 
-    const storesServingCategoryLoyalCustomer = userLoyaltyCode.includes(
-      category,
-    )
-      ? storesList.filter(function (store) {
-          console.log(
-            'in choosecategory - matching codes in  ',
-            store.loyalty_code,
-            ' and ',
-            userLoyaltyCode,
-          );
-          console.log(
-            'XXXXXX  user loyalty code includes ',
-            category,
-            ' ',
-            userLoyaltyCode.includes(category),
-          );
-          return (
-            store.loyalty_code.filter(code => userLoyaltyCode.includes(code))
-              .length == true
-          );
-        })
-      : storesList;
-
-    navigate(CHOOSESTORE, {
-      storesServingCategory: storesServingCategoryLoyalCustomer,
-      category: category,
+      setModalVisibleLoyalty(false);
     });
-    */
   };
 
   const onChangeCode = ({name, value, isRequired}) => {
@@ -130,7 +105,7 @@ const LoyaltyCodeForCategory = ({
         <CustomButtonSmall
           title="YES"
           onPress={() => {
-            console.log('yes');
+            // console.log('yes');
             setEnterCode(true);
           }}
           loading={orderItemsState.addOrderItem.loading}
@@ -141,7 +116,7 @@ const LoyaltyCodeForCategory = ({
         <CustomButtonSmall
           title="NO"
           onPress={() => {
-            console.log('NO');
+            // console.log('NO');
             setModalVisibleLoyalty(false);
             navigate(CHOOSESTORE, {
               storesServingCategory: storesList,
@@ -188,7 +163,7 @@ const LoyaltyCodeForCategory = ({
                   label="Please enter your Loyalty Code"
                   autoFocus={true}
                   placeholder="CODE"
-                  maxLength={8}
+                  maxLength={20}
                   value={formCode.codeValue || ''}
                   onChangeText={value => {
                     onChangeCode({name: 'codeValue', value, isRequired: true});
