@@ -9,7 +9,12 @@ const CategoryChoose = ({navigation}) => {
   const {storesDispatch, storesState} = useContext(GlobalContext);
   const {authState} = useContext(GlobalContext);
 
-  console.log('in choose category screen. loyalty code of user is ', authState.loyalty_code);
+  /*
+  console.log(
+    'in choose category screen. loyalty code of user is ',
+    authState.loyalty_code,
+  );
+  */
 
   useEffect(() => {
     // the navigation in the dep array is to trigger a reload/sort on navigating back to this screen
@@ -23,8 +28,8 @@ const CategoryChoose = ({navigation}) => {
   return (
     <ChooseCategoryComponent
       storesLoading={storesState.getStores.loading}
-      storesData={(storesState.getStores.data)}
-      userLoyaltyCode={authState.loyalty_code}
+      storesData={storesState.getStores.data}
+      userLoyaltyCode={authState.loyalty_code.code}
     />
   );
 };

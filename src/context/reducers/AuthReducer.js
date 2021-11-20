@@ -21,6 +21,9 @@ import {
   GET_USER_DETAILS_FAIL,
   GET_USER_DETAILS_LOADING,
   GET_USER_DETAILS_SUCCESS,
+  ADD_LOYALTYCODE_FAIL,
+  ADD_LOYALTYCODE_SUCCESS,
+  ADD_LOYALTYCODE_LOADING,
 } from '../../constants/actionTypes';
 
 const authReducer = (state, {type, payload}) => {
@@ -277,7 +280,7 @@ const authReducer = (state, {type, payload}) => {
         },
       };
     case GET_USER_DETAILS_SUCCESS:
-      console.log('auth reducer:got user detail success - ', payload);
+      // console.log('auth reducer:got user detail success - ', payload);
       return {
         ...state,
         userName: payload.username,
@@ -288,7 +291,14 @@ const authReducer = (state, {type, payload}) => {
         pincode: payload.pincode,
         latitude: payload.latitude,
         longitude: payload.longitude,
-        loyalty_code: payload.loyalty_code,
+        // loyalty_code: payload.loyalty_code,
+
+        loyalty_code: {
+          ...state.loyalty_code,
+          code: payload.loyalty_code,
+          loading: false,
+          error: null,
+        },
 
         getUserDetails: {
           ...state.getUserDetails,
@@ -305,6 +315,34 @@ const authReducer = (state, {type, payload}) => {
           error: payload
             ? payload
             : 'There was an error updating your name on the server',
+        },
+      };
+
+    case ADD_LOYALTYCODE_LOADING:
+      return {
+        ...state,
+        loyalty_code: {
+          ...state.loyalty_code,
+          loading: true,
+        },
+      };
+    case ADD_LOYALTYCODE_SUCCESS:
+      console.log('auth reducer:got user detail success - ', payload);
+      return {
+        ...state,
+        loyalty_code: {
+          ...state.loyalty_code,
+          loading: false,
+          code: payload.loyalty_code,
+          error: null,
+        },
+      };
+    case ADD_LOYALTYCODE_FAIL:
+      return {
+        ...state,
+        loyalty_code: {
+          error: payload ? payload : 'There was an error adding this code',
+          loading: false,
         },
       };
   }

@@ -17,8 +17,11 @@ export default {
   latitude: null,
   longitude: null,
 
-  loyalty_code: null,
-
+  loyalty_code: {
+    code: null,
+    error: null,
+    loading: false,
+  },
   phoneNumberSignInSubmit: {
     error: null,
     loading: false,

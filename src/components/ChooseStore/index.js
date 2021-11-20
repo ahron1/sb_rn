@@ -1,12 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react';
-import {
-  Text,
-  Pressable,
-  View,
-  FlatList,
-  Alert,
-  Linking,
-} from 'react-native';
+import {Text, Pressable, View, FlatList, Alert, Linking} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import Icon from '../../components/common/Icon';
 import {GlobalContext} from '../../context/Provider';
@@ -29,7 +22,7 @@ import CustomButton from '../common/CustomButton';
 import CustomButtonMedium from '../common/CustomButtonMedium';
 import addOrder from '../../context/actions/addOrder';
 
-const ChooseStoreComponent = ({storesData }) => {
+const ChooseStoreComponent = ({storesData}) => {
   const [modalVisibleOrderFinal, setModalVisibleOrderFinal] = useState(false);
   const [selectedStoreDetails, setSelectedStoreDetails] = useState({});
   const {navigate} = useNavigation();
@@ -183,47 +176,46 @@ const ChooseStoreComponent = ({storesData }) => {
     );
   };
 
-      viewStoreComponent = (
-        <>
-          <View style={styles.dashboard}>
-            <View style={styles.dashboardItem}>
-              <View>
-                <Text style={styles.dashboardItemTitleFreeFlow}>
-                  {'There are  '}
-                </Text>
-              </View>
-              <View>
-                <Text style={[styles.dashboardItemContent]}>
-                  {storesData.length}
-                </Text>
-              </View>
-              <View>
-                <Text style={styles.dashboardItemTitleFreeFlow}>
-                  {'  '}
-                  stores in your area.
-                </Text>
-              </View>
-            </View>
+  viewStoreComponent = (
+    <>
+      <View style={styles.dashboard}>
+        <View style={styles.dashboardItem}>
+          <View>
+            <Text style={styles.dashboardItemTitleFreeFlow}>
+              {'There are  '}
+            </Text>
           </View>
+          <View>
+            <Text style={[styles.dashboardItemContent]}>
+              {storesData.length}
+            </Text>
+          </View>
+          <View>
+            <Text style={styles.dashboardItemTitleFreeFlow}>
+              {'  '}
+              stores in your area.
+            </Text>
+          </View>
+        </View>
+      </View>
 
-          <FlatList
-            data={storesData}
-            renderItem={renderItem}
-            keyExtractor={item => String(item.store_id)}
-            ItemSeparatorComponent={ListItemSeparatorComponentThick}
-            ListEmptyComponent={ListEmptyComponent}
-            ListFooterComponent={ListFooterComponent}
-          />
+      <FlatList
+        data={storesData}
+        renderItem={renderItem}
+        keyExtractor={item => String(item.store_id)}
+        ItemSeparatorComponent={ListItemSeparatorComponentThick}
+        ListEmptyComponent={ListEmptyComponent}
+        ListFooterComponent={ListFooterComponent}
+      />
 
-          <OrderSend
-            modalVisibleOrderFinal={modalVisibleOrderFinal}
-            setModalVisibleOrderFinal={setModalVisibleOrderFinal}
-            selectedStoreDetails={selectedStoreDetails}
-            // storeId={storeId}
-          />
-        </>
-      );
-      
+      <OrderSend
+        modalVisibleOrderFinal={modalVisibleOrderFinal}
+        setModalVisibleOrderFinal={setModalVisibleOrderFinal}
+        selectedStoreDetails={selectedStoreDetails}
+        // storeId={storeId}
+      />
+    </>
+  );
 
   return viewStoreComponent;
 };
