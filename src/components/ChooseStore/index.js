@@ -44,12 +44,14 @@ const ChooseStoreComponent = ({storesData}) => {
       mobile_number: storePhoneNumber,
     } = item;
 
+    console.log('in choose store. store details is ', item);
+
     return (
       <View>
         <Pressable
           onPress={() =>
             addOrder()(ordersDispatch)(orderId => {
-              navigate(ORDERITEMS, {orderId});
+              navigate(ORDERITEMS, {orderId, item});
             })
           }>
           <View style={[styles.listRow, styles.headerRow]}>

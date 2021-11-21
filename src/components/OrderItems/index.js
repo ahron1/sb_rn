@@ -29,10 +29,12 @@ import getOrderStatus from '../../helpers/orderStatus';
 import LoadingView from '../LoadingView';
 import getDateTime from '../../helpers/dateTimeString';
 import CustomButtonSmall from '../common/CustomButtonSmall';
+import OrderSend from '../OrderSend';
 
 // const OrderItemsComponent = ({orderStatusDetails, dataOrderItems}) => {
 const OrderItemsComponent = ({
   orderId,
+  chosenStoreDetails,
   dataOrderItems,
   loadingGetOrderItems,
 }) => {
@@ -41,27 +43,38 @@ const OrderItemsComponent = ({
   const [modalVisibleViewItem, setModalVisibleViewItem] = useState(false);
   const [modalVisibleAddItem, setModalVisibleAddItem] = useState(false);
   const [modalVisibleMakePayment, setModalVisibleMakePayment] = useState(false);
+  const [modalVisibleOrderFinal, setModalVisibleOrderFinal] = useState(false);
+  const [selectedStoreDetails, setSelectedStoreDetails] = useState({});
   const {navigate} = useNavigation();
 
-  // const {
-  // orderId,
-  // orderCreatedDateTime,
-  // orderStatusText,
-  // orderStatusNext,
-  // orderColorCode,
-  // orderStatusCode,
-  // } = orderStatusDetails;
-  //
+  console.log(
+    'in order items component. chosen store details is ',
+    chosenStoreDetails,
+  );
+  const {
+    store_id: chosenStoreId,
+    store_name: chosenStoreName,
+    offers_delivery: chosenOffersDelivery,
+    offers_pickup: chosenOffersPickup,
+    address_line1: chosenAddressLine1,
+    address_line2: chosenAddressLine2,
+    pincode: chosenPincode,
+    city: chosenCity,
+    state: chosenState,
+    mobile_number: chosenStorePhoneNumber,
+  } = chosenStoreDetails ? chosenStoreDetails : {};
+
+  console.log('in order items component. storeName is ', storeName);
 
   const [order] = ordersState.getOrders.data.filter(
     x => x.order_id === orderId,
   );
 
-  // console.log(
-  // 'in orderitems component. orders state is:>> ',
-  // ordersState.getOrders.data.filter(x => x.order_id === orderId),
-  // order,
-  // );
+  console.log(
+    'in orderitems component. orders state is:>> ',
+    ordersState.getOrders.data.filter(x => x.order_id === orderId),
+    order,
+  );
 
   const {
     time_100_created,
@@ -291,11 +304,17 @@ const OrderItemsComponent = ({
                   // iconColor={colors.color1_2}
                   iconColor={colors.color2_4}
                   onPress={() => {
-                    // console.log(
-                    // 'in order items component send button. order id is:>> ',
-                    // orderId,
-                    // );
-                    navigate(STORES, {orderId: orderId});
+                    // navigate(STORES, {orderId: orderId});
+
+                    setSelectedStoreDetails({
+                      storeId: chosenStoreId,
+                      storeName: chosenStoreName,
+                      offersDelivery: chosenOffersDelivery,
+                      offersPickup: chosenOffersPickup,
+                      storePhoneNumber: chosenStorePhoneNumber,
+                    });
+
+                    setModalVisibleOrderFinal(true);
                   }}
                 />
                 <FloatingLeftButton
@@ -542,47 +561,55 @@ const OrderItemsComponent = ({
     } = item;
 
     return (
-      <View style={styles.listItem}>
-        <Pressable
-          onPress={() => {
-            setCurrentItem(item);
-            setModalVisibleViewItem(true);
-          }}>
-          <View>
-            <View style={styles.listRowItem}>
-              <Text style={styles.availabilityInfo}>
-                {itemAvailable !== null ? (
-                  itemAvailable === true ? (
-                    <Icon
-                      type="fontAwesome"
-                      name="check"
-                      style={styles.checkMark}
-                    />
+      <View>
+        <View style={styles.listItem}>
+          <Pressable
+            onPress={() => {
+              setCurrentItem(item);
+              setModalVisibleViewItem(true);
+            }}>
+            <View>
+              <View style={styles.listRowItem}>
+                <Text style={styles.availabilityInfo}>
+                  {itemAvailable !== null ? (
+                    itemAvailable === true ? (
+                      <Icon
+                        type="fontAwesome"
+                        name="check"
+                        style={styles.checkMark}
+                      />
+                    ) : (
+                      <Icon
+                        type="fontAwesome"
+                        name="remove"
+                        style={styles.crossMark}
+                      />
+                    )
                   ) : (
-                    <Icon
-                      type="fontAwesome"
-                      name="remove"
-                      style={styles.crossMark}
-                    />
-                  )
-                ) : (
-                  ''
-                )}
-              </Text>
+                    ''
+                  )}
+                </Text>
 
-              <Text style={styles.itemInfo}>{itemName}</Text>
-              <Text style={styles.quantityInfo}> {itemQuantity}</Text>
-              <Text style={styles.priceInfo}>
-                {' '}
-                {itemPrice && (
-                  <Text>
-                    {'\u20B9'} {itemPrice}
-                  </Text>
-                )}
-              </Text>
+                <Text style={styles.itemInfo}>{itemName}</Text>
+                <Text style={styles.quantityInfo}> {itemQuantity}</Text>
+                <Text style={styles.priceInfo}>
+                  {' '}
+                  {itemPrice && (
+                    <Text>
+                      {'\u20B9'} {itemPrice}
+                    </Text>
+                  )}
+                </Text>
+              </View>
             </View>
-          </View>
-        </Pressable>
+          </Pressable>
+        </View>
+        <OrderSend
+          modalVisibleOrderFinal={modalVisibleOrderFinal}
+          setModalVisibleOrderFinal={setModalVisibleOrderFinal}
+          orderId={orderId}
+          selectedStoreDetails={selectedStoreDetails}
+        />
       </View>
     );
   };
