@@ -23,8 +23,6 @@ const addLoyaltyCode =
     });
     axiosInstance
       .post('/add_loyalty_code_customer', {
-        // category: category,
-        // loyaltyCode: loyaltyCode,
         object:
           '{' + '"' + category + '"' + ':' + '"' + loyaltyCode + '"' + '}',
       })

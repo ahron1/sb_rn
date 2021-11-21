@@ -7,24 +7,8 @@ import LoadingView from '../LoadingView';
 import LoyaltyCodeForCategory from '../LoyaltyCodeForCategory';
 import styles from './styles';
 
-const ChooseCategoryComponent = ({
-  storesLoading,
-  storesData,
-  // userLoyaltyCode,
-}) => {
-  // console.log('in choose category. stores are ', storesData);
+const ChooseCategoryComponent = ({storesLoading, storesData}) => {
   const {navigate} = useNavigation();
-  /*
-  console.log(
-    'in choose category. store categories are ',
-    storesData.map(a => ({
-      name: a.name,
-      id: a.store_id,
-      category: a.category,
-      loyalty_code: a.loyalty_code,
-    })),
-  );
-  */
 
   let choiceComponent;
   const {authState} = useContext(GlobalContext);
@@ -34,14 +18,8 @@ const ChooseCategoryComponent = ({
 
   const userLoyaltyCode = authState.loyalty_code.code;
 
-  // console.log(
-  // 'in choose category. user loyalty code is ',
-  // JSON.parse(userLoyaltyCode),
-  // );
-
   // this is the static list of categories.
   // after the list of stores has been fetched, the next function will update this list with available categories
-  // TODO - a useeffect for making the network call and subsequently calling the update function.
   const Categories = [
     {
       id: 0,
@@ -84,22 +62,18 @@ const ChooseCategoryComponent = ({
       availability:
         storesData.filter(function (store) {
           return JSON.parse(store.category).medicine == true;
-          // return store.category.medicine == true;
         }).length > 0
           ? true
           : false,
-      // availability: false,
     },
     {
       category: 'fruit',
       availability:
         storesData.filter(function (store) {
           return JSON.parse(store.category).fruit == true;
-          // return store.category.fruit == true;
         }).length > 0
           ? true
           : false,
-      // availability: false,
     },
     {
       category: 'vegetable',
@@ -109,13 +83,8 @@ const ChooseCategoryComponent = ({
         }).length > 0
           ? true
           : false,
-      // availability: true,
     },
   ];
-
-  // this is the static list of categories.
-  // after the list of stores has been fetched, the next function will update this list with available categories
-  // TODO - a useeffect for making the network call and subsequently calling the update function.
 
   const availablityUpdate = category => {
     category.availability = CategoryAvailability.find(
@@ -138,12 +107,6 @@ const ChooseCategoryComponent = ({
                   <View style={styles.itemView}>
                     <Pressable
                       onPress={() => {
-                        /*
-                        console.log(
-                          'in choosecategory. category choosen is ' +
-                            item.category,
-                        );
-                        */
                         setChosenCategory(item.category);
 
                         const storesServingCategory = storesData.filter(
@@ -153,52 +116,9 @@ const ChooseCategoryComponent = ({
                             );
                           },
                         );
-
-                        /*console.log(
-                          'in choosecategory. stores servicing category choosen is ' +
-                            +JSON.stringify(
-                              storesServingCategory.map(store => store.name),
-                            ),
-                        ); */
-
                         const storesServingCategoryLoyalCustomer =
                           userLoyaltyCode.includes(item.category)
                             ? storesServingCategory.filter(function (store) {
-                                /*
-                                console.log(
-                                  'in choosecategory - matching codes in  ',
-                                  store.loyalty_code,
-                                  ' and ',
-                                  userLoyaltyCode,
-                                );
-                                console.log(
-                                  'XXXXXX  user loyalty code includes ',
-                                  item.category,
-                                  ' ',
-                                  userLoyaltyCode.includes(item.category),
-                                );
-                                */
-                                console.log(
-                                  ' zzzzz in choosecategory. store code is ',
-                                  store.loyalty_code,
-                                  ' and user loyalty code is ',
-                                  userLoyaltyCode,
-                                );
-                                console.log(
-                                  'xxxxxx in choosecategory ',
-                                  store.loyalty_code.filter(function (code) {
-                                    console.log(
-                                      'yyyyyyyy store code is ',
-                                      code,
-                                      ' user code ',
-                                      userLoyaltyCode,
-                                      ' includes store code: ',
-                                      userLoyaltyCode.includes(code),
-                                    );
-                                    userLoyaltyCode.includes(code);
-                                  }).length == true,
-                                );
-
                                 return (
                                   store.loyalty_code.filter(code =>
                                     userLoyaltyCode.includes(code),
@@ -208,21 +128,7 @@ const ChooseCategoryComponent = ({
                             : storesServingCategory;
                         setStoresList(storesServingCategoryLoyalCustomer);
 
-                        console.log(
-                          'in choose category component, stores serving category for all customer are ',
-                          storesServingCategory,
-                        );
-                        console.log(
-                          'in choose category component, stores serving category for loyal customer are ',
-                          storesServingCategoryLoyalCustomer,
-                        );
-
                         if (userLoyaltyCode.includes(item.category)) {
-                          /*
-                          console.log(
-                            'in choose category. use has code for this category',
-                          );
-                          */
                           navigate(CHOOSESTORE, {
                             storesServingCategory:
                               storesServingCategoryLoyalCustomer,
@@ -231,14 +137,6 @@ const ChooseCategoryComponent = ({
                         } else {
                           setModalVisibleLoyalty(true);
                         }
-
-                        /*
-                        navigate(CHOOSESTORE, {
-                          storesServingCategory:
-                            storesServingCategoryLoyalCustomer,
-                          category: item.category,
-                        });
-                        */
                       }}>
                       <View>
                         <Image

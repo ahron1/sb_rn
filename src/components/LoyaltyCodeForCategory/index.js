@@ -2,7 +2,6 @@ import React, {useContext, useEffect, useState} from 'react';
 import {NavigationContainer, useNavigation} from '@react-navigation/native';
 import {View, Text, Alert} from 'react-native';
 import AppModal from '../common/AppModal';
-// import CustomButton from '../common/CustomButton';
 import CustomButtonMedium from '../common/CustomButtonMedium';
 import AppTextInput from '../common/AppTextInput';
 import {GlobalContext} from '../../context/Provider';
@@ -13,7 +12,6 @@ import {CHOOSESTORE} from '../../constants/routeNames';
 import addLoyaltyCode from '../../context/actions/auth/addLoyaltyCode';
 
 const LoyaltyCodeForCategory = ({
-  orderId,
   modalVisibleLoyalty,
   setModalVisibleLoyalty,
   storesList,
@@ -21,36 +19,58 @@ const LoyaltyCodeForCategory = ({
   // userLoyaltyCode,
 }) => {
   const {navigate} = useNavigation();
-  const {orderItemsDispatch, orderItemsState} = useContext(GlobalContext);
   const [formCode, setFormCode] = useState({});
   const [formErrorsCode, setFormErrorsCode] = useState({});
   const [enterCode, setEnterCode] = useState(false);
-  const [
-    storesServingCategoryLoyalCustomer,
-    setStoresServingCategoryLoyalCustomer,
-  ] = useState();
+  const [storesCategoryLoyalCustomer, setStoresCategoryLoyalCustomer] =
+    useState();
   const {authState, authDispatch} = useContext(GlobalContext);
 
-  // the useeffect for updating the list of stores doesn't work
+  // the useeffect for updating the list of stores doesn't work.
+  // very strange the same code works in the choosecategory component.
   /*
   useEffect(() => {
     console.log(
       'updated user loyalty codes in useeffect  ',
       authState.loyalty_code.code,
     );
-    const foo = authState.loyalty_code.code.includes(category)
-      ? storesList.filter(function (store) {
-          return (
+
+    const foo =
+      storesList && authState.loyalty_code.code.includes(category)
+        ? storesList.filter(store => {
             store.loyalty_code.filter(code => {
               authState.loyalty_code.code.includes(code);
-            }).length == true
+            }).length > 0;
+          })
+        : [];
+
+    const goo = authState.loyalty_code.code.includes(category)
+      ? storesList.filter(function (store) {
+          console.log('stores codes are  ', store.loyalty_code);
+          console.log(
+            '------- stores codes filtered are  ',
+            store.loyalty_code.filter(code =>
+              authState.loyalty_code.code.includes(code),
+            ).length > 0,
+          );
+          return (
+            store.loyalty_code.filter(function (code) {
+              console.log('code is ', code);
+              console.log('array  is ', authState.loyalty_code.code);
+              console.log(
+                'array contains code is ',
+                authState.loyalty_code.code.includes(code),
+              );
+              authState.loyalty_code.code.includes(code);
+            }).length > 0
           );
         })
       : storesList;
 
-    setStoresServingCategoryLoyalCustomer(foo);
-  }, [authState.loyalty_code.code]);
-   */
+    setStoresCategoryLoyalCustomer(foo);
+    console.log('=============', storesCategoryLoyalCustomer);
+  }, [storesList, authState.loyalty_code.code]);
+  */
 
   const onSubmitCode = ({name, value, isRequired}) => {
     const loyaltyCode = formCode.codeValue.toUpperCase();
@@ -66,7 +86,7 @@ const LoyaltyCodeForCategory = ({
       setModalVisibleLoyalty(false);
 
       /*
-      // the useeffect for updating the list of stores doesn't work. 
+      // the useeffect for updating the list of stores doesn't work.
       navigate(CHOOSESTORE, {
         storesServingCategory: storesServingCategoryLoyalCustomer,
         category: category,
@@ -108,8 +128,6 @@ const LoyaltyCodeForCategory = ({
             // console.log('yes');
             setEnterCode(true);
           }}
-          loading={orderItemsState.addOrderItem.loading}
-          disabled={orderItemsState.addOrderItem.loading}
           style={styles.buttonSection}
           backgroundColor={colors.color1_4}
         />
@@ -123,8 +141,6 @@ const LoyaltyCodeForCategory = ({
               category: category,
             });
           }}
-          loading={orderItemsState.addOrderItem.loading}
-          disabled={orderItemsState.addOrderItem.loading}
           style={styles.buttonSection}
           backgroundColor={colors.color1_4}
         />
@@ -174,8 +190,8 @@ const LoyaltyCodeForCategory = ({
               <CustomButtonMedium
                 title="OK"
                 onPress={onSubmitCode}
-                // loading={orderItemsState.addOrderItem.loading}
-                // disabled={orderItemsState.addOrderItem.loading}
+                loading={authState.loyalty_code.loading}
+                disabled={authState.loyalty_code.loading}
                 style={styles.buttonSection}
                 backgroundColor={colors.color1_4}
               />
