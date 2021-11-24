@@ -11,28 +11,28 @@ import {
   View,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import ViewItem from '../ViewItem';
-import AddItem from '../AddItem';
-import MakePayment from '../MakePayment';
-import FloatingLeftButton from '../common/FloatingLeftButton';
-import FloatingRightButton from '../common/FloatingRightButton';
-import FloatingCenterButton from '../common/FloatingCenterButton';
-import ListFooterComponent from '../common/ListFooter';
+import ViewItem from '../../ViewItem';
+import AddItem from '../../AddItem';
+import MakePayment from '../../MakePayment';
+import FloatingLeftButton from '../../common/FloatingLeftButton';
+import FloatingRightButton from '../../common/FloatingRightButton';
+import FloatingCenterButton from '../../common/FloatingCenterButton';
+import ListFooterComponent from '../../common/ListFooter';
 import styles from './styles';
-import colors from '../../assets/theme/colors';
-import Icon from '../../components/common/Icon';
-import ListItemSeparatorComponent from '../common/ListItemSeparator';
-import {ALLORDERS, ORDERSTATUS, STORES} from '../../constants/routeNames';
-import {GlobalContext} from '../../context/Provider';
-import deleteOrder from '../../context/actions/deleteOrder';
-import getOrderStatus from '../../helpers/orderStatus';
-import LoadingView from '../LoadingView';
-import getDateTime from '../../helpers/dateTimeString';
-import CustomButtonSmall from '../common/CustomButtonSmall';
-import OrderSend from '../OrderSend';
+import colors from '../../../assets/theme/colors';
+import Icon from '../../common/Icon';
+import ListItemSeparatorComponent from '../../common/ListItemSeparator';
+import {ALLORDERS, ORDERSTATUS, STORES} from '../../../constants/routeNames';
+import {GlobalContext} from '../../../context/Provider';
+import deleteOrder from '../../../context/actions/deleteOrder';
+import getOrderStatus from '../../../helpers/orderStatus';
+import LoadingView from '../../LoadingView';
+import getDateTime from '../../../helpers/dateTimeString';
+import CustomButtonSmall from '../../common/CustomButtonSmall';
+import OrderSend from '../../OrderSend';
 
 // const OrderItemsComponent = ({orderStatusDetails, dataOrderItems}) => {
-const OrderItemsComponent = ({
+const NewOrderGrocery = ({
   orderId,
   chosenStoreDetails,
   dataOrderItems,
@@ -47,6 +47,10 @@ const OrderItemsComponent = ({
   const [selectedStoreDetails, setSelectedStoreDetails] = useState({});
   const {navigate} = useNavigation();
 
+  console.log(
+    'in new order component. chosen store details is ',
+    chosenStoreDetails,
+  );
   const {
     store_id: chosenStoreId,
     store_name: chosenStoreName,
@@ -60,20 +64,17 @@ const OrderItemsComponent = ({
     mobile_number: chosenStorePhoneNumber,
   } = chosenStoreDetails ? chosenStoreDetails : {};
 
-  // console.log(
-  // 'in order items component. chosen store details is ',
-  // chosenStoreDetails,
-  // );
+  console.log('in order items component. storeName is ', storeName);
 
   const [order] = ordersState.getOrders.data.filter(
     x => x.order_id === orderId,
   );
 
-  //  console.log(
-  //    'in orderitems component. orders state is:>> ',
-  //    ordersState.getOrders.data.filter(x => x.order_id === orderId),
-  //    order,
-  //  );
+  console.log(
+    'in orderitems component. orders state is:>> ',
+    ordersState.getOrders.data.filter(x => x.order_id === orderId),
+    order,
+  );
 
   const {
     time_100_created,
@@ -687,4 +688,4 @@ const OrderItemsComponent = ({
   );
 };
 
-export default OrderItemsComponent;
+export default NewOrderGrocery;

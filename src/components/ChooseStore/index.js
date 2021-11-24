@@ -3,12 +3,7 @@ import {Text, Pressable, View, FlatList, Alert, Linking} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import Icon from '../../components/common/Icon';
 import {GlobalContext} from '../../context/Provider';
-import {
-  ALLORDERS,
-  ORDERITEMS,
-  PROFILE,
-  REWARDS,
-} from '../../constants/routeNames';
+import {NEWORDER} from '../../constants/routeNames';
 import OrderSend from '../OrderSend';
 import styles from './styles';
 import FloatingCenterButton from '../common/FloatingCenterButton';
@@ -22,7 +17,7 @@ import CustomButton from '../common/CustomButton';
 import CustomButtonMedium from '../common/CustomButtonMedium';
 import addOrder from '../../context/actions/addOrder';
 
-const ChooseStoreComponent = ({storesData}) => {
+const ChooseStoreComponent = ({storesData, category}) => {
   const [modalVisibleOrderFinal, setModalVisibleOrderFinal] = useState(false);
   const [selectedStoreDetails, setSelectedStoreDetails] = useState({});
   const {navigate} = useNavigation();
@@ -44,14 +39,16 @@ const ChooseStoreComponent = ({storesData}) => {
       mobile_number: storePhoneNumber,
     } = item;
 
-    console.log('in choose store. store details is ', item);
-
     return (
       <View>
         <Pressable
           onPress={() =>
             addOrder()(ordersDispatch)(orderId => {
-              navigate(ORDERITEMS, {orderId, item});
+              navigate(NEWORDER, {
+                orderId: orderId,
+                item: item,
+                category: category,
+              });
             })
           }>
           <View style={[styles.listRow, styles.headerRow]}>

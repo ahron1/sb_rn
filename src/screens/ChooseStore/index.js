@@ -1,15 +1,6 @@
 import {useNavigation, useRoute} from '@react-navigation/core';
 import React, {useContext, useEffect} from 'react';
-import {Text, Pressable, View} from 'react-native';
 import ChooseStoreComponent from '../../components/ChooseStore';
-import {GlobalContext} from '../../context/Provider';
-import {useFocusEffect} from '@react-navigation/native';
-import NavMenuComponent, {
-  NavMenuPressable,
-} from '../../components/common/NavMenu';
-import getStores from '../../context/actions/getStores';
-import getDefaultStore from '../../context/actions/getDefaultStore';
-
 const ChooseStore = () => {
   const route = useRoute();
 
@@ -26,7 +17,10 @@ const ChooseStore = () => {
   }
 
   return (
-    <ChooseStoreComponent storesData={route.params.storesServingCategory} />
+    <ChooseStoreComponent
+      storesData={route.params.storesData}
+      category={route.params.category}
+    />
   );
 };
 

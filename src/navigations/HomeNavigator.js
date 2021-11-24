@@ -9,6 +9,7 @@ import {
   ORDERSTATUS,
   CHOOSECATEGORY,
   CHOOSESTORE,
+  NEWORDER,
 } from '../constants/routeNames';
 
 import {createStackNavigator, HeaderBackButton} from '@react-navigation/stack';
@@ -24,6 +25,7 @@ import ChooseCategory from '../screens/ChooseCategory';
 import colors from '../assets/theme/colors';
 import {Button} from 'react-native';
 import ChooseStore from '../screens/ChooseStore';
+import NewOrder from '../screens/NewOrder';
 
 const HomeNavigator = ({navigation}) => {
   const HomeStack = createStackNavigator();
@@ -53,6 +55,7 @@ const HomeNavigator = ({navigation}) => {
       <HomeStack.Screen name={ORDERSTATUS} component={OrderStatus} />
       <HomeStack.Screen name={CHOOSECATEGORY} component={ChooseCategory} />
       <HomeStack.Screen name={CHOOSESTORE} component={ChooseStore} />
+      <HomeStack.Screen name={NEWORDER} component={NewOrder} />
     </HomeStack.Navigator>
   );
 };

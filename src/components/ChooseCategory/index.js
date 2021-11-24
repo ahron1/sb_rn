@@ -199,7 +199,7 @@ const ChooseCategoryComponent = ({storesLoading, storesData}) => {
 
                         if (userLoyaltyCode.includes(item.category)) {
                           navigate(CHOOSESTORE, {
-                            storesServingCategory: storesList,
+                            storesData: storesList,
                             category: item.category,
                           });
                         } else {
