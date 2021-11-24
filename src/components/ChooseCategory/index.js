@@ -11,10 +11,10 @@ const ChooseCategoryComponent = ({storesLoading, storesData}) => {
   const {navigate} = useNavigation();
 
   let choiceComponent;
+  let storesList;
   const {authState} = useContext(GlobalContext);
   const [modalVisibleLoyalty, setModalVisibleLoyalty] = useState(false);
   const [chosenCategory, setChosenCategory] = useState(null);
-  const [storesList, setStoresList] = useState(null);
 
   const userLoyaltyCode = authState.loyalty_code.code;
 
@@ -119,19 +119,87 @@ const ChooseCategoryComponent = ({storesLoading, storesData}) => {
                         const storesServingCategoryLoyalCustomer =
                           userLoyaltyCode.includes(item.category)
                             ? storesServingCategory.filter(function (store) {
+                                /*
                                 return (
                                   store.loyalty_code.filter(code =>
-                                    userLoyaltyCode.includes(code),
-                                  ).length == true
+                                    authState.loyalty_code.code.includes(code),
+                                  ).length > 0
+                                );
+
+                                return (
+                                  store.loyalty_code.filter(function (code) {
+                                    return authState.loyalty_code.code.includes(
+                                      code,
+                                    );
+                                  }).length > 0
+                                );
+                                */
+                                /*
+                                console.log(
+                                  'users codes are  ',
+                                  authState.loyalty_code.code,
+                                );
+
+                                console.log(
+                                  'stores codes are  ',
+                                  store.loyalty_code,
+                                );
+                                console.log(
+                                  '------- stores codes filtered are  ',
+                                  store.loyalty_code.filter(code =>
+                                    authState.loyalty_code.code.includes(code),
+                                  ).length > 0,
+                                );
+                                */
+                                return (
+                                  store.loyalty_code.filter(function (code) {
+                                    /*
+                                    console.log('code is ', code);
+                                    console.log(
+                                      'array  is ',
+                                      authState.loyalty_code.code,
+                                    );
+                                    console.log(
+                                      'array contains code is ',
+                                      authState.loyalty_code.code.includes(
+                                        code,
+                                      ),
+                                    );
+                                    */
+                                    return authState.loyalty_code.code.includes(
+                                      code,
+                                    );
+                                  }).length > 0
                                 );
                               })
                             : storesServingCategory;
-                        setStoresList(storesServingCategoryLoyalCustomer);
+
+                        // Note 1 ---
+                        // if user has entered the code for store1 under category A,
+                        // and the store also serves category B,
+                        // then when the user chooses category B, he is shown store1
+
+                        // Note 2 --
+                        // If the user entered code for store1 under category A,
+                        // and code for store2 under category B,
+                        // and both store1 and store2 serve category C
+                        // then when the user chooses category C, he is shown both store1 and store2
+
+                        // Note 3 ---
+                        // if user has loyalty code(s) but none of the stores
+                        // for which he has the code(s) service the category
+                        // then user is shown zero stores.
+                        // then user should be shown all stores which service the category (regardless of code)
+                        //
+
+                        storesList =
+                          storesServingCategoryLoyalCustomer.length > 0
+                            ? storesServingCategoryLoyalCustomer
+                            : storesServingCategory;
 
                         if (userLoyaltyCode.includes(item.category)) {
                           navigate(CHOOSESTORE, {
-                            storesServingCategory:
-                              storesServingCategoryLoyalCustomer,
+                            storesServingCategory: storesList,
                             category: item.category,
                           });
                         } else {
