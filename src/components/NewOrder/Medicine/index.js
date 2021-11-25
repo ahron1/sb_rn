@@ -12,8 +12,6 @@ import {
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import ViewItem from '../../ViewItem';
-import AddItem from '../../AddItem';
-import MakePayment from '../../MakePayment';
 import FloatingLeftButton from '../../common/FloatingLeftButton';
 import FloatingRightButton from '../../common/FloatingRightButton';
 import FloatingCenterButton from '../../common/FloatingCenterButton';
@@ -30,9 +28,13 @@ import LoadingView from '../../LoadingView';
 import getDateTime from '../../../helpers/dateTimeString';
 import CustomButtonSmall from '../../common/CustomButtonSmall';
 import OrderSend from '../../OrderSend';
+import AddItemMedicine from '../../AddItemModal/Medicine';
+
+// this file is a copy of the orderitems file and has a number of unneccessary elements.
+// todo - clean up.
 
 // const OrderItemsComponent = ({orderStatusDetails, dataOrderItems}) => {
-const OrderItemsComponent = ({
+const NewOrderMedicine = ({
   orderId,
   chosenStoreDetails,
   dataOrderItems,
@@ -42,13 +44,12 @@ const OrderItemsComponent = ({
   const [currentItem, setCurrentItem] = useState({});
   const [modalVisibleViewItem, setModalVisibleViewItem] = useState(false);
   const [modalVisibleAddItem, setModalVisibleAddItem] = useState(false);
-  const [modalVisibleMakePayment, setModalVisibleMakePayment] = useState(false);
   const [modalVisibleOrderFinal, setModalVisibleOrderFinal] = useState(false);
   const [selectedStoreDetails, setSelectedStoreDetails] = useState({});
   const {navigate} = useNavigation();
 
   console.log(
-    'in order items component. chosen store details is ',
+    'in new order component. chosen store details is ',
     chosenStoreDetails,
   );
   const {
@@ -65,6 +66,7 @@ const OrderItemsComponent = ({
   } = chosenStoreDetails ? chosenStoreDetails : {};
 
   console.log('in order items component. storeName is ', storeName);
+  console.log('in order items component. dataorderitems is ', dataOrderItems);
 
   const [order] = ordersState.getOrders.data.filter(
     x => x.order_id === orderId,
@@ -100,13 +102,6 @@ const OrderItemsComponent = ({
   const currentCodeNumber = orderStatusCode
     ? Number(orderStatusCode.substr(7, 3))
     : 100;
-  // console.log(
-  // 'in order items. order status code is :> ',
-  // orderStatusCode,
-  // 'number is ',
-  // currentCodeNumber,
-  // );
-  // the conditional assignment is to take care of deletion where the order item details are no longer found after deletion
 
   let total;
   if (Array.isArray(dataOrderItems) && dataOrderItems.length > 0) {
@@ -118,258 +113,82 @@ const OrderItemsComponent = ({
 
   // const {orderId, orderPrice, orderDate, orderStatus, orderRatingStars} = order;
 
-  const navigateOrderStatus = () => {
-    navigate(ORDERSTATUS, {
-      orderStatusCode: orderStatusCode,
-      orderColorCode: orderColorCode,
-      orderId: orderId,
-      storeName: storeName,
-      time_200_customer_sent: time_200_customer_sent,
-    });
-  };
-
   //todo - move to helper function
   const OrderItemsButtons = () => {
-    // console.log(
-    // 'in order items component. orderstatuscode is:>> ',
-    // orderStatusCode,
-    // orderStatusText,
-    // );
-    var buttons;
-    switch (orderStatusCode) {
-      case 'status_900_order_complete':
-        // console.log('in order items component. buttons func. status 500');
-        buttons = (
+    const buttons =
+      dataOrderItems.length > 0 ? (
+        <View>
           <View>
-            <View>
-              <FloatingCenterButton
-                buttonText="Earn rewards"
-                iconType="entypo"
-                iconName="trophy"
-                circleColor={colors.color3_3}
-                iconColor={colors.color2_4}
-                onPress={() => {
-                  Linking.openURL(
-                    'whatsapp://send?text=' +
-                      'Hello Storebhai team, I completed an order on the app.' +
-                      ' I want to ask about your rewards program.' +
-                      '&phone=91' +
-                      '8883672999',
-                  );
-                }}
-              />
-            </View>
-          </View>
-        );
-        break;
+            <FloatingRightButton
+              buttonText="Send order"
+              iconType="fontAwesome"
+              iconName="send"
+              circleColor={colors.color4_3}
+              // iconColor={colors.color1_2}
+              iconColor={colors.color2_4}
+              onPress={() => {
+                // navigate(STORES, {orderId: orderId});
 
-      case 'status_700_payment_received':
-        // console.log('in order items component. buttons func. status 500');
-        buttons = (
+                setSelectedStoreDetails({
+                  storeId: chosenStoreId,
+                  storeName: chosenStoreName,
+                  offersDelivery: chosenOffersDelivery,
+                  offersPickup: chosenOffersPickup,
+                  storePhoneNumber: chosenStorePhoneNumber,
+                });
+
+                setModalVisibleOrderFinal(true);
+              }}
+            />
+            <FloatingLeftButton
+              buttonText="Add item"
+              iconType="materialCommunity"
+              // iconName="cart-arrow-down"
+              iconName="cart-plus"
+              circleColor={colors.color2_2_4}
+              iconColor={colors.color1_3}
+              onPress={() => {
+                // console.log('in order items component. + pressed');
+                setModalVisibleAddItem(true);
+              }}
+            />
+          </View>
+        </View>
+      ) : (
+        <View>
           <View>
-            <View>
-              <FloatingCenterButton
-                buttonText="Earn rewards"
-                iconType="entypo"
-                iconName="trophy"
-                circleColor={colors.color3_3}
-                iconColor={colors.color2_4}
-                onPress={() => {
-                  Linking.openURL(
-                    'whatsapp://send?text=' +
-                      'Hello Storebhai team, I completed an order on the app.' +
-                      ' I want to ask about the rewards program.' +
-                      '&phone=91' +
-                      '8883672999',
-                  );
-                }}
-              />
-            </View>
+            <FloatingRightButton
+              buttonText="Delete order"
+              iconType="materialCommunity"
+              // iconName="cart-off"
+              iconName="playlist-remove"
+              circleColor={colors.color3_2}
+              iconColor={colors.color2_3}
+              loading={ordersState.deleteOrder.loading}
+              disabled={ordersState.deleteOrder.loading}
+              onPress={() => {
+                // console.log('in order items component. delete pressed');
+                deleteOrder({orderId})(ordersDispatch)(() => {
+                  // console.log('in order items components. deleted order');
+                  navigate(ALLORDERS);
+                });
+              }}
+            />
+            <FloatingLeftButton
+              buttonText="Add item"
+              iconType="materialCommunity"
+              // iconName="cart-arrow-down"
+              iconName="cart-plus"
+              circleColor={colors.color2_2_4}
+              iconColor={colors.color1_3}
+              onPress={() => {
+                // console.log('in order items component. + pressed');
+                setModalVisibleAddItem(true);
+              }}
+            />
           </View>
-        );
-        break;
-
-      case 'status_600_payment_made':
-        // console.log('in order items component. buttons func. status 500');
-        buttons = (
-          <View>
-            <View>
-              <FloatingCenterButton
-                buttonText="Check status"
-                iconType="ant"
-                iconName="questioncircle"
-                circleColor={colors.color4_2}
-                iconColor={colors.color2_4}
-                onPress={() => {
-                  // console.log('in order items component. check status pressed');
-                  navigateOrderStatus();
-                }}
-              />
-            </View>
-          </View>
-        );
-        break;
-
-      case 'status_500_customer_received':
-      case 'status_400_store_fulfilled':
-      case 'status_300_store_checked':
-        // console.log('in order items component. buttons func. status 500');
-        buttons = (
-          <View>
-            <View>
-              <FloatingCenterButton
-                buttonText="Make payment"
-                iconType="fontisto"
-                iconName="inr"
-                iconColor={colors.color2_3}
-                circleColor={colors.color3_4}
-                onPress={() => {
-                  // console.log('in order items component. payment pressed');
-                  setModalVisibleMakePayment(true);
-                }}
-              />
-            </View>
-          </View>
-        );
-        break;
-
-      case 'status_200_customer_sent':
-        buttons = (
-          <View>
-            <View>
-              <FloatingLeftButton
-                buttonText="Add item"
-                iconType="materialCommunity"
-                // iconName="cart-arrow-down"
-                iconName="cart-plus"
-                circleColor={colors.color2_2_4}
-                iconColor={colors.color1_3}
-                onPress={() => {
-                  // console.log('in order items component. + pressed');
-                  setModalVisibleAddItem(true);
-                }}
-              />
-
-              <FloatingRightButton
-                buttonText="Status"
-                iconType="ant"
-                iconName="questioncircle"
-                iconColor={colors.color2_4}
-                circleColor={colors.color4_2}
-                onPress={() => {
-                  // console.log(
-                  // 'in order items component. check status pressed. order status code is:>> ',
-                  // orderStatusCode,
-                  // );
-                  navigateOrderStatus();
-                }}
-              />
-            </View>
-            <View>
-              <FloatingRightButton
-                buttonText="Status"
-                iconType="ant"
-                iconName="questioncircle"
-                iconColor={colors.color2_4}
-                circleColor={colors.color4_2}
-                onPress={() => {
-                  // console.log(
-                  // 'in order items component. check status pressed. order status code is:>> ',
-                  // orderStatusCode,
-                  // );
-                  navigateOrderStatus();
-                }}
-              />
-            </View>
-          </View>
-        );
-        break;
-
-      // IMP - the default case is called on newly created orders.
-      // default case is same as for status_100_customer_started
-      // .. compare the navigate(ORDERITEMS) func in addOrderPressed with the
-      // .. onPress function in the renderItem pressable in AllOrdersComponent
-      // todo - this is very hackish. fix it so new orders get the right status.
-      default:
-        // console.log('in order items component. buttons func. status default');
-        if (dataOrderItems.length > 0) {
-          buttons = (
-            <View>
-              <View>
-                <FloatingRightButton
-                  buttonText="Send order"
-                  iconType="fontAwesome"
-                  iconName="send"
-                  circleColor={colors.color4_3}
-                  // iconColor={colors.color1_2}
-                  iconColor={colors.color2_4}
-                  onPress={() => {
-                    // navigate(STORES, {orderId: orderId});
-
-                    setSelectedStoreDetails({
-                      storeId: chosenStoreId,
-                      storeName: chosenStoreName,
-                      offersDelivery: chosenOffersDelivery,
-                      offersPickup: chosenOffersPickup,
-                      storePhoneNumber: chosenStorePhoneNumber,
-                    });
-
-                    setModalVisibleOrderFinal(true);
-                  }}
-                />
-                <FloatingLeftButton
-                  buttonText="Add item"
-                  iconType="materialCommunity"
-                  // iconName="cart-arrow-down"
-                  iconName="cart-plus"
-                  circleColor={colors.color2_2_4}
-                  iconColor={colors.color1_3}
-                  onPress={() => {
-                    // console.log('in order items component. + pressed');
-                    setModalVisibleAddItem(true);
-                  }}
-                />
-              </View>
-            </View>
-          );
-        } else {
-          buttons = (
-            <View>
-              <View>
-                <FloatingRightButton
-                  buttonText="Delete order"
-                  iconType="materialCommunity"
-                  // iconName="cart-off"
-                  iconName="playlist-remove"
-                  circleColor={colors.color3_2}
-                  iconColor={colors.color2_3}
-                  loading={ordersState.deleteOrder.loading}
-                  disabled={ordersState.deleteOrder.loading}
-                  onPress={() => {
-                    // console.log('in order items component. delete pressed');
-                    deleteOrder({orderId})(ordersDispatch)(() => {
-                      // console.log('in order items components. deleted order');
-                      navigate(ALLORDERS);
-                    });
-                  }}
-                />
-                <FloatingLeftButton
-                  buttonText="Add item"
-                  iconType="materialCommunity"
-                  // iconName="cart-arrow-down"
-                  iconName="cart-plus"
-                  circleColor={colors.color2_2_4}
-                  iconColor={colors.color1_3}
-                  onPress={() => {
-                    // console.log('in order items component. + pressed');
-                    setModalVisibleAddItem(true);
-                  }}
-                />
-              </View>
-            </View>
-          );
-        }
-    }
+        </View>
+      );
 
     return buttons;
   };
@@ -537,19 +356,6 @@ const OrderItemsComponent = ({
     );
   };
 
-  //TODO / TOTEST
-  useEffect(() => {
-    // console.log(
-    // 'in order items component. there are now ',
-    // dataOrderItems.length,
-    // ' items in this order',
-    // );
-  }, [dataOrderItems]);
-  // console.log(
-  //   'in order items component. dataorderitems is:>> ',
-  //   dataOrderItems,
-  // );
-
   const renderItem = ({item}) => {
     const {
       order_item_id: itemId,
@@ -671,21 +477,13 @@ const OrderItemsComponent = ({
         orderId={orderId}
         currentCodeNumber={currentCodeNumber}
       />
-      <AddItem
+      <AddItemMedicine
         modalVisibleAddItem={modalVisibleAddItem}
         setModalVisibleAddItem={setModalVisibleAddItem}
         orderId={orderId}
-      />
-
-      <MakePayment
-        modalVisibleMakePayment={modalVisibleMakePayment}
-        setModalVisibleMakePayment={setModalVisibleMakePayment}
-        orderId={orderId}
-        total={total}
-        storeId={storeId ? storeId : null}
       />
     </>
   );
 };
 
-export default OrderItemsComponent;
+export default NewOrderMedicine;

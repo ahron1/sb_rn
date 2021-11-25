@@ -12,7 +12,7 @@ import {
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import ViewItem from '../ViewItem';
-import AddItem from '../AddItem';
+import AddItemGrocery from '../AddItemModal/Grocery';
 import MakePayment from '../MakePayment';
 import FloatingLeftButton from '../common/FloatingLeftButton';
 import FloatingRightButton from '../common/FloatingRightButton';
@@ -670,7 +670,7 @@ const OrderItemsComponent = ({
         orderId={orderId}
         currentCodeNumber={currentCodeNumber}
       />
-      <AddItem
+      <AddItemGrocery
         modalVisibleAddItem={modalVisibleAddItem}
         setModalVisibleAddItem={setModalVisibleAddItem}
         orderId={orderId}

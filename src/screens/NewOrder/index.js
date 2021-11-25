@@ -10,6 +10,7 @@ import NavMenuComponent, {
   NavMenuPressable,
 } from '../../components/common/NavMenu';
 import NewOrderGrocery from '../../components/NewOrder/Grocery';
+import NewOrderMedicine from '../../components/NewOrder/Medicine';
 
 const NewOrder = ({navigation}) => {
   const route = useRoute();
@@ -22,12 +23,37 @@ const NewOrder = ({navigation}) => {
   const {setOptions, toggleDrawer} = useNavigation();
   const {orderItemsDispatch, orderItemsState} = useContext(GlobalContext);
 
+  // const OrderScreen = NewOrderGrocery;
+  let OrderScreen;
+  switch (category) {
+    case 'grocery':
+      OrderScreen = NewOrderGrocery;
+      break;
+    case 'medicine':
+      OrderScreen = NewOrderMedicine;
+      break;
+    case 'vegetable':
+      OrderScreen = NewOrderGrocery;
+      break;
+    case 'fruit':
+      OrderScreen = NewOrderGrocery;
+      break;
+
+    default:
+      OrderScreen = NewOrderGrocery;
+      break;
+  }
+
   const {
     data: dataGetOrderItems,
     loading: loadingGetOrderItems,
     error: errorGetOrderItems,
   } = orderItemsState.getOrderItems;
 
+  console.log(
+    'in new order screen. getorderitems in orderitemsstate is ',
+    orderItemsState.getOrderItems,
+  );
   useEffect(() => {
     setOptions({
       headerLeft: () => (
@@ -45,16 +71,9 @@ const NewOrder = ({navigation}) => {
     getOrderItems(orderId)(orderItemsDispatch);
   }, []);
 
-  //TODO / TOTEST:
-  useEffect(() => {
-    // console.log(
-    // 'in order items scree. there are now ',
-    // dataGetOrderItems.length + ' items in the order',
-    // );
-  }, [dataGetOrderItems]);
-
   return (
-    <NewOrderGrocery
+    // <NewOrderGrocery
+    <OrderScreen
       // orderStatusDetails={orderStatusDetails}
       orderId={orderId}
       chosenStoreDetails={chosenStoreDetails}

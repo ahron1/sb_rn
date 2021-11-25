@@ -2,22 +2,26 @@ import React, {useContext, useState} from 'react';
 import {View, Text, StatusBar} from 'react-native';
 import ImagePicker from 'react-native-image-crop-picker';
 import {ImageOrVideo} from 'react-native-image-crop-picker';
-import AppModal from '../common/AppModal';
+import AppModal from '../../common/AppModal';
 // import CustomButton from '../common/CustomButton';
-import CustomButtonMedium from '../common/CustomButtonMedium';
-import AppTextInput from '../common/AppTextInput';
-import addOrderItem from '../../context/actions/addOrderItem';
-import {GlobalContext} from '../../context/Provider';
+import CustomButtonMedium from '../../common/CustomButtonMedium';
+import AppTextInput from '../../common/AppTextInput';
+import addOrderItem from '../../../context/actions/addOrderItem';
+import {GlobalContext} from '../../../context/Provider';
 import styles from './styles';
-import colors from '../../assets/theme/colors';
-import CustomButtonSmall from '../common/CustomButtonSmall';
-import {Avatar} from '../common/Avatar';
+import colors from '../../../assets/theme/colors';
+import CustomButtonSmall from '../../common/CustomButtonSmall';
+import {Avatar} from '../../common/Avatar';
 
-const AddItem = ({orderId, modalVisibleAddItem, setModalVisibleAddItem}) => {
+const AddItemMedicine = ({
+  orderId,
+  modalVisibleAddItem,
+  setModalVisibleAddItem,
+}) => {
   const {orderItemsDispatch, orderItemsState} = useContext(GlobalContext);
   const [formAddItem, setFormAddItem] = useState({});
   const [formErrorsAddItem, setFormErrorsAddItem] = useState({});
-  var imageSource = '../../assets/images/logo3.png';
+  var imageSource = '../../../assets/images/logo3.png';
 
   const onAvatarChange = (image: ImageOrVideo) => {
     console.log('in add item component, image uploaded ', image);
@@ -163,4 +167,4 @@ const AddItem = ({orderId, modalVisibleAddItem, setModalVisibleAddItem}) => {
   );
 };
 
-export default AddItem;
+export default AddItemMedicine;
