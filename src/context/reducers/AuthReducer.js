@@ -341,10 +341,10 @@ const authReducer = (state, {type, payload}) => {
           error: null,
         },
       };
-      console.log(
-        'in auth reducer add code success -  updated state is ',
-        state.loyalty_code.code,
-      );
+      // console.log(
+      // 'in auth reducer add code success -  updated state is ',
+      // state.loyalty_code.code,
+      // );
       return foo;
     case ADD_LOYALTYCODE_FAIL:
       return {

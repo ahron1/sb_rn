@@ -26,6 +26,8 @@ const LoyaltyCodeForCategory = ({
     useState();
   const {authState, authDispatch} = useContext(GlobalContext);
 
+  // console.log('in loyalty code modal, stores list is ', storesList);
+
   // the useeffect for updating the list of stores doesn't work.
   // very strange the same code works in the choosecategory component.
   /*

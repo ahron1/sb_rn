@@ -49,10 +49,12 @@ const NewOrderGrocery = ({
   const [selectedStoreDetails, setSelectedStoreDetails] = useState({});
   const {navigate} = useNavigation();
 
+  /*
   console.log(
     'in new order component. chosen store details is ',
     chosenStoreDetails,
   );
+  */
   const {
     store_id: chosenStoreId,
     store_name: chosenStoreName,
@@ -66,18 +68,20 @@ const NewOrderGrocery = ({
     mobile_number: chosenStorePhoneNumber,
   } = chosenStoreDetails ? chosenStoreDetails : {};
 
-  console.log('in order items component. storeName is ', storeName);
-  console.log('in order items component. dataorderitems is ', dataOrderItems);
+  console.log('in grocery new order. storeName is ', storeName);
+  console.log('in grocery new order. dataorderitems is ', dataOrderItems);
 
   const [order] = ordersState.getOrders.data.filter(
     x => x.order_id === orderId,
   );
 
+  /*
   console.log(
     'in orderitems component. orders state is:>> ',
     ordersState.getOrders.data.filter(x => x.order_id === orderId),
     order,
   );
+  */
 
   const {
     time_100_created,
@@ -149,7 +153,7 @@ const NewOrderGrocery = ({
               circleColor={colors.color2_2_4}
               iconColor={colors.color1_3}
               onPress={() => {
-                // console.log('in order items component. + pressed');
+                // console.log('in grocery new order. + pressed');
                 setModalVisibleAddItem(true);
               }}
             />
@@ -168,9 +172,9 @@ const NewOrderGrocery = ({
               loading={ordersState.deleteOrder.loading}
               disabled={ordersState.deleteOrder.loading}
               onPress={() => {
-                // console.log('in order items component. delete pressed');
+                // console.log('in grocery new order. delete pressed');
                 deleteOrder({orderId})(ordersDispatch)(() => {
-                  // console.log('in order items components. deleted order');
+                  // console.log('in grocery new orders. deleted order');
                   navigate(ALLORDERS);
                 });
               }}
@@ -183,7 +187,7 @@ const NewOrderGrocery = ({
               circleColor={colors.color2_2_4}
               iconColor={colors.color1_3}
               onPress={() => {
-                // console.log('in order items component. + pressed');
+                // console.log('in grocery new order. + pressed');
                 setModalVisibleAddItem(true);
               }}
             />

@@ -12,11 +12,11 @@ interface AvatarProps extends ImageProps {
 
 const Styles = StyleSheet.create({
   avatar: {
-    paddingTop: 20,
+    // paddingTop: 10,
     height: 300,
     width: 300,
     // borderRadius: 100,
-    padding: 20,
+    // padding: 10,
   },
 });
 
@@ -35,20 +35,26 @@ export const Avatar = (props: AvatarProps) => {
   };
   return (
     <View>
-      <Image
-        style={Styles.avatar}
-        {...props}
-        source={uri ? {uri} : props.source}
-      />
+      <Pressable onPress={pickPicture}>
+        <View>
+          <Image
+            style={Styles.avatar}
+            {...props}
+            source={uri ? {uri} : props.source}
+          />
+        </View>
+      </Pressable>
 
+      {/*
       <CustomButtonSmall
-        title="Upload picture"
+        title="Upload prescription"
         onPress={pickPicture}
         // loading={orderItemsState.addOrderItem.loading}
         // disabled={orderItemsState.addOrderItem.loading}
         // style={styles.buttonSection}
         backgroundColor={colors.color1_4}
       />
+      */}
     </View>
   );
 };

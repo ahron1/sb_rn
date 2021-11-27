@@ -68,17 +68,6 @@ const AddItemGrocery = ({
     }
   };
 
-  const uploadPic = () => {
-    console.log('in add item component. upload pic func');
-    ImagePicker.openPicker({
-      width: 300,
-      height: 400,
-      cropping: true,
-    }).then(image => {
-      console.log(image);
-    });
-  };
-
   return (
     <AppModal
       modalVisible={modalVisibleAddItem}

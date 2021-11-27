@@ -11,12 +11,17 @@ const ChooseCategoryComponent = ({storesLoading, storesData}) => {
   const {navigate} = useNavigation();
 
   let choiceComponent;
-  let storesList;
+  // let storesList;
   const {authState} = useContext(GlobalContext);
   const [modalVisibleLoyalty, setModalVisibleLoyalty] = useState(false);
+  const [storesList, setStoresList] = useState([]);
   const [chosenCategory, setChosenCategory] = useState(null);
 
   const userLoyaltyCode = authState.loyalty_code.code;
+  console.log(
+    'in choose category component. userloyalty code is ',
+    userLoyaltyCode,
+  );
 
   // this is the static list of categories.
   // after the list of stores has been fetched, the next function will update this list with available categories
@@ -192,10 +197,17 @@ const ChooseCategoryComponent = ({storesLoading, storesData}) => {
                         // then user should be shown all stores which service the category (regardless of code)
                         //
 
+                        /*
                         storesList =
                           storesServingCategoryLoyalCustomer.length > 0
                             ? storesServingCategoryLoyalCustomer
                             : storesServingCategory;
+                            */
+                        setStoresList(
+                          storesServingCategoryLoyalCustomer.length > 0
+                            ? storesServingCategoryLoyalCustomer
+                            : storesServingCategory,
+                        );
 
                         if (userLoyaltyCode.includes(item.category)) {
                           navigate(CHOOSESTORE, {

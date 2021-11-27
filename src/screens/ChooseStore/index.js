@@ -6,7 +6,10 @@ const ChooseStore = () => {
 
   if (route.params) {
     /*
-    console.log('in choose store screen. route stores is:>> ', route.params.storesServingCategory);
+    console.log(
+      'in choose store screen. route stores is:>> ',
+      route.params.storesServingCategory,
+    );
     console.log(
       'in choose store screen. route category is:>> ',
       route.params.category,
@@ -18,7 +21,7 @@ const ChooseStore = () => {
 
   return (
     <ChooseStoreComponent
-      storesData={route.params.storesData}
+      storesData={route.params.storesServingCategory}
       category={route.params.category}
     />
   );
