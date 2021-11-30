@@ -22,8 +22,6 @@ const LoyaltyCodeForCategory = ({
   const [formCode, setFormCode] = useState({});
   const [formErrorsCode, setFormErrorsCode] = useState({});
   const [enterCode, setEnterCode] = useState(false);
-  const [storesCategoryLoyalCustomer, setStoresCategoryLoyalCustomer] =
-    useState();
   const {authState, authDispatch} = useContext(GlobalContext);
 
   // console.log('in loyalty code modal, stores list is ', storesList);
@@ -139,7 +137,7 @@ const LoyaltyCodeForCategory = ({
             // console.log('NO');
             setModalVisibleLoyalty(false);
             navigate(CHOOSESTORE, {
-              storesServingCategory: storesList,
+              storesData: storesList,
               category: category,
             });
           }}

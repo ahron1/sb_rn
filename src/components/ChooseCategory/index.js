@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import {GlobalContext} from '../../context/Provider';
 import {useNavigation} from '@react-navigation/native';
 import {FlatList, Image, Pressable, Text, View} from 'react-native';
@@ -14,6 +14,8 @@ const ChooseCategoryComponent = ({storesLoading, storesData}) => {
   // let storesList;
   const {authState} = useContext(GlobalContext);
   const [modalVisibleLoyalty, setModalVisibleLoyalty] = useState(false);
+  const [navigateChooseStore, setNavigateChooseStore] = useState(false);
+  const [currentCategory, setCurrentCategory] = useState();
   const [storesList, setStoresList] = useState([]);
   const [chosenCategory, setChosenCategory] = useState(null);
 
@@ -91,6 +93,20 @@ const ChooseCategoryComponent = ({storesLoading, storesData}) => {
     },
   ];
 
+  useEffect(() => {
+    if (navigateChooseStore && !modalVisibleLoyalty) {
+      console.log(
+        'in choose category component useeffect . stores list 222 is ',
+        storesList,
+      );
+      navigate(CHOOSESTORE, {
+        storesData: storesList,
+        // category: item.category,
+        category: currentCategory,
+      });
+    }
+  }, [storesList, navigateChooseStore]);
+
   const availablityUpdate = category => {
     category.availability = CategoryAvailability.find(
       item => item.category == category.category,
@@ -124,53 +140,8 @@ const ChooseCategoryComponent = ({storesLoading, storesData}) => {
                         const storesServingCategoryLoyalCustomer =
                           userLoyaltyCode.includes(item.category)
                             ? storesServingCategory.filter(function (store) {
-                                /*
-                                return (
-                                  store.loyalty_code.filter(code =>
-                                    authState.loyalty_code.code.includes(code),
-                                  ).length > 0
-                                );
-
                                 return (
                                   store.loyalty_code.filter(function (code) {
-                                    return authState.loyalty_code.code.includes(
-                                      code,
-                                    );
-                                  }).length > 0
-                                );
-                                */
-                                /*
-                                console.log(
-                                  'users codes are  ',
-                                  authState.loyalty_code.code,
-                                );
-
-                                console.log(
-                                  'stores codes are  ',
-                                  store.loyalty_code,
-                                );
-                                console.log(
-                                  '------- stores codes filtered are  ',
-                                  store.loyalty_code.filter(code =>
-                                    authState.loyalty_code.code.includes(code),
-                                  ).length > 0,
-                                );
-                                */
-                                return (
-                                  store.loyalty_code.filter(function (code) {
-                                    /*
-                                    console.log('code is ', code);
-                                    console.log(
-                                      'array  is ',
-                                      authState.loyalty_code.code,
-                                    );
-                                    console.log(
-                                      'array contains code is ',
-                                      authState.loyalty_code.code.includes(
-                                        code,
-                                      ),
-                                    );
-                                    */
                                     return authState.loyalty_code.code.includes(
                                       code,
                                     );
@@ -179,30 +150,13 @@ const ChooseCategoryComponent = ({storesLoading, storesData}) => {
                               })
                             : storesServingCategory;
 
-                        // Note 1 ---
-                        // if user has entered the code for store1 under category A,
-                        // and the store also serves category B,
-                        // then when the user chooses category B, he is shown store1
+                        console.log(
+                          'in choose category component. stores list 111 is ',
+                          storesList,
+                        );
 
-                        // Note 2 --
-                        // If the user entered code for store1 under category A,
-                        // and code for store2 under category B,
-                        // and both store1 and store2 serve category C
-                        // then when the user chooses category C, he is shown both store1 and store2
+                        setCurrentCategory(item.category);
 
-                        // Note 3 ---
-                        // if user has loyalty code(s) but none of the stores
-                        // for which he has the code(s) service the category
-                        // then user is shown zero stores.
-                        // then user should be shown all stores which service the category (regardless of code)
-                        //
-
-                        /*
-                        storesList =
-                          storesServingCategoryLoyalCustomer.length > 0
-                            ? storesServingCategoryLoyalCustomer
-                            : storesServingCategory;
-                            */
                         setStoresList(
                           storesServingCategoryLoyalCustomer.length > 0
                             ? storesServingCategoryLoyalCustomer
@@ -210,10 +164,13 @@ const ChooseCategoryComponent = ({storesLoading, storesData}) => {
                         );
 
                         if (userLoyaltyCode.includes(item.category)) {
+                          setNavigateChooseStore(true);
+                          /*
                           navigate(CHOOSESTORE, {
                             storesData: storesList,
                             category: item.category,
                           });
+                          */
                         } else {
                           setModalVisibleLoyalty(true);
                         }
@@ -250,3 +207,21 @@ const ChooseCategoryComponent = ({storesLoading, storesData}) => {
 };
 
 export default ChooseCategoryComponent;
+
+// Note 1 ---
+// if user has entered the code for store1 under category A,
+// and the store also serves category B,
+// then when the user chooses category B, he is shown store1
+
+// Note 2 --
+// If the user entered code for store1 under category A,
+// and code for store2 under category B,
+// and both store1 and store2 serve category C
+// then when the user chooses category C, he is shown both store1 and store2
+
+// Note 3 ---
+// if user has loyalty code(s) but none of the stores
+// for which he has the code(s) service the category
+// then user is shown zero stores.
+// then user should be shown all stores which service the category (regardless of code)
+//
