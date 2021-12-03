@@ -1,9 +1,6 @@
 import React, {useEffect} from 'react';
-import {useState} from 'react';
 import {useContext} from 'react';
 import {useNavigation, useRoute} from '@react-navigation/core';
-import {Text, Pressable, View} from 'react-native';
-import OrderItemsComponent from '../../components/OrderItems';
 import {GlobalContext} from '../../context/Provider';
 import getOrderItems from '../../context/actions/getOrderItems';
 import NavMenuComponent, {
@@ -17,7 +14,8 @@ const NewOrder = ({navigation}) => {
   const orderId = route.params.orderId;
   const chosenStoreDetails = route.params.item;
   const category = route.params.category;
-  // console.log('in new order screen. chosen store  is:>> ', chosenStoreDetails);
+  //const storeId = route.params.storeId;
+  console.log('in new order screen. chosen store  is:>> ', chosenStoreDetails);
   // console.log('in new order screen. category  is:>> ', category);
 
   const {setOptions, toggleDrawer} = useNavigation();
@@ -30,7 +28,8 @@ const NewOrder = ({navigation}) => {
       OrderScreen = NewOrderGrocery;
       break;
     case 'medicine':
-      OrderScreen = NewOrderMedicine;
+      //OrderScreen = NewOrderMedicine;
+      OrderScreen = NewOrderGrocery;
       break;
     case 'vegetable':
       OrderScreen = NewOrderGrocery;

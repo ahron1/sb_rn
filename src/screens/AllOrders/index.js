@@ -1,14 +1,12 @@
 import {useNavigation} from '@react-navigation/core';
 import React, {useEffect} from 'react';
 import {useContext} from 'react';
-import {Text, Pressable, View} from 'react-native';
 import AllOrdersComponent from '../../components/AllOrders';
 import NavMenuComponent, {
   NavMenuPressable,
 } from '../../components/common/NavMenu';
 import getOrders from '../../context/actions/getOrders';
 import {GlobalContext} from '../../context/Provider';
-import messaging from '@react-native-firebase/messaging';
 
 const AllOrders = ({navigation}) => {
   const {setOptions, toggleDrawer} = useNavigation();

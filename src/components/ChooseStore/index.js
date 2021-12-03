@@ -6,15 +6,15 @@ import {GlobalContext} from '../../context/Provider';
 import {NEWORDER} from '../../constants/routeNames';
 import OrderSend from '../OrderSend';
 import styles from './styles';
-import FloatingCenterButton from '../common/FloatingCenterButton';
+//import FloatingCenterButton from '../common/FloatingCenterButton';
 import colors from '../../assets/theme/colors';
 import CustomButtonSmall from '../common/CustomButtonSmall';
-import ListItemSeparatorComponent from '../common/ListItemSeparator';
+//import ListItemSeparatorComponent from '../common/ListItemSeparator';
 import ListItemSeparatorComponentThick from '../common/ListItemSeparatorThick';
-import {yupToFormErrors} from 'formik';
-import LoadingView from '../LoadingView';
-import CustomButton from '../common/CustomButton';
-import CustomButtonMedium from '../common/CustomButtonMedium';
+//import {yupToFormErrors} from 'formik';
+//import LoadingView from '../LoadingView';
+//import CustomButton from '../common/CustomButton';
+//import CustomButtonMedium from '../common/CustomButtonMedium';
 import addOrder from '../../context/actions/addOrder';
 
 const ChooseStoreComponent = ({storesData, category}) => {
@@ -43,7 +43,7 @@ const ChooseStoreComponent = ({storesData, category}) => {
       <View>
         <Pressable
           onPress={() =>
-            addOrder()(ordersDispatch)(orderId => {
+            addOrder({storeId})(ordersDispatch)(orderId => {
               navigate(NEWORDER, {
                 orderId: orderId,
                 item: item,

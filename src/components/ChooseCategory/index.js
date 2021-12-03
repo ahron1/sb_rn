@@ -17,7 +17,6 @@ const ChooseCategoryComponent = ({storesLoading, storesData}) => {
   const [navigateChooseStore, setNavigateChooseStore] = useState(false);
   const [currentCategory, setCurrentCategory] = useState();
   const [storesList, setStoresList] = useState([]);
-  const [chosenCategory, setChosenCategory] = useState(null);
 
   const userLoyaltyCode = authState.loyalty_code.code;
   console.log(
@@ -93,26 +92,21 @@ const ChooseCategoryComponent = ({storesLoading, storesData}) => {
     },
   ];
 
-  useEffect(() => {
-    if (navigateChooseStore && !modalVisibleLoyalty) {
-      console.log(
-        'in choose category component useeffect . stores list 222 is ',
-        storesList,
-      );
-      navigate(CHOOSESTORE, {
-        storesData: storesList,
-        // category: item.category,
-        category: currentCategory,
-      });
-    }
-  }, [storesList, navigateChooseStore]);
-
   const availablityUpdate = category => {
     category.availability = CategoryAvailability.find(
       item => item.category == category.category,
     ).availability;
   };
   Categories.forEach(availablityUpdate);
+
+  useEffect(() => {
+    if (navigateChooseStore && !modalVisibleLoyalty) {
+      navigate(CHOOSESTORE, {
+        storesData: storesList,
+        category: currentCategory,
+      });
+    }
+  }, [storesList, navigateChooseStore]);
 
   if (storesLoading) {
     choiceComponent = <LoadingView />;
@@ -128,7 +122,7 @@ const ChooseCategoryComponent = ({storesLoading, storesData}) => {
                   <View style={styles.itemView}>
                     <Pressable
                       onPress={() => {
-                        setChosenCategory(item.category);
+                        setCurrentCategory(item.category);
 
                         const storesServingCategory = storesData.filter(
                           function (store) {
@@ -150,13 +144,6 @@ const ChooseCategoryComponent = ({storesLoading, storesData}) => {
                               })
                             : storesServingCategory;
 
-                        console.log(
-                          'in choose category component. stores list 111 is ',
-                          storesList,
-                        );
-
-                        setCurrentCategory(item.category);
-
                         setStoresList(
                           storesServingCategoryLoyalCustomer.length > 0
                             ? storesServingCategoryLoyalCustomer
@@ -165,12 +152,6 @@ const ChooseCategoryComponent = ({storesLoading, storesData}) => {
 
                         if (userLoyaltyCode.includes(item.category)) {
                           setNavigateChooseStore(true);
-                          /*
-                          navigate(CHOOSESTORE, {
-                            storesData: storesList,
-                            category: item.category,
-                          });
-                          */
                         } else {
                           setModalVisibleLoyalty(true);
                         }
@@ -197,7 +178,7 @@ const ChooseCategoryComponent = ({storesLoading, storesData}) => {
           modalVisibleLoyalty={modalVisibleLoyalty}
           setModalVisibleLoyalty={setModalVisibleLoyalty}
           storesList={storesList}
-          category={chosenCategory}
+          category={currentCategory}
           userLoyaltyCode={userLoyaltyCode}
         />
       </>

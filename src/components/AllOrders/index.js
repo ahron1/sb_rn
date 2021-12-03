@@ -1,17 +1,9 @@
 import React, {useContext, useEffect, useState} from 'react';
-import {
-  Alert,
-  FlatList,
-  ImageBackground,
-  Pressable,
-  Text,
-  View,
-} from 'react-native';
+import {Alert, FlatList, Pressable, Text, View} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {CHOOSECATEGORY, ORDERITEMS, PROFILE} from '../../constants/routeNames';
 import ListFooterComponent from '../common/ListFooter';
 import FloatingCenterButton from '../common/FloatingCenterButton';
-import addOrder from '../../context/actions/addOrder';
 import {GlobalContext} from '../../context/Provider';
 import styles from './styles';
 import colors from '../../assets/theme/colors';
@@ -24,7 +16,7 @@ import LoadingView from '../LoadingView';
 const AllOrdersComponent = ({
   dataAllOrders,
   loadingGetOrders,
-  errorGetOrders,
+  //errorGetOrders,
 }) => {
   // console.log('in all orders component. dataallorders is:> ', dataAllOrders);
   const {ordersDispatch, ordersState, authState} = useContext(GlobalContext);
