@@ -47,11 +47,6 @@ const NewOrderGrocery = ({
     store_name: chosenStoreName,
     offers_delivery: chosenOffersDelivery,
     offers_pickup: chosenOffersPickup,
-    address_line1: chosenAddressLine1,
-    address_line2: chosenAddressLine2,
-    pincode: chosenPincode,
-    city: chosenCity,
-    state: chosenState,
     mobile_number: chosenStorePhoneNumber,
   } = chosenStoreDetails ? chosenStoreDetails : {};
 
@@ -73,12 +68,10 @@ const NewOrderGrocery = ({
   const {
     time_100_created,
     time_200_customer_sent,
-    price: orderPrice,
     is_delivery: isDelivery,
     is_pickup: isPickup,
     store_name: storeName,
     store_number: storeNumber,
-    store_id: storeId,
     customer_note: orderComments,
   } = order ? order : {};
   // the conditional assignment is to take care of deletion where the order item details are no longer found after deletion
@@ -98,7 +91,7 @@ const NewOrderGrocery = ({
   let total;
   if (Array.isArray(dataOrderItems) && dataOrderItems.length > 0) {
     let prices = dataOrderItems.map(a => a.price * a.available);
-    total = prices.reduce((accumulator, currentValue, currentIndex, array) => {
+    total = prices.reduce((accumulator, currentValue) => {
       return accumulator + currentValue;
     }, 0);
   }
@@ -325,6 +318,7 @@ const NewOrderGrocery = ({
             <Text
               style={[
                 styles.dashboardItemTitle,
+                // eslint-disable-next-line react-native/no-inline-styles
                 {fontWeight: '700'},
                 {color: orderColorText},
               ]}>
@@ -350,7 +344,6 @@ const NewOrderGrocery = ({
 
   const renderItem = ({item}) => {
     const {
-      order_item_id: itemId,
       name: itemName,
       quantity: itemQuantity,
       price: itemPrice,

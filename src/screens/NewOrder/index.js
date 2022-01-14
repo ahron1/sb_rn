@@ -8,8 +8,9 @@ import NavMenuComponent, {
 } from '../../components/common/NavMenu';
 import NewOrderGrocery from '../../components/NewOrder/Grocery';
 import NewOrderMedicine from '../../components/NewOrder/Medicine';
+import OrderItemsComponent from '../../components/OrderItems';
 
-const NewOrder = ({navigation}) => {
+const NewOrder = ({}) => {
   const route = useRoute();
   const orderId = route.params.orderId;
   const chosenStoreDetails = route.params.item;
@@ -25,11 +26,12 @@ const NewOrder = ({navigation}) => {
   let OrderScreen;
   switch (category) {
     case 'grocery':
-      OrderScreen = NewOrderGrocery;
+      //OrderScreen = NewOrderGrocery;
+      OrderScreen = OrderItemsComponent;
       break;
     case 'medicine':
-      //OrderScreen = NewOrderMedicine;
-      OrderScreen = NewOrderGrocery;
+      OrderScreen = NewOrderMedicine;
+      //OrderScreen = NewOrderGrocery;
       break;
     case 'vegetable':
       OrderScreen = NewOrderGrocery;
@@ -46,7 +48,7 @@ const NewOrder = ({navigation}) => {
   const {
     data: dataGetOrderItems,
     loading: loadingGetOrderItems,
-    error: errorGetOrderItems,
+    //error: errorGetOrderItems,
   } = orderItemsState.getOrderItems;
 
   console.log(
@@ -68,6 +70,7 @@ const NewOrder = ({navigation}) => {
 
   useEffect(() => {
     getOrderItems(orderId)(orderItemsDispatch);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

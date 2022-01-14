@@ -48,6 +48,7 @@ const AllOrders = ({navigation}) => {
     });
     return unsubscribe;
     // the navigation in the dep array is to trigger a reload/sort on navigating back to this screen
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [navigation, dataGetOrders]);
 
   return (

@@ -1,17 +1,26 @@
 import React, {useContext} from 'react';
-import {useState} from 'react';
-import {Alert, FlatList, Linking, Pressable, Text, View} from 'react-native';
+import {useState, useEffect} from 'react';
+import {
+  Alert,
+  Button,
+  FlatList,
+  Linking,
+  Pressable,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import ViewItem from '../../ViewItem';
-import AddItemGrocery from '../../AddItemModal/Grocery';
 import FloatingLeftButton from '../../common/FloatingLeftButton';
 import FloatingRightButton from '../../common/FloatingRightButton';
+import FloatingCenterButton from '../../common/FloatingCenterButton';
 import ListFooterComponent from '../../common/ListFooter';
 import styles from './styles';
 import colors from '../../../assets/theme/colors';
 import Icon from '../../common/Icon';
 import ListItemSeparatorComponent from '../../common/ListItemSeparator';
-import {ALLORDERS} from '../../../constants/routeNames';
+import {ALLORDERS, ORDERSTATUS, STORES} from '../../../constants/routeNames';
 import {GlobalContext} from '../../../context/Provider';
 import deleteOrder from '../../../context/actions/deleteOrder';
 import getOrderStatus from '../../../helpers/orderStatus';
@@ -19,12 +28,13 @@ import LoadingView from '../../LoadingView';
 import getDateTime from '../../../helpers/dateTimeString';
 import CustomButtonSmall from '../../common/CustomButtonSmall';
 import OrderSend from '../../OrderSend';
+import AddItemMedicine from '../../AddItemModal/Medicine';
 
 // this file is a copy of the orderitems file and has a number of unneccessary elements.
 // todo - clean up.
 
 // const OrderItemsComponent = ({orderStatusDetails, dataOrderItems}) => {
-const NewOrderGrocery = ({
+const NewOrderMedicine = ({
   orderId,
   chosenStoreDetails,
   dataOrderItems,
@@ -55,8 +65,8 @@ const NewOrderGrocery = ({
     mobile_number: chosenStorePhoneNumber,
   } = chosenStoreDetails ? chosenStoreDetails : {};
 
-  console.log('in grocery new order. storeName is ', storeName);
-  console.log('in grocery new order. dataorderitems is ', dataOrderItems);
+  console.log('in medicine new order. storeName is ', storeName);
+  console.log('in medicine new order. dataorderitems is ', dataOrderItems);
 
   const [order] = ordersState.getOrders.data.filter(
     x => x.order_id === orderId,
@@ -140,7 +150,7 @@ const NewOrderGrocery = ({
               circleColor={colors.color2_2_4}
               iconColor={colors.color1_3}
               onPress={() => {
-                // console.log('in grocery new order. + pressed');
+                console.log('in medicine new order. + pressed');
                 setModalVisibleAddItem(true);
               }}
             />
@@ -159,9 +169,9 @@ const NewOrderGrocery = ({
               loading={ordersState.deleteOrder.loading}
               disabled={ordersState.deleteOrder.loading}
               onPress={() => {
-                // console.log('in grocery new order. delete pressed');
+                // console.log('in medicine new order. delete pressed');
                 deleteOrder({orderId})(ordersDispatch)(() => {
-                  // console.log('in grocery new orders. deleted order');
+                  // console.log('in medicine new orders. deleted order');
                   navigate(ALLORDERS);
                 });
               }}
@@ -174,7 +184,7 @@ const NewOrderGrocery = ({
               circleColor={colors.color2_2_4}
               iconColor={colors.color1_3}
               onPress={() => {
-                // console.log('in grocery new order. + pressed');
+                console.log('in medicine new order. + pressed');
                 setModalVisibleAddItem(true);
               }}
             />
@@ -469,7 +479,7 @@ const NewOrderGrocery = ({
         orderId={orderId}
         currentCodeNumber={currentCodeNumber}
       />
-      <AddItemGrocery
+      <AddItemMedicine
         modalVisibleAddItem={modalVisibleAddItem}
         setModalVisibleAddItem={setModalVisibleAddItem}
         orderId={orderId}
@@ -478,4 +488,4 @@ const NewOrderGrocery = ({
   );
 };
 
-export default NewOrderGrocery;
+export default NewOrderMedicine;

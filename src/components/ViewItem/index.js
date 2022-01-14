@@ -1,13 +1,5 @@
 import React, {useContext} from 'react';
-import {
-  Modal,
-  Text,
-  Pressable,
-  View,
-  ScrollView,
-  Button,
-  Alert,
-} from 'react-native';
+import {Text, View} from 'react-native';
 import AppModal from '../common/AppModal';
 import CustomButtonSmall from '../common/CustomButtonSmall';
 import deleteOrderItem from '../../context/actions/deleteOrderItem';

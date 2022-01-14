@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext} from 'react';
 import {Alert, FlatList, Pressable, Text, View} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {CHOOSECATEGORY, ORDERITEMS, PROFILE} from '../../constants/routeNames';
@@ -19,9 +19,9 @@ const AllOrdersComponent = ({
   //errorGetOrders,
 }) => {
   // console.log('in all orders component. dataallorders is:> ', dataAllOrders);
-  const {ordersDispatch, ordersState, authState} = useContext(GlobalContext);
+  const {ordersState, authState} = useContext(GlobalContext);
   const {navigate} = useNavigation();
-  // console.log('in all orders. auth state is: ', authState);
+  console.log('in all orders component. dataAllOrders is: ', dataAllOrders);
 
   const addOrderPressed = () => {
     // console.log('in all orders component. add order pressed');
@@ -70,15 +70,13 @@ const AllOrdersComponent = ({
   };
 
   const renderItem = ({item: order}) => {
-    // console.log('in all order component, order :>> ', order);
+    //console.log('in all order component, order :>> ', order);
     // const {orderId, orderPrice, orderDate, status, orderRatingStars} =
     const {
       time_100_created,
       time_200_customer_sent,
       price: orderPrice,
       order_id: orderId,
-      is_delivery: isDelivery,
-      is_pickup: isPickup,
       store_name: storeName,
     } = order;
 
@@ -86,7 +84,6 @@ const AllOrdersComponent = ({
       orderStatusText: orderStatusText,
       orderStatusNext: orderStatusNext,
       orderColorCode: orderColorCode,
-      orderStatusCode: orderStatusCode,
       orderColorText: orderColorText,
     } = getOrderStatus(order);
 

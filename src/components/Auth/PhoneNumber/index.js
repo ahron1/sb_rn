@@ -13,7 +13,7 @@ export default function PhoneNumber() {
   const {authDispatch, authState} = useContext(GlobalContext);
   const {
     // data: dataPhoneNumberSignInSubmit,
-    error: errorPhoneNumberSignInSubmit,
+    //error: errorPhoneNumberSignInSubmit,
     loading: loadingPhoneNumberSignInSubmit,
   } = authState.phoneNumberSignInSubmit;
   const [phoneNumber, setPhoneNumber] = useState(null);

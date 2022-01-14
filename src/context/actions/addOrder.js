@@ -8,10 +8,9 @@ import getDateTime from '../../helpers/dateTimeString';
 import getOrderStatus from '../../helpers/orderStatus';
 
 const addOrder =
-  ({storeId}) =>
+  ({storeId, category}) =>
   dispatch =>
   onSuccess => {
-    // console.log('in action add order dispatch loading . ');
     dispatch({
       type: ADD_ORDER_LOADING,
     });
@@ -20,6 +19,7 @@ const addOrder =
       //.get('/add_order')
       .post('/add_order', {
         storeId: storeId,
+        category: category,
       })
       .then(res => {
         // console.log('in action add order . new order is >> ', res.data);
