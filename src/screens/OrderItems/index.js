@@ -29,7 +29,8 @@ const OrderItems = () => {
 
   useEffect(() => {
     setOptions({
-      headerLeft: () => (
+      //headerLeft: () => (
+      headerRight: () => (
         <NavMenuPressable
           onPress={() => {
             toggleDrawer();

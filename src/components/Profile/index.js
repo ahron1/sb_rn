@@ -1,11 +1,11 @@
-import React, {useContext, useEffect} from 'react';
+import React, {useContext} from 'react';
 import {useState} from 'react';
-import {Alert, Text, View, PermissionsAndroid} from 'react-native';
+import {Alert, Text, View, PermissionsAndroid, FlatList} from 'react-native';
 import Geolocation from 'react-native-geolocation-service';
 import Geocoder from 'react-native-geocoding';
 import RNAndroidLocationEnabler from 'react-native-android-location-enabler';
 import {GlobalContext} from '../../context/Provider';
-import addressLog, {setGeoAddressHelper} from '../../helpers/geoHelpers';
+import {setGeoAddressHelper} from '../../helpers/geoHelpers';
 import AddressForm from '../AddressForm';
 import NameForm from '../NameForm';
 import logOut from '../../context/actions/auth/logOut';
@@ -17,6 +17,19 @@ import CustomButton from '../common/CustomButton';
 import colors from '../../assets/theme/colors';
 import {ALLORDERS} from '../../constants/routeNames';
 
+import {
+  Button,
+  Headline,
+  Paragraph,
+  Subheading,
+  Text as PaperText,
+  Title,
+  Card,
+  TextInput,
+  Divider,
+  List,
+} from 'react-native-paper';
+
 Geocoder.init('AIzaSyBw1Ua3oGDMs8WwJyNXLRkpsJSq6Vup0bo'); // use a valid API key
 
 const ProfileComponent = () => {
@@ -24,6 +37,7 @@ const ProfileComponent = () => {
   const [modalVisibleAddAddress, setModalVisibleAddAddress] = useState(false);
   const [modalVisibleAddName, setModalVisibleAddName] = useState(false);
   const [loadingEditAddress, setLoadingEditAddress] = useState(false);
+  const [text, setText] = React.useState('');
 
   const [geoAddress, setGeoAddress] = useState({});
   const [systemLocation, setSystemLocation] = useState(0);
@@ -61,7 +75,7 @@ const ProfileComponent = () => {
           setGeoAddressWrapper: setGeoAddressWrapper,
         });
       })
-      .catch(error => {
+      .catch(_error => {
         setLoadingEditAddress(false);
         // console.log('error getting address from coordinates', error);
       });
@@ -97,7 +111,7 @@ const ProfileComponent = () => {
         processLocation(position.coords);
         // processLocation({});
       },
-      error => {
+      _error => {
         setLoadingEditAddress(false);
         Alert.alert(
           'Problem getting location',
@@ -157,7 +171,7 @@ const ProfileComponent = () => {
       interval: 10000,
       fastInterval: 5000,
     })
-      .then(data => {
+      .then(_data => {
         // console.log('in RNAndroidLocationEnabler. data is:> ', data);
         setLoadingEditAddress(true);
         locationHandler();
@@ -331,6 +345,69 @@ const ProfileComponent = () => {
       </Container>
     </>
   );
+
+  //  const renderItem = ({item}) => {
+  //    console.log(item);
+  //    return (
+  //      <>
+  //        <List.Item
+  //          title={item}
+  //          description={item}
+  //          left={props => <List.Icon {...props} icon="email" />}
+  //          right={props => <List.Icon {...props} icon="gmail" />}
+  //        />
+  //        <Button mode="contained">{item}</Button>
+  //        <Divider />
+  //      </>
+  //    );
+  //  };
+  //
+  //  const Data = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+  //  return (
+  //    <View style={{flex: 1}}>
+  //      <View style={{flex: 0.5}}>
+  //        <Headline>Headline</Headline>
+  //        <Subheading>Subheading</Subheading>
+  //        <Title>Title</Title>
+  //        <Paragraph>Paragraph</Paragraph>
+  //        <Text>RN Default Text</Text>
+  //        <PaperText> Paper Text</PaperText>
+  //        <FlatList data={Data} renderItem={renderItem} />
+  //      </View>
+  //      <View style={{flex: 0.5}}>
+  //        <Card>
+  //          <Card.Title title="Card title" subtitle="subtitle" />
+  //          <Card.Content>
+  //            <Title>Title</Title>
+  //            <Paragraph>Paragraph</Paragraph>
+  //            <TextInput
+  //              label="Mobile Number"
+  //              mode="outlined"
+  //              value={text}
+  //              onChangeText={text => setText(text)}
+  //            />
+  //          </Card.Content>
+  //          <Card.Actions>
+  //            <Button
+  //              icon="login"
+  //              mode="contained"
+  //              onPress={() => console.log('text ok ' + text)}
+  //              style={{alignItems: 'flex-end'}}>
+  //              OK
+  //            </Button>
+  //          </Card.Actions>
+  //        </Card>
+  //        <Button
+  //          icon="login"
+  //          mode="contained"
+  //          onPress={() => {
+  //            console.log('Pressed');
+  //          }}>
+  //          Login
+  //        </Button>
+  //      </View>
+  //    </View>
+  //  );
 };
 
 export default ProfileComponent;

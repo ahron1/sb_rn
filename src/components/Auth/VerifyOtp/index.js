@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react';
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {Image, Text, View} from 'react-native';
 
 import styles from './styles';
 import colors from '../../../assets/theme/colors';
@@ -14,7 +14,7 @@ export default function VerifyOtp() {
   const {confirmationMethod} = authState;
   const {
     // data: dataPhoneNumberOtpSubmit,
-    error: errorPhoneNumberOtpSubmit,
+    //error: errorPhoneNumberOtpSubmit,
     loading: loadingPhoneNumberOtpSubmit,
   } = authState.phoneNumberOtpSubmit;
 

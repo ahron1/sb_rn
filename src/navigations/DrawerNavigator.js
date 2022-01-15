@@ -10,10 +10,10 @@ const getDrawerContent = navigation => {
 
 const DrawerNavigator = () => {
   const Drawer = createDrawerNavigator();
-
   return (
     <Drawer.Navigator
       drawerType="front"
+      drawerPosition="right"
       drawerContent={({navigation}) => getDrawerContent(navigation)}>
       <Drawer.Screen name={HOME_NAVIGATOR} component={HomeNavigator} />
     </Drawer.Navigator>
