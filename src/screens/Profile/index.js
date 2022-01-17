@@ -45,7 +45,7 @@ const Profile = () => {
       user
         .getIdToken()
         //this is the token that should be used for UID auth.
-        .then(token => console.info('got users token'));
+        .then(token => console.info('got users token' + token));
       messaging()
         .getToken()
         .then(token => {
@@ -56,6 +56,7 @@ const Profile = () => {
     } else {
       // console.log('auth() current user doesnt exist. not setting state');
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [auth().currentUser]);
 
   // Handle user state changes
@@ -82,6 +83,7 @@ const Profile = () => {
     } else {
       // console.log('in profile screen. creds not yet ready to call credupdate');
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [fireBaseUid, phoneNumber, fcmToken]);
 
   useEffect(() => {
@@ -117,11 +119,13 @@ const Profile = () => {
         getUserDetails()(authDispatch);
       }
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [credUpdated]);
 
   useEffect(() => {
     setOptions({
-      headerLeft: () => (
+      //headerLeft: () => (
+      headerRight: () => (
         <NavMenuPressable
           onPress={() => {
             toggleDrawer();

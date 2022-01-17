@@ -6,9 +6,10 @@
  * @flow strict-local
  */
 
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import messaging from '@react-native-firebase/messaging';
-import GlobalProvider, {GlobalContext} from './src/context/Provider';
+import GlobalProvider from './src/context/Provider';
+import {Provider as PaperProvider} from 'react-native-paper';
 import AppNavContainer from './src/navigations';
 import PushNotification from 'react-native-push-notification';
 import {Alert} from 'react-native';
@@ -85,7 +86,9 @@ const App = () => {
 
   return (
     <GlobalProvider>
-      <AppNavContainer />
+      <PaperProvider>
+        <AppNavContainer />
+      </PaperProvider>
     </GlobalProvider>
   );
 };

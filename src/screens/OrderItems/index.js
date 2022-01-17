@@ -1,8 +1,6 @@
 import React, {useEffect} from 'react';
-import {useState} from 'react';
 import {useContext} from 'react';
 import {useNavigation, useRoute} from '@react-navigation/core';
-import {Text, Pressable, View} from 'react-native';
 import OrderItemsComponent from '../../components/OrderItems';
 import {GlobalContext} from '../../context/Provider';
 import getOrderItems from '../../context/actions/getOrderItems';
@@ -10,7 +8,7 @@ import NavMenuComponent, {
   NavMenuPressable,
 } from '../../components/common/NavMenu';
 
-const OrderItems = ({navigation}) => {
+const OrderItems = () => {
   // const {params: {orderId = {}} = {}} = useRoute();
   const route = useRoute();
   // const orderStatusDetails = route.params;
@@ -18,22 +16,21 @@ const OrderItems = ({navigation}) => {
   const orderId = route.params.orderId;
   const chosenStoreDetails = route.params.item;
   console.log(
-    'in order items screen. chosen store  is:>> ',
-    chosenStoreDetails,
+    //'in order items screen. chosen store  is:>> ',
+    'in order items screen. order params  is:>> ',
+    route.params,
   );
 
   const {setOptions, toggleDrawer} = useNavigation();
   const {orderItemsDispatch, orderItemsState} = useContext(GlobalContext);
 
-  const {
-    data: dataGetOrderItems,
-    loading: loadingGetOrderItems,
-    error: errorGetOrderItems,
-  } = orderItemsState.getOrderItems;
+  const {data: dataGetOrderItems, loading: loadingGetOrderItems} =
+    orderItemsState.getOrderItems;
 
   useEffect(() => {
     setOptions({
-      headerLeft: () => (
+      //headerLeft: () => (
+      headerRight: () => (
         <NavMenuPressable
           onPress={() => {
             toggleDrawer();
@@ -46,6 +43,7 @@ const OrderItems = ({navigation}) => {
 
   useEffect(() => {
     getOrderItems(orderId)(orderItemsDispatch);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // useEffect(() => {

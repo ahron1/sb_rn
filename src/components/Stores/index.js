@@ -1,33 +1,15 @@
-import React, {useContext, useEffect, useState} from 'react';
-import {
-  Text,
-  TouchableOpacity,
-  Pressable,
-  View,
-  FlatList,
-  Alert,
-  Linking,
-} from 'react-native';
-import sendOrder from '../../context/actions/sendOrder';
+import React, {useContext, useState} from 'react';
+import {Text, Pressable, View, FlatList, Alert, Linking} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import Icon from '../../components/common/Icon';
 import {GlobalContext} from '../../context/Provider';
-import {
-  ALLORDERS,
-  ORDERITEMS,
-  PROFILE,
-  REWARDS,
-} from '../../constants/routeNames';
+import {PROFILE} from '../../constants/routeNames';
 import OrderSend from '../OrderSend';
 import styles from './styles';
-import FloatingCenterButton from '../common/FloatingCenterButton';
 import colors from '../../assets/theme/colors';
 import CustomButtonSmall from '../common/CustomButtonSmall';
-import ListItemSeparatorComponent from '../common/ListItemSeparator';
 import ListItemSeparatorComponentThick from '../common/ListItemSeparatorThick';
-import {yupToFormErrors} from 'formik';
 import LoadingView from '../LoadingView';
-import CustomButton from '../common/CustomButton';
 import CustomButtonMedium from '../common/CustomButtonMedium';
 
 const StoresComponent = ({storesLoading, storesData, orderId}) => {
@@ -35,7 +17,6 @@ const StoresComponent = ({storesLoading, storesData, orderId}) => {
   const [selectedStoreDetails, setSelectedStoreDetails] = useState({});
   const {navigate} = useNavigation();
   const {authState} = useContext(GlobalContext);
-  const {ordersDispatch, ordersState} = useContext(GlobalContext);
   let viewStoreComponent;
 
   const renderItem = ({item}) => {

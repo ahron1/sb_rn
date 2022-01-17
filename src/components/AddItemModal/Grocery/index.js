@@ -1,7 +1,5 @@
 import React, {useContext, useState} from 'react';
-import {View, Text, StatusBar} from 'react-native';
-import ImagePicker from 'react-native-image-crop-picker';
-import {ImageOrVideo} from 'react-native-image-crop-picker';
+import {View, Text} from 'react-native';
 import AppModal from '../../common/AppModal';
 // import CustomButton from '../common/CustomButton';
 import CustomButtonMedium from '../../common/CustomButtonMedium';
@@ -10,7 +8,6 @@ import addOrderItem from '../../../context/actions/addOrderItem';
 import {GlobalContext} from '../../../context/Provider';
 import styles from './styles';
 import colors from '../../../assets/theme/colors';
-import CustomButtonSmall from '../../common/CustomButtonSmall';
 
 const AddItemGrocery = ({
   orderId,

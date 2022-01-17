@@ -1,0 +1,1861 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADD_LOYALTYCODE_FAIL	./constants/actionTypes.js	/^export const ADD_LOYALTYCODE_FAIL = 'ADD_LOYALTYCODE_FAIL';$/;"	E
+ADD_LOYALTYCODE_FAIL	./context/actions/auth/addLoyaltyCode.js	/^  ADD_LOYALTYCODE_FAIL,$/;"	V
+ADD_LOYALTYCODE_FAIL	./context/reducers/AuthReducer.js	/^  ADD_LOYALTYCODE_FAIL,$/;"	V
+ADD_LOYALTYCODE_LOADING	./constants/actionTypes.js	/^export const ADD_LOYALTYCODE_LOADING = 'ADD_LOYALTYCODE_LOADING';$/;"	E
+ADD_LOYALTYCODE_LOADING	./context/actions/auth/addLoyaltyCode.js	/^  ADD_LOYALTYCODE_LOADING,$/;"	V
+ADD_LOYALTYCODE_LOADING	./context/reducers/AuthReducer.js	/^  ADD_LOYALTYCODE_LOADING,$/;"	V
+ADD_LOYALTYCODE_SUCCESS	./constants/actionTypes.js	/^export const ADD_LOYALTYCODE_SUCCESS = 'ADD_LOYALTYCODE_SUCCESS';$/;"	E
+ADD_LOYALTYCODE_SUCCESS	./context/actions/auth/addLoyaltyCode.js	/^  ADD_LOYALTYCODE_SUCCESS,$/;"	V
+ADD_LOYALTYCODE_SUCCESS	./context/reducers/AuthReducer.js	/^  ADD_LOYALTYCODE_SUCCESS,$/;"	V
+ADD_ORDERITEM_FAIL	./constants/actionTypes.js	/^export const ADD_ORDERITEM_FAIL = 'ADD_ORDERITEM_FAIL';$/;"	E
+ADD_ORDERITEM_FAIL	./context/actions/addOrderItem.js	/^  ADD_ORDERITEM_FAIL,$/;"	V
+ADD_ORDERITEM_FAIL	./context/reducers/orderItemsReducer.js	/^  ADD_ORDERITEM_FAIL,$/;"	V
+ADD_ORDERITEM_LOADING	./constants/actionTypes.js	/^export const ADD_ORDERITEM_LOADING = 'ADD_ORDERITEM_LOADING';$/;"	E
+ADD_ORDERITEM_LOADING	./context/actions/addOrderItem.js	/^  ADD_ORDERITEM_LOADING,$/;"	V
+ADD_ORDERITEM_LOADING	./context/reducers/orderItemsReducer.js	/^  ADD_ORDERITEM_LOADING,$/;"	V
+ADD_ORDERITEM_SUCCESS	./constants/actionTypes.js	/^export const ADD_ORDERITEM_SUCCESS = 'ADD_ORDERITEM_SUCCESS';$/;"	E
+ADD_ORDERITEM_SUCCESS	./context/actions/addOrderItem.js	/^  ADD_ORDERITEM_SUCCESS,$/;"	V
+ADD_ORDERITEM_SUCCESS	./context/reducers/orderItemsReducer.js	/^  ADD_ORDERITEM_SUCCESS,$/;"	V
+ADD_ORDER_FAIL	./constants/actionTypes.js	/^export const ADD_ORDER_FAIL = 'ADD_ORDER_FAIL';$/;"	E
+ADD_ORDER_FAIL	./context/actions/addOrder.js	/^  ADD_ORDER_FAIL,$/;"	V
+ADD_ORDER_FAIL	./context/reducers/ordersReducer.js	/^  ADD_ORDER_FAIL,$/;"	V
+ADD_ORDER_LOADING	./constants/actionTypes.js	/^export const ADD_ORDER_LOADING = 'ADD_ORDER_LOADING';$/;"	E
+ADD_ORDER_LOADING	./context/actions/addOrder.js	/^  ADD_ORDER_LOADING,$/;"	V
+ADD_ORDER_LOADING	./context/reducers/ordersReducer.js	/^  ADD_ORDER_LOADING,$/;"	V
+ADD_ORDER_SUCCESS	./constants/actionTypes.js	/^export const ADD_ORDER_SUCCESS = 'ADD_ORDER_SUCCESS';$/;"	E
+ADD_ORDER_SUCCESS	./context/actions/addOrder.js	/^  ADD_ORDER_SUCCESS,$/;"	V
+ADD_ORDER_SUCCESS	./context/reducers/ordersReducer.js	/^  ADD_ORDER_SUCCESS,$/;"	V
+ALLORDERS	./components/Stores/index.js	/^  ALLORDERS,$/;"	V
+ALLORDERS	./constants/routeNames.js	/^export const ALLORDERS = 'My orders';$/;"	E
+ALLORDERS	./navigations/HomeNavigator.js	/^  ALLORDERS,$/;"	V
+ALLORDERS	./navigations/SideMenu/index.js	/^  ALLORDERS,$/;"	V
+AddItemGrocery	./components/AddItemModal/Grocery/index.js	/^const AddItemGrocery = ({$/;"	F
+AddItemMedicine	./components/AddItemModal/Medicine/index.js	/^const AddItemMedicine = ({$/;"	F
+AddressForm	./components/AddressForm/index.js	/^const AddressForm = ({$/;"	F
+Alert	./components/AllOrders/index.js	/^  Alert,$/;"	V
+Alert	./components/NameForm/index.js	/^  Alert,$/;"	V
+Alert	./components/NewOrder/Grocery/index.js	/^  Alert,$/;"	V
+Alert	./components/NewOrder/Medicine/index.js	/^  Alert,$/;"	V
+Alert	./components/OrderItems/index.js	/^  Alert,$/;"	V
+Alert	./components/Stores/index.js	/^  Alert,$/;"	V
+Alert	./components/ViewItem/index.js	/^  Alert,$/;"	V
+AllOrders	./screens/AllOrders/index.js	/^const AllOrders = ({navigation}) => {$/;"	F
+AllOrdersComponent	./components/AllOrders/index.js	/^const AllOrdersComponent = ({$/;"	F
+AppModal	./components/common/AppModal/index.js	/^const AppModal = ({$/;"	F
+AppNavContainer	./navigations/index.js	/^const AppNavContainer = () => {$/;"	F
+AppTextInput	./components/common/AppTextInput/index.js	/^const AppTextInput = ({$/;"	F
+Avatar	./components/common/Avatar/index.js	/^export const Avatar = (props: AvatarProps) => {$/;"	E
+Button	./components/NameForm/index.js	/^  Button,$/;"	V
+Button	./components/NewOrder/Grocery/index.js	/^  Button,$/;"	V
+Button	./components/NewOrder/Medicine/index.js	/^  Button,$/;"	V
+Button	./components/OrderItems/index.js	/^  Button,$/;"	V
+Button	./components/ViewItem/index.js	/^  Button,$/;"	V
+Buttons1	./components/LoyaltyCodeForCategory/index.js	/^  const Buttons1 = () => {$/;"	F
+CHOOSECATEGORY	./constants/routeNames.js	/^export const CHOOSECATEGORY = 'Choose Category';$/;"	E
+CHOOSECATEGORY	./navigations/HomeNavigator.js	/^  CHOOSECATEGORY,$/;"	V
+CHOOSESTORE	./constants/routeNames.js	/^export const CHOOSESTORE = 'Choose Store';$/;"	E
+CHOOSESTORE	./navigations/HomeNavigator.js	/^  CHOOSESTORE,$/;"	V
+CRED_UPDATE_FAIL	./constants/actionTypes.js	/^export const CRED_UPDATE_FAIL = 'CRED_UPDATE_FAIL';$/;"	E
+CRED_UPDATE_FAIL	./context/actions/auth/credUpdate.js	/^  CRED_UPDATE_FAIL,$/;"	V
+CRED_UPDATE_FAIL	./context/reducers/AuthReducer.js	/^  CRED_UPDATE_FAIL,$/;"	V
+CRED_UPDATE_LOADING	./constants/actionTypes.js	/^export const CRED_UPDATE_LOADING = 'CRED_UPDATE_LOADING';$/;"	E
+CRED_UPDATE_LOADING	./context/actions/auth/credUpdate.js	/^  CRED_UPDATE_LOADING,$/;"	V
+CRED_UPDATE_LOADING	./context/reducers/AuthReducer.js	/^  CRED_UPDATE_LOADING,$/;"	V
+CRED_UPDATE_SUCCESS	./constants/actionTypes.js	/^export const CRED_UPDATE_SUCCESS = 'CRED_UPDATE_SUCCESS';$/;"	E
+CRED_UPDATE_SUCCESS	./context/actions/auth/credUpdate.js	/^  CRED_UPDATE_SUCCESS,$/;"	V
+CRED_UPDATE_SUCCESS	./context/reducers/AuthReducer.js	/^  CRED_UPDATE_SUCCESS,$/;"	V
+Categories	./components/ChooseCategory/index.js	/^  const Categories = [$/;"	A
+CategoryAvailability	./components/ChooseCategory/index.js	/^  const CategoryAvailability = [$/;"	A
+CategoryChoose	./screens/ChooseCategory/index.js	/^const CategoryChoose = ({navigation}) => {$/;"	F
+ChooseCategoryComponent	./components/ChooseCategory/index.js	/^const ChooseCategoryComponent = ({storesLoading, storesData}) => {$/;"	F
+ChooseStore	./screens/ChooseStore/index.js	/^const ChooseStore = () => {$/;"	F
+ChooseStoreComponent	./components/ChooseStore/index.js	/^const ChooseStoreComponent = ({storesData, category}) => {$/;"	F
+Container	./components/common/Container/index.js	/^const Container = ({style, children}) => {$/;"	F
+CustomButton	./components/common/CustomButton/index.js	/^const CustomButton = ({$/;"	F
+CustomButtonMedium	./components/common/CustomButtonMedium/index.js	/^const CustomButtonMedium = ({$/;"	F
+CustomButtonSmall	./components/common/CustomButtonSmall/index.js	/^const CustomButtonSmall = ({$/;"	F
+DELETE_ORDERITEM_FAIL	./constants/actionTypes.js	/^export const DELETE_ORDERITEM_FAIL = 'DELETE_ORDERITEM_FAIL';$/;"	E
+DELETE_ORDERITEM_FAIL	./context/actions/deleteOrderItem.js	/^  DELETE_ORDERITEM_FAIL,$/;"	V
+DELETE_ORDERITEM_FAIL	./context/reducers/orderItemsReducer.js	/^  DELETE_ORDERITEM_FAIL,$/;"	V
+DELETE_ORDERITEM_LOADING	./constants/actionTypes.js	/^export const DELETE_ORDERITEM_LOADING = 'DELETE_ORDERITEM_LOADING';$/;"	E
+DELETE_ORDERITEM_LOADING	./context/actions/deleteOrderItem.js	/^  DELETE_ORDERITEM_LOADING,$/;"	V
+DELETE_ORDERITEM_LOADING	./context/reducers/orderItemsReducer.js	/^  DELETE_ORDERITEM_LOADING,$/;"	V
+DELETE_ORDERITEM_SUCCESS	./constants/actionTypes.js	/^export const DELETE_ORDERITEM_SUCCESS = 'DELETE_ORDERITEM_SUCCESS';$/;"	E
+DELETE_ORDERITEM_SUCCESS	./context/actions/deleteOrderItem.js	/^  DELETE_ORDERITEM_SUCCESS,$/;"	V
+DELETE_ORDERITEM_SUCCESS	./context/reducers/orderItemsReducer.js	/^  DELETE_ORDERITEM_SUCCESS,$/;"	V
+DELETE_ORDER_FAIL	./constants/actionTypes.js	/^export const DELETE_ORDER_FAIL = 'DELETE_ORDER_FAIL';$/;"	E
+DELETE_ORDER_FAIL	./context/actions/deleteOrder.js	/^  DELETE_ORDER_FAIL,$/;"	V
+DELETE_ORDER_FAIL	./context/reducers/ordersReducer.js	/^  DELETE_ORDER_FAIL,$/;"	V
+DELETE_ORDER_LOADING	./constants/actionTypes.js	/^export const DELETE_ORDER_LOADING = 'DELETE_ORDER_LOADING';$/;"	E
+DELETE_ORDER_LOADING	./context/actions/deleteOrder.js	/^  DELETE_ORDER_LOADING,$/;"	V
+DELETE_ORDER_LOADING	./context/reducers/ordersReducer.js	/^  DELETE_ORDER_LOADING,$/;"	V
+DELETE_ORDER_SUCCESS	./constants/actionTypes.js	/^export const DELETE_ORDER_SUCCESS = 'DELETE_ORDER_SUCCESS';$/;"	E
+DELETE_ORDER_SUCCESS	./context/actions/deleteOrder.js	/^  DELETE_ORDER_SUCCESS,$/;"	V
+DELETE_ORDER_SUCCESS	./context/reducers/ordersReducer.js	/^  DELETE_ORDER_SUCCESS,$/;"	V
+DEV_BACKEND_URL	./config/env.js	/^  DEV_BACKEND_URL,$/;"	V
+DEV_BACKEND_URL	./config/env.js	/^const DEV_BACKEND_URL = 'http:\/\/192.168.122.242';$/;"	V
+Date	./components/AllOrders/index.js	/^                Date:{' '}$/;"	P
+DrawerNavigator	./navigations/DrawerNavigator.js	/^const DrawerNavigator = () => {$/;"	F
+EDIT_ORDERITEM_FAIL	./constants/actionTypes.js	/^export const EDIT_ORDERITEM_FAIL = 'EDIT_ORDERITEM_FAIL';$/;"	E
+EDIT_ORDERITEM_FAIL	./context/reducers/orderItemsReducer.js	/^  EDIT_ORDERITEM_FAIL,$/;"	V
+EDIT_ORDERITEM_LOADING	./constants/actionTypes.js	/^export const EDIT_ORDERITEM_LOADING = 'EDIT_ORDERITEM_LOADING';$/;"	E
+EDIT_ORDERITEM_LOADING	./context/reducers/orderItemsReducer.js	/^  EDIT_ORDERITEM_LOADING,$/;"	V
+EDIT_ORDERITEM_SUCCESS	./constants/actionTypes.js	/^export const EDIT_ORDERITEM_SUCCESS = 'EDIT_ORDERITEM_SUCCESS';$/;"	E
+EDIT_ORDERITEM_SUCCESS	./context/reducers/orderItemsReducer.js	/^  EDIT_ORDERITEM_SUCCESS,$/;"	V
+EDIT_ORDER_FAIL	./constants/actionTypes.js	/^export const EDIT_ORDER_FAIL = 'EDIT_ORDER_FAIL';$/;"	E
+EDIT_ORDER_LOADING	./constants/actionTypes.js	/^export const EDIT_ORDER_LOADING = 'EDIT_ORDER_LOADING';$/;"	E
+EDIT_ORDER_SUCCESS	./constants/actionTypes.js	/^export const EDIT_ORDER_SUCCESS = 'EDIT_ORDER_SUCCESS';$/;"	E
+FlatList	./components/AllOrders/index.js	/^  FlatList,$/;"	V
+FlatList	./components/NewOrder/Grocery/index.js	/^  FlatList,$/;"	V
+FlatList	./components/NewOrder/Medicine/index.js	/^  FlatList,$/;"	V
+FlatList	./components/OrderItems/index.js	/^  FlatList,$/;"	V
+FlatList	./components/Stores/index.js	/^  FlatList,$/;"	V
+FloatingCenterButton	./components/common/FloatingCenterButton/index.js	/^const FloatingCenterButton = ({$/;"	F
+FloatingLeftButton	./components/common/FloatingLeftButton/index.js	/^const FloatingLeftButton = ({$/;"	F
+FloatingRightButton	./components/common/FloatingRightButton/index.js	/^const FloatingRightButton = ({$/;"	F
+GET_DEFAULT_STORE_FAIL	./constants/actionTypes.js	/^export const GET_DEFAULT_STORE_FAIL = 'GET_DEFAULT_STORE_FAIL';$/;"	E
+GET_DEFAULT_STORE_FAIL	./context/actions/getDefaultStore.js	/^  GET_DEFAULT_STORE_FAIL,$/;"	V
+GET_DEFAULT_STORE_FAIL	./context/reducers/storesReducer.js	/^  GET_DEFAULT_STORE_FAIL,$/;"	V
+GET_DEFAULT_STORE_LOADING	./constants/actionTypes.js	/^export const GET_DEFAULT_STORE_LOADING = 'GET_DEFAULT_STORE_LOADING';$/;"	E
+GET_DEFAULT_STORE_LOADING	./context/actions/getDefaultStore.js	/^  GET_DEFAULT_STORE_LOADING,$/;"	V
+GET_DEFAULT_STORE_LOADING	./context/reducers/storesReducer.js	/^  GET_DEFAULT_STORE_LOADING,$/;"	V
+GET_DEFAULT_STORE_SUCCESS	./constants/actionTypes.js	/^export const GET_DEFAULT_STORE_SUCCESS = 'GET_DEFAULT_STORE_SUCCESS';$/;"	E
+GET_DEFAULT_STORE_SUCCESS	./context/actions/getDefaultStore.js	/^  GET_DEFAULT_STORE_SUCCESS,$/;"	V
+GET_DEFAULT_STORE_SUCCESS	./context/reducers/storesReducer.js	/^  GET_DEFAULT_STORE_SUCCESS,$/;"	V
+GET_ORDERITEMS_FAIL	./constants/actionTypes.js	/^export const GET_ORDERITEMS_FAIL = 'GET_ORDERITEMS_FAIL';$/;"	E
+GET_ORDERITEMS_FAIL	./context/actions/getOrderItems.js	/^  GET_ORDERITEMS_FAIL,$/;"	V
+GET_ORDERITEMS_FAIL	./context/reducers/orderItemsReducer.js	/^  GET_ORDERITEMS_FAIL,$/;"	V
+GET_ORDERITEMS_LOADING	./constants/actionTypes.js	/^export const GET_ORDERITEMS_LOADING = 'GET_ORDERITEMS_LOADING';$/;"	E
+GET_ORDERITEMS_LOADING	./context/actions/getOrderItems.js	/^  GET_ORDERITEMS_LOADING,$/;"	V
+GET_ORDERITEMS_LOADING	./context/reducers/orderItemsReducer.js	/^  GET_ORDERITEMS_LOADING,$/;"	V
+GET_ORDERITEMS_SUCCESS	./constants/actionTypes.js	/^export const GET_ORDERITEMS_SUCCESS = 'GET_ORDERITEMS_SUCCESS';$/;"	E
+GET_ORDERITEMS_SUCCESS	./context/actions/getOrderItems.js	/^  GET_ORDERITEMS_SUCCESS,$/;"	V
+GET_ORDERITEMS_SUCCESS	./context/reducers/orderItemsReducer.js	/^  GET_ORDERITEMS_SUCCESS,$/;"	V
+GET_ORDERS_FAIL	./constants/actionTypes.js	/^export const GET_ORDERS_FAIL = 'GET_ORDERS_FAIL';$/;"	E
+GET_ORDERS_FAIL	./context/actions/getOrders.js	/^  GET_ORDERS_FAIL,$/;"	V
+GET_ORDERS_FAIL	./context/reducers/ordersReducer.js	/^  GET_ORDERS_FAIL,$/;"	V
+GET_ORDERS_LOADING	./constants/actionTypes.js	/^export const GET_ORDERS_LOADING = 'GET_ORDERS_LOADING';$/;"	E
+GET_ORDERS_LOADING	./context/actions/getOrders.js	/^  GET_ORDERS_LOADING,$/;"	V
+GET_ORDERS_LOADING	./context/reducers/ordersReducer.js	/^  GET_ORDERS_LOADING,$/;"	V
+GET_ORDERS_SUCCESS	./constants/actionTypes.js	/^export const GET_ORDERS_SUCCESS = 'GET_ORDERS_SUCCESS';$/;"	E
+GET_ORDERS_SUCCESS	./context/actions/getOrders.js	/^  GET_ORDERS_SUCCESS,$/;"	V
+GET_ORDERS_SUCCESS	./context/reducers/ordersReducer.js	/^  GET_ORDERS_SUCCESS,$/;"	V
+GET_STORES_FAIL	./constants/actionTypes.js	/^export const GET_STORES_FAIL = 'GET_STORES_FAIL';$/;"	E
+GET_STORES_FAIL	./context/actions/getStores.js	/^  GET_STORES_FAIL,$/;"	V
+GET_STORES_FAIL	./context/reducers/storesReducer.js	/^  GET_STORES_FAIL,$/;"	V
+GET_STORES_LOADING	./constants/actionTypes.js	/^export const GET_STORES_LOADING = 'GET_STORES_LOADING';$/;"	E
+GET_STORES_LOADING	./context/actions/getStores.js	/^  GET_STORES_LOADING,$/;"	V
+GET_STORES_LOADING	./context/reducers/storesReducer.js	/^  GET_STORES_LOADING,$/;"	V
+GET_STORES_SUCCESS	./constants/actionTypes.js	/^export const GET_STORES_SUCCESS = 'GET_STORES_SUCCESS';$/;"	E
+GET_STORES_SUCCESS	./context/actions/getStores.js	/^  GET_STORES_SUCCESS,$/;"	V
+GET_STORES_SUCCESS	./context/reducers/storesReducer.js	/^  GET_STORES_SUCCESS,$/;"	V
+GET_USER_DETAILS_FAIL	./constants/actionTypes.js	/^export const GET_USER_DETAILS_FAIL = 'GET_USER_DETAILS_FAIL';$/;"	E
+GET_USER_DETAILS_FAIL	./context/actions/auth/getUserDetails.js	/^  GET_USER_DETAILS_FAIL,$/;"	V
+GET_USER_DETAILS_FAIL	./context/reducers/AuthReducer.js	/^  GET_USER_DETAILS_FAIL,$/;"	V
+GET_USER_DETAILS_LOADING	./constants/actionTypes.js	/^export const GET_USER_DETAILS_LOADING = 'GET_USER_DETAILS_LOADING';$/;"	E
+GET_USER_DETAILS_LOADING	./context/actions/auth/getUserDetails.js	/^  GET_USER_DETAILS_LOADING,$/;"	V
+GET_USER_DETAILS_LOADING	./context/reducers/AuthReducer.js	/^  GET_USER_DETAILS_LOADING,$/;"	V
+GET_USER_DETAILS_SUCCESS	./constants/actionTypes.js	/^export const GET_USER_DETAILS_SUCCESS = 'GET_USER_DETAILS_SUCCESS';$/;"	E
+GET_USER_DETAILS_SUCCESS	./context/actions/auth/getUserDetails.js	/^  GET_USER_DETAILS_SUCCESS,$/;"	V
+GET_USER_DETAILS_SUCCESS	./context/reducers/AuthReducer.js	/^  GET_USER_DETAILS_SUCCESS,$/;"	V
+GlobalProvider	./context/Provider.js	/^const GlobalProvider = ({children}) => {$/;"	F
+HOME_NAVIGATOR	./constants/routeNames.js	/^export const HOME_NAVIGATOR = 'Home';$/;"	E
+HomeNavigator	./navigations/HomeNavigator.js	/^const HomeNavigator = ({navigation}) => {$/;"	F
+Icon	./components/common/Icon/index.js	/^const Icon = ({type, ...props}) => {$/;"	F
+Image	./components/OrderStatus/index.js	/^  Image,$/;"	V
+Image	./components/Rewards/index.js	/^  Image,$/;"	V
+Image	./navigations/SideMenu/index.js	/^  Image,$/;"	V
+ImageBackground	./components/AllOrders/index.js	/^  ImageBackground,$/;"	V
+LOGOUT_FAIL	./constants/actionTypes.js	/^export const LOGOUT_FAIL = 'LOGOUT_FAIL';$/;"	E
+LOGOUT_FAIL	./context/actions/auth/logOut.js	/^  LOGOUT_FAIL,$/;"	V
+LOGOUT_FAIL	./context/reducers/AuthReducer.js	/^  LOGOUT_FAIL,$/;"	V
+LOGOUT_LOADING	./constants/actionTypes.js	/^export const LOGOUT_LOADING = 'LOGOUT_LOADING';$/;"	E
+LOGOUT_LOADING	./context/actions/auth/logOut.js	/^  LOGOUT_LOADING,$/;"	V
+LOGOUT_LOADING	./context/reducers/AuthReducer.js	/^  LOGOUT_LOADING,$/;"	V
+LOGOUT_SUCCESS	./constants/actionTypes.js	/^export const LOGOUT_SUCCESS = 'LOGOUT_SUCCESS';$/;"	E
+LOGOUT_SUCCESS	./context/actions/auth/logOut.js	/^  LOGOUT_SUCCESS,$/;"	V
+LOGOUT_SUCCESS	./context/reducers/AuthReducer.js	/^  LOGOUT_SUCCESS,$/;"	V
+Linking	./components/NewOrder/Grocery/index.js	/^  Linking,$/;"	V
+Linking	./components/NewOrder/Medicine/index.js	/^  Linking,$/;"	V
+Linking	./components/OrderItems/index.js	/^  Linking,$/;"	V
+Linking	./components/Stores/index.js	/^  Linking,$/;"	V
+Linking	./navigations/SideMenu/index.js	/^  Linking,$/;"	V
+ListEmptyComponent	./components/ChooseStore/index.js	/^  const ListEmptyComponent = () => {$/;"	F
+ListEmptyComponent	./components/NewOrder/Grocery/index.js	/^  const ListEmptyComponent = () => {$/;"	F
+ListEmptyComponent	./components/NewOrder/Medicine/index.js	/^  const ListEmptyComponent = () => {$/;"	F
+ListEmptyComponent	./components/OrderItems/index.js	/^  const ListEmptyComponent = () => {$/;"	F
+ListEmptyComponent	./components/Stores/index.js	/^  const ListEmptyComponent = () => {$/;"	F
+ListFooterComponent	./components/ChooseStore/index.js	/^  const ListFooterComponent = () => {$/;"	F
+ListFooterComponent	./components/Stores/index.js	/^  const ListFooterComponent = () => {$/;"	F
+ListFooterComponent	./components/common/ListFooter/index.js	/^const ListFooterComponent = () => {$/;"	F
+ListFooterComponent	./components/common/ListFooter/styles.js	/^  ListFooterComponent: {$/;"	P
+ListHeaderComponent	./components/AllOrders/index.js	/^  const ListHeaderComponent = () => {$/;"	F
+ListHeaderComponent	./components/NewOrder/Grocery/index.js	/^  const ListHeaderComponent = () => {$/;"	F
+ListHeaderComponent	./components/NewOrder/Medicine/index.js	/^  const ListHeaderComponent = () => {$/;"	F
+ListHeaderComponent	./components/OrderItems/index.js	/^  const ListHeaderComponent = () => {$/;"	F
+ListItemSeparatorComponent	./components/common/ListItemSeparator/index.js	/^const ListItemSeparatorComponent = () => {$/;"	F
+ListItemSeparatorComponent	./components/common/ListItemSeparator/styles.js	/^  ListItemSeparatorComponent: {$/;"	P
+ListItemSeparatorComponentThick	./components/common/ListItemSeparatorThick/index.js	/^const ListItemSeparatorComponentThick = () => {$/;"	F
+ListItemSeparatorComponentThick	./components/common/ListItemSeparatorThick/styles.js	/^  ListItemSeparatorComponentThick: {$/;"	P
+Loading	./components/LoadingView/index.js	/^          Loading$/;"	V
+LoadingProfile	./components/Auth/LoadingProfile/index.js	/^export default function LoadingProfile() {$/;"	E
+LoadingView	./components/LoadingView/index.js	/^const LoadingView = () => {$/;"	F
+LoyaltyCodeForCategory	./components/LoyaltyCodeForCategory/index.js	/^const LoyaltyCodeForCategory = ({$/;"	F
+MakePayment	./components/MakePayment/index.js	/^const MakePayment = ({$/;"	F
+Minutes	./helpers/dateTimeString.js	/^  var Minutes;$/;"	V
+Modal	./components/NameForm/index.js	/^  Modal,$/;"	V
+Modal	./components/ViewItem/index.js	/^  Modal,$/;"	V
+NEWORDER	./constants/routeNames.js	/^export const NEWORDER = 'New Order';$/;"	E
+NEWORDER	./navigations/HomeNavigator.js	/^  NEWORDER,$/;"	V
+NameForm	./components/NameForm/index.js	/^const NameForm = ({$/;"	F
+NavMenuComponent	./components/common/NavMenu/index.js	/^const NavMenuComponent = () => {$/;"	F
+NavMenuPressable	./components/common/NavMenu/index.js	/^const NavMenuPressable = props => {$/;"	F
+NavMenuPressable	./screens/AllOrders/index.js	/^  NavMenuPressable,$/;"	V
+NavMenuPressable	./screens/NewOrder/index.js	/^  NavMenuPressable,$/;"	V
+NavMenuPressable	./screens/Offers/index.js	/^  NavMenuPressable,$/;"	V
+NavMenuPressable	./screens/OrderItems/index.js	/^  NavMenuPressable,$/;"	V
+NavMenuPressable	./screens/OrderStatus/index.js	/^  NavMenuPressable,$/;"	V
+NavMenuPressable	./screens/Profile/index.js	/^  NavMenuPressable,$/;"	V
+NavMenuPressable	./screens/Rewards/index.js	/^  NavMenuPressable,$/;"	V
+NavMenuPressable	./screens/Stores/index.js	/^  NavMenuPressable,$/;"	V
+NewOrder	./screens/NewOrder/index.js	/^const NewOrder = ({navigation}) => {$/;"	F
+NewOrderGrocery	./components/NewOrder/Grocery/index.js	/^const NewOrderGrocery = ({$/;"	F
+NewOrderMedicine	./components/NewOrder/Medicine/index.js	/^const NewOrderMedicine = ({$/;"	F
+OFFERS	./constants/routeNames.js	/^export const OFFERS = 'Offers';$/;"	E
+OFFERS	./navigations/HomeNavigator.js	/^  OFFERS,$/;"	V
+OFFERS	./navigations/SideMenu/index.js	/^  OFFERS,$/;"	V
+ORDERITEMS	./components/Stores/index.js	/^  ORDERITEMS,$/;"	V
+ORDERITEMS	./constants/routeNames.js	/^export const ORDERITEMS = 'Order details';$/;"	E
+ORDERITEMS	./navigations/HomeNavigator.js	/^  ORDERITEMS,$/;"	V
+ORDERITEMS	./navigations/SideMenu/index.js	/^  ORDERITEMS,$/;"	V
+ORDERSTATUS	./constants/routeNames.js	/^export const ORDERSTATUS = 'Order status';$/;"	E
+ORDERSTATUS	./navigations/HomeNavigator.js	/^  ORDERSTATUS,$/;"	V
+Offers	./screens/Offers/index.js	/^const Offers = () => {$/;"	F
+OffersComponent	./components/Offers/index.js	/^const OffersComponent = () => {$/;"	F
+OrderItems	./screens/OrderItems/index.js	/^const OrderItems = ({navigation}) => {$/;"	F
+OrderItemsButtons	./components/NewOrder/Grocery/index.js	/^  const OrderItemsButtons = () => {$/;"	F
+OrderItemsButtons	./components/NewOrder/Medicine/index.js	/^  const OrderItemsButtons = () => {$/;"	F
+OrderItemsButtons	./components/OrderItems/index.js	/^  const OrderItemsButtons = () => {$/;"	F
+OrderItemsComponent	./components/OrderItems/index.js	/^const OrderItemsComponent = ({$/;"	F
+OrderScreen	./screens/NewOrder/index.js	/^  let OrderScreen;$/;"	V
+OrderSend	./components/OrderSend/index.js	/^const OrderSend = ({$/;"	F
+OrderStatus	./screens/OrderStatus/index.js	/^const OrderStatus = ({navigation}) => {$/;"	F
+OrderStatusComponent	./components/OrderStatus/index.js	/^const OrderStatusComponent = ({$/;"	F
+OrdersListEmptyComponent	./components/AllOrders/index.js	/^  const OrdersListEmptyComponent = () => {$/;"	F
+PAY_ORDER_FAIL	./constants/actionTypes.js	/^export const PAY_ORDER_FAIL = 'PAY_ORDER_FAIL';$/;"	E
+PAY_ORDER_FAIL	./context/actions/orderPayment.js	/^  PAY_ORDER_FAIL,$/;"	V
+PAY_ORDER_FAIL	./context/reducers/ordersReducer.js	/^  PAY_ORDER_FAIL,$/;"	V
+PAY_ORDER_LOADING	./constants/actionTypes.js	/^export const PAY_ORDER_LOADING = 'PAY_ORDER_LOADING';$/;"	E
+PAY_ORDER_LOADING	./context/actions/orderPayment.js	/^  PAY_ORDER_LOADING,$/;"	V
+PAY_ORDER_LOADING	./context/reducers/ordersReducer.js	/^  PAY_ORDER_LOADING,$/;"	V
+PAY_ORDER_SUCCESS	./constants/actionTypes.js	/^export const PAY_ORDER_SUCCESS = 'PAY_ORDER_SUCCESS';$/;"	E
+PAY_ORDER_SUCCESS	./context/actions/orderPayment.js	/^  PAY_ORDER_SUCCESS,$/;"	V
+PAY_ORDER_SUCCESS	./context/reducers/ordersReducer.js	/^  PAY_ORDER_SUCCESS,$/;"	V
+PHONENUMBER_OTP_SUBMIT_FAIL	./constants/actionTypes.js	/^export const PHONENUMBER_OTP_SUBMIT_FAIL = 'PHONENUMBER_OTP_SUBMIT_FAIL';$/;"	E
+PHONENUMBER_OTP_SUBMIT_FAIL	./context/actions/auth/phoneNumberOtpSubmit.js	/^  PHONENUMBER_OTP_SUBMIT_FAIL,$/;"	V
+PHONENUMBER_OTP_SUBMIT_FAIL	./context/reducers/AuthReducer.js	/^  PHONENUMBER_OTP_SUBMIT_FAIL,$/;"	V
+PHONENUMBER_OTP_SUBMIT_LOADING	./constants/actionTypes.js	/^export const PHONENUMBER_OTP_SUBMIT_LOADING = 'PHONENUMBER_OTP_SUBMIT_LOADING';$/;"	E
+PHONENUMBER_OTP_SUBMIT_LOADING	./context/actions/auth/phoneNumberOtpSubmit.js	/^  PHONENUMBER_OTP_SUBMIT_LOADING,$/;"	V
+PHONENUMBER_OTP_SUBMIT_LOADING	./context/reducers/AuthReducer.js	/^  PHONENUMBER_OTP_SUBMIT_LOADING,$/;"	V
+PHONENUMBER_OTP_SUBMIT_SUCCESS	./constants/actionTypes.js	/^export const PHONENUMBER_OTP_SUBMIT_SUCCESS = 'PHONENUMBER_OTP_SUBMIT_SUCCESS';$/;"	E
+PHONENUMBER_OTP_SUBMIT_SUCCESS	./context/actions/auth/phoneNumberOtpSubmit.js	/^  PHONENUMBER_OTP_SUBMIT_SUCCESS,$/;"	V
+PHONENUMBER_OTP_SUBMIT_SUCCESS	./context/reducers/AuthReducer.js	/^  PHONENUMBER_OTP_SUBMIT_SUCCESS,$/;"	V
+PHONENUMBER_SIGNIN_SUBMIT_FAIL	./constants/actionTypes.js	/^export const PHONENUMBER_SIGNIN_SUBMIT_FAIL = 'PHONENUMBER_SIGNIN_SUBMIT_FAIL';$/;"	E
+PHONENUMBER_SIGNIN_SUBMIT_FAIL	./context/actions/auth/phoneNumberSignInSubmit.js	/^  PHONENUMBER_SIGNIN_SUBMIT_FAIL,$/;"	V
+PHONENUMBER_SIGNIN_SUBMIT_FAIL	./context/reducers/AuthReducer.js	/^  PHONENUMBER_SIGNIN_SUBMIT_FAIL,$/;"	V
+PHONENUMBER_SIGNIN_SUBMIT_LOADING	./constants/actionTypes.js	/^export const PHONENUMBER_SIGNIN_SUBMIT_LOADING =$/;"	E
+PHONENUMBER_SIGNIN_SUBMIT_LOADING	./context/actions/auth/phoneNumberSignInSubmit.js	/^  PHONENUMBER_SIGNIN_SUBMIT_LOADING,$/;"	V
+PHONENUMBER_SIGNIN_SUBMIT_LOADING	./context/reducers/AuthReducer.js	/^  PHONENUMBER_SIGNIN_SUBMIT_LOADING,$/;"	V
+PHONENUMBER_SIGNIN_SUBMIT_SUCCESS	./constants/actionTypes.js	/^export const PHONENUMBER_SIGNIN_SUBMIT_SUCCESS =$/;"	E
+PHONENUMBER_SIGNIN_SUBMIT_SUCCESS	./context/actions/auth/phoneNumberSignInSubmit.js	/^  PHONENUMBER_SIGNIN_SUBMIT_SUCCESS,$/;"	V
+PHONENUMBER_SIGNIN_SUBMIT_SUCCESS	./context/reducers/AuthReducer.js	/^  PHONENUMBER_SIGNIN_SUBMIT_SUCCESS,$/;"	V
+PRIORITIES	./components/Profile/index.OLD.js	/^    PRIORITIES: {HIGH_ACCURACY},$/;"	P
+PROD_BACKEND_URL	./config/env.js	/^  PROD_BACKEND_URL,$/;"	V
+PROD_BACKEND_URL	./config/env.js	/^const PROD_BACKEND_URL = 'http:\/\/192.168.122.242';$/;"	V
+PROFILE	./components/Stores/index.js	/^  PROFILE,$/;"	V
+PROFILE	./constants/routeNames.js	/^export const PROFILE = 'Profile';$/;"	E
+PROFILE	./navigations/HomeNavigator.js	/^  PROFILE,$/;"	V
+PROFILE	./navigations/SideMenu/index.js	/^  PROFILE,$/;"	V
+PhoneNumber	./components/Auth/PhoneNumber/index.js	/^export default function PhoneNumber() {$/;"	E
+Pressable	./components/AllOrders/index.js	/^  Pressable,$/;"	V
+Pressable	./components/NameForm/index.js	/^  Pressable,$/;"	V
+Pressable	./components/NewOrder/Grocery/index.js	/^  Pressable,$/;"	V
+Pressable	./components/NewOrder/Medicine/index.js	/^  Pressable,$/;"	V
+Pressable	./components/OrderItems/index.js	/^  Pressable,$/;"	V
+Pressable	./components/Stores/index.js	/^  Pressable,$/;"	V
+Pressable	./components/ViewItem/index.js	/^  Pressable,$/;"	V
+Profile	./screens/Profile/index.js	/^const Profile = () => {$/;"	F
+ProfileComponent	./components/Profile/index.OLD.js	/^const ProfileComponent = () => {$/;"	F
+ProfileComponent	./components/Profile/index.js	/^const ProfileComponent = () => {$/;"	F
+REWARDS	./components/Stores/index.js	/^  REWARDS,$/;"	V
+REWARDS	./constants/routeNames.js	/^export const REWARDS = 'Rewards';$/;"	E
+REWARDS	./navigations/HomeNavigator.js	/^  REWARDS,$/;"	V
+REWARDS	./navigations/SideMenu/index.js	/^  REWARDS,$/;"	V
+Rewards	./screens/Rewards/index.js	/^const Rewards = () => {$/;"	F
+RewardsComponent	./components/Rewards/index.js	/^const RewardsComponent = () => {$/;"	F
+SEND_ORDER_FAIL	./constants/actionTypes.js	/^export const SEND_ORDER_FAIL = 'SEND_ORDER_FAIL';$/;"	E
+SEND_ORDER_FAIL	./context/actions/sendOrder.js	/^  SEND_ORDER_FAIL,$/;"	V
+SEND_ORDER_FAIL	./context/reducers/ordersReducer.js	/^  SEND_ORDER_FAIL,$/;"	V
+SEND_ORDER_LOADING	./constants/actionTypes.js	/^export const SEND_ORDER_LOADING = 'SEND_ORDER_LOADING';$/;"	E
+SEND_ORDER_LOADING	./context/actions/sendOrder.js	/^  SEND_ORDER_LOADING,$/;"	V
+SEND_ORDER_LOADING	./context/reducers/ordersReducer.js	/^  SEND_ORDER_LOADING,$/;"	V
+SEND_ORDER_SUCCESS	./constants/actionTypes.js	/^export const SEND_ORDER_SUCCESS = 'SEND_ORDER_SUCCESS';$/;"	E
+SEND_ORDER_SUCCESS	./context/actions/sendOrder.js	/^  SEND_ORDER_SUCCESS,$/;"	V
+SEND_ORDER_SUCCESS	./context/reducers/ordersReducer.js	/^  SEND_ORDER_SUCCESS,$/;"	V
+STORES	./constants/routeNames.js	/^export const STORES = 'Stores';$/;"	E
+STORES	./navigations/HomeNavigator.js	/^  STORES,$/;"	V
+STORES	./navigations/SideMenu/index.js	/^  STORES,$/;"	V
+SafeAreaView	./navigations/SideMenu/index.js	/^  SafeAreaView,$/;"	V
+ScrollView	./components/NameForm/index.js	/^  ScrollView,$/;"	V
+ScrollView	./components/OrderStatus/index.js	/^  ScrollView,$/;"	V
+ScrollView	./components/Rewards/index.js	/^  ScrollView,$/;"	V
+ScrollView	./components/ViewItem/index.js	/^  ScrollView,$/;"	V
+ScrollView	./navigations/SideMenu/index.js	/^  ScrollView,$/;"	V
+SideMenu	./navigations/SideMenu/index.js	/^const SideMenu = ({navigation}) => {$/;"	F
+Status	./components/AllOrders/index.js	/^                Status:{' '}$/;"	P
+Status	./components/NewOrder/Grocery/index.js	/^              Status:{' '}$/;"	P
+Status	./components/NewOrder/Medicine/index.js	/^              Status:{' '}$/;"	P
+Status	./components/OrderItems/index.js	/^              Status:{' '}$/;"	P
+Store	./components/AllOrders/index.js	/^                    Store:{' '}$/;"	P
+Store	./components/NewOrder/Grocery/index.js	/^                  Store:{' '}$/;"	P
+Store	./components/NewOrder/Medicine/index.js	/^                  Store:{' '}$/;"	P
+Store	./components/OrderItems/index.js	/^                  Store:{' '}$/;"	P
+Stores	./screens/Stores/index.js	/^const Stores = ({navigation}) => {$/;"	F
+StoresComponent	./components/Stores/index.js	/^const StoresComponent = ({storesLoading, storesData, orderId}) => {$/;"	F
+StyleSheet	./components/OrderStatus/index.js	/^  StyleSheet,$/;"	V
+StyleSheet	./components/Rewards/index.js	/^  StyleSheet,$/;"	V
+TODO	./components/Auth/LoadingProfile/index.js	/^  \/\/TODO --------------$/;"	T
+TODO	./components/OrderItems/index.js	/^  \/\/TODO \/ TOTEST$/;"	T
+TODO	./screens/OrderItems/index.js	/^  \/\/TODO \/ TOTEST:$/;"	T
+Text	./components/AllOrders/index.js	/^  Text,$/;"	V
+Text	./components/NameForm/index.js	/^  Text,$/;"	V
+Text	./components/NewOrder/Grocery/index.js	/^  Text,$/;"	V
+Text	./components/NewOrder/Medicine/index.js	/^  Text,$/;"	V
+Text	./components/OrderItems/index.js	/^  Text,$/;"	V
+Text	./components/OrderStatus/index.js	/^  Text,$/;"	V
+Text	./components/Rewards/index.js	/^  Text,$/;"	V
+Text	./components/Stores/index.js	/^  Text,$/;"	V
+Text	./components/ViewItem/index.js	/^  Text,$/;"	V
+Text	./navigations/SideMenu/index.js	/^  Text,$/;"	V
+TouchableOpacity	./components/NewOrder/Grocery/index.js	/^  TouchableOpacity,$/;"	V
+TouchableOpacity	./components/NewOrder/Medicine/index.js	/^  TouchableOpacity,$/;"	V
+TouchableOpacity	./components/OrderItems/index.js	/^  TouchableOpacity,$/;"	V
+TouchableOpacity	./components/OrderStatus/index.js	/^  TouchableOpacity,$/;"	V
+TouchableOpacity	./components/Rewards/index.js	/^  TouchableOpacity,$/;"	V
+TouchableOpacity	./components/Stores/index.js	/^  TouchableOpacity,$/;"	V
+TouchableOpacity	./navigations/SideMenu/index.js	/^  TouchableOpacity,$/;"	V
+USER_ADDRESS_UPDATE_FAIL	./constants/actionTypes.js	/^export const USER_ADDRESS_UPDATE_FAIL = 'USER_ADDRESS_UPDATE_FAIL';$/;"	E
+USER_ADDRESS_UPDATE_FAIL	./context/actions/auth/userAddressUpdate.js	/^  USER_ADDRESS_UPDATE_FAIL,$/;"	V
+USER_ADDRESS_UPDATE_FAIL	./context/reducers/AuthReducer.js	/^  USER_ADDRESS_UPDATE_FAIL,$/;"	V
+USER_ADDRESS_UPDATE_LOADING	./constants/actionTypes.js	/^export const USER_ADDRESS_UPDATE_LOADING = 'USER_ADDRESS_UPDATE_LOADING';$/;"	E
+USER_ADDRESS_UPDATE_LOADING	./context/actions/auth/userAddressUpdate.js	/^  USER_ADDRESS_UPDATE_LOADING,$/;"	V
+USER_ADDRESS_UPDATE_LOADING	./context/reducers/AuthReducer.js	/^  USER_ADDRESS_UPDATE_LOADING,$/;"	V
+USER_ADDRESS_UPDATE_SUCCESS	./constants/actionTypes.js	/^export const USER_ADDRESS_UPDATE_SUCCESS = 'USER_ADDRESS_UPDATE_SUCCESS';$/;"	E
+USER_ADDRESS_UPDATE_SUCCESS	./context/actions/auth/userAddressUpdate.js	/^  USER_ADDRESS_UPDATE_SUCCESS,$/;"	V
+USER_ADDRESS_UPDATE_SUCCESS	./context/reducers/AuthReducer.js	/^  USER_ADDRESS_UPDATE_SUCCESS,$/;"	V
+USER_NAME_UPDATE_FAIL	./constants/actionTypes.js	/^export const USER_NAME_UPDATE_FAIL = 'USER_NAME_UPDATE_FAIL';$/;"	E
+USER_NAME_UPDATE_FAIL	./context/actions/auth/userNameUpdate.js	/^  USER_NAME_UPDATE_FAIL,$/;"	V
+USER_NAME_UPDATE_FAIL	./context/reducers/AuthReducer.js	/^  USER_NAME_UPDATE_FAIL,$/;"	V
+USER_NAME_UPDATE_LOADING	./constants/actionTypes.js	/^export const USER_NAME_UPDATE_LOADING = 'USER_NAME_UPDATE_LOADING';$/;"	E
+USER_NAME_UPDATE_LOADING	./context/actions/auth/userNameUpdate.js	/^  USER_NAME_UPDATE_LOADING,$/;"	V
+USER_NAME_UPDATE_LOADING	./context/reducers/AuthReducer.js	/^  USER_NAME_UPDATE_LOADING,$/;"	V
+USER_NAME_UPDATE_SUCCESS	./constants/actionTypes.js	/^export const USER_NAME_UPDATE_SUCCESS = 'USER_NAME_UPDATE_SUCCESS';$/;"	E
+USER_NAME_UPDATE_SUCCESS	./context/actions/auth/userNameUpdate.js	/^  USER_NAME_UPDATE_SUCCESS,$/;"	V
+USER_NAME_UPDATE_SUCCESS	./context/reducers/AuthReducer.js	/^  USER_NAME_UPDATE_SUCCESS,$/;"	V
+VerifyOtp	./components/Auth/VerifyOtp/index.js	/^export default function VerifyOtp() {$/;"	E
+View	./components/AllOrders/index.js	/^  View,$/;"	V
+View	./components/NameForm/index.js	/^  View,$/;"	V
+View	./components/NewOrder/Grocery/index.js	/^  View,$/;"	V
+View	./components/NewOrder/Medicine/index.js	/^  View,$/;"	V
+View	./components/OrderItems/index.js	/^  View,$/;"	V
+View	./components/OrderStatus/index.js	/^  View,$/;"	V
+View	./components/Rewards/index.js	/^  View,$/;"	V
+View	./components/Stores/index.js	/^  View,$/;"	V
+View	./components/ViewItem/index.js	/^  View,$/;"	V
+View	./navigations/SideMenu/index.js	/^  View,$/;"	V
+ViewItem	./components/ViewItem/index.js	/^const ViewItem = ({$/;"	F
+accuracy	./components/Profile/index.js	/^        accuracy: accuracy,$/;"	P
+activityIndicator	./components/LoadingView/styles.js	/^  activityIndicator: {$/;"	P
+activityIndicator	./components/common/CustomButton/styles.js	/^  activityIndicator: {$/;"	P
+activityIndicator	./components/common/CustomButtonMedium/styles.js	/^  activityIndicator: {$/;"	P
+activityIndicator	./components/common/CustomButtonSmall/styles.js	/^  activityIndicator: {$/;"	P
+addOrder	./context/actions/addOrder.js	/^const addOrder = () => dispatch => onSuccess => {$/;"	F
+addOrder	./context/initialStates/ordersInitialState.js	/^  addOrder: {$/;"	P
+addOrder	./context/reducers/ordersReducer.js	/^        addOrder: {$/;"	P
+addOrderItem	./context/initialStates/orderItemsInitialState.js	/^  addOrderItem: {$/;"	P
+addOrderItem	./context/reducers/orderItemsReducer.js	/^        addOrderItem: {$/;"	P
+addOrderPressed	./components/AllOrders/index.js	/^  const addOrderPressed = () => {$/;"	F
+addressComponent	./components/Profile/index.js	/^          addressComponent: addressComponent,$/;"	P
+addressLine1	./context/initialStates/authInitialState.js	/^  addressLine1: null,$/;"	P
+addressLine1	./context/reducers/AuthReducer.js	/^        addressLine1: null,$/;"	P
+addressLine2	./components/AddressForm/index.js	/^                addressLine2: geoAddressLine2,$/;"	P
+addressLine2	./components/AddressForm/index.js	/^    addressLine2: yup$/;"	P
+addressLine2	./context/initialStates/authInitialState.js	/^  addressLine2: null,$/;"	P
+addressLine2	./context/reducers/AuthReducer.js	/^        addressLine2: null,$/;"	P
+addressLog	./helpers/geoHelpers.js	/^const addressLog = addressComponent => {$/;"	F
+addressString	./components/AddressForm/index.js	/^    var addressString = ($/;"	F
+addressString	./components/Profile/index.OLD.js	/^            addressString,$/;"	V
+addressString	./components/Profile/index.OLD.js	/^      var addressString = '3A Rustombagh main road s r layout bangalore 560017';$/;"	V
+address_line1	./components/ChooseStore/index.js	/^      address_line1: addressLine1,$/;"	P
+address_line1	./components/NewOrder/Grocery/index.js	/^    address_line1: chosenAddressLine1,$/;"	P
+address_line1	./components/NewOrder/Medicine/index.js	/^    address_line1: chosenAddressLine1,$/;"	P
+address_line1	./components/OrderItems/index.js	/^    address_line1: chosenAddressLine1,$/;"	P
+address_line1	./components/Stores/index.js	/^      address_line1: addressLine1,$/;"	P
+address_line2	./components/ChooseStore/index.js	/^      address_line2: addressLine2,$/;"	P
+address_line2	./components/NewOrder/Grocery/index.js	/^    address_line2: chosenAddressLine2,$/;"	P
+address_line2	./components/NewOrder/Medicine/index.js	/^    address_line2: chosenAddressLine2,$/;"	P
+address_line2	./components/OrderItems/index.js	/^    address_line2: chosenAddressLine2,$/;"	P
+address_line2	./components/Stores/index.js	/^      address_line2: addressLine2,$/;"	P
+amount	./context/actions/orderPayment.js	/^        amount: total,$/;"	P
+android	./components/Profile/index.OLD.js	/^          android: {$/;"	P
+android	./components/Profile/index.OLD.js	/^        android: {$/;"	P
+authDispatch	./components/AddressForm/index.js	/^          authDispatch,$/;"	V
+authDispatch	./components/AddressForm/index.js	/^  const {authState, authDispatch} = useContext(GlobalContext);$/;"	V
+authDispatch	./components/Auth/LoadingProfile/index.js	/^  const {authDispatch, authState} = useContext(GlobalContext);$/;"	V
+authDispatch	./components/Auth/PhoneNumber/index.js	/^  const {authDispatch, authState} = useContext(GlobalContext);$/;"	V
+authDispatch	./components/Auth/VerifyOtp/index.js	/^  const {authDispatch, authState} = useContext(GlobalContext);$/;"	V
+authDispatch	./components/LoyaltyCodeForCategory/index.js	/^  const {authState, authDispatch} = useContext(GlobalContext);$/;"	V
+authDispatch	./components/NameForm/index.js	/^  const {authState, authDispatch} = useContext(GlobalContext);$/;"	V
+authDispatch	./components/Profile/index.OLD.js	/^  const {authDispatch, authState} = useContext(GlobalContext);$/;"	V
+authDispatch	./components/Profile/index.js	/^  const {authDispatch, authState} = useContext(GlobalContext);$/;"	V
+authDispatch	./context/Provider.js	/^        authDispatch,$/;"	V
+authDispatch	./context/Provider.js	/^  const [authState, authDispatch] = useReducer(authReducer, authInitialState);$/;"	V
+authDispatch	./screens/Profile/index.js	/^  const {authDispatch, authState} = useContext(GlobalContext);$/;"	V
+authReducer	./context/reducers/AuthReducer.js	/^const authReducer = (state, {type, payload}) => {$/;"	F
+authState	./components/AddressForm/index.js	/^  const {authState, authDispatch} = useContext(GlobalContext);$/;"	V
+authState	./components/AllOrders/index.js	/^  const {ordersDispatch, ordersState, authState} = useContext(GlobalContext);$/;"	V
+authState	./components/Auth/LoadingProfile/index.js	/^  const {authDispatch, authState} = useContext(GlobalContext);$/;"	V
+authState	./components/Auth/PhoneNumber/index.js	/^  const {authDispatch, authState} = useContext(GlobalContext);$/;"	V
+authState	./components/Auth/VerifyOtp/index.js	/^  const {authDispatch, authState} = useContext(GlobalContext);$/;"	V
+authState	./components/ChooseCategory/index.js	/^  const {authState} = useContext(GlobalContext);$/;"	V
+authState	./components/ChooseStore/index.js	/^  const {authState} = useContext(GlobalContext);$/;"	V
+authState	./components/LoyaltyCodeForCategory/index.js	/^  const {authState, authDispatch} = useContext(GlobalContext);$/;"	V
+authState	./components/NameForm/index.js	/^  const {authState, authDispatch} = useContext(GlobalContext);$/;"	V
+authState	./components/Profile/index.OLD.js	/^  const {authDispatch, authState} = useContext(GlobalContext);$/;"	V
+authState	./components/Profile/index.js	/^  const {authDispatch, authState} = useContext(GlobalContext);$/;"	V
+authState	./components/Stores/index.js	/^  const {authState} = useContext(GlobalContext);$/;"	V
+authState	./context/Provider.js	/^        authState,$/;"	V
+authState	./context/Provider.js	/^  const [authState, authDispatch] = useReducer(authReducer, authInitialState);$/;"	V
+authState	./navigations/index.js	/^  const {authState} = useContext(GlobalContext);$/;"	V
+authState	./screens/Profile/index.js	/^  const {authDispatch, authState} = useContext(GlobalContext);$/;"	V
+authState	./screens/Stores/index.js	/^  const {authState} = useContext(GlobalContext);$/;"	V
+authenticated	./screens/Profile/index.js	/^  const [authenticated, setAuthenticated] = useState(false);$/;"	V
+autoFocus	./components/Auth/PhoneNumber/index.js	/^            autoFocus$/;"	V
+autoFocus	./components/Auth/VerifyOtp/index.js	/^            autoFocus$/;"	V
+availabilityInfo	./components/NewOrder/Grocery/styles.js	/^  availabilityInfo: {$/;"	P
+availabilityInfo	./components/NewOrder/Medicine/styles.js	/^  availabilityInfo: {$/;"	P
+availabilityInfo	./components/OrderItems/styles.js	/^  availabilityInfo: {$/;"	P
+available	./components/NewOrder/Grocery/index.js	/^      available: itemAvailable,$/;"	P
+available	./components/NewOrder/Medicine/index.js	/^      available: itemAvailable,$/;"	P
+available	./components/OrderItems/index.js	/^      available: itemAvailable,$/;"	P
+available	./components/ViewItem/index.js	/^    available: orderItemAvailable,$/;"	P
+available	./context/actions/addOrderItem.js	/^              available: null,$/;"	P
+availablityUpdate	./components/ChooseCategory/index.js	/^  const availablityUpdate = category => {$/;"	F
+avatar	./components/common/Avatar/index.js	/^  avatar: {$/;"	P
+axiosInstance	./context/actions/addOrder.js	/^  axiosInstance$/;"	V
+axiosInstance	./context/actions/addOrderItem.js	/^    axiosInstance$/;"	V
+axiosInstance	./context/actions/auth/addLoyaltyCode.js	/^    axiosInstance$/;"	V
+axiosInstance	./context/actions/auth/credUpdate.js	/^    axiosInstance$/;"	V
+axiosInstance	./context/actions/auth/getUserDetails.js	/^  axiosInstance$/;"	V
+axiosInstance	./context/actions/auth/userAddressUpdate.js	/^    axiosInstance$/;"	V
+axiosInstance	./context/actions/auth/userNameUpdate.js	/^    axiosInstance$/;"	V
+axiosInstance	./context/actions/deleteOrder.js	/^    axiosInstance$/;"	V
+axiosInstance	./context/actions/deleteOrderItem.js	/^    axiosInstance$/;"	V
+axiosInstance	./context/actions/getDefaultStore.js	/^  axiosInstance$/;"	V
+axiosInstance	./context/actions/getOrderItems.js	/^  axiosInstance$/;"	V
+axiosInstance	./context/actions/getOrders.js	/^  axiosInstance$/;"	V
+axiosInstance	./context/actions/getStores.js	/^  axiosInstance$/;"	V
+axiosInstance	./context/actions/orderPayment.js	/^    axiosInstance$/;"	V
+axiosInstance	./context/actions/sendOrder.js	/^    axiosInstance$/;"	V
+backgroundColor	./components/AllOrders/index.js	/^            backgroundColor: orderColorCode,$/;"	P
+backgroundColor	./components/common/CustomButton/index.js	/^  backgroundColor,$/;"	V
+backgroundColor	./components/common/CustomButtonMedium/index.js	/^  backgroundColor,$/;"	V
+backgroundColor	./components/common/CustomButtonSmall/index.js	/^  backgroundColor,$/;"	V
+bodyText	./components/Profile/styles.js	/^  bodyText: {$/;"	P
+button	./components/Auth/PhoneNumber/styles.js	/^  button: {},$/;"	P
+button	./components/Auth/VerifyOtp/styles.js	/^  button: {},$/;"	P
+button	./components/ChooseStore/styles.js	/^  button: {$/;"	P
+button	./components/NewOrder/Grocery/styles.js	/^  button: {$/;"	P
+button	./components/NewOrder/Medicine/styles.js	/^  button: {$/;"	P
+button	./components/OrderItems/styles.js	/^  button: {$/;"	P
+button	./components/Profile/styles.js	/^  button: {$/;"	P
+button	./components/Stores/styles.js	/^  button: {$/;"	P
+button	./components/common/FloatingCenterButton/styles.js	/^  button: {$/;"	P
+button	./components/common/FloatingLeftButton/styles.js	/^  button: {$/;"	P
+button	./components/common/FloatingRightButton/styles.js	/^  button: {$/;"	P
+buttonCircle	./components/common/FloatingCenterButton/styles.js	/^  buttonCircle: {$/;"	P
+buttonCircle	./components/common/FloatingLeftButton/styles.js	/^  buttonCircle: {$/;"	P
+buttonCircle	./components/common/FloatingRightButton/styles.js	/^  buttonCircle: {$/;"	P
+buttonContainer	./components/common/FloatingCenterButton/styles.js	/^  buttonContainer: {$/;"	P
+buttonContainer	./components/common/FloatingLeftButton/styles.js	/^  buttonContainer: {$/;"	P
+buttonContainer	./components/common/FloatingRightButton/styles.js	/^  buttonContainer: {$/;"	P
+buttonIcon	./components/common/FloatingCenterButton/styles.js	/^  buttonIcon: {$/;"	P
+buttonIcon	./components/common/FloatingLeftButton/styles.js	/^  buttonIcon: {$/;"	P
+buttonIcon	./components/common/FloatingRightButton/styles.js	/^  buttonIcon: {$/;"	P
+buttonSection	./components/AddItemModal/Grocery/styles.js	/^  buttonSection: {$/;"	P
+buttonSection	./components/AddItemModal/Medicine/styles.js	/^  buttonSection: {$/;"	P
+buttonSection	./components/AddressForm/styles.js	/^  buttonSection: {$/;"	P
+buttonSection	./components/Auth/PhoneNumber/styles.js	/^  buttonSection: {$/;"	P
+buttonSection	./components/Auth/VerifyOtp/styles.js	/^  buttonSection: {$/;"	P
+buttonSection	./components/ChooseStore/styles.js	/^  buttonSection: {$/;"	P
+buttonSection	./components/LoyaltyCodeForCategory/styles.js	/^  buttonSection: {$/;"	P
+buttonSection	./components/MakePayment/styles.js	/^  buttonSection: {$/;"	P
+buttonSection	./components/NameForm/styles.js	/^  buttonSection: {$/;"	P
+buttonSection	./components/OrderSend/styles.js	/^  buttonSection: {$/;"	P
+buttonSection	./components/OrderStatus/styles.js	/^  buttonSection: {$/;"	P
+buttonSection	./components/Profile/styles.js	/^  buttonSection: {$/;"	P
+buttonSection	./components/Stores/styles.js	/^  buttonSection: {$/;"	P
+buttonSection	./components/ViewItem/styles.js	/^  buttonSection: {$/;"	P
+buttonText	./components/common/CustomButton/styles.js	/^  buttonText: {$/;"	P
+buttonText	./components/common/CustomButtonMedium/styles.js	/^  buttonText: {$/;"	P
+buttonText	./components/common/CustomButtonSmall/styles.js	/^  buttonText: {$/;"	P
+buttonText	./components/common/FloatingCenterButton/index.js	/^  buttonText,$/;"	V
+buttonText	./components/common/FloatingCenterButton/styles.js	/^  buttonText: {$/;"	P
+buttonText	./components/common/FloatingLeftButton/index.js	/^  buttonText,$/;"	V
+buttonText	./components/common/FloatingLeftButton/styles.js	/^  buttonText: {$/;"	P
+buttonText	./components/common/FloatingRightButton/index.js	/^  buttonText,$/;"	V
+buttonText	./components/common/FloatingRightButton/styles.js	/^  buttonText: {$/;"	P
+buttonTextContainer	./components/common/FloatingCenterButton/styles.js	/^  buttonTextContainer: {$/;"	P
+buttonTextContainer	./components/common/FloatingLeftButton/styles.js	/^  buttonTextContainer: {$/;"	P
+buttonTextContainer	./components/common/FloatingRightButton/styles.js	/^  buttonTextContainer: {$/;"	P
+buttonWithText	./components/ChooseStore/styles.js	/^  buttonWithText: {$/;"	P
+buttonWithText	./components/Stores/styles.js	/^  buttonWithText: {$/;"	P
+buttons	./components/OrderItems/index.js	/^          buttons = ($/;"	M
+buttons	./components/OrderItems/index.js	/^        buttons = ($/;"	M
+buttons	./components/OrderItems/index.js	/^    var buttons;$/;"	V
+cardStyle	./navigations/HomeNavigator.js	/^        cardStyle: {backgroundColor: colors.color2_4},$/;"	P
+category	./components/ChooseCategory/index.js	/^        category: currentCategory,$/;"	P
+category	./components/ChooseStore/index.js	/^                category: category,$/;"	P
+category	./components/LoyaltyCodeForCategory/index.js	/^              category: category,$/;"	P
+category	./components/LoyaltyCodeForCategory/index.js	/^        category: category,$/;"	P
+category	./components/LoyaltyCodeForCategory/index.js	/^  category,$/;"	V
+category	./context/actions/auth/addLoyaltyCode.js	/^    category,$/;"	V
+checkMark	./components/ChooseStore/styles.js	/^  checkMark: {$/;"	P
+checkMark	./components/NewOrder/Grocery/styles.js	/^  checkMark: {$/;"	P
+checkMark	./components/NewOrder/Medicine/styles.js	/^  checkMark: {$/;"	P
+checkMark	./components/OrderItems/styles.js	/^  checkMark: {$/;"	P
+checkMark	./components/Stores/styles.js	/^  checkMark: {$/;"	P
+choiceComponent	./components/ChooseCategory/index.js	/^    choiceComponent = ($/;"	M
+choiceComponent	./components/ChooseCategory/index.js	/^  let choiceComponent;$/;"	V
+chosenStoreDetails	./components/NewOrder/Grocery/index.js	/^    chosenStoreDetails,$/;"	V
+chosenStoreDetails	./components/NewOrder/Grocery/index.js	/^  chosenStoreDetails,$/;"	V
+chosenStoreDetails	./components/NewOrder/Medicine/index.js	/^    chosenStoreDetails,$/;"	V
+chosenStoreDetails	./components/NewOrder/Medicine/index.js	/^  chosenStoreDetails,$/;"	V
+chosenStoreDetails	./components/OrderItems/index.js	/^  chosenStoreDetails,$/;"	V
+chosenStoreDetails	./screens/OrderItems/index.js	/^    chosenStoreDetails,$/;"	V
+circleColor	./components/common/FloatingCenterButton/index.js	/^  circleColor,$/;"	V
+circleColor	./components/common/FloatingLeftButton/index.js	/^  circleColor,$/;"	V
+circleColor	./components/common/FloatingRightButton/index.js	/^  circleColor,$/;"	V
+city	./components/AddressForm/index.js	/^                city: geoCity,$/;"	P
+city	./components/ChooseStore/index.js	/^      city: city,$/;"	P
+city	./components/NewOrder/Grocery/index.js	/^    city: chosenCity,$/;"	P
+city	./components/NewOrder/Medicine/index.js	/^    city: chosenCity,$/;"	P
+city	./components/OrderItems/index.js	/^    city: chosenCity,$/;"	P
+city	./components/Stores/index.js	/^      city: city,$/;"	P
+city	./context/initialStates/authInitialState.js	/^  city: null,$/;"	P
+city	./context/reducers/AuthReducer.js	/^        city: null,$/;"	P
+closeIcon	./components/common/AppModal/styles.js	/^  closeIcon: {$/;"	P
+code	./components/ChooseCategory/index.js	/^                                      code,$/;"	V
+code	./context/initialStates/authInitialState.js	/^    code: null,$/;"	P
+color	./components/AllOrders/index.js	/^            color: orderColorText,$/;"	P
+columnHeaders	./components/NewOrder/Grocery/styles.js	/^  columnHeaders: {$/;"	P
+columnHeaders	./components/NewOrder/Medicine/styles.js	/^  columnHeaders: {$/;"	P
+columnHeaders	./components/OrderItems/styles.js	/^  columnHeaders: {$/;"	P
+confirmationMethod	./components/Auth/LoadingProfile/index.js	/^  const {confirmationMethod} = authState;$/;"	V
+confirmationMethod	./components/Auth/VerifyOtp/index.js	/^  const {confirmationMethod} = authState;$/;"	V
+confirmationMethod	./context/actions/auth/phoneNumberOtpSubmit.js	/^    confirmationMethod$/;"	V
+confirmationMethod	./context/initialStates/authInitialState.js	/^  confirmationMethod: null,$/;"	P
+confirmationMethod	./context/reducers/AuthReducer.js	/^        confirmationMethod: null,$/;"	P
+confirmationMethod	./context/reducers/AuthReducer.js	/^        confirmationMethod: payload,$/;"	P
+container	./components/ChooseCategory/styles.js	/^  container: {$/;"	P
+container	./components/LoadingView/styles.js	/^  container: {$/;"	P
+container	./components/OrderStatus/styles.js	/^  container: {$/;"	P
+container	./navigations/SideMenu/styles.js	/^  container: {$/;"	P
+credUpdate	./context/initialStates/authInitialState.js	/^  credUpdate: {$/;"	P
+credUpdate	./context/reducers/AuthReducer.js	/^        credUpdate: {$/;"	P
+credUpdate	./screens/Profile/index.js	/^    credUpdate: credUpdateState,$/;"	P
+credUpdated	./context/initialStates/authInitialState.js	/^  credUpdated: false,$/;"	P
+credUpdated	./context/reducers/AuthReducer.js	/^        credUpdated: false,$/;"	P
+credUpdated	./context/reducers/AuthReducer.js	/^        credUpdated: true,$/;"	P
+credUpdated	./navigations/index.js	/^  const {credUpdated} = authState;$/;"	V
+credUpdated	./screens/Profile/index.js	/^    credUpdated,$/;"	V
+cropping	./components/common/Avatar/index.js	/^      cropping: true,$/;"	P
+crossMark	./components/ChooseStore/styles.js	/^  crossMark: {$/;"	P
+crossMark	./components/NewOrder/Grocery/styles.js	/^  crossMark: {$/;"	P
+crossMark	./components/NewOrder/Medicine/styles.js	/^  crossMark: {$/;"	P
+crossMark	./components/OrderItems/styles.js	/^  crossMark: {$/;"	P
+crossMark	./components/Stores/styles.js	/^  crossMark: {$/;"	P
+currentAddress	./components/Profile/index.OLD.js	/^  const [currentAddress, setCurrentAddress] = useState({});$/;"	V
+currentCategory	./components/ChooseCategory/index.js	/^  const [currentCategory, setCurrentCategory] = useState();$/;"	V
+currentCodeNumber	./components/ViewItem/index.js	/^  currentCodeNumber: orderStatusCodeNumber,$/;"	P
+currentItem	./components/NewOrder/Grocery/index.js	/^  const [currentItem, setCurrentItem] = useState({});$/;"	V
+currentItem	./components/NewOrder/Medicine/index.js	/^  const [currentItem, setCurrentItem] = useState({});$/;"	V
+currentItem	./components/OrderItems/index.js	/^  const [currentItem, setCurrentItem] = useState({});$/;"	V
+currentLocation	./components/Profile/index.OLD.js	/^  const [currentLocation, setCurrentLocation] = useState({});$/;"	V
+currentUserName	./components/NameForm/index.js	/^  currentUserName,$/;"	V
+customerId	./components/MakePayment/index.js	/^  customerId,$/;"	V
+customer_note	./components/NewOrder/Grocery/index.js	/^    customer_note: orderComments,$/;"	P
+customer_note	./components/NewOrder/Medicine/index.js	/^    customer_note: orderComments,$/;"	P
+customer_note	./components/OrderItems/index.js	/^    customer_note: orderComments,$/;"	P
+dashboard	./components/AllOrders/styles.js	/^  dashboard: {$/;"	P
+dashboard	./components/ChooseStore/styles.js	/^  dashboard: {$/;"	P
+dashboard	./components/NewOrder/Grocery/styles.js	/^  dashboard: {$/;"	P
+dashboard	./components/NewOrder/Medicine/styles.js	/^  dashboard: {$/;"	P
+dashboard	./components/OrderItems/styles.js	/^  dashboard: {$/;"	P
+dashboard	./components/OrderStatus/styles.js	/^  dashboard: {$/;"	P
+dashboard	./components/Stores/styles.js	/^  dashboard: {$/;"	P
+dashboardButton	./components/NewOrder/Grocery/styles.js	/^  dashboardButton: {$/;"	P
+dashboardButton	./components/NewOrder/Medicine/styles.js	/^  dashboardButton: {$/;"	P
+dashboardButton	./components/OrderItems/styles.js	/^  dashboardButton: {$/;"	P
+dashboardItem	./components/AllOrders/styles.js	/^  dashboardItem: {$/;"	P
+dashboardItem	./components/ChooseStore/styles.js	/^  dashboardItem: {$/;"	P
+dashboardItem	./components/NewOrder/Grocery/styles.js	/^  dashboardItem: {$/;"	P
+dashboardItem	./components/NewOrder/Medicine/styles.js	/^  dashboardItem: {$/;"	P
+dashboardItem	./components/OrderItems/styles.js	/^  dashboardItem: {$/;"	P
+dashboardItem	./components/OrderStatus/styles.js	/^  dashboardItem: {$/;"	P
+dashboardItem	./components/Stores/styles.js	/^  dashboardItem: {$/;"	P
+dashboardItemContent	./components/ChooseStore/styles.js	/^  dashboardItemContent: {$/;"	P
+dashboardItemContent	./components/NewOrder/Grocery/styles.js	/^  dashboardItemContent: {$/;"	P
+dashboardItemContent	./components/NewOrder/Medicine/styles.js	/^  dashboardItemContent: {$/;"	P
+dashboardItemContent	./components/OrderItems/styles.js	/^  dashboardItemContent: {$/;"	P
+dashboardItemContent	./components/Stores/styles.js	/^  dashboardItemContent: {$/;"	P
+dashboardItemContentFreeFlow	./components/NewOrder/Grocery/styles.js	/^  dashboardItemContentFreeFlow: {$/;"	P
+dashboardItemContentFreeFlow	./components/NewOrder/Medicine/styles.js	/^  dashboardItemContentFreeFlow: {$/;"	P
+dashboardItemContentFreeFlow	./components/OrderItems/styles.js	/^  dashboardItemContentFreeFlow: {$/;"	P
+dashboardItemText	./components/AllOrders/styles.js	/^  dashboardItemText: {$/;"	P
+dashboardItemTitle	./components/AllOrders/styles.js	/^  dashboardItemTitle: {$/;"	P
+dashboardItemTitle	./components/ChooseStore/styles.js	/^  dashboardItemTitle: {$/;"	P
+dashboardItemTitle	./components/NewOrder/Grocery/styles.js	/^  dashboardItemTitle: {$/;"	P
+dashboardItemTitle	./components/NewOrder/Medicine/styles.js	/^  dashboardItemTitle: {$/;"	P
+dashboardItemTitle	./components/OrderItems/styles.js	/^  dashboardItemTitle: {$/;"	P
+dashboardItemTitle	./components/Stores/styles.js	/^  dashboardItemTitle: {$/;"	P
+dashboardItemTitleFreeFlow	./components/ChooseStore/styles.js	/^  dashboardItemTitleFreeFlow: {$/;"	P
+dashboardItemTitleFreeFlow	./components/NewOrder/Grocery/styles.js	/^  dashboardItemTitleFreeFlow: {$/;"	P
+dashboardItemTitleFreeFlow	./components/NewOrder/Medicine/styles.js	/^  dashboardItemTitleFreeFlow: {$/;"	P
+dashboardItemTitleFreeFlow	./components/OrderItems/styles.js	/^  dashboardItemTitleFreeFlow: {$/;"	P
+dashboardItemTitleFreeFlow	./components/Stores/styles.js	/^  dashboardItemTitleFreeFlow: {$/;"	P
+dashboardItemTitleItalic	./components/AllOrders/styles.js	/^  dashboardItemTitleItalic: {$/;"	P
+dashboardSubItem	./components/AllOrders/styles.js	/^  dashboardSubItem: {$/;"	P
+dashboardTextDetail	./components/OrderStatus/styles.js	/^  dashboardTextDetail: {$/;"	P
+dashboardTextTitle	./components/OrderStatus/styles.js	/^  dashboardTextTitle: {$/;"	P
+data	./context/initialStates/offersInitialState.js	/^    data: [],$/;"	P
+data	./context/initialStates/orderItemsInitialState.js	/^    data: [],$/;"	P
+data	./context/initialStates/ordersInitialState.js	/^    data: [],$/;"	P
+data	./context/initialStates/profileInitialState.js	/^    data: null,$/;"	P
+data	./context/initialStates/rewardsInitialState.js	/^    data: [],$/;"	P
+data	./context/initialStates/storesInitialState.js	/^    data: [],$/;"	P
+data	./context/reducers/AuthReducer.js	/^          data: [],$/;"	P
+data	./context/reducers/orderItemsReducer.js	/^          data: [...state.getOrderItems.data, payload.newOrderDetails],$/;"	P
+data	./context/reducers/orderItemsReducer.js	/^          data: payload,$/;"	P
+data	./context/reducers/ordersReducer.js	/^          data: [...state.getOrders.data, payload],$/;"	P
+data	./context/reducers/ordersReducer.js	/^          data: payload,$/;"	P
+data	./context/reducers/storesReducer.js	/^          data: payload,$/;"	P
+data	./screens/AllOrders/index.js	/^    data: dataGetOrders,$/;"	P
+data	./screens/NewOrder/index.js	/^    data: dataGetOrderItems,$/;"	P
+data	./screens/OrderItems/index.js	/^    data: dataGetOrderItems,$/;"	P
+dataAllOrders	./components/AllOrders/index.js	/^  dataAllOrders,$/;"	V
+dataOrderItems	./components/NewOrder/Grocery/index.js	/^  dataOrderItems,$/;"	V
+dataOrderItems	./components/NewOrder/Medicine/index.js	/^  dataOrderItems,$/;"	V
+dataOrderItems	./components/OrderItems/index.js	/^  dataOrderItems,$/;"	V
+deleteOrder	./context/initialStates/ordersInitialState.js	/^  deleteOrder: {$/;"	P
+deleteOrder	./context/reducers/ordersReducer.js	/^        deleteOrder: {$/;"	P
+deleteOrderItem	./context/initialStates/orderItemsInitialState.js	/^  deleteOrderItem: {$/;"	P
+deleteOrderItem	./context/reducers/orderItemsReducer.js	/^        deleteOrderItem: {$/;"	P
+description	./components/OrderStatus/styles.js	/^  description: {$/;"	P
+desiredAccuracy	./components/Profile/index.OLD.js	/^  desiredAccuracy: {$/;"	P
+devEnvironmentVariables	./config/env.js	/^const devEnvironmentVariables = {$/;"	O
+disabled	./components/MakePayment/index.js	/^      disabled: true,$/;"	P
+disabled	./components/OrderSend/index.js	/^            disabled: true,$/;"	P
+disabled	./components/common/CustomButton/index.js	/^  disabled,$/;"	V
+disabled	./components/common/CustomButtonMedium/index.js	/^  disabled,$/;"	V
+disabled	./components/common/CustomButtonSmall/index.js	/^  disabled,$/;"	V
+disabled	./components/common/FloatingCenterButton/index.js	/^  disabled,$/;"	V
+disabled	./components/common/FloatingLeftButton/index.js	/^  disabled,$/;"	V
+disabled	./components/common/FloatingRightButton/index.js	/^  disabled,$/;"	V
+emptyContainer	./components/ChooseStore/styles.js	/^  emptyContainer: {$/;"	P
+emptyContainer	./components/Stores/styles.js	/^  emptyContainer: {$/;"	P
+emptyListText	./components/AllOrders/styles.js	/^  emptyListText: {$/;"	P
+emptyListText	./components/ChooseStore/styles.js	/^  emptyListText: {$/;"	P
+emptyListText	./components/NewOrder/Grocery/styles.js	/^  emptyListText: {$/;"	P
+emptyListText	./components/NewOrder/Medicine/styles.js	/^  emptyListText: {$/;"	P
+emptyListText	./components/OrderItems/styles.js	/^  emptyListText: {$/;"	P
+emptyListText	./components/Stores/styles.js	/^  emptyListText: {$/;"	P
+emptyListView	./components/AllOrders/styles.js	/^  emptyListView: {$/;"	P
+emptyListView	./components/ChooseStore/styles.js	/^  emptyListView: {$/;"	P
+emptyListView	./components/NewOrder/Grocery/styles.js	/^  emptyListView: {$/;"	P
+emptyListView	./components/NewOrder/Medicine/styles.js	/^  emptyListView: {$/;"	P
+emptyListView	./components/OrderItems/styles.js	/^  emptyListView: {$/;"	P
+emptyListView	./components/Stores/styles.js	/^  emptyListView: {$/;"	P
+emptySectionText	./components/Profile/styles.js	/^  emptySectionText: {$/;"	P
+emptyText	./components/ChooseStore/styles.js	/^  emptyText: {$/;"	P
+emptyText	./components/Stores/styles.js	/^  emptyText: {$/;"	P
+emptyTextIndicator	./components/ChooseStore/styles.js	/^  emptyTextIndicator: {$/;"	P
+emptyTextIndicator	./components/Stores/styles.js	/^  emptyTextIndicator: {$/;"	P
+enableHighAccuracy	./components/Profile/index.js	/^        enableHighAccuracy: true,$/;"	P
+enterCode	./components/LoyaltyCodeForCategory/index.js	/^  const [enterCode, setEnterCode] = useState(false);$/;"	V
+enterNumber	./components/Auth/PhoneNumber/styles.js	/^  enterNumber: {$/;"	P
+enterNumber	./components/Auth/VerifyOtp/styles.js	/^  enterNumber: {$/;"	P
+enterNumber	./components/Profile/styles.js	/^  enterNumber: {$/;"	P
+error	./components/Auth/LoadingProfile/index.js	/^    error: errorPhoneNumberOtpSubmit,$/;"	P
+error	./components/Auth/PhoneNumber/index.js	/^    error: errorPhoneNumberSignInSubmit,$/;"	P
+error	./components/Auth/VerifyOtp/index.js	/^    error: errorPhoneNumberOtpSubmit,$/;"	P
+error	./components/common/AppTextInput/index.js	/^  error,$/;"	V
+error	./context/initialStates/authInitialState.js	/^    error: null,$/;"	P
+error	./context/initialStates/offersInitialState.js	/^    error: null,$/;"	P
+error	./context/initialStates/orderItemsInitialState.js	/^    error: null,$/;"	P
+error	./context/initialStates/ordersInitialState.js	/^    error: null,$/;"	P
+error	./context/initialStates/profileInitialState.js	/^    error: null,$/;"	P
+error	./context/initialStates/rewardsInitialState.js	/^    error: null,$/;"	P
+error	./context/initialStates/storesInitialState.js	/^    error: null,$/;"	P
+error	./context/reducers/AuthReducer.js	/^          error: null,$/;"	P
+error	./context/reducers/AuthReducer.js	/^          error: payload$/;"	P
+error	./context/reducers/AuthReducer.js	/^          error: payload,$/;"	P
+error	./context/reducers/orderItemsReducer.js	/^          error: null,$/;"	P
+error	./context/reducers/orderItemsReducer.js	/^          error: payload,$/;"	P
+error	./context/reducers/ordersReducer.js	/^          error: null,$/;"	P
+error	./context/reducers/ordersReducer.js	/^          error: payload,$/;"	P
+error	./context/reducers/storesReducer.js	/^          error: null,$/;"	P
+error	./context/reducers/storesReducer.js	/^          error: payload,$/;"	P
+error	./screens/AllOrders/index.js	/^    error: errorGetOrders,$/;"	P
+error	./screens/NewOrder/index.js	/^    error: errorGetOrderItems,$/;"	P
+error	./screens/OrderItems/index.js	/^    error: errorGetOrderItems,$/;"	P
+errorGetOrders	./components/AllOrders/index.js	/^  errorGetOrders,$/;"	V
+errorText	./components/AddressForm/styles.js	/^  errorText: {$/;"	P
+errorText	./components/common/AppTextInput/styles.js	/^  errorText: {$/;"	P
+errors	./components/AddressForm/index.js	/^                errors,$/;"	V
+fastInterval	./components/Profile/index.js	/^      fastInterval: 5000,$/;"	P
+fcmToken	./context/actions/auth/credUpdate.js	/^        fcmToken: fcmToken,$/;"	P
+fcmToken	./context/initialStates/authInitialState.js	/^  fcmToken: null,$/;"	P
+fcmToken	./context/reducers/AuthReducer.js	/^        fcmToken: null,$/;"	P
+fcmToken	./screens/Profile/index.js	/^              fcmToken: fcmToken,$/;"	P
+fcmToken	./screens/Profile/index.js	/^  const [fcmToken, setFcmToken] = useState(null);$/;"	V
+fireBaseUid	./context/actions/auth/credUpdate.js	/^        fireBaseUid: fireBaseUid,$/;"	P
+fireBaseUid	./screens/Profile/index.js	/^              fireBaseUid: fireBaseUid,$/;"	P
+fireBaseUid	./screens/Profile/index.js	/^  const [fireBaseUid, setFireBaseUid] = useState(null);$/;"	V
+firebaseUid	./components/NameForm/index.js	/^  firebaseUid,$/;"	V
+firebaseUid	./context/initialStates/authInitialState.js	/^  firebaseUid: null,$/;"	P
+firebaseUid	./context/reducers/AuthReducer.js	/^        firebaseUid: null,$/;"	P
+flex	./components/AllOrders/styles.js	/^    flex: 6,$/;"	P
+flex	./components/Auth/LoadingProfile/index.js	/^    flex: 1,$/;"	P
+flex	./components/Auth/PhoneNumber/styles.js	/^    flex: 1,$/;"	P
+flex	./components/Auth/VerifyOtp/styles.js	/^    flex: 1,$/;"	P
+flex	./components/ChooseCategory/styles.js	/^    flex: 1,$/;"	P
+flex	./components/ChooseStore/styles.js	/^    flex: 2,$/;"	P
+flex	./components/ChooseStore/styles.js	/^    flex: 3,$/;"	P
+flex	./components/ChooseStore/styles.js	/^    flex: 5,$/;"	P
+flex	./components/ChooseStore/styles.js	/^    flex: 6,$/;"	P
+flex	./components/MakePayment/styles.js	/^    flex: 2,$/;"	P
+flex	./components/MakePayment/styles.js	/^    flex: 7,$/;"	P
+flex	./components/NewOrder/Grocery/styles.js	/^    flex: 1,$/;"	P
+flex	./components/NewOrder/Grocery/styles.js	/^    flex: 3,$/;"	P
+flex	./components/NewOrder/Grocery/styles.js	/^    flex: 5,$/;"	P
+flex	./components/NewOrder/Grocery/styles.js	/^    flex: 7,$/;"	P
+flex	./components/NewOrder/Medicine/styles.js	/^    flex: 1,$/;"	P
+flex	./components/NewOrder/Medicine/styles.js	/^    flex: 3,$/;"	P
+flex	./components/NewOrder/Medicine/styles.js	/^    flex: 5,$/;"	P
+flex	./components/NewOrder/Medicine/styles.js	/^    flex: 7,$/;"	P
+flex	./components/OrderItems/styles.js	/^    flex: 1,$/;"	P
+flex	./components/OrderItems/styles.js	/^    flex: 3,$/;"	P
+flex	./components/OrderItems/styles.js	/^    flex: 5,$/;"	P
+flex	./components/OrderItems/styles.js	/^    flex: 7,$/;"	P
+flex	./components/OrderStatus/styles.js	/^    flex: 1,$/;"	P
+flex	./components/OrderStatus/styles.js	/^    flex: 2,$/;"	P
+flex	./components/OrderStatus/styles.js	/^    flex: 4,$/;"	P
+flex	./components/Profile/styles.js	/^    flex: 1,$/;"	P
+flex	./components/Stores/styles.js	/^    flex: 2,$/;"	P
+flex	./components/Stores/styles.js	/^    flex: 3,$/;"	P
+flex	./components/Stores/styles.js	/^    flex: 5,$/;"	P
+flex	./components/Stores/styles.js	/^    flex: 6,$/;"	P
+flex	./components/ViewItem/styles.js	/^    flex: 3,$/;"	P
+flex	./components/ViewItem/styles.js	/^    flex: 7,$/;"	P
+flex	./components/common/AppModal/styles.js	/^    flex: 1,$/;"	P
+flex	./components/common/AppTextInput/styles.js	/^    flex: 1,$/;"	P
+floatingCenterButton	./components/common/FloatingCenterButton/styles.js	/^  floatingCenterButton: {$/;"	P
+floatingLeftButton	./components/common/FloatingLeftButton/styles.js	/^  floatingLeftButton: {$/;"	P
+floatingRightButton	./components/common/FloatingRightButton/styles.js	/^  floatingRightButton: {$/;"	P
+fontSize	./components/Auth/LoadingProfile/index.js	/^    fontSize: 25,$/;"	P
+fontSize	./navigations/SideMenu/styles.js	/^    fontSize: 25,$/;"	P
+fontSize	./navigations/SideMenu/styles.js	/^    fontSize: 32,$/;"	P
+foo	./context/reducers/AuthReducer.js	/^      const foo = {$/;"	O
+foo	./helpers/orderStatus.js	/^const foo = () => {$/;"	F
+footerSeparator	./components/common/AppModal/styles.js	/^  footerSeparator: {$/;"	P
+forceRequestLocation	./components/Profile/index.js	/^        forceRequestLocation: true,$/;"	P
+formAddAddress	./components/AddressForm/index.js	/^  const [formAddAddress, setFormAddAddress] = useState({});$/;"	V
+formAddItem	./components/AddItemModal/Grocery/index.js	/^  const [formAddItem, setFormAddItem] = useState({});$/;"	V
+formAddItem	./components/AddItemModal/Medicine/index.js	/^  const [formAddItem, setFormAddItem] = useState({});$/;"	V
+formAddName	./components/NameForm/index.js	/^  const [formAddName, setFormAddName] = useState($/;"	V
+formCode	./components/LoyaltyCodeForCategory/index.js	/^  const [formCode, setFormCode] = useState({});$/;"	V
+formErrorsAddAddress	./components/AddressForm/index.js	/^  const [formErrorsAddAddress, setFormErrorsAddAddress] = useState({});$/;"	V
+formErrorsAddItem	./components/AddItemModal/Grocery/index.js	/^  const [formErrorsAddItem, setFormErrorsAddItem] = useState({});$/;"	V
+formErrorsAddItem	./components/AddItemModal/Medicine/index.js	/^  const [formErrorsAddItem, setFormErrorsAddItem] = useState({});$/;"	V
+formErrorsAddName	./components/NameForm/index.js	/^  const [formErrorsAddName, setFormErrorsAddName] = useState({});$/;"	V
+formErrorsCode	./components/LoyaltyCodeForCategory/index.js	/^  const [formErrorsCode, setFormErrorsCode] = useState({});$/;"	V
+formOrderSend	./components/OrderSend/index.js	/^  const [formOrderSend, setFormOrderSend] = useState({});$/;"	V
+geoAccuracy	./components/AddressForm/index.js	/^                  geoAccuracy,$/;"	V
+geoAccuracy	./context/actions/auth/userAddressUpdate.js	/^        geoAccuracy: geoAccuracy,$/;"	P
+geoAddress	./components/AddressForm/index.js	/^  geoAddress,$/;"	V
+geoAddress	./components/Profile/index.js	/^  const [geoAddress, setGeoAddress] = useState({});$/;"	V
+geoAddressFromCoordinates	./components/Profile/index.js	/^  const geoAddressFromCoordinates = async ({latitude, longitude}) => {$/;"	F
+geoCity	./components/AddressForm/index.js	/^    geoCity,$/;"	V
+geoCityExists	./helpers/geoHelpers.js	/^  const geoCityExists = addressComponent.some(x => x.types[0] === 'locality');$/;"	F
+geoPincode	./components/AddressForm/index.js	/^    geoPincode,$/;"	V
+geoRoute	./components/AddressForm/index.js	/^    geoRoute,$/;"	V
+geoRouteExists	./helpers/geoHelpers.js	/^  const geoRouteExists = addressComponent.some(x => x.types[0] === 'route');$/;"	F
+geoState	./components/AddressForm/index.js	/^    geoState,$/;"	V
+geoSubLocalityL1	./components/AddressForm/index.js	/^    geoSubLocalityL1,$/;"	V
+geoSubLocalityL2	./components/AddressForm/index.js	/^    geoSubLocalityL2,$/;"	V
+getAddressFromCoordinates	./components/Profile/index.OLD.js	/^  const getAddressFromCoordinates = async ({lat, lng}) => {$/;"	F
+getAndSetLocation	./components/Profile/index.OLD.js	/^  const getAndSetLocation = async () => {$/;"	F
+getAndSetLocation	./components/Profile/index.js	/^  const getAndSetLocation = async () => {$/;"	F
+getBorderColor	./components/common/AppTextInput/index.js	/^  const getBorderColor = () => {$/;"	F
+getColor	./components/OrderStatus/index.js	/^  const getColor = sectionStatus => {$/;"	F
+getDateTime	./helpers/dateTimeString.js	/^const getDateTime = Time => {$/;"	F
+getDefaultStore	./context/actions/getDefaultStore.js	/^const getDefaultStore = () => dispatch => {$/;"	F
+getDefaultStore	./context/initialStates/storesInitialState.js	/^  getDefaultStore: {$/;"	P
+getDefaultStore	./context/reducers/storesReducer.js	/^        getDefaultStore: {$/;"	P
+getDrawerContent	./navigations/DrawerNavigator.js	/^const getDrawerContent = navigation => {$/;"	F
+getFlexDirection	./components/common/AppTextInput/index.js	/^  const getFlexDirection = () => {$/;"	F
+getGeoAddressLine2	./helpers/geoHelpers.js	/^const getGeoAddressLine2 = (geoRoute, geoSubLocalityL1, geoSubLocalityL2) => {$/;"	F
+getIconFont	./components/common/Icon/index.js	/^const getIconFont = type => {$/;"	F
+getOffers	./context/initialStates/offersInitialState.js	/^  getOffers: {$/;"	P
+getOrderItems	./context/actions/getOrderItems.js	/^const getOrderItems = orderId => dispatch => {$/;"	F
+getOrderItems	./context/initialStates/orderItemsInitialState.js	/^  getOrderItems: {$/;"	P
+getOrderItems	./context/reducers/AuthReducer.js	/^        getOrderItems: {$/;"	P
+getOrderItems	./context/reducers/orderItemsReducer.js	/^        getOrderItems: {$/;"	P
+getOrderStatus	./helpers/orderStatus.js	/^const getOrderStatus = order => {$/;"	F
+getOrders	./context/initialStates/ordersInitialState.js	/^  getOrders: {$/;"	P
+getOrders	./context/reducers/AuthReducer.js	/^        getOrders: {$/;"	P
+getOrders	./context/reducers/ordersReducer.js	/^        getOrders: {$/;"	P
+getRewards	./context/initialStates/rewardsInitialState.js	/^  getRewards: {$/;"	P
+getStatusIconName	./components/OrderStatus/index.js	/^  const getStatusIconName = sectionStatus => {$/;"	F
+getStatusIconType	./components/OrderStatus/index.js	/^  const getStatusIconType = sectionStatus => {$/;"	F
+getStatusText	./components/OrderStatus/index.js	/^  const getStatusText = sectionStatus => {$/;"	F
+getStores	./context/actions/getStores.js	/^const getStores = () => dispatch => {$/;"	F
+getStores	./context/initialStates/storesInitialState.js	/^  getStores: {$/;"	P
+getStores	./context/reducers/storesReducer.js	/^        getStores: {$/;"	P
+getTextcolor	./components/OrderStatus/index.js	/^  const getTextcolor = sectionStatus => {$/;"	F
+getUserDetails	./context/initialStates/authInitialState.js	/^  getUserDetails: {$/;"	P
+getUserDetails	./context/reducers/AuthReducer.js	/^        getUserDetails: {$/;"	P
+getUserDetails	./screens/Profile/index.js	/^    getUserDetails: getUserDetailsState,$/;"	P
+handleBlur	./components/AddressForm/index.js	/^                handleBlur,$/;"	V
+handleChange	./components/AddressForm/index.js	/^                handleChange,$/;"	V
+handleSubmit	./components/AddressForm/index.js	/^                handleSubmit,$/;"	V
+header	./components/common/AppModal/styles.js	/^  header: {$/;"	P
+headerLeft	./screens/AllOrders/index.js	/^      headerLeft: () => ($/;"	M
+headerLeft	./screens/NewOrder/index.js	/^      headerLeft: () => ($/;"	M
+headerLeft	./screens/Offers/index.js	/^      headerLeft: () => ($/;"	M
+headerLeft	./screens/OrderItems/index.js	/^      headerLeft: () => ($/;"	M
+headerLeft	./screens/OrderStatus/index.js	/^      headerLeft: () => ($/;"	M
+headerLeft	./screens/Profile/index.js	/^      headerLeft: () => ($/;"	M
+headerLeft	./screens/Rewards/index.js	/^      headerLeft: () => ($/;"	M
+headerLeft	./screens/Stores/index.js	/^      headerLeft: () => ($/;"	M
+headerRight	./navigations/HomeNavigator.js	/^        headerRight: () => ($/;"	M
+headerRow	./components/ChooseStore/styles.js	/^  headerRow: {$/;"	P
+headerRow	./components/Stores/styles.js	/^  headerRow: {$/;"	P
+headerStyle	./navigations/HomeNavigator.js	/^        headerStyle: {backgroundColor: colors.color1_2},$/;"	P
+headers	./helpers/axiosInterceptor.js	/^  headers,$/;"	V
+headers	./helpers/axiosInterceptor.js	/^let headers = {};$/;"	O
+height	./components/OrderStatus/index.js	/^                    height: 60,$/;"	P
+height	./components/common/Avatar/index.js	/^      height: 400,$/;"	P
+height	./components/common/Avatar/index.js	/^    height: 300,$/;"	P
+height	./navigations/SideMenu/styles.js	/^    height: 80,$/;"	P
+hr	./components/Profile/styles.js	/^  hr: {$/;"	P
+icon	./components/common/AppTextInput/index.js	/^  icon,$/;"	V
+icon	./components/common/AppTextInput/styles.js	/^  icon: {$/;"	P
+iconColor	./components/common/FloatingCenterButton/index.js	/^  iconColor,$/;"	V
+iconColor	./components/common/FloatingLeftButton/index.js	/^  iconColor,$/;"	V
+iconColor	./components/common/FloatingRightButton/index.js	/^  iconColor,$/;"	V
+iconLarge	./components/OrderStatus/styles.js	/^  iconLarge: {$/;"	P
+iconMedium	./components/OrderStatus/styles.js	/^  iconMedium: {$/;"	P
+iconName	./components/common/FloatingCenterButton/index.js	/^  iconName,$/;"	V
+iconName	./components/common/FloatingLeftButton/index.js	/^  iconName,$/;"	V
+iconName	./components/common/FloatingRightButton/index.js	/^  iconName,$/;"	V
+iconPosition	./components/common/AppTextInput/index.js	/^  iconPosition,$/;"	V
+iconSmall	./components/OrderStatus/styles.js	/^  iconSmall: {$/;"	P
+iconTiny	./components/OrderStatus/styles.js	/^  iconTiny: {$/;"	P
+iconType	./components/common/FloatingCenterButton/index.js	/^  iconType,$/;"	V
+iconType	./components/common/FloatingLeftButton/index.js	/^  iconType,$/;"	V
+iconType	./components/common/FloatingRightButton/index.js	/^  iconType,$/;"	V
+iconXLarge	./components/OrderStatus/styles.js	/^  iconXLarge: {$/;"	P
+iconXSmall	./components/OrderStatus/styles.js	/^  iconXSmall: {$/;"	P
+id	./components/ChooseCategory/index.js	/^      id: 0,$/;"	P
+id	./components/ChooseCategory/index.js	/^      id: 1,$/;"	P
+id	./components/ChooseCategory/index.js	/^      id: 2,$/;"	P
+id	./components/ChooseCategory/index.js	/^      id: 3,$/;"	P
+imageData	./components/AddItemModal/Medicine/index.js	/^    const imageData = new FormData();$/;"	V
+imageSource	./components/AddItemModal/Medicine/index.js	/^  var imageSource = '..\/..\/..\/assets\/images\/upload.png';$/;"	V
+imageThumbnail	./components/ChooseCategory/styles.js	/^  imageThumbnail: {$/;"	P
+img	./components/AddItemModal/Medicine/index.js	/^  const [img, setImg] = useState(null);$/;"	V
+input	./components/AddItemModal/Grocery/styles.js	/^  input: {$/;"	P
+input	./components/AddItemModal/Medicine/styles.js	/^  input: {$/;"	P
+input	./components/AddressForm/styles.js	/^  input: {$/;"	P
+input	./components/Auth/VerifyOtp/styles.js	/^  input: {$/;"	P
+input	./components/LoyaltyCodeForCategory/styles.js	/^  input: {$/;"	P
+input	./components/MakePayment/styles.js	/^  input: {$/;"	P
+input	./components/NameForm/styles.js	/^  input: {$/;"	P
+input	./components/OrderSend/styles.js	/^  input: {$/;"	P
+input	./components/OrderStatus/styles.js	/^  input: {$/;"	P
+input	./components/Profile/styles.js	/^  input: {$/;"	P
+input	./components/ViewItem/styles.js	/^  input: {$/;"	P
+inputContainer	./components/common/AppTextInput/styles.js	/^  inputContainer: {$/;"	P
+inputForm	./components/NameForm/styles.js	/^  inputForm: {$/;"	P
+interval	./components/Profile/index.js	/^      interval: 10000,$/;"	P
+introSection	./components/AddItemModal/Grocery/styles.js	/^  introSection: {$/;"	P
+introSection	./components/AddItemModal/Medicine/styles.js	/^  introSection: {$/;"	P
+introSection	./components/AddressForm/styles.js	/^  introSection: {$/;"	P
+introSection	./components/LoyaltyCodeForCategory/styles.js	/^  introSection: {$/;"	P
+introSection	./components/MakePayment/styles.js	/^  introSection: {$/;"	P
+introSection	./components/NameForm/styles.js	/^  introSection: {$/;"	P
+introSection	./components/OrderSend/styles.js	/^  introSection: {$/;"	P
+introSection	./components/OrderStatus/styles.js	/^  introSection: {$/;"	P
+introSection	./components/ViewItem/styles.js	/^  introSection: {$/;"	P
+introText	./components/AddItemModal/Grocery/styles.js	/^  introText: {$/;"	P
+introText	./components/AddItemModal/Medicine/styles.js	/^  introText: {$/;"	P
+introText	./components/AddressForm/styles.js	/^  introText: {$/;"	P
+introText	./components/Auth/PhoneNumber/styles.js	/^  introText: {$/;"	P
+introText	./components/Auth/VerifyOtp/styles.js	/^  introText: {$/;"	P
+introText	./components/LoyaltyCodeForCategory/styles.js	/^  introText: {$/;"	P
+introText	./components/MakePayment/styles.js	/^  introText: {$/;"	P
+introText	./components/NameForm/styles.js	/^  introText: {$/;"	P
+introText	./components/OrderSend/styles.js	/^  introText: {$/;"	P
+introText	./components/OrderStatus/styles.js	/^  introText: {$/;"	P
+introText	./components/ViewItem/styles.js	/^  introText: {$/;"	P
+introTextTitle	./components/Auth/PhoneNumber/styles.js	/^  introTextTitle: {$/;"	P
+isCurrentStatus	./components/OrderStatus/index.js	/^  const isCurrentStatus = sectionStatus => {$/;"	F
+isDelivery	./components/OrderSend/index.js	/^    let isDelivery;$/;"	V
+isDelivery	./context/actions/sendOrder.js	/^        isDelivery: isDelivery,$/;"	P
+isFutureStatus	./components/OrderStatus/index.js	/^  const isFutureStatus = sectionStatus => {$/;"	F
+isLocationDifferent	./components/Profile/index.OLD.js	/^  const [isLocationDifferent, setIsLocationDifferent] = useState(false);$/;"	V
+isOldStatus	./components/OrderStatus/index.js	/^  const isOldStatus = sectionStatus => {$/;"	F
+isPaymentCash	./components/MakePayment/index.js	/^        isPaymentCash,$/;"	V
+isPaymentCash	./components/MakePayment/index.js	/^    let isPaymentCash;$/;"	V
+isPaymentCash	./context/actions/orderPayment.js	/^        isPaymentCash: isPaymentCash,$/;"	P
+isPaymentCash	./context/actions/orderPayment.js	/^    isPaymentCash,$/;"	V
+isPaymentCredit	./components/MakePayment/index.js	/^        isPaymentCredit,$/;"	V
+isPaymentCredit	./components/MakePayment/index.js	/^    let isPaymentCredit;$/;"	V
+isPaymentCredit	./context/actions/orderPayment.js	/^        isPaymentCredit: isPaymentCredit,$/;"	P
+isPaymentCredit	./context/actions/orderPayment.js	/^    isPaymentCredit,$/;"	V
+isPaymentOnline	./components/MakePayment/index.js	/^        isPaymentOnline,$/;"	V
+isPaymentOnline	./components/MakePayment/index.js	/^    let isPaymentOnline;$/;"	V
+isPaymentOnline	./context/actions/orderPayment.js	/^        isPaymentOnline: isPaymentOnline,$/;"	P
+isPaymentOnline	./context/actions/orderPayment.js	/^    isPaymentOnline,$/;"	V
+isPickup	./components/OrderSend/index.js	/^    let isPickup;$/;"	V
+isPickup	./context/actions/sendOrder.js	/^        isPickup: isPickup,$/;"	P
+isRequired	./components/AddItemModal/Grocery/index.js	/^                  isRequired: true,$/;"	P
+isRequired	./components/AddItemModal/Medicine/index.js	/^                    isRequired: true,$/;"	P
+isRequired	./components/OrderSend/index.js	/^                  isRequired: false,$/;"	P
+isValid	./components/AddressForm/index.js	/^                isValid,$/;"	V
+is_delivery	./components/AllOrders/index.js	/^      is_delivery: isDelivery,$/;"	P
+is_delivery	./components/NewOrder/Grocery/index.js	/^    is_delivery: isDelivery,$/;"	P
+is_delivery	./components/NewOrder/Medicine/index.js	/^    is_delivery: isDelivery,$/;"	P
+is_delivery	./components/OrderItems/index.js	/^    is_delivery: isDelivery,$/;"	P
+is_delivery	./context/actions/addOrder.js	/^        is_delivery: isDelivery,$/;"	P
+is_pickup	./components/AllOrders/index.js	/^      is_pickup: isPickup,$/;"	P
+is_pickup	./components/NewOrder/Grocery/index.js	/^    is_pickup: isPickup,$/;"	P
+is_pickup	./components/NewOrder/Medicine/index.js	/^    is_pickup: isPickup,$/;"	P
+is_pickup	./components/OrderItems/index.js	/^    is_pickup: isPickup,$/;"	P
+is_pickup	./context/actions/addOrder.js	/^        is_pickup: isPickup,$/;"	P
+item	./components/ChooseStore/index.js	/^                item: item,$/;"	P
+item	./components/ViewItem/index.js	/^  item,$/;"	V
+itemInfo	./components/NewOrder/Grocery/styles.js	/^  itemInfo: {$/;"	P
+itemInfo	./components/NewOrder/Medicine/styles.js	/^  itemInfo: {$/;"	P
+itemInfo	./components/OrderItems/styles.js	/^  itemInfo: {$/;"	P
+itemTitle	./components/NewOrder/Grocery/styles.js	/^  itemTitle: {$/;"	P
+itemTitle	./components/NewOrder/Medicine/styles.js	/^  itemTitle: {$/;"	P
+itemTitle	./components/OrderItems/styles.js	/^  itemTitle: {$/;"	P
+itemView	./components/ChooseCategory/styles.js	/^  itemView: {$/;"	P
+keyboardType	./components/common/AppTextInput/index.js	/^  keyboardType,$/;"	V
+label	./components/MakePayment/index.js	/^      label: label1,$/;"	P
+label	./components/MakePayment/index.js	/^      label: label2,$/;"	P
+label	./components/MakePayment/index.js	/^      label: label3,$/;"	P
+label	./components/common/AppTextInput/index.js	/^  label,$/;"	V
+label	./components/common/AppTextInput/styles.js	/^  label: {$/;"	P
+label1	./components/MakePayment/index.js	/^  const label1 = 'Pay store directly \\n(by cash or other method)';$/;"	V
+label2	./components/MakePayment/index.js	/^  const label2 = 'Pay online \\n(not yet available for this store)';$/;"	V
+labelStyle	./components/MakePayment/index.js	/^      labelStyle: {fontSize: 18},$/;"	P
+labelStyle	./components/OrderSend/index.js	/^            labelStyle: {fontSize: 18, paddingVertical: 10},$/;"	P
+labelText	./components/ChooseCategory/styles.js	/^  labelText: {$/;"	P
+latitude	./components/Profile/index.js	/^        latitude: latitude,$/;"	P
+latitude	./context/initialStates/authInitialState.js	/^  latitude: null,$/;"	P
+latitude	./context/reducers/AuthReducer.js	/^        latitude: null,$/;"	P
+list	./components/AllOrders/styles.js	/^  list: {$/;"	P
+list	./components/NewOrder/Grocery/styles.js	/^  list: {$/;"	P
+list	./components/NewOrder/Medicine/styles.js	/^  list: {$/;"	P
+list	./components/OrderItems/styles.js	/^  list: {$/;"	P
+listItem	./components/NewOrder/Grocery/styles.js	/^  listItem: {$/;"	P
+listItem	./components/NewOrder/Medicine/styles.js	/^  listItem: {$/;"	P
+listItem	./components/OrderItems/styles.js	/^  listItem: {$/;"	P
+listRow	./components/AllOrders/styles.js	/^  listRow: {$/;"	P
+listRow	./components/ChooseStore/styles.js	/^  listRow: {$/;"	P
+listRow	./components/MakePayment/styles.js	/^  listRow: {$/;"	P
+listRow	./components/Stores/styles.js	/^  listRow: {$/;"	P
+listRowItem	./components/ChooseStore/styles.js	/^  listRowItem: {$/;"	P
+listRowItem	./components/NewOrder/Grocery/styles.js	/^  listRowItem: {$/;"	P
+listRowItem	./components/NewOrder/Medicine/styles.js	/^  listRowItem: {$/;"	P
+listRowItem	./components/OrderItems/styles.js	/^  listRowItem: {$/;"	P
+listRowItem	./components/Stores/styles.js	/^  listRowItem: {$/;"	P
+loadableButton	./components/Profile/styles.js	/^  loadableButton: {$/;"	P
+loaderSection	./components/common/CustomButton/styles.js	/^  loaderSection: {$/;"	P
+loaderSection	./components/common/CustomButtonMedium/styles.js	/^  loaderSection: {$/;"	P
+loaderSection	./components/common/CustomButtonSmall/styles.js	/^  loaderSection: {$/;"	P
+loading	./components/Auth/LoadingProfile/index.js	/^    loading: loadingPhoneNumberOtpSubmit,$/;"	P
+loading	./components/Auth/PhoneNumber/index.js	/^    loading: loadingPhoneNumberSignInSubmit,$/;"	P
+loading	./components/Auth/VerifyOtp/index.js	/^    loading: loadingPhoneNumberOtpSubmit,$/;"	P
+loading	./components/common/CustomButton/index.js	/^  loading,$/;"	V
+loading	./components/common/CustomButtonMedium/index.js	/^  loading,$/;"	V
+loading	./components/common/CustomButtonSmall/index.js	/^  loading,$/;"	V
+loading	./components/common/FloatingCenterButton/index.js	/^  loading,$/;"	V
+loading	./components/common/FloatingLeftButton/index.js	/^  loading,$/;"	V
+loading	./components/common/FloatingRightButton/index.js	/^  loading,$/;"	V
+loading	./context/initialStates/authInitialState.js	/^    loading: false,$/;"	P
+loading	./context/initialStates/offersInitialState.js	/^    loading: false,$/;"	P
+loading	./context/initialStates/orderItemsInitialState.js	/^    loading: false,$/;"	P
+loading	./context/initialStates/ordersInitialState.js	/^    loading: false,$/;"	P
+loading	./context/initialStates/profileInitialState.js	/^    loading: false,$/;"	P
+loading	./context/initialStates/rewardsInitialState.js	/^    loading: false,$/;"	P
+loading	./context/initialStates/storesInitialState.js	/^    loading: false,$/;"	P
+loading	./context/reducers/AuthReducer.js	/^          loading: false,$/;"	P
+loading	./context/reducers/AuthReducer.js	/^          loading: true,$/;"	P
+loading	./context/reducers/orderItemsReducer.js	/^          loading: false,$/;"	P
+loading	./context/reducers/orderItemsReducer.js	/^          loading: true,$/;"	P
+loading	./context/reducers/ordersReducer.js	/^          loading: false,$/;"	P
+loading	./context/reducers/ordersReducer.js	/^          loading: true,$/;"	P
+loading	./context/reducers/storesReducer.js	/^          loading: false,$/;"	P
+loading	./context/reducers/storesReducer.js	/^          loading: true,$/;"	P
+loading	./screens/AllOrders/index.js	/^    loading: loadingGetOrders,$/;"	P
+loading	./screens/NewOrder/index.js	/^    loading: loadingGetOrderItems,$/;"	P
+loading	./screens/OrderItems/index.js	/^    loading: loadingGetOrderItems,$/;"	P
+loadingEditAddress	./components/Profile/index.js	/^  const [loadingEditAddress, setLoadingEditAddress] = useState(false);$/;"	V
+loadingGetOrderItems	./components/NewOrder/Grocery/index.js	/^  loadingGetOrderItems,$/;"	V
+loadingGetOrderItems	./components/NewOrder/Medicine/index.js	/^  loadingGetOrderItems,$/;"	V
+loadingGetOrderItems	./components/OrderItems/index.js	/^  loadingGetOrderItems,$/;"	V
+loadingGetOrders	./components/AllOrders/index.js	/^  loadingGetOrders,$/;"	V
+loadingText	./components/LoadingView/styles.js	/^  loadingText: {$/;"	P
+loadingTextIndicator	./components/LoadingView/styles.js	/^  loadingTextIndicator: {$/;"	P
+location	./components/Profile/index.OLD.js	/^            location,$/;"	V
+locationEnabled	./components/Profile/index.OLD.js	/^  const [locationEnabled, requestResolution] = useLocationSettings($/;"	V
+locationHandler	./components/Profile/index.OLD.js	/^  const locationHandler = async () => {$/;"	F
+locationHandler	./components/Profile/index.js	/^  const locationHandler = async () => {$/;"	F
+locationPermissionHandler	./components/Profile/index.js	/^  const locationPermissionHandler = async () => {$/;"	F
+logOut	./context/actions/auth/logOut.js	/^const logOut = () => dispatch => {$/;"	F
+logOut	./context/initialStates/authInitialState.js	/^  logOut: {$/;"	P
+logOut	./context/reducers/AuthReducer.js	/^        logOut: {$/;"	P
+logoImage	./components/Auth/PhoneNumber/styles.js	/^  logoImage: {$/;"	P
+logoImage	./components/Auth/VerifyOtp/styles.js	/^  logoImage: {$/;"	P
+logoImage	./components/Profile/styles.js	/^  logoImage: {$/;"	P
+logoImage	./navigations/SideMenu/styles.js	/^  logoImage: {$/;"	P
+logoutButton	./components/Profile/styles.js	/^  logoutButton: {$/;"	P
+logoutButtonSection	./components/Profile/styles.js	/^  logoutButtonSection: {$/;"	P
+longitude	./components/Profile/index.js	/^        longitude: longitude,$/;"	P
+longitude	./context/initialStates/authInitialState.js	/^  longitude: null,$/;"	P
+longitude	./context/reducers/AuthReducer.js	/^        longitude: null,$/;"	P
+loyaltyCode	./context/actions/auth/addLoyaltyCode.js	/^    loyaltyCode,$/;"	V
+loyalty_code	./context/initialStates/authInitialState.js	/^  loyalty_code: {$/;"	P
+loyalty_code	./context/reducers/AuthReducer.js	/^        loyalty_code: {$/;"	P
+marginHorizontal	./navigations/SideMenu/styles.js	/^    marginHorizontal: 30,$/;"	P
+marginTop	./components/AddItemModal/Grocery/styles.js	/^    marginTop: 70,$/;"	P
+marginTop	./components/AddItemModal/Medicine/styles.js	/^    marginTop: 70,$/;"	P
+marginTop	./components/LoyaltyCodeForCategory/styles.js	/^    marginTop: 70,$/;"	P
+marginTop	./navigations/SideMenu/styles.js	/^    marginTop: 30,$/;"	P
+marginVertical	./navigations/SideMenu/styles.js	/^    marginVertical: 40,$/;"	P
+maximumAge	./components/Profile/index.js	/^        maximumAge: 0,$/;"	P
+menuContainer	./components/common/NavMenu/styles.js	/^  menuContainer: {$/;"	P
+menuIcon	./components/common/NavMenu/styles.js	/^  menuIcon: {$/;"	P
+menuItems	./navigations/SideMenu/index.js	/^  const menuItems = [$/;"	A
+menuText	./components/common/NavMenu/styles.js	/^  menuText: {$/;"	P
+mobileNumber	./context/initialStates/authInitialState.js	/^  mobileNumber: null,$/;"	P
+mobileNumber	./context/reducers/AuthReducer.js	/^        mobileNumber: null,$/;"	P
+mobile_number	./components/ChooseStore/index.js	/^      mobile_number: storePhoneNumber,$/;"	P
+mobile_number	./components/NewOrder/Grocery/index.js	/^    mobile_number: chosenStorePhoneNumber,$/;"	P
+mobile_number	./components/NewOrder/Medicine/index.js	/^    mobile_number: chosenStorePhoneNumber,$/;"	P
+mobile_number	./components/OrderItems/index.js	/^    mobile_number: chosenStorePhoneNumber,$/;"	P
+mobile_number	./components/Stores/index.js	/^      mobile_number: storePhoneNumber,$/;"	P
+modalBody	./components/common/AppModal/index.js	/^  modalBody,$/;"	V
+modalBody	./components/common/AppModal/styles.js	/^  modalBody: {$/;"	P
+modalFooter	./components/common/AppModal/index.js	/^  modalFooter,$/;"	V
+modalTitle	./components/common/AppModal/index.js	/^  modalTitle,$/;"	V
+modalView	./components/common/AppModal/styles.js	/^  modalView: {$/;"	P
+modalVisible	./components/common/AppModal/index.js	/^  modalVisible,$/;"	V
+modalVisibleAddAddress	./components/AddressForm/index.js	/^  modalVisibleAddAddress,$/;"	V
+modalVisibleAddAddress	./components/Profile/index.js	/^  const [modalVisibleAddAddress, setModalVisibleAddAddress] = useState(false);$/;"	V
+modalVisibleAddItem	./components/AddItemModal/Grocery/index.js	/^  modalVisibleAddItem,$/;"	V
+modalVisibleAddItem	./components/AddItemModal/Medicine/index.js	/^  modalVisibleAddItem,$/;"	V
+modalVisibleAddItem	./components/NewOrder/Grocery/index.js	/^  const [modalVisibleAddItem, setModalVisibleAddItem] = useState(false);$/;"	V
+modalVisibleAddItem	./components/NewOrder/Medicine/index.js	/^  const [modalVisibleAddItem, setModalVisibleAddItem] = useState(false);$/;"	V
+modalVisibleAddItem	./components/OrderItems/index.js	/^  const [modalVisibleAddItem, setModalVisibleAddItem] = useState(false);$/;"	V
+modalVisibleAddName	./components/NameForm/index.js	/^  modalVisibleAddName,$/;"	V
+modalVisibleAddName	./components/Profile/index.js	/^  const [modalVisibleAddName, setModalVisibleAddName] = useState(false);$/;"	V
+modalVisibleLoyalty	./components/ChooseCategory/index.js	/^  const [modalVisibleLoyalty, setModalVisibleLoyalty] = useState(false);$/;"	V
+modalVisibleLoyalty	./components/LoyaltyCodeForCategory/index.js	/^  modalVisibleLoyalty,$/;"	V
+modalVisibleMakePayment	./components/MakePayment/index.js	/^  modalVisibleMakePayment,$/;"	V
+modalVisibleMakePayment	./components/OrderItems/index.js	/^  const [modalVisibleMakePayment, setModalVisibleMakePayment] = useState(false);$/;"	V
+modalVisibleOrderFinal	./components/ChooseStore/index.js	/^  const [modalVisibleOrderFinal, setModalVisibleOrderFinal] = useState(false);$/;"	V
+modalVisibleOrderFinal	./components/NewOrder/Grocery/index.js	/^  const [modalVisibleOrderFinal, setModalVisibleOrderFinal] = useState(false);$/;"	V
+modalVisibleOrderFinal	./components/NewOrder/Medicine/index.js	/^  const [modalVisibleOrderFinal, setModalVisibleOrderFinal] = useState(false);$/;"	V
+modalVisibleOrderFinal	./components/OrderItems/index.js	/^  const [modalVisibleOrderFinal, setModalVisibleOrderFinal] = useState(false);$/;"	V
+modalVisibleOrderFinal	./components/OrderSend/index.js	/^  modalVisibleOrderFinal,$/;"	V
+modalVisibleOrderFinal	./components/Stores/index.js	/^  const [modalVisibleOrderFinal, setModalVisibleOrderFinal] = useState(false);$/;"	V
+modalVisibleViewItem	./components/NewOrder/Grocery/index.js	/^  const [modalVisibleViewItem, setModalVisibleViewItem] = useState(false);$/;"	V
+modalVisibleViewItem	./components/NewOrder/Medicine/index.js	/^  const [modalVisibleViewItem, setModalVisibleViewItem] = useState(false);$/;"	V
+modalVisibleViewItem	./components/OrderItems/index.js	/^  const [modalVisibleViewItem, setModalVisibleViewItem] = useState(false);$/;"	V
+modalVisibleViewItem	./components/ViewItem/index.js	/^  modalVisibleViewItem,$/;"	V
+name	./components/ChooseStore/index.js	/^      name: storeName,$/;"	P
+name	./components/NewOrder/Grocery/index.js	/^      name: itemName,$/;"	P
+name	./components/NewOrder/Medicine/index.js	/^      name: itemName,$/;"	P
+name	./components/OrderItems/index.js	/^      name: itemName,$/;"	P
+name	./components/Stores/index.js	/^      name: storeName,$/;"	P
+name	./components/ViewItem/index.js	/^    name: orderItemName,$/;"	P
+navigate	./components/AllOrders/index.js	/^  const {navigate} = useNavigation();$/;"	V
+navigate	./components/ChooseCategory/index.js	/^  const {navigate} = useNavigation();$/;"	V
+navigate	./components/ChooseStore/index.js	/^  const {navigate} = useNavigation();$/;"	V
+navigate	./components/LoyaltyCodeForCategory/index.js	/^  const {navigate} = useNavigation();$/;"	V
+navigate	./components/MakePayment/index.js	/^  const {navigate} = useNavigation();$/;"	V
+navigate	./components/NewOrder/Grocery/index.js	/^  const {navigate} = useNavigation();$/;"	V
+navigate	./components/NewOrder/Medicine/index.js	/^  const {navigate} = useNavigation();$/;"	V
+navigate	./components/OrderItems/index.js	/^  const {navigate} = useNavigation();$/;"	V
+navigate	./components/OrderSend/index.js	/^  const {navigate} = useNavigation();$/;"	V
+navigate	./components/Profile/index.js	/^  const {navigate} = useNavigation();$/;"	V
+navigate	./components/Stores/index.js	/^  const {navigate} = useNavigation();$/;"	V
+navigateChooseStore	./components/ChooseCategory/index.js	/^  const [navigateChooseStore, setNavigateChooseStore] = useState(false);$/;"	V
+navigateOrderStatus	./components/OrderItems/index.js	/^  const navigateOrderStatus = () => {$/;"	F
+newOrderDetails	./context/actions/addOrderItem.js	/^            newOrderDetails: {$/;"	P
+number	./context/actions/auth/credUpdate.js	/^            number: phoneNumber,$/;"	P
+numberAuthenticated	./context/initialStates/authInitialState.js	/^  numberAuthenticated: false,$/;"	P
+numberAuthenticated	./context/reducers/AuthReducer.js	/^        numberAuthenticated: false,$/;"	P
+numberAuthenticated	./context/reducers/AuthReducer.js	/^        numberAuthenticated: true,$/;"	P
+numberAuthenticated	./screens/Profile/index.js	/^    numberAuthenticated,$/;"	V
+numberChecked	./context/initialStates/authInitialState.js	/^  numberChecked: false,$/;"	P
+numberChecked	./context/reducers/AuthReducer.js	/^        numberChecked: false,$/;"	P
+numberChecked	./context/reducers/AuthReducer.js	/^        numberChecked: true,$/;"	P
+numberChecked	./screens/Profile/index.js	/^    numberChecked,$/;"	V
+numberSection	./components/Auth/PhoneNumber/styles.js	/^  numberSection: {$/;"	P
+numberSection	./components/Auth/VerifyOtp/styles.js	/^  numberSection: {$/;"	P
+numberSection	./components/Profile/styles.js	/^  numberSection: {$/;"	P
+offersDelivery	./components/NewOrder/Grocery/index.js	/^                  offersDelivery: chosenOffersDelivery,$/;"	P
+offersDelivery	./components/NewOrder/Medicine/index.js	/^                  offersDelivery: chosenOffersDelivery,$/;"	P
+offersDelivery	./components/OrderItems/index.js	/^                      offersDelivery: chosenOffersDelivery,$/;"	P
+offersDelivery	./components/OrderSend/index.js	/^  const {storeId, storeName, offersDelivery, offersPickup} =$/;"	V
+offersDelivery	./components/Stores/index.js	/^              offersDelivery,$/;"	V
+offersDelivery	./components/Stores/index.js	/^        offersDelivery: offersDelivery,$/;"	P
+offersDelivery	./components/Stores/index.js	/^    offersDelivery,$/;"	V
+offersPickup	./components/NewOrder/Grocery/index.js	/^                  offersPickup: chosenOffersPickup,$/;"	P
+offersPickup	./components/NewOrder/Medicine/index.js	/^                  offersPickup: chosenOffersPickup,$/;"	P
+offersPickup	./components/OrderItems/index.js	/^                      offersPickup: chosenOffersPickup,$/;"	P
+offersPickup	./components/OrderSend/index.js	/^  const {storeId, storeName, offersDelivery, offersPickup} =$/;"	V
+offersPickup	./components/Stores/index.js	/^              offersPickup,$/;"	V
+offersPickup	./components/Stores/index.js	/^        offersPickup: offersPickup,$/;"	P
+offersPickup	./components/Stores/index.js	/^    offersPickup,$/;"	V
+offers_delivery	./components/ChooseStore/index.js	/^      offers_delivery: offersDelivery,$/;"	P
+offers_delivery	./components/NewOrder/Grocery/index.js	/^    offers_delivery: chosenOffersDelivery,$/;"	P
+offers_delivery	./components/NewOrder/Medicine/index.js	/^    offers_delivery: chosenOffersDelivery,$/;"	P
+offers_delivery	./components/OrderItems/index.js	/^    offers_delivery: chosenOffersDelivery,$/;"	P
+offers_delivery	./components/Stores/index.js	/^      offers_delivery: offersDelivery,$/;"	P
+offers_pickup	./components/ChooseStore/index.js	/^      offers_pickup: offersPickup,$/;"	P
+offers_pickup	./components/NewOrder/Grocery/index.js	/^    offers_pickup: chosenOffersPickup,$/;"	P
+offers_pickup	./components/NewOrder/Medicine/index.js	/^    offers_pickup: chosenOffersPickup,$/;"	P
+offers_pickup	./components/OrderItems/index.js	/^    offers_pickup: chosenOffersPickup,$/;"	P
+offers_pickup	./components/Stores/index.js	/^      offers_pickup: offersPickup,$/;"	P
+onAuthStateChanged	./screens/Profile/index.js	/^  const onAuthStateChanged = user => {$/;"	F
+onAvatarChange	./components/AddItemModal/Medicine/index.js	/^  const onAvatarChange = (image: ImageOrVideo) => {$/;"	F
+onChangeAddItem	./components/AddItemModal/Grocery/index.js	/^  const onChangeAddItem = ({name, value, isRequired}) => {$/;"	F
+onChangeAddItem	./components/AddItemModal/Medicine/index.js	/^  const onChangeAddItem = ({name, value, isRequired}) => {$/;"	F
+onChangeCode	./components/LoyaltyCodeForCategory/index.js	/^  const onChangeCode = ({name, value, isRequired}) => {$/;"	F
+onChangeName	./components/NameForm/index.js	/^  const onChangeName = ({name, value, isRequired}) => {$/;"	F
+onChangeOrderComment	./components/OrderSend/index.js	/^  const onChangeOrderComment = ({name, value, isRequired}) => {$/;"	F
+onChangeText	./components/common/AppTextInput/index.js	/^  onChangeText,$/;"	V
+onDismiss	./components/common/AppModal/index.js	/^  onDismiss,$/;"	V
+onModalClose	./components/common/AppModal/index.js	/^  onModalClose,$/;"	V
+onPress	./components/AddressForm/index.js	/^              onPress: () => {$/;"	M
+onPress	./components/AllOrders/index.js	/^                  onPress: () => navigate(PROFILE),$/;"	M
+onPress	./components/NewOrder/Grocery/index.js	/^                            onPress: () => {$/;"	M
+onPress	./components/NewOrder/Medicine/index.js	/^                            onPress: () => {$/;"	M
+onPress	./components/OrderItems/index.js	/^                            onPress: () => {$/;"	M
+onPress	./components/Profile/index.js	/^              onPress: () => processLocation({}),$/;"	M
+onPress	./components/Stores/index.js	/^            onPress: () => Linking.openURL(`tel:${storePhoneNumber}`),$/;"	M
+onPress	./components/Stores/index.js	/^            onPress: () =>$/;"	M
+onPress	./components/common/CustomButton/index.js	/^  onPress,$/;"	V
+onPress	./components/common/CustomButtonMedium/index.js	/^  onPress,$/;"	V
+onPress	./components/common/CustomButtonSmall/index.js	/^  onPress,$/;"	V
+onPress	./components/common/FloatingCenterButton/index.js	/^  onPress,$/;"	V
+onPress	./components/common/FloatingLeftButton/index.js	/^  onPress,$/;"	V
+onPress	./components/common/FloatingRightButton/index.js	/^  onPress,$/;"	V
+onPress	./navigations/SideMenu/index.js	/^      onPress: () => {$/;"	M
+onPressRadioButton	./components/MakePayment/index.js	/^  function onPressRadioButton(radioButtonsArray) {$/;"	F
+onPressRadioButton	./components/OrderSend/index.js	/^  function onPressRadioButton(radioButtonsArray) {$/;"	F
+onShow	./components/common/AppModal/index.js	/^  onShow,$/;"	V
+onSubmitAddItem	./components/AddItemModal/Grocery/index.js	/^  const onSubmitAddItem = ({name, value, isRequired}) => {$/;"	F
+onSubmitAddItem	./components/AddItemModal/Medicine/index.js	/^  const onSubmitAddItem = ({name, value, isRequired}) => {$/;"	F
+onSubmitCode	./components/LoyaltyCodeForCategory/index.js	/^  const onSubmitCode = ({name, value, isRequired}) => {$/;"	F
+onSubmitMakePayment	./components/MakePayment/index.js	/^  const onSubmitMakePayment = () => {$/;"	F
+onSubmitName	./components/NameForm/index.js	/^  const onSubmitName = () => {$/;"	F
+onSubmitSendOrder	./components/OrderSend/index.js	/^  const onSubmitSendOrder = ({name, value, isRequired}) => {$/;"	F
+order	./components/NewOrder/Grocery/index.js	/^    order,$/;"	V
+order	./components/NewOrder/Grocery/index.js	/^  const [order] = ordersState.getOrders.data.filter($/;"	V
+order	./components/NewOrder/Medicine/index.js	/^    order,$/;"	V
+order	./components/NewOrder/Medicine/index.js	/^  const [order] = ordersState.getOrders.data.filter($/;"	V
+order	./components/OrderItems/index.js	/^  const [order] = ordersState.getOrders.data.filter($/;"	V
+orderColorCode	./components/AllOrders/index.js	/^      orderColorCode: orderColorCode,$/;"	P
+orderColorCode	./components/NewOrder/Grocery/index.js	/^    orderColorCode: orderColorCode,$/;"	P
+orderColorCode	./components/NewOrder/Medicine/index.js	/^    orderColorCode: orderColorCode,$/;"	P
+orderColorCode	./components/OrderItems/index.js	/^      orderColorCode: orderColorCode,$/;"	P
+orderColorCode	./components/OrderItems/index.js	/^    orderColorCode: orderColorCode,$/;"	P
+orderColorCode	./components/OrderStatus/index.js	/^  orderColorCode,$/;"	V
+orderColorCode	./context/actions/addOrder.js	/^        orderColorCode,$/;"	V
+orderColorCode	./context/actions/addOrder.js	/^        orderColorCode: orderColorCode,$/;"	P
+orderColorCode	./helpers/orderStatus.js	/^    orderColorCode,$/;"	V
+orderColorCode	./helpers/orderStatus.js	/^    orderColorCode: orderColorCode,$/;"	P
+orderColorCode	./screens/OrderStatus/index.js	/^    orderColorCode,$/;"	V
+orderColorText	./components/AllOrders/index.js	/^      orderColorText: orderColorText,$/;"	P
+orderColorText	./components/NewOrder/Grocery/index.js	/^    orderColorText: orderColorText,$/;"	P
+orderColorText	./components/NewOrder/Medicine/index.js	/^    orderColorText: orderColorText,$/;"	P
+orderColorText	./components/OrderItems/index.js	/^    orderColorText: orderColorText,$/;"	P
+orderColorText	./context/actions/addOrder.js	/^        orderColorText,$/;"	V
+orderColorText	./context/actions/addOrder.js	/^        orderColorText: orderColorText,$/;"	P
+orderColorText	./helpers/orderStatus.js	/^    orderColorText,$/;"	V
+orderColorText	./helpers/orderStatus.js	/^    orderColorText: orderColorText,$/;"	P
+orderCreatedDateTime	./context/actions/addOrder.js	/^        orderCreatedDateTime,$/;"	V
+orderId	./components/AddItemModal/Grocery/index.js	/^  orderId,$/;"	V
+orderId	./components/AddItemModal/Medicine/index.js	/^  orderId,$/;"	V
+orderId	./components/AllOrders/index.js	/^            orderId,$/;"	V
+orderId	./components/ChooseStore/index.js	/^                orderId: orderId,$/;"	P
+orderId	./components/MakePayment/index.js	/^        orderId,$/;"	V
+orderId	./components/MakePayment/index.js	/^  orderId,$/;"	V
+orderId	./components/NewOrder/Grocery/index.js	/^  orderId,$/;"	V
+orderId	./components/NewOrder/Medicine/index.js	/^  orderId,$/;"	V
+orderId	./components/OrderItems/index.js	/^      orderId: orderId,$/;"	P
+orderId	./components/OrderItems/index.js	/^  orderId,$/;"	V
+orderId	./components/OrderSend/index.js	/^  orderId,$/;"	V
+orderId	./components/OrderStatus/index.js	/^  orderId,$/;"	V
+orderId	./context/actions/addOrder.js	/^        orderId,$/;"	V
+orderId	./context/actions/addOrderItem.js	/^            orderId: orderId,$/;"	P
+orderId	./context/actions/addOrderItem.js	/^        orderId: orderId,$/;"	P
+orderId	./context/actions/deleteOrder.js	/^          orderId: orderId,$/;"	P
+orderId	./context/actions/getOrderItems.js	/^        orderId: orderId,$/;"	P
+orderId	./context/actions/orderPayment.js	/^        orderId: orderId,$/;"	P
+orderId	./context/actions/orderPayment.js	/^    orderId,$/;"	V
+orderId	./context/actions/sendOrder.js	/^        orderId: orderId,$/;"	P
+orderId	./screens/OrderStatus/index.js	/^    orderId,$/;"	V
+orderId	./screens/Stores/index.js	/^        orderId$/;"	V
+orderId	./screens/Stores/index.js	/^  let orderId = 0;$/;"	V
+orderItem	./components/ViewItem/styles.js	/^  orderItem: {$/;"	P
+orderItemContent	./components/ViewItem/styles.js	/^  orderItemContent: {$/;"	P
+orderItemId	./context/actions/deleteOrderItem.js	/^          orderItemId: orderItemId,$/;"	P
+orderItemTitle	./components/ViewItem/styles.js	/^  orderItemTitle: {$/;"	P
+orderItemsDispatch	./components/AddItemModal/Grocery/index.js	/^  const {orderItemsDispatch, orderItemsState} = useContext(GlobalContext);$/;"	V
+orderItemsDispatch	./components/AddItemModal/Medicine/index.js	/^  const {orderItemsDispatch, orderItemsState} = useContext(GlobalContext);$/;"	V
+orderItemsDispatch	./components/ViewItem/index.js	/^  const {orderItemsDispatch, orderItemsState} = useContext(GlobalContext);$/;"	V
+orderItemsDispatch	./context/Provider.js	/^        orderItemsDispatch,$/;"	V
+orderItemsDispatch	./context/Provider.js	/^  const [orderItemsState, orderItemsDispatch] = useReducer($/;"	V
+orderItemsDispatch	./screens/NewOrder/index.js	/^  const {orderItemsDispatch, orderItemsState} = useContext(GlobalContext);$/;"	V
+orderItemsDispatch	./screens/OrderItems/index.js	/^  const {orderItemsDispatch, orderItemsState} = useContext(GlobalContext);$/;"	V
+orderItemsInitialState	./context/Provider.js	/^    orderItemsInitialState,$/;"	V
+orderItemsReducer	./context/Provider.js	/^    orderItemsReducer,$/;"	V
+orderItemsReducer	./context/reducers/orderItemsReducer.js	/^const orderItemsReducer = (state, {type, payload}) => {$/;"	F
+orderItemsState	./components/AddItemModal/Grocery/index.js	/^  const {orderItemsDispatch, orderItemsState} = useContext(GlobalContext);$/;"	V
+orderItemsState	./components/AddItemModal/Medicine/index.js	/^  const {orderItemsDispatch, orderItemsState} = useContext(GlobalContext);$/;"	V
+orderItemsState	./components/ViewItem/index.js	/^  const {orderItemsDispatch, orderItemsState} = useContext(GlobalContext);$/;"	V
+orderItemsState	./context/Provider.js	/^        orderItemsState,$/;"	V
+orderItemsState	./context/Provider.js	/^  const [orderItemsState, orderItemsDispatch] = useReducer($/;"	V
+orderItemsState	./screens/NewOrder/index.js	/^  const {orderItemsDispatch, orderItemsState} = useContext(GlobalContext);$/;"	V
+orderItemsState	./screens/OrderItems/index.js	/^  const {orderItemsDispatch, orderItemsState} = useContext(GlobalContext);$/;"	V
+orderSentTime	./components/OrderStatus/index.js	/^  orderSentTime,$/;"	V
+orderStatusCode	./components/AllOrders/index.js	/^      orderStatusCode: orderStatusCode,$/;"	P
+orderStatusCode	./components/NewOrder/Grocery/index.js	/^    orderStatusCode: orderStatusCode,$/;"	P
+orderStatusCode	./components/NewOrder/Medicine/index.js	/^    orderStatusCode: orderStatusCode,$/;"	P
+orderStatusCode	./components/OrderItems/index.js	/^      orderStatusCode: orderStatusCode,$/;"	P
+orderStatusCode	./components/OrderItems/index.js	/^    orderStatusCode: orderStatusCode,$/;"	P
+orderStatusCode	./components/OrderStatus/index.js	/^  orderStatusCode,$/;"	V
+orderStatusCode	./context/actions/addOrder.js	/^        orderStatusCode,$/;"	V
+orderStatusCode	./context/actions/addOrder.js	/^        orderStatusCode: orderStatusCode,$/;"	P
+orderStatusCode	./helpers/orderStatus.js	/^    orderStatusCode,$/;"	V
+orderStatusCode	./helpers/orderStatus.js	/^    orderStatusCode: orderStatusCode,$/;"	P
+orderStatusCode	./screens/OrderStatus/index.js	/^    orderStatusCode,$/;"	V
+orderStatusNext	./components/AllOrders/index.js	/^      orderStatusNext: orderStatusNext,$/;"	P
+orderStatusNext	./components/NewOrder/Grocery/index.js	/^    orderStatusNext: orderStatusNext,$/;"	P
+orderStatusNext	./components/NewOrder/Medicine/index.js	/^    orderStatusNext: orderStatusNext,$/;"	P
+orderStatusNext	./components/OrderItems/index.js	/^    orderStatusNext: orderStatusNext,$/;"	P
+orderStatusNext	./context/actions/addOrder.js	/^        orderStatusNext,$/;"	V
+orderStatusNext	./context/actions/addOrder.js	/^        orderStatusNext: orderStatusNext,$/;"	P
+orderStatusNext	./helpers/orderStatus.js	/^    orderStatusNext,$/;"	V
+orderStatusNext	./helpers/orderStatus.js	/^    orderStatusNext: orderStatusNext,$/;"	P
+orderStatusText	./components/AllOrders/index.js	/^      orderStatusText: orderStatusText,$/;"	P
+orderStatusText	./components/NewOrder/Grocery/index.js	/^    orderStatusText: orderStatusText,$/;"	P
+orderStatusText	./components/NewOrder/Medicine/index.js	/^    orderStatusText: orderStatusText,$/;"	P
+orderStatusText	./components/OrderItems/index.js	/^    orderStatusText: orderStatusText,$/;"	P
+orderStatusText	./context/actions/addOrder.js	/^        orderStatusText,$/;"	V
+orderStatusText	./context/actions/addOrder.js	/^        orderStatusText: orderStatusText,$/;"	P
+orderStatusText	./helpers/orderStatus.js	/^    orderStatusText,$/;"	V
+orderStatusText	./helpers/orderStatus.js	/^    orderStatusText: orderStatusText,$/;"	P
+order_id	./components/AllOrders/index.js	/^      order_id: orderId,$/;"	P
+order_id	./context/actions/addOrder.js	/^        order_id: orderId,$/;"	P
+order_item_id	./components/NewOrder/Grocery/index.js	/^      order_item_id: itemId,$/;"	P
+order_item_id	./components/NewOrder/Medicine/index.js	/^      order_item_id: itemId,$/;"	P
+order_item_id	./components/OrderItems/index.js	/^      order_item_id: itemId,$/;"	P
+order_item_id	./components/ViewItem/index.js	/^    order_item_id: orderItemId,$/;"	P
+order_price	./context/actions/addOrder.js	/^        order_price: orderPrice,$/;"	P
+ordersButton	./components/Profile/styles.js	/^  ordersButton: {$/;"	P
+ordersButtonSection	./components/Profile/styles.js	/^  ordersButtonSection: {$/;"	P
+ordersDispatch	./components/AllOrders/index.js	/^  const {ordersDispatch, ordersState, authState} = useContext(GlobalContext);$/;"	V
+ordersDispatch	./components/ChooseStore/index.js	/^  const {ordersDispatch, ordersState} = useContext(GlobalContext);$/;"	V
+ordersDispatch	./components/MakePayment/index.js	/^  const {ordersDispatch, ordersState} = useContext(GlobalContext);$/;"	V
+ordersDispatch	./components/NewOrder/Grocery/index.js	/^  const {ordersDispatch, ordersState} = useContext(GlobalContext);$/;"	V
+ordersDispatch	./components/NewOrder/Medicine/index.js	/^  const {ordersDispatch, ordersState} = useContext(GlobalContext);$/;"	V
+ordersDispatch	./components/OrderItems/index.js	/^  const {ordersDispatch, ordersState} = useContext(GlobalContext);$/;"	V
+ordersDispatch	./components/OrderSend/index.js	/^        ordersDispatch,$/;"	V
+ordersDispatch	./components/OrderSend/index.js	/^  const {ordersDispatch, ordersState} = useContext(GlobalContext);$/;"	V
+ordersDispatch	./components/Stores/index.js	/^  const {ordersDispatch, ordersState} = useContext(GlobalContext);$/;"	V
+ordersDispatch	./context/Provider.js	/^        ordersDispatch,$/;"	V
+ordersDispatch	./context/Provider.js	/^  const [ordersState, ordersDispatch] = useReducer($/;"	V
+ordersDispatch	./screens/AllOrders/index.js	/^  const {ordersDispatch, ordersState} = useContext(GlobalContext);$/;"	V
+ordersInitialState	./context/Provider.js	/^    ordersInitialState,$/;"	V
+ordersReducer	./context/Provider.js	/^    ordersReducer,$/;"	V
+ordersReducer	./context/reducers/ordersReducer.js	/^const ordersReducer = (state, {type, payload}) => {$/;"	F
+ordersState	./components/AllOrders/index.js	/^  const {ordersDispatch, ordersState, authState} = useContext(GlobalContext);$/;"	V
+ordersState	./components/ChooseStore/index.js	/^  const {ordersDispatch, ordersState} = useContext(GlobalContext);$/;"	V
+ordersState	./components/MakePayment/index.js	/^  const {ordersDispatch, ordersState} = useContext(GlobalContext);$/;"	V
+ordersState	./components/NewOrder/Grocery/index.js	/^  const {ordersDispatch, ordersState} = useContext(GlobalContext);$/;"	V
+ordersState	./components/NewOrder/Medicine/index.js	/^  const {ordersDispatch, ordersState} = useContext(GlobalContext);$/;"	V
+ordersState	./components/OrderItems/index.js	/^  const {ordersDispatch, ordersState} = useContext(GlobalContext);$/;"	V
+ordersState	./components/OrderSend/index.js	/^  const {ordersDispatch, ordersState} = useContext(GlobalContext);$/;"	V
+ordersState	./components/Stores/index.js	/^  const {ordersDispatch, ordersState} = useContext(GlobalContext);$/;"	V
+ordersState	./context/Provider.js	/^        ordersState,$/;"	V
+ordersState	./context/Provider.js	/^  const [ordersState, ordersDispatch] = useReducer($/;"	V
+ordersState	./screens/AllOrders/index.js	/^  const {ordersDispatch, ordersState} = useContext(GlobalContext);$/;"	V
+otpCode	./components/Auth/LoadingProfile/index.js	/^  const [otpCode, setOtpCode] = useState('');$/;"	V
+otpCode	./components/Auth/VerifyOtp/index.js	/^  const [otpCode, setOtpCode] = useState('');$/;"	V
+padding	./components/AddItemModal/Grocery/styles.js	/^    padding: 15,$/;"	P
+padding	./components/AddItemModal/Medicine/styles.js	/^    padding: 15,$/;"	P
+padding	./components/LoyaltyCodeForCategory/styles.js	/^    padding: 15,$/;"	P
+padding	./components/OrderStatus/index.js	/^                    padding: 5,$/;"	P
+paddingHorizontal	./components/common/AppModal/styles.js	/^    paddingHorizontal: 10,$/;"	P
+paddingLeft	./navigations/SideMenu/styles.js	/^    paddingLeft: 20,$/;"	P
+paddingRight	./components/common/CustomButton/styles.js	/^    paddingRight: 5,$/;"	P
+paddingRight	./components/common/CustomButtonMedium/styles.js	/^    paddingRight: 4,$/;"	P
+paddingRight	./components/common/CustomButtonSmall/styles.js	/^    paddingRight: 2,$/;"	P
+paddingTop	./components/common/AppModal/styles.js	/^    paddingTop: 1,$/;"	P
+paddingTop	./navigations/SideMenu/styles.js	/^    paddingTop: 5,$/;"	P
+paddingVertical	./components/ChooseStore/styles.js	/^    paddingVertical: 9,$/;"	P
+paddingVertical	./components/NewOrder/Grocery/styles.js	/^    paddingVertical: 9,$/;"	P
+paddingVertical	./components/NewOrder/Medicine/styles.js	/^    paddingVertical: 9,$/;"	P
+paddingVertical	./components/OrderItems/styles.js	/^    paddingVertical: 9,$/;"	P
+paddingVertical	./components/Stores/styles.js	/^    paddingVertical: 9,$/;"	P
+paddingVertical	./navigations/SideMenu/styles.js	/^    paddingVertical: 25,$/;"	P
+params	./context/actions/deleteOrder.js	/^        params: {$/;"	P
+params	./context/actions/deleteOrderItem.js	/^        params: {$/;"	P
+params	./context/actions/getOrderItems.js	/^      params: {$/;"	P
+payOrder	./context/initialStates/ordersInitialState.js	/^  payOrder: {$/;"	P
+payOrder	./context/reducers/ordersReducer.js	/^        payOrder: {$/;"	P
+payload	./context/actions/addOrder.js	/^        payload: err,$/;"	P
+payload	./context/actions/addOrder.js	/^        payload: order,$/;"	P
+payload	./context/actions/addOrderItem.js	/^          payload: err,$/;"	P
+payload	./context/actions/addOrderItem.js	/^          payload: {$/;"	P
+payload	./context/actions/auth/addLoyaltyCode.js	/^          payload: err,$/;"	P
+payload	./context/actions/auth/credUpdate.js	/^          payload: err,$/;"	P
+payload	./context/actions/auth/credUpdate.js	/^          payload: {$/;"	P
+payload	./context/actions/auth/getUserDetails.js	/^        payload: err,$/;"	P
+payload	./context/actions/auth/logOut.js	/^            payload: error,$/;"	P
+payload	./context/actions/auth/logOut.js	/^        payload: error,$/;"	P
+payload	./context/actions/auth/phoneNumberOtpSubmit.js	/^          payload: error,$/;"	P
+payload	./context/actions/auth/phoneNumberSignInSubmit.js	/^        payload: confirmation,$/;"	P
+payload	./context/actions/auth/phoneNumberSignInSubmit.js	/^        payload: error,$/;"	P
+payload	./context/actions/auth/userAddressUpdate.js	/^          payload: err,$/;"	P
+payload	./context/actions/auth/userAddressUpdate.js	/^          payload: {userAddress: userAddress, userCoordinates: userCoordinates},$/;"	P
+payload	./context/actions/auth/userNameUpdate.js	/^          payload: err,$/;"	P
+payload	./context/actions/auth/userNameUpdate.js	/^          payload: userName,$/;"	P
+payload	./context/actions/deleteOrder.js	/^          payload: err,$/;"	P
+payload	./context/actions/deleteOrder.js	/^          payload: {orderId},$/;"	P
+payload	./context/actions/deleteOrderItem.js	/^          payload: err,$/;"	P
+payload	./context/actions/deleteOrderItem.js	/^          payload: {orderItemId},$/;"	P
+payload	./context/actions/getDefaultStore.js	/^        payload: err,$/;"	P
+payload	./context/actions/getOrderItems.js	/^        payload: err,$/;"	P
+payload	./context/actions/getOrders.js	/^        payload: err,$/;"	P
+payload	./context/actions/getStores.js	/^        payload: err,$/;"	P
+payload	./context/actions/orderPayment.js	/^          payload: err,$/;"	P
+payload	./context/actions/sendOrder.js	/^          payload: err,$/;"	P
+phoneNumber	./components/Auth/PhoneNumber/index.js	/^  const [phoneNumber, setPhoneNumber] = useState(null);$/;"	V
+phoneNumber	./context/actions/auth/credUpdate.js	/^        phoneNumber: phoneNumber,$/;"	P
+phoneNumber	./screens/Profile/index.js	/^              phoneNumber: phoneNumber,$/;"	P
+phoneNumber	./screens/Profile/index.js	/^  const [phoneNumber, setPhoneNumber] = useState(null);$/;"	V
+phoneNumberOtpSubmit	./context/initialStates/authInitialState.js	/^  phoneNumberOtpSubmit: {$/;"	P
+phoneNumberOtpSubmit	./context/reducers/AuthReducer.js	/^        phoneNumberOtpSubmit: {$/;"	P
+phoneNumberSignInSubmit	./context/actions/auth/phoneNumberSignInSubmit.js	/^const phoneNumberSignInSubmit = phoneNumber => dispatch => {$/;"	F
+phoneNumberSignInSubmit	./context/initialStates/authInitialState.js	/^  phoneNumberSignInSubmit: {$/;"	P
+phoneNumberSignInSubmit	./context/reducers/AuthReducer.js	/^        phoneNumberSignInSubmit: {$/;"	P
+phoneNumberWithCode	./components/Auth/PhoneNumber/index.js	/^    const phoneNumberWithCode = '+91' + phoneNumber;$/;"	V
+pickPicture	./components/common/Avatar/index.js	/^  const pickPicture = () => {$/;"	F
+pincode	./components/AddressForm/index.js	/^                pincode: geoPincode,$/;"	P
+pincode	./components/ChooseStore/index.js	/^      pincode: pincode,$/;"	P
+pincode	./components/NewOrder/Grocery/index.js	/^    pincode: chosenPincode,$/;"	P
+pincode	./components/NewOrder/Medicine/index.js	/^    pincode: chosenPincode,$/;"	P
+pincode	./components/OrderItems/index.js	/^    pincode: chosenPincode,$/;"	P
+pincode	./components/Stores/index.js	/^      pincode: pincode,$/;"	P
+pincode	./context/initialStates/authInitialState.js	/^  pincode: null,$/;"	P
+pincode	./context/reducers/AuthReducer.js	/^        pincode: null,$/;"	P
+price	./components/AllOrders/index.js	/^      price: orderPrice,$/;"	P
+price	./components/MakePayment/styles.js	/^  price: {$/;"	P
+price	./components/NewOrder/Grocery/index.js	/^      price: itemPrice,$/;"	P
+price	./components/NewOrder/Grocery/index.js	/^    price: orderPrice,$/;"	P
+price	./components/NewOrder/Grocery/styles.js	/^  price: {$/;"	P
+price	./components/NewOrder/Medicine/index.js	/^      price: itemPrice,$/;"	P
+price	./components/NewOrder/Medicine/index.js	/^    price: orderPrice,$/;"	P
+price	./components/NewOrder/Medicine/styles.js	/^  price: {$/;"	P
+price	./components/OrderItems/index.js	/^      price: itemPrice,$/;"	P
+price	./components/OrderItems/index.js	/^    price: orderPrice,$/;"	P
+price	./components/OrderItems/styles.js	/^  price: {$/;"	P
+price	./components/ViewItem/index.js	/^    price: orderItemPrice,$/;"	P
+price	./components/ViewItem/styles.js	/^  price: {$/;"	P
+price	./context/actions/addOrderItem.js	/^              price: null,$/;"	P
+priceInfo	./components/NewOrder/Grocery/styles.js	/^  priceInfo: {$/;"	P
+priceInfo	./components/NewOrder/Medicine/styles.js	/^  priceInfo: {$/;"	P
+priceInfo	./components/OrderItems/styles.js	/^  priceInfo: {$/;"	P
+priceTitle	./components/NewOrder/Grocery/styles.js	/^  priceTitle: {$/;"	P
+priceTitle	./components/NewOrder/Medicine/styles.js	/^  priceTitle: {$/;"	P
+priceTitle	./components/OrderItems/styles.js	/^  priceTitle: {$/;"	P
+prices	./components/NewOrder/Grocery/index.js	/^    let prices = dataOrderItems.map(a => a.price * a.available);$/;"	F
+prices	./components/NewOrder/Medicine/index.js	/^    let prices = dataOrderItems.map(a => a.price * a.available);$/;"	F
+prices	./components/OrderItems/index.js	/^    let prices = dataOrderItems.map(a => a.price * a.available);$/;"	F
+primary	./components/ChooseStore/index.js	/^                primary$/;"	V
+primary	./components/ChooseStore/index.js	/^            primary$/;"	V
+primary	./components/NewOrder/Grocery/index.js	/^                      primary$/;"	V
+primary	./components/NewOrder/Medicine/index.js	/^                      primary$/;"	V
+primary	./components/OrderItems/index.js	/^                      primary$/;"	V
+primary	./components/Profile/index.js	/^              primary$/;"	V
+primary	./components/Stores/index.js	/^                primary$/;"	V
+primary	./components/Stores/index.js	/^            primary$/;"	V
+processLocation	./components/Profile/index.js	/^  const processLocation = userLocation => {$/;"	F
+prodEnvironmentVariables	./config/env.js	/^const prodEnvironmentVariables = {$/;"	O
+quantity	./components/NewOrder/Grocery/index.js	/^      quantity: itemQuantity,$/;"	P
+quantity	./components/NewOrder/Medicine/index.js	/^      quantity: itemQuantity,$/;"	P
+quantity	./components/OrderItems/index.js	/^      quantity: itemQuantity,$/;"	P
+quantity	./components/ViewItem/index.js	/^    quantity: orderItemQuantity,$/;"	P
+quantityInfo	./components/NewOrder/Grocery/styles.js	/^  quantityInfo: {$/;"	P
+quantityInfo	./components/NewOrder/Medicine/styles.js	/^  quantityInfo: {$/;"	P
+quantityInfo	./components/OrderItems/styles.js	/^  quantityInfo: {$/;"	P
+quantityTitle	./components/NewOrder/Grocery/styles.js	/^  quantityTitle: {$/;"	P
+quantityTitle	./components/NewOrder/Medicine/styles.js	/^  quantityTitle: {$/;"	P
+quantityTitle	./components/OrderItems/styles.js	/^  quantityTitle: {$/;"	P
+radioButtons	./components/MakePayment/index.js	/^  const [radioButtons, setRadioButtons] = useState(radioButtonsData);$/;"	V
+radioButtons	./components/OrderSend/index.js	/^  const [radioButtons, setRadioButtons] = useState(radioButtonsData);$/;"	V
+radioButtonsData	./components/MakePayment/index.js	/^  const radioButtonsData = [$/;"	A
+rationale	./components/Profile/index.OLD.js	/^            rationale: {$/;"	P
+renderItem	./components/AllOrders/index.js	/^  const renderItem = ({item: order}) => {$/;"	F
+renderItem	./components/ChooseStore/index.js	/^  const renderItem = ({item}) => {$/;"	F
+renderItem	./components/NewOrder/Grocery/index.js	/^  const renderItem = ({item}) => {$/;"	F
+renderItem	./components/NewOrder/Medicine/index.js	/^  const renderItem = ({item}) => {$/;"	F
+renderItem	./components/OrderItems/index.js	/^  const renderItem = ({item}) => {$/;"	F
+renderItem	./components/Stores/index.js	/^  const renderItem = ({item}) => {$/;"	F
+requestResolution	./components/Profile/index.OLD.js	/^  const [locationEnabled, requestResolution] = useLocationSettings($/;"	V
+responsiveFontSize	./components/OrderStatus/index.js	/^  responsiveFontSize,$/;"	V
+responsiveHeight	./components/OrderStatus/index.js	/^  responsiveHeight,$/;"	V
+responsiveWidth	./components/OrderStatus/index.js	/^  responsiveWidth,$/;"	V
+rowItem	./components/AllOrders/styles.js	/^  rowItem: {$/;"	P
+rowItem	./components/ChooseStore/styles.js	/^  rowItem: {$/;"	P
+rowItem	./components/MakePayment/styles.js	/^  rowItem: {$/;"	P
+rowItem	./components/Stores/styles.js	/^  rowItem: {$/;"	P
+rowItemContent	./components/AllOrders/styles.js	/^  rowItemContent: {$/;"	P
+rowItemContent	./components/ChooseStore/styles.js	/^  rowItemContent: {$/;"	P
+rowItemContent	./components/MakePayment/styles.js	/^  rowItemContent: {$/;"	P
+rowItemContent	./components/Stores/styles.js	/^  rowItemContent: {$/;"	P
+rowItemContentBold	./components/ChooseStore/styles.js	/^  rowItemContentBold: {$/;"	P
+rowItemContentBold	./components/Stores/styles.js	/^  rowItemContentBold: {$/;"	P
+rowItemContentRegular	./components/ChooseStore/styles.js	/^  rowItemContentRegular: {$/;"	P
+rowItemContentRegular	./components/Stores/styles.js	/^  rowItemContentRegular: {$/;"	P
+rowItemTitle	./components/AllOrders/styles.js	/^  rowItemTitle: {$/;"	P
+rowItemTitle	./components/ChooseStore/styles.js	/^  rowItemTitle: {$/;"	P
+rowItemTitle	./components/MakePayment/styles.js	/^  rowItemTitle: {$/;"	P
+rowItemTitle	./components/Stores/styles.js	/^  rowItemTitle: {$/;"	P
+rowItemTitleBold	./components/AllOrders/styles.js	/^  rowItemTitleBold: {$/;"	P
+rowItemTitleBold	./components/ChooseStore/styles.js	/^  rowItemTitleBold: {$/;"	P
+rowItemTitleBold	./components/Stores/styles.js	/^  rowItemTitleBold: {$/;"	P
+rowItemTitleLong	./components/ChooseStore/styles.js	/^  rowItemTitleLong: {$/;"	P
+rowItemTitleLong	./components/Stores/styles.js	/^  rowItemTitleLong: {$/;"	P
+screen	./components/Auth/LoadingProfile/index.js	/^  screen: {$/;"	P
+screen	./components/Auth/PhoneNumber/styles.js	/^  screen: {$/;"	P
+screen	./components/Auth/VerifyOtp/styles.js	/^  screen: {$/;"	P
+screen	./components/Profile/styles.js	/^  screen: {$/;"	P
+sectionActionIcon	./components/OrderStatus/styles.js	/^  sectionActionIcon: {$/;"	P
+sectionBody	./components/Profile/styles.js	/^  sectionBody: {$/;"	P
+sectionDesc	./components/OrderStatus/styles.js	/^  sectionDesc: {$/;"	P
+sectionDescText	./components/OrderStatus/styles.js	/^  sectionDescText: {$/;"	P
+sectionProgressArrow	./components/OrderStatus/styles.js	/^  sectionProgressArrow: {$/;"	P
+sectionStatusDescText	./components/OrderStatus/styles.js	/^  sectionStatusDescText: {$/;"	P
+sectionStatusIcon	./components/OrderStatus/styles.js	/^  sectionStatusIcon: {$/;"	P
+sectionText	./components/Profile/styles.js	/^  sectionText: {$/;"	P
+sectionTitle	./components/Profile/styles.js	/^  sectionTitle: {$/;"	P
+sectionWho	./components/OrderStatus/styles.js	/^  sectionWho: {$/;"	P
+selected	./components/MakePayment/index.js	/^      selected: true,$/;"	P
+selected	./components/OrderSend/index.js	/^            selected: true,$/;"	P
+selectedStoreDetails	./components/ChooseStore/index.js	/^  const [selectedStoreDetails, setSelectedStoreDetails] = useState({});$/;"	V
+selectedStoreDetails	./components/NewOrder/Grocery/index.js	/^  const [selectedStoreDetails, setSelectedStoreDetails] = useState({});$/;"	V
+selectedStoreDetails	./components/NewOrder/Medicine/index.js	/^  const [selectedStoreDetails, setSelectedStoreDetails] = useState({});$/;"	V
+selectedStoreDetails	./components/OrderItems/index.js	/^  const [selectedStoreDetails, setSelectedStoreDetails] = useState({});$/;"	V
+selectedStoreDetails	./components/OrderSend/index.js	/^  selectedStoreDetails,$/;"	V
+selectedStoreDetails	./components/Stores/index.js	/^  const [selectedStoreDetails, setSelectedStoreDetails] = useState({});$/;"	V
+sendOrder	./context/initialStates/ordersInitialState.js	/^  sendOrder: {$/;"	P
+sendOrder	./context/reducers/ordersReducer.js	/^        sendOrder: {$/;"	P
+setAuthenticated	./screens/Profile/index.js	/^  const [authenticated, setAuthenticated] = useState(false);$/;"	V
+setCurrentAddress	./components/Profile/index.OLD.js	/^  const [currentAddress, setCurrentAddress] = useState({});$/;"	V
+setCurrentCategory	./components/ChooseCategory/index.js	/^  const [currentCategory, setCurrentCategory] = useState();$/;"	V
+setCurrentItem	./components/NewOrder/Grocery/index.js	/^  const [currentItem, setCurrentItem] = useState({});$/;"	V
+setCurrentItem	./components/NewOrder/Medicine/index.js	/^  const [currentItem, setCurrentItem] = useState({});$/;"	V
+setCurrentItem	./components/OrderItems/index.js	/^  const [currentItem, setCurrentItem] = useState({});$/;"	V
+setCurrentLocation	./components/Profile/index.OLD.js	/^  const [currentLocation, setCurrentLocation] = useState({});$/;"	V
+setEnterCode	./components/LoyaltyCodeForCategory/index.js	/^  const [enterCode, setEnterCode] = useState(false);$/;"	V
+setFcmToken	./screens/Profile/index.js	/^  const [fcmToken, setFcmToken] = useState(null);$/;"	V
+setFieldValue	./components/AddressForm/index.js	/^                setFieldValue,$/;"	V
+setFireBaseUid	./screens/Profile/index.js	/^  const [fireBaseUid, setFireBaseUid] = useState(null);$/;"	V
+setFormAddAddress	./components/AddressForm/index.js	/^  const [formAddAddress, setFormAddAddress] = useState({});$/;"	V
+setFormAddItem	./components/AddItemModal/Grocery/index.js	/^  const [formAddItem, setFormAddItem] = useState({});$/;"	V
+setFormAddItem	./components/AddItemModal/Medicine/index.js	/^  const [formAddItem, setFormAddItem] = useState({});$/;"	V
+setFormAddName	./components/NameForm/index.js	/^  const [formAddName, setFormAddName] = useState($/;"	V
+setFormCode	./components/LoyaltyCodeForCategory/index.js	/^  const [formCode, setFormCode] = useState({});$/;"	V
+setFormErrorsAddAddress	./components/AddressForm/index.js	/^  const [formErrorsAddAddress, setFormErrorsAddAddress] = useState({});$/;"	V
+setFormErrorsAddItem	./components/AddItemModal/Grocery/index.js	/^  const [formErrorsAddItem, setFormErrorsAddItem] = useState({});$/;"	V
+setFormErrorsAddItem	./components/AddItemModal/Medicine/index.js	/^  const [formErrorsAddItem, setFormErrorsAddItem] = useState({});$/;"	V
+setFormErrorsAddName	./components/NameForm/index.js	/^  const [formErrorsAddName, setFormErrorsAddName] = useState({});$/;"	V
+setFormErrorsCode	./components/LoyaltyCodeForCategory/index.js	/^  const [formErrorsCode, setFormErrorsCode] = useState({});$/;"	V
+setFormOrderSend	./components/OrderSend/index.js	/^  const [formOrderSend, setFormOrderSend] = useState({});$/;"	V
+setGeoAddress	./components/Profile/index.js	/^  const [geoAddress, setGeoAddress] = useState({});$/;"	V
+setGeoAddressHelper	./helpers/geoHelpers.js	/^const setGeoAddressHelper = ({addressComponent, setGeoAddressWrapper}) => {$/;"	F
+setGeoAddressWrapper	./components/Profile/index.js	/^          setGeoAddressWrapper: setGeoAddressWrapper,$/;"	P
+setGeoAddressWrapper	./components/Profile/index.js	/^        const setGeoAddressWrapper = (key, value) => {$/;"	F
+setImg	./components/AddItemModal/Medicine/index.js	/^  const [img, setImg] = useState(null);$/;"	V
+setIsLocationDifferent	./components/Profile/index.OLD.js	/^  const [isLocationDifferent, setIsLocationDifferent] = useState(false);$/;"	V
+setLoadingEditAddress	./components/Profile/index.js	/^  const [loadingEditAddress, setLoadingEditAddress] = useState(false);$/;"	V
+setLoadingEditAddressWrapper	./components/AddressForm/index.js	/^  setLoadingEditAddressWrapper,$/;"	V
+setLoadingEditAddressWrapper	./components/Profile/index.js	/^  const setLoadingEditAddressWrapper = x => {$/;"	F
+setModalVisible	./components/common/AppModal/index.js	/^  setModalVisible,$/;"	V
+setModalVisibleAddAddress	./components/AddressForm/index.js	/^  setModalVisibleAddAddress,$/;"	V
+setModalVisibleAddAddress	./components/Profile/index.js	/^  const [modalVisibleAddAddress, setModalVisibleAddAddress] = useState(false);$/;"	V
+setModalVisibleAddItem	./components/AddItemModal/Grocery/index.js	/^  setModalVisibleAddItem,$/;"	V
+setModalVisibleAddItem	./components/AddItemModal/Medicine/index.js	/^  setModalVisibleAddItem,$/;"	V
+setModalVisibleAddItem	./components/NewOrder/Grocery/index.js	/^  const [modalVisibleAddItem, setModalVisibleAddItem] = useState(false);$/;"	V
+setModalVisibleAddItem	./components/NewOrder/Medicine/index.js	/^  const [modalVisibleAddItem, setModalVisibleAddItem] = useState(false);$/;"	V
+setModalVisibleAddItem	./components/OrderItems/index.js	/^  const [modalVisibleAddItem, setModalVisibleAddItem] = useState(false);$/;"	V
+setModalVisibleAddName	./components/NameForm/index.js	/^  setModalVisibleAddName,$/;"	V
+setModalVisibleAddName	./components/Profile/index.js	/^  const [modalVisibleAddName, setModalVisibleAddName] = useState(false);$/;"	V
+setModalVisibleLoyalty	./components/ChooseCategory/index.js	/^  const [modalVisibleLoyalty, setModalVisibleLoyalty] = useState(false);$/;"	V
+setModalVisibleLoyalty	./components/LoyaltyCodeForCategory/index.js	/^  setModalVisibleLoyalty,$/;"	V
+setModalVisibleMakePayment	./components/MakePayment/index.js	/^  setModalVisibleMakePayment,$/;"	V
+setModalVisibleMakePayment	./components/OrderItems/index.js	/^  const [modalVisibleMakePayment, setModalVisibleMakePayment] = useState(false);$/;"	V
+setModalVisibleOrderFinal	./components/ChooseStore/index.js	/^  const [modalVisibleOrderFinal, setModalVisibleOrderFinal] = useState(false);$/;"	V
+setModalVisibleOrderFinal	./components/NewOrder/Grocery/index.js	/^  const [modalVisibleOrderFinal, setModalVisibleOrderFinal] = useState(false);$/;"	V
+setModalVisibleOrderFinal	./components/NewOrder/Medicine/index.js	/^  const [modalVisibleOrderFinal, setModalVisibleOrderFinal] = useState(false);$/;"	V
+setModalVisibleOrderFinal	./components/OrderItems/index.js	/^  const [modalVisibleOrderFinal, setModalVisibleOrderFinal] = useState(false);$/;"	V
+setModalVisibleOrderFinal	./components/OrderSend/index.js	/^  setModalVisibleOrderFinal,$/;"	V
+setModalVisibleOrderFinal	./components/Stores/index.js	/^  const [modalVisibleOrderFinal, setModalVisibleOrderFinal] = useState(false);$/;"	V
+setModalVisibleViewItem	./components/NewOrder/Grocery/index.js	/^  const [modalVisibleViewItem, setModalVisibleViewItem] = useState(false);$/;"	V
+setModalVisibleViewItem	./components/NewOrder/Medicine/index.js	/^  const [modalVisibleViewItem, setModalVisibleViewItem] = useState(false);$/;"	V
+setModalVisibleViewItem	./components/OrderItems/index.js	/^  const [modalVisibleViewItem, setModalVisibleViewItem] = useState(false);$/;"	V
+setModalVisibleViewItem	./components/ViewItem/index.js	/^  setModalVisibleViewItem,$/;"	V
+setNavigateChooseStore	./components/ChooseCategory/index.js	/^  const [navigateChooseStore, setNavigateChooseStore] = useState(false);$/;"	V
+setOptions	./screens/AllOrders/index.js	/^  const {setOptions, toggleDrawer} = useNavigation();$/;"	V
+setOptions	./screens/NewOrder/index.js	/^  const {setOptions, toggleDrawer} = useNavigation();$/;"	V
+setOptions	./screens/Offers/index.js	/^  const {setOptions, toggleDrawer} = useNavigation();$/;"	V
+setOptions	./screens/OrderItems/index.js	/^  const {setOptions, toggleDrawer} = useNavigation();$/;"	V
+setOptions	./screens/OrderStatus/index.js	/^  const {setOptions, toggleDrawer} = useNavigation();$/;"	V
+setOptions	./screens/Profile/index.js	/^  const {setOptions, toggleDrawer} = useNavigation();$/;"	V
+setOptions	./screens/Rewards/index.js	/^  const {setOptions, toggleDrawer} = useNavigation();$/;"	V
+setOptions	./screens/Stores/index.js	/^  const {setOptions, toggleDrawer} = useNavigation();$/;"	V
+setOtpCode	./components/Auth/LoadingProfile/index.js	/^  const [otpCode, setOtpCode] = useState('');$/;"	V
+setOtpCode	./components/Auth/VerifyOtp/index.js	/^  const [otpCode, setOtpCode] = useState('');$/;"	V
+setPhoneNumber	./components/Auth/PhoneNumber/index.js	/^  const [phoneNumber, setPhoneNumber] = useState(null);$/;"	V
+setPhoneNumber	./screens/Profile/index.js	/^  const [phoneNumber, setPhoneNumber] = useState(null);$/;"	V
+setRadioButtons	./components/MakePayment/index.js	/^  const [radioButtons, setRadioButtons] = useState(radioButtonsData);$/;"	V
+setRadioButtons	./components/OrderSend/index.js	/^  const [radioButtons, setRadioButtons] = useState(radioButtonsData);$/;"	V
+setSelectedStoreDetails	./components/ChooseStore/index.js	/^  const [selectedStoreDetails, setSelectedStoreDetails] = useState({});$/;"	V
+setSelectedStoreDetails	./components/NewOrder/Grocery/index.js	/^  const [selectedStoreDetails, setSelectedStoreDetails] = useState({});$/;"	V
+setSelectedStoreDetails	./components/NewOrder/Medicine/index.js	/^  const [selectedStoreDetails, setSelectedStoreDetails] = useState({});$/;"	V
+setSelectedStoreDetails	./components/OrderItems/index.js	/^  const [selectedStoreDetails, setSelectedStoreDetails] = useState({});$/;"	V
+setSelectedStoreDetails	./components/Stores/index.js	/^  const [selectedStoreDetails, setSelectedStoreDetails] = useState({});$/;"	V
+setStoredAddress	./components/Profile/index.OLD.js	/^  const [storedAddress, setStoredAddress] = useState({});$/;"	V
+setStoredLocation	./components/Profile/index.OLD.js	/^  const [storedLocation, setStoredLocation] = useState({});$/;"	V
+setStoresList	./components/ChooseCategory/index.js	/^  const [storesList, setStoresList] = useState([]);$/;"	V
+setSubmitIntent	./components/AddressForm/index.js	/^  const [submitIntent, setSubmitIntent] = useState(false);$/;"	V
+setSystemLocation	./components/Profile/index.js	/^  const [systemLocation, setSystemLocation] = useState(0);$/;"	V
+setTextFocused	./components/common/AppTextInput/index.js	/^  const [textFocused, setTextFocused] = React.useState(false);$/;"	V
+setUploadPic	./components/AddItemModal/Medicine/index.js	/^  const [uploadPic, setUploadPic] = useState(false);$/;"	V
+setUri	./components/common/Avatar/index.js	/^  const [uri, setUri] = useState(props.source?.uri || undefined);$/;"	V
+setWasStoredAddressUpdated	./components/Profile/index.OLD.js	/^  const [wasStoredAddressUpdated, setWasStoredAddressUpdated] = useState(false);$/;"	V
+setWasStoredLocationUpdated	./components/Profile/index.OLD.js	/^  const [wasStoredLocationUpdated, setWasStoredLocationUpdated] =$/;"	V
+shadowOffset	./components/common/AppModal/styles.js	/^    shadowOffset: {$/;"	P
+sideBarItem	./navigations/SideMenu/styles.js	/^  sideBarItem: {$/;"	P
+sideBarItemText	./navigations/SideMenu/styles.js	/^  sideBarItemText: {$/;"	P
+sideBarTop	./navigations/SideMenu/styles.js	/^  sideBarTop: {$/;"	P
+sideBarTopAppText	./navigations/SideMenu/styles.js	/^  sideBarTopAppText: {$/;"	P
+sideBarTopBrandText	./navigations/SideMenu/styles.js	/^  sideBarTopBrandText: {$/;"	P
+state	./components/AddressForm/index.js	/^                state: geoState,$/;"	P
+state	./components/ChooseStore/index.js	/^      state: state,$/;"	P
+state	./components/NewOrder/Grocery/index.js	/^    state: chosenState,$/;"	P
+state	./components/NewOrder/Medicine/index.js	/^    state: chosenState,$/;"	P
+state	./components/OrderItems/index.js	/^    state: chosenState,$/;"	P
+state	./components/Stores/index.js	/^      state: state,$/;"	P
+state	./context/initialStates/authInitialState.js	/^  state: null,$/;"	P
+state	./context/reducers/AuthReducer.js	/^        state: null,$/;"	P
+statusCodes	./components/OrderStatus/index.js	/^const statusCodes = [100, 200, 300, 400, 500, 600, 700, 800, 900];$/;"	A
+status_100_customer_started	./helpers/orderStatus.js	/^    status_100_customer_started,$/;"	V
+status_200_customer_sent	./helpers/orderStatus.js	/^    status_200_customer_sent,$/;"	V
+status_300_store_checked	./helpers/orderStatus.js	/^    status_300_store_checked,$/;"	V
+status_400_store_fulfilled	./helpers/orderStatus.js	/^    status_400_store_fulfilled,$/;"	V
+status_500_customer_received	./helpers/orderStatus.js	/^    status_500_customer_received,$/;"	V
+status_600_payment_made	./helpers/orderStatus.js	/^    status_600_payment_made,$/;"	V
+status_700_payment_received	./helpers/orderStatus.js	/^    status_700_payment_received,$/;"	V
+status_900_order_complete	./helpers/orderStatus.js	/^    status_900_order_complete,$/;"	V
+statusboard	./components/NewOrder/Grocery/styles.js	/^  statusboard: {$/;"	P
+statusboard	./components/NewOrder/Medicine/styles.js	/^  statusboard: {$/;"	P
+statusboard	./components/OrderItems/styles.js	/^  statusboard: {$/;"	P
+stepSection	./components/Auth/PhoneNumber/styles.js	/^  stepSection: {$/;"	P
+stepSection	./components/Auth/VerifyOtp/styles.js	/^  stepSection: {$/;"	P
+storeCurrentAddress	./components/Profile/index.OLD.js	/^  const storeCurrentAddress = async () => {$/;"	F
+storeCurrentLocation	./components/Profile/index.OLD.js	/^  const storeCurrentLocation = async () => {$/;"	F
+storeCurrentName	./components/NameForm/index.js	/^  const storeCurrentName = () => {$/;"	F
+storeId	./components/MakePayment/index.js	/^  storeId,$/;"	V
+storeId	./components/NewOrder/Grocery/index.js	/^                  storeId: chosenStoreId,$/;"	P
+storeId	./components/NewOrder/Medicine/index.js	/^                  storeId: chosenStoreId,$/;"	P
+storeId	./components/OrderItems/index.js	/^                      storeId: chosenStoreId,$/;"	P
+storeId	./components/OrderSend/index.js	/^  const {storeId, storeName, offersDelivery, offersPickup} =$/;"	V
+storeId	./components/Stores/index.js	/^              storeId,$/;"	V
+storeId	./components/Stores/index.js	/^        storeId: storeId,$/;"	P
+storeId	./components/Stores/index.js	/^    storeId,$/;"	V
+storeId	./context/actions/sendOrder.js	/^        storeId: storeId,$/;"	P
+storeName	./components/NewOrder/Grocery/index.js	/^                  storeName: chosenStoreName,$/;"	P
+storeName	./components/NewOrder/Medicine/index.js	/^                  storeName: chosenStoreName,$/;"	P
+storeName	./components/OrderItems/index.js	/^                      storeName: chosenStoreName,$/;"	P
+storeName	./components/OrderItems/index.js	/^      storeName: storeName,$/;"	P
+storeName	./components/OrderSend/index.js	/^  const {storeId, storeName, offersDelivery, offersPickup} =$/;"	V
+storeName	./components/OrderStatus/index.js	/^  storeName,$/;"	V
+storeName	./components/Stores/index.js	/^              storeName,$/;"	V
+storeName	./components/Stores/index.js	/^        storeName,$/;"	V
+storeName	./components/Stores/index.js	/^        storeName: storeName,$/;"	P
+storeName	./components/Stores/index.js	/^    storeName,$/;"	V
+storeName	./screens/OrderStatus/index.js	/^    storeName,$/;"	V
+storeNumber	./components/NewOrder/Grocery/index.js	/^                                  storeNumber,$/;"	V
+storeNumber	./components/NewOrder/Medicine/index.js	/^                                  storeNumber,$/;"	V
+storeNumber	./components/OrderItems/index.js	/^                                  storeNumber,$/;"	V
+storePhoneNumber	./components/NewOrder/Grocery/index.js	/^                  storePhoneNumber: chosenStorePhoneNumber,$/;"	P
+storePhoneNumber	./components/NewOrder/Medicine/index.js	/^                  storePhoneNumber: chosenStorePhoneNumber,$/;"	P
+storePhoneNumber	./components/OrderItems/index.js	/^                      storePhoneNumber: chosenStorePhoneNumber,$/;"	P
+storePhoneNumber	./components/Stores/index.js	/^              storePhoneNumber,$/;"	V
+storePhoneNumber	./components/Stores/index.js	/^        storePhoneNumber: storePhoneNumber,$/;"	P
+storePhoneNumber	./components/Stores/index.js	/^    storePhoneNumber,$/;"	V
+storeSelect	./components/Stores/index.js	/^  const storeSelect = ({$/;"	F
+store_id	./components/ChooseStore/index.js	/^      store_id: storeId,$/;"	P
+store_id	./components/NewOrder/Grocery/index.js	/^    store_id: chosenStoreId,$/;"	P
+store_id	./components/NewOrder/Grocery/index.js	/^    store_id: storeId,$/;"	P
+store_id	./components/NewOrder/Medicine/index.js	/^    store_id: chosenStoreId,$/;"	P
+store_id	./components/NewOrder/Medicine/index.js	/^    store_id: storeId,$/;"	P
+store_id	./components/OrderItems/index.js	/^    store_id: chosenStoreId,$/;"	P
+store_id	./components/OrderItems/index.js	/^    store_id: storeId,$/;"	P
+store_id	./components/Stores/index.js	/^      store_id: storeId,$/;"	P
+store_name	./components/AllOrders/index.js	/^      store_name: storeName,$/;"	P
+store_name	./components/NewOrder/Grocery/index.js	/^    store_name: chosenStoreName,$/;"	P
+store_name	./components/NewOrder/Grocery/index.js	/^    store_name: storeName,$/;"	P
+store_name	./components/NewOrder/Medicine/index.js	/^    store_name: chosenStoreName,$/;"	P
+store_name	./components/NewOrder/Medicine/index.js	/^    store_name: storeName,$/;"	P
+store_name	./components/OrderItems/index.js	/^    store_name: chosenStoreName,$/;"	P
+store_name	./components/OrderItems/index.js	/^    store_name: storeName,$/;"	P
+store_number	./components/NewOrder/Grocery/index.js	/^    store_number: storeNumber,$/;"	P
+store_number	./components/NewOrder/Medicine/index.js	/^    store_number: storeNumber,$/;"	P
+store_number	./components/OrderItems/index.js	/^    store_number: storeNumber,$/;"	P
+storedAddress	./components/Profile/index.OLD.js	/^  const [storedAddress, setStoredAddress] = useState({});$/;"	V
+storedLocation	./components/Profile/index.OLD.js	/^  const [storedLocation, setStoredLocation] = useState({});$/;"	V
+storesData	./components/ChooseCategory/index.js	/^                            storesData: storesList,$/;"	P
+storesData	./components/ChooseCategory/index.js	/^        storesData: storesList,$/;"	P
+storesData	./components/LoyaltyCodeForCategory/index.js	/^              storesData: storesList,$/;"	P
+storesDispatch	./context/Provider.js	/^        storesDispatch,$/;"	V
+storesDispatch	./context/Provider.js	/^  const [storesState, storesDispatch] = useReducer($/;"	V
+storesDispatch	./screens/ChooseCategory/index.js	/^  const {storesDispatch, storesState} = useContext(GlobalContext);$/;"	V
+storesDispatch	./screens/Stores/index.js	/^  const {storesDispatch, storesState} = useContext(GlobalContext);$/;"	V
+storesInitialState	./context/Provider.js	/^    storesInitialState,$/;"	V
+storesList	./components/ChooseCategory/index.js	/^                          storesList,$/;"	V
+storesList	./components/ChooseCategory/index.js	/^  const [storesList, setStoresList] = useState([]);$/;"	V
+storesList	./components/LoyaltyCodeForCategory/index.js	/^  storesList,$/;"	V
+storesReducer	./context/Provider.js	/^    storesReducer,$/;"	V
+storesReducer	./context/reducers/storesReducer.js	/^const storesReducer = (state, {type, payload}) => {$/;"	F
+storesServingCategory	./components/LoyaltyCodeForCategory/index.js	/^        storesServingCategory: storesServingCategoryLoyalCustomer,$/;"	P
+storesState	./context/Provider.js	/^        storesState,$/;"	V
+storesState	./context/Provider.js	/^  const [storesState, storesDispatch] = useReducer($/;"	V
+storesState	./screens/ChooseCategory/index.js	/^  const {storesDispatch, storesState} = useContext(GlobalContext);$/;"	V
+storesState	./screens/Stores/index.js	/^  const {storesDispatch, storesState} = useContext(GlobalContext);$/;"	V
+style	./components/common/AppTextInput/index.js	/^  style,$/;"	V
+style	./components/common/CustomButton/index.js	/^        style,$/;"	V
+style	./components/common/CustomButton/index.js	/^  style,$/;"	V
+style	./components/common/CustomButtonMedium/index.js	/^        style,$/;"	V
+style	./components/common/CustomButtonMedium/index.js	/^  style,$/;"	V
+style	./components/common/CustomButtonSmall/index.js	/^        style,$/;"	V
+style	./components/common/CustomButtonSmall/index.js	/^  style,$/;"	V
+submitFormik	./components/AddressForm/index.js	/^  const submitFormik = async values => {$/;"	F
+submitIntent	./components/AddressForm/index.js	/^  const [submitIntent, setSubmitIntent] = useState(false);$/;"	V
+submitOtpCode	./components/Auth/VerifyOtp/index.js	/^  const submitOtpCode = () => {$/;"	F
+submitPhoneNumber	./components/Auth/PhoneNumber/index.js	/^  const submitPhoneNumber = () => {$/;"	F
+subscriber	./screens/Profile/index.js	/^    const subscriber = () => {$/;"	F
+systemCoordinates	./components/AddressForm/index.js	/^    const systemCoordinates = {$/;"	O
+systemLocation	./components/AddressForm/index.js	/^  systemLocation,$/;"	V
+systemLocation	./components/Profile/index.js	/^  const [systemLocation, setSystemLocation] = useState(0);$/;"	V
+tertiary	./components/Profile/index.js	/^              tertiary$/;"	V
+text	./components/Auth/LoadingProfile/index.js	/^  text: {$/;"	P
+text	./components/MakePayment/styles.js	/^  text: {$/;"	P
+textBold	./components/MakePayment/styles.js	/^  textBold: {$/;"	P
+textFocused	./components/common/AppTextInput/index.js	/^  const [textFocused, setTextFocused] = React.useState(false);$/;"	V
+textInput	./components/Auth/PhoneNumber/styles.js	/^  textInput: {$/;"	P
+textInput	./components/common/AppTextInput/styles.js	/^  textInput: {$/;"	P
+textSection	./components/MakePayment/styles.js	/^  textSection: {$/;"	P
+textValue	./components/common/AppTextInput/index.js	/^  textValue,$/;"	V
+time_100_created	./components/AllOrders/index.js	/^      time_100_created,$/;"	V
+time_100_created	./components/NewOrder/Grocery/index.js	/^    time_100_created,$/;"	V
+time_100_created	./components/NewOrder/Medicine/index.js	/^    time_100_created,$/;"	V
+time_100_created	./components/OrderItems/index.js	/^    time_100_created,$/;"	V
+time_100_created	./context/actions/addOrder.js	/^        time_100_created,$/;"	V
+time_200_customer_sent	./components/AllOrders/index.js	/^      time_200_customer_sent,$/;"	V
+time_200_customer_sent	./components/NewOrder/Grocery/index.js	/^    time_200_customer_sent,$/;"	V
+time_200_customer_sent	./components/NewOrder/Medicine/index.js	/^    time_200_customer_sent,$/;"	V
+time_200_customer_sent	./components/OrderItems/index.js	/^      time_200_customer_sent: time_200_customer_sent,$/;"	P
+time_200_customer_sent	./components/OrderItems/index.js	/^    time_200_customer_sent,$/;"	V
+time_200_customer_sent	./screens/OrderStatus/index.js	/^    time_200_customer_sent,$/;"	V
+timeout	./components/Profile/index.js	/^        timeout: 15000,$/;"	P
+title	./components/common/AppModal/styles.js	/^  title: {$/;"	P
+title	./components/common/CustomButton/index.js	/^  title,$/;"	V
+title	./components/common/CustomButtonMedium/index.js	/^  title,$/;"	V
+title	./components/common/CustomButtonSmall/index.js	/^  title,$/;"	V
+titleText	./components/MakePayment/styles.js	/^  titleText: {$/;"	P
+titleText	./components/Profile/styles.js	/^  titleText: {$/;"	P
+toggleDrawer	./screens/AllOrders/index.js	/^  const {setOptions, toggleDrawer} = useNavigation();$/;"	V
+toggleDrawer	./screens/NewOrder/index.js	/^  const {setOptions, toggleDrawer} = useNavigation();$/;"	V
+toggleDrawer	./screens/Offers/index.js	/^  const {setOptions, toggleDrawer} = useNavigation();$/;"	V
+toggleDrawer	./screens/OrderItems/index.js	/^  const {setOptions, toggleDrawer} = useNavigation();$/;"	V
+toggleDrawer	./screens/OrderStatus/index.js	/^  const {setOptions, toggleDrawer} = useNavigation();$/;"	V
+toggleDrawer	./screens/Profile/index.js	/^  const {setOptions, toggleDrawer} = useNavigation();$/;"	V
+toggleDrawer	./screens/Rewards/index.js	/^  const {setOptions, toggleDrawer} = useNavigation();$/;"	V
+toggleDrawer	./screens/Stores/index.js	/^  const {setOptions, toggleDrawer} = useNavigation();$/;"	V
+token	./context/actions/auth/credUpdate.js	/^            token: fcmToken,$/;"	P
+total	./components/MakePayment/index.js	/^        total,$/;"	V
+total	./components/MakePayment/index.js	/^  total,$/;"	V
+total	./components/NewOrder/Grocery/index.js	/^  let total;$/;"	V
+total	./components/NewOrder/Medicine/index.js	/^  let total;$/;"	V
+total	./components/OrderItems/index.js	/^  let total;$/;"	V
+total	./context/actions/orderPayment.js	/^    total,$/;"	V
+touched	./components/AddressForm/index.js	/^                touched,$/;"	V
+type	./context/actions/addOrder.js	/^        type: ADD_ORDER_FAIL,$/;"	P
+type	./context/actions/addOrder.js	/^        type: ADD_ORDER_SUCCESS,$/;"	P
+type	./context/actions/addOrder.js	/^    type: ADD_ORDER_LOADING,$/;"	P
+type	./context/actions/addOrderItem.js	/^          type: ADD_ORDERITEM_FAIL,$/;"	P
+type	./context/actions/addOrderItem.js	/^          type: ADD_ORDERITEM_SUCCESS,$/;"	P
+type	./context/actions/addOrderItem.js	/^      type: ADD_ORDERITEM_LOADING,$/;"	P
+type	./context/actions/auth/addLoyaltyCode.js	/^          type: ADD_LOYALTYCODE_FAIL,$/;"	P
+type	./context/actions/auth/addLoyaltyCode.js	/^          type: ADD_LOYALTYCODE_SUCCESS,$/;"	P
+type	./context/actions/auth/addLoyaltyCode.js	/^      type: ADD_LOYALTYCODE_LOADING,$/;"	P
+type	./context/actions/auth/credUpdate.js	/^          type: CRED_UPDATE_FAIL,$/;"	P
+type	./context/actions/auth/credUpdate.js	/^          type: CRED_UPDATE_SUCCESS,$/;"	P
+type	./context/actions/auth/credUpdate.js	/^      type: CRED_UPDATE_LOADING,$/;"	P
+type	./context/actions/auth/getUserDetails.js	/^        type: GET_USER_DETAILS_FAIL,$/;"	P
+type	./context/actions/auth/getUserDetails.js	/^        type: GET_USER_DETAILS_SUCCESS,$/;"	P
+type	./context/actions/auth/getUserDetails.js	/^    type: GET_USER_DETAILS_LOADING,$/;"	P
+type	./context/actions/auth/logOut.js	/^            type: LOGOUT_FAIL,$/;"	P
+type	./context/actions/auth/logOut.js	/^            type: LOGOUT_SUCCESS,$/;"	P
+type	./context/actions/auth/logOut.js	/^        type: LOGOUT_FAIL,$/;"	P
+type	./context/actions/auth/logOut.js	/^    type: LOGOUT_LOADING,$/;"	P
+type	./context/actions/auth/phoneNumberOtpSubmit.js	/^          type: PHONENUMBER_OTP_SUBMIT_FAIL,$/;"	P
+type	./context/actions/auth/phoneNumberOtpSubmit.js	/^          type: PHONENUMBER_OTP_SUBMIT_SUCCESS,$/;"	P
+type	./context/actions/auth/phoneNumberOtpSubmit.js	/^      type: PHONENUMBER_OTP_SUBMIT_LOADING,$/;"	P
+type	./context/actions/auth/phoneNumberSignInSubmit.js	/^        type: PHONENUMBER_SIGNIN_SUBMIT_FAIL,$/;"	P
+type	./context/actions/auth/phoneNumberSignInSubmit.js	/^        type: PHONENUMBER_SIGNIN_SUBMIT_SUCCESS,$/;"	P
+type	./context/actions/auth/phoneNumberSignInSubmit.js	/^    type: PHONENUMBER_SIGNIN_SUBMIT_LOADING,$/;"	P
+type	./context/actions/auth/userAddressUpdate.js	/^          type: USER_ADDRESS_UPDATE_FAIL,$/;"	P
+type	./context/actions/auth/userAddressUpdate.js	/^          type: USER_ADDRESS_UPDATE_SUCCESS,$/;"	P
+type	./context/actions/auth/userAddressUpdate.js	/^      type: USER_ADDRESS_UPDATE_LOADING,$/;"	P
+type	./context/actions/auth/userNameUpdate.js	/^          type: USER_NAME_UPDATE_FAIL,$/;"	P
+type	./context/actions/auth/userNameUpdate.js	/^          type: USER_NAME_UPDATE_SUCCESS,$/;"	P
+type	./context/actions/auth/userNameUpdate.js	/^      type: USER_NAME_UPDATE_LOADING,$/;"	P
+type	./context/actions/deleteOrder.js	/^          type: DELETE_ORDER_FAIL,$/;"	P
+type	./context/actions/deleteOrder.js	/^          type: DELETE_ORDER_SUCCESS,$/;"	P
+type	./context/actions/deleteOrder.js	/^      type: DELETE_ORDER_LOADING,$/;"	P
+type	./context/actions/deleteOrderItem.js	/^          type: DELETE_ORDERITEM_FAIL,$/;"	P
+type	./context/actions/deleteOrderItem.js	/^          type: DELETE_ORDERITEM_SUCCESS,$/;"	P
+type	./context/actions/deleteOrderItem.js	/^      type: DELETE_ORDERITEM_LOADING,$/;"	P
+type	./context/actions/getDefaultStore.js	/^        type: GET_DEFAULT_STORE_FAIL,$/;"	P
+type	./context/actions/getDefaultStore.js	/^        type: GET_DEFAULT_STORE_SUCCESS,$/;"	P
+type	./context/actions/getDefaultStore.js	/^    type: GET_DEFAULT_STORE_LOADING,$/;"	P
+type	./context/actions/getOrderItems.js	/^        type: GET_ORDERITEMS_FAIL,$/;"	P
+type	./context/actions/getOrderItems.js	/^        type: GET_ORDERITEMS_SUCCESS,$/;"	P
+type	./context/actions/getOrderItems.js	/^    type: GET_ORDERITEMS_LOADING,$/;"	P
+type	./context/actions/getOrders.js	/^        type: GET_ORDERS_FAIL,$/;"	P
+type	./context/actions/getOrders.js	/^        type: GET_ORDERS_SUCCESS,$/;"	P
+type	./context/actions/getOrders.js	/^    type: GET_ORDERS_LOADING,$/;"	P
+type	./context/actions/getStores.js	/^        type: GET_STORES_FAIL,$/;"	P
+type	./context/actions/getStores.js	/^        type: GET_STORES_SUCCESS,$/;"	P
+type	./context/actions/getStores.js	/^    type: GET_STORES_LOADING,$/;"	P
+type	./context/actions/orderPayment.js	/^          type: PAY_ORDER_FAIL,$/;"	P
+type	./context/actions/orderPayment.js	/^          type: PAY_ORDER_SUCCESS,$/;"	P
+type	./context/actions/orderPayment.js	/^      type: PAY_ORDER_LOADING,$/;"	P
+type	./context/actions/sendOrder.js	/^          type: SEND_ORDER_FAIL,$/;"	P
+type	./context/actions/sendOrder.js	/^          type: SEND_ORDER_SUCCESS,$/;"	P
+type	./context/actions/sendOrder.js	/^      type: SEND_ORDER_LOADING,$/;"	P
+uid	./context/actions/auth/credUpdate.js	/^            uid: fireBaseUid,$/;"	P
+unsubscribe	./screens/AllOrders/index.js	/^    const unsubscribe = navigation.addListener('focus', () => {$/;"	F
+unsubscribe	./screens/ChooseCategory/index.js	/^    const unsubscribe = navigation.addListener('focus', () => {$/;"	F
+unsubscribe	./screens/Stores/index.js	/^    const unsubscribe = navigation.addListener('focus', () => {$/;"	F
+uploadImg	./components/AddItemModal/Medicine/index.js	/^  const uploadImg = async () => {$/;"	F
+uploadPic	./components/AddItemModal/Medicine/index.js	/^  const [uploadPic, setUploadPic] = useState(false);$/;"	V
+uri	./components/common/Avatar/index.js	/^  const [uri, setUri] = useState(props.source?.uri || undefined);$/;"	V
+useLocationSettings	./components/Profile/index.OLD.js	/^    useLocationSettings,$/;"	V
+useResponsiveFontSize	./components/Auth/PhoneNumber/styles.js	/^  useResponsiveFontSize,$/;"	V
+useResponsiveHeight	./components/Auth/PhoneNumber/styles.js	/^  useResponsiveHeight,$/;"	V
+useResponsiveWidth	./components/Auth/PhoneNumber/styles.js	/^  useResponsiveWidth,$/;"	V
+user	./screens/Profile/index.js	/^      user$/;"	V
+userAddress	./components/AddressForm/index.js	/^                  userAddress,$/;"	V
+userAddress	./context/actions/auth/userAddressUpdate.js	/^        userAddress: userAddress,$/;"	P
+userAddressUpdate	./context/initialStates/authInitialState.js	/^  userAddressUpdate: {$/;"	P
+userAddressUpdate	./context/reducers/AuthReducer.js	/^        userAddressUpdate: {$/;"	P
+userCoordinates	./components/AddressForm/index.js	/^                  userCoordinates: systemCoordinates,$/;"	P
+userCoordinates	./components/AddressForm/index.js	/^        const userCoordinates = {$/;"	O
+userCoordinates	./context/actions/auth/userAddressUpdate.js	/^        userCoordinates: userCoordinates,$/;"	P
+userLocation	./components/Profile/index.OLD.js	/^    let userLocation;$/;"	V
+userLoyaltyCode	./components/ChooseCategory/index.js	/^    userLoyaltyCode,$/;"	V
+userName	./context/actions/auth/userNameUpdate.js	/^        userName: userName,$/;"	P
+userName	./context/initialStates/authInitialState.js	/^  userName: null,$/;"	P
+userName	./context/reducers/AuthReducer.js	/^        userName: null,$/;"	P
+userName	./context/reducers/AuthReducer.js	/^        userName: payload,$/;"	P
+userNameUpdate	./context/initialStates/authInitialState.js	/^  userNameUpdate: {$/;"	P
+userNameUpdate	./context/initialStates/profileInitialState.js	/^  userNameUpdate: {$/;"	P
+userNameUpdate	./context/reducers/AuthReducer.js	/^        userNameUpdate: {$/;"	P
+userRow	./components/AddItemModal/Grocery/styles.js	/^  userRow: {$/;"	P
+userRow	./components/AddItemModal/Medicine/styles.js	/^  userRow: {$/;"	P
+userRow	./components/LoyaltyCodeForCategory/styles.js	/^  userRow: {$/;"	P
+value	./components/AddItemModal/Grocery/index.js	/^                  value,$/;"	V
+value	./components/AddItemModal/Medicine/index.js	/^                    value,$/;"	V
+value	./components/OrderSend/index.js	/^                  value,$/;"	V
+values	./components/AddressForm/index.js	/^                values,$/;"	V
+viewStoreComponent	./components/ChooseStore/index.js	/^  let viewStoreComponent;$/;"	V
+viewStoreComponent	./components/ChooseStore/index.js	/^  viewStoreComponent = ($/;"	M
+viewStoreComponent	./components/Stores/index.js	/^      viewStoreComponent = ($/;"	M
+viewStoreComponent	./components/Stores/index.js	/^    viewStoreComponent = ($/;"	M
+viewStoreComponent	./components/Stores/index.js	/^  let viewStoreComponent;$/;"	V
+wasStoredAddressUpdated	./components/Profile/index.OLD.js	/^  const [wasStoredAddressUpdated, setWasStoredAddressUpdated] = useState(false);$/;"	V
+wasStoredLocationUpdated	./components/Profile/index.OLD.js	/^  const [wasStoredLocationUpdated, setWasStoredLocationUpdated] =$/;"	V
+welcomeSection	./components/Auth/PhoneNumber/styles.js	/^  welcomeSection: {$/;"	P
+welcomeSection	./components/Auth/VerifyOtp/styles.js	/^  welcomeSection: {$/;"	P
+welcomeText	./components/Auth/PhoneNumber/styles.js	/^  welcomeText: {$/;"	P
+welcomeText	./components/Auth/VerifyOtp/styles.js	/^  welcomeText: {$/;"	P
+width	./components/OrderStatus/index.js	/^                    width: 60,$/;"	P
+width	./components/common/Avatar/index.js	/^      width: 300,$/;"	P
+width	./components/common/Avatar/index.js	/^    width: 300,$/;"	P
+width	./navigations/SideMenu/styles.js	/^    width: 80,$/;"	P
+wrapper	./components/AllOrders/styles.js	/^  wrapper: {},$/;"	P
+wrapper	./components/ChooseStore/styles.js	/^  wrapper: {},$/;"	P
+wrapper	./components/NewOrder/Grocery/styles.js	/^  wrapper: {},$/;"	P
+wrapper	./components/NewOrder/Medicine/styles.js	/^  wrapper: {},$/;"	P
+wrapper	./components/OrderItems/styles.js	/^  wrapper: {},$/;"	P
+wrapper	./components/Stores/styles.js	/^  wrapper: {},$/;"	P
+wrapper	./components/common/AppModal/styles.js	/^  wrapper: {$/;"	P
+wrapper	./components/common/AppTextInput/styles.js	/^  wrapper: {$/;"	P
+wrapper	./components/common/Container/styles.js	/^  wrapper: {},$/;"	P
+wrapper	./components/common/CustomButton/styles.js	/^  wrapper: {$/;"	P
+wrapper	./components/common/CustomButtonMedium/styles.js	/^  wrapper: {$/;"	P
+wrapper	./components/common/CustomButtonSmall/styles.js	/^  wrapper: {$/;"	P
+yup	./components/AddressForm/index.js	/^import * as yup from 'yup';$/;"	I

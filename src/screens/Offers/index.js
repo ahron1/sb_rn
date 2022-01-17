@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
 import {useNavigation} from '@react-navigation/core';
-import {Text, Pressable, View} from 'react-native';
 import OffersComponent from '../../components/Offers';
 import NavMenuComponent, {
   NavMenuPressable,
@@ -10,7 +9,8 @@ const Offers = () => {
   const {setOptions, toggleDrawer} = useNavigation();
   useEffect(() => {
     setOptions({
-      headerLeft: () => (
+      //headerLeft: () => (
+      headerRight: () => (
         <NavMenuPressable
           onPress={() => {
             toggleDrawer();

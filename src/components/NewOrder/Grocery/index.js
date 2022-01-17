@@ -1,28 +1,17 @@
 import React, {useContext} from 'react';
-import {useState, useEffect} from 'react';
-import {
-  Alert,
-  Button,
-  FlatList,
-  Linking,
-  Pressable,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import {useState} from 'react';
+import {Alert, FlatList, Linking, Pressable, Text, View} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import ViewItem from '../../ViewItem';
 import AddItemGrocery from '../../AddItemModal/Grocery';
-import MakePayment from '../../MakePayment';
 import FloatingLeftButton from '../../common/FloatingLeftButton';
 import FloatingRightButton from '../../common/FloatingRightButton';
-import FloatingCenterButton from '../../common/FloatingCenterButton';
 import ListFooterComponent from '../../common/ListFooter';
 import styles from './styles';
 import colors from '../../../assets/theme/colors';
 import Icon from '../../common/Icon';
 import ListItemSeparatorComponent from '../../common/ListItemSeparator';
-import {ALLORDERS, ORDERSTATUS, STORES} from '../../../constants/routeNames';
+import {ALLORDERS} from '../../../constants/routeNames';
 import {GlobalContext} from '../../../context/Provider';
 import deleteOrder from '../../../context/actions/deleteOrder';
 import getOrderStatus from '../../../helpers/orderStatus';
@@ -49,22 +38,15 @@ const NewOrderGrocery = ({
   const [selectedStoreDetails, setSelectedStoreDetails] = useState({});
   const {navigate} = useNavigation();
 
-  /*
   console.log(
     'in new order component. chosen store details is ',
     chosenStoreDetails,
   );
-  */
   const {
     store_id: chosenStoreId,
     store_name: chosenStoreName,
     offers_delivery: chosenOffersDelivery,
     offers_pickup: chosenOffersPickup,
-    address_line1: chosenAddressLine1,
-    address_line2: chosenAddressLine2,
-    pincode: chosenPincode,
-    city: chosenCity,
-    state: chosenState,
     mobile_number: chosenStorePhoneNumber,
   } = chosenStoreDetails ? chosenStoreDetails : {};
 
@@ -86,12 +68,10 @@ const NewOrderGrocery = ({
   const {
     time_100_created,
     time_200_customer_sent,
-    price: orderPrice,
     is_delivery: isDelivery,
     is_pickup: isPickup,
     store_name: storeName,
     store_number: storeNumber,
-    store_id: storeId,
     customer_note: orderComments,
   } = order ? order : {};
   // the conditional assignment is to take care of deletion where the order item details are no longer found after deletion
@@ -111,7 +91,7 @@ const NewOrderGrocery = ({
   let total;
   if (Array.isArray(dataOrderItems) && dataOrderItems.length > 0) {
     let prices = dataOrderItems.map(a => a.price * a.available);
-    total = prices.reduce((accumulator, currentValue, currentIndex, array) => {
+    total = prices.reduce((accumulator, currentValue) => {
       return accumulator + currentValue;
     }, 0);
   }
@@ -338,6 +318,7 @@ const NewOrderGrocery = ({
             <Text
               style={[
                 styles.dashboardItemTitle,
+                // eslint-disable-next-line react-native/no-inline-styles
                 {fontWeight: '700'},
                 {color: orderColorText},
               ]}>
@@ -363,7 +344,6 @@ const NewOrderGrocery = ({
 
   const renderItem = ({item}) => {
     const {
-      order_item_id: itemId,
       name: itemName,
       quantity: itemQuantity,
       price: itemPrice,

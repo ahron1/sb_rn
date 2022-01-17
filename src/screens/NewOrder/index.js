@@ -1,9 +1,6 @@
 import React, {useEffect} from 'react';
-import {useState} from 'react';
 import {useContext} from 'react';
 import {useNavigation, useRoute} from '@react-navigation/core';
-import {Text, Pressable, View} from 'react-native';
-import OrderItemsComponent from '../../components/OrderItems';
 import {GlobalContext} from '../../context/Provider';
 import getOrderItems from '../../context/actions/getOrderItems';
 import NavMenuComponent, {
@@ -11,13 +8,15 @@ import NavMenuComponent, {
 } from '../../components/common/NavMenu';
 import NewOrderGrocery from '../../components/NewOrder/Grocery';
 import NewOrderMedicine from '../../components/NewOrder/Medicine';
+import OrderItemsComponent from '../../components/OrderItems';
 
-const NewOrder = ({navigation}) => {
+const NewOrder = ({}) => {
   const route = useRoute();
   const orderId = route.params.orderId;
   const chosenStoreDetails = route.params.item;
   const category = route.params.category;
-  // console.log('in new order screen. chosen store  is:>> ', chosenStoreDetails);
+  //const storeId = route.params.storeId;
+  console.log('in new order screen. chosen store  is:>> ', chosenStoreDetails);
   // console.log('in new order screen. category  is:>> ', category);
 
   const {setOptions, toggleDrawer} = useNavigation();
@@ -27,10 +26,12 @@ const NewOrder = ({navigation}) => {
   let OrderScreen;
   switch (category) {
     case 'grocery':
-      OrderScreen = NewOrderGrocery;
+      //OrderScreen = NewOrderGrocery;
+      OrderScreen = OrderItemsComponent;
       break;
     case 'medicine':
       OrderScreen = NewOrderMedicine;
+      //OrderScreen = NewOrderGrocery;
       break;
     case 'vegetable':
       OrderScreen = NewOrderGrocery;
@@ -47,7 +48,7 @@ const NewOrder = ({navigation}) => {
   const {
     data: dataGetOrderItems,
     loading: loadingGetOrderItems,
-    error: errorGetOrderItems,
+    //error: errorGetOrderItems,
   } = orderItemsState.getOrderItems;
 
   console.log(
@@ -56,7 +57,8 @@ const NewOrder = ({navigation}) => {
   );
   useEffect(() => {
     setOptions({
-      headerLeft: () => (
+      //headerLeft: () => (
+      headerRight: () => (
         <NavMenuPressable
           onPress={() => {
             toggleDrawer();
@@ -69,6 +71,7 @@ const NewOrder = ({navigation}) => {
 
   useEffect(() => {
     getOrderItems(orderId)(orderItemsDispatch);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

@@ -1,15 +1,6 @@
 import React, {useContext} from 'react';
 import {useState, useEffect} from 'react';
-import {
-  Alert,
-  Button,
-  FlatList,
-  Linking,
-  Pressable,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import {Alert, FlatList, Linking, Pressable, Text, View} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import ViewItem from '../ViewItem';
 import AddItemGrocery from '../AddItemModal/Grocery';
@@ -22,7 +13,7 @@ import styles from './styles';
 import colors from '../../assets/theme/colors';
 import Icon from '../../components/common/Icon';
 import ListItemSeparatorComponent from '../common/ListItemSeparator';
-import {ALLORDERS, ORDERSTATUS, STORES} from '../../constants/routeNames';
+import {ALLORDERS, ORDERSTATUS} from '../../constants/routeNames';
 import {GlobalContext} from '../../context/Provider';
 import deleteOrder from '../../context/actions/deleteOrder';
 import getOrderStatus from '../../helpers/orderStatus';
@@ -52,18 +43,14 @@ const OrderItemsComponent = ({
     store_name: chosenStoreName,
     offers_delivery: chosenOffersDelivery,
     offers_pickup: chosenOffersPickup,
-    address_line1: chosenAddressLine1,
-    address_line2: chosenAddressLine2,
-    pincode: chosenPincode,
-    city: chosenCity,
-    state: chosenState,
     mobile_number: chosenStorePhoneNumber,
   } = chosenStoreDetails ? chosenStoreDetails : {};
 
-  // console.log(
-  // 'in order items component. chosen store details is ',
-  // chosenStoreDetails,
-  // );https://github.com/aruhn1/sb_rn/commits/mainhttps://github.com/aruhn1/sb_rn/commits/main
+  console.log(
+    'in order items component. chosen store details is ',
+    chosenStoreDetails,
+  );
+  console.log('in order items component. order id is ', orderId);
 
   const [order] = ordersState.getOrders.data.filter(
     x => x.order_id === orderId,
@@ -78,7 +65,6 @@ const OrderItemsComponent = ({
   const {
     time_100_created,
     time_200_customer_sent,
-    price: orderPrice,
     is_delivery: isDelivery,
     is_pickup: isPickup,
     store_name: storeName,
@@ -110,7 +96,7 @@ const OrderItemsComponent = ({
   let total;
   if (Array.isArray(dataOrderItems) && dataOrderItems.length > 0) {
     let prices = dataOrderItems.map(a => a.price * a.available);
-    total = prices.reduce((accumulator, currentValue, currentIndex, array) => {
+    total = prices.reduce((accumulator, currentValue) => {
       return accumulator + currentValue;
     }, 0);
   }
@@ -513,6 +499,7 @@ const OrderItemsComponent = ({
             <Text
               style={[
                 styles.dashboardItemTitle,
+                // eslint-disable-next-line react-native/no-inline-styles
                 {fontWeight: '700'},
                 {color: orderColorText},
               ]}>
@@ -551,7 +538,6 @@ const OrderItemsComponent = ({
 
   const renderItem = ({item}) => {
     const {
-      order_item_id: itemId,
       name: itemName,
       quantity: itemQuantity,
       price: itemPrice,

@@ -1,9 +1,7 @@
 import {useNavigation, useRoute} from '@react-navigation/core';
 import React, {useContext, useEffect} from 'react';
-import {Text, Pressable, View} from 'react-native';
 import StoresComponent from '../../components/Stores';
 import {GlobalContext} from '../../context/Provider';
-import {useFocusEffect} from '@react-navigation/native';
 import NavMenuComponent, {
   NavMenuPressable,
 } from '../../components/common/NavMenu';
@@ -25,7 +23,7 @@ const Stores = ({navigation}) => {
   }
   useEffect(() => {
     setOptions({
-      headerLeft: () => (
+      headerRight: () => (
         <NavMenuPressable
           onPress={() => {
             toggleDrawer();
@@ -59,6 +57,7 @@ const Stores = ({navigation}) => {
       }
     });
     return unsubscribe;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [navigation]);
 
   return (

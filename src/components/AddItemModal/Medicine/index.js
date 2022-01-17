@@ -20,7 +20,7 @@ const AddItemMedicine = ({
   setModalVisibleAddItem,
 }) => {
   const {orderItemsDispatch, orderItemsState} = useContext(GlobalContext);
-  const [uploadPic, setUploadPic] = useState(false);
+  const [uploadPic, setUploadPic] = useState(true);
   const [formAddItem, setFormAddItem] = useState({});
   const [formErrorsAddItem, setFormErrorsAddItem] = useState({});
   const [img, setImg] = useState(null);
@@ -93,9 +93,11 @@ const AddItemMedicine = ({
     // const res = await axios.post('https://httpbin.org/post', imageData);
     // console.log(Object.keys(res));
 
-    axios.post('https://httpbin.org/post', imageData).then(res => {
+    //axios.post('https://httpbin.org/post', imageData).then(res => {
+      axios.post('http://localhost:5000/upload_image', imageData).then(res => {
       console.log(Object.keys(res));
-      setModalVisibleAddItem(false);
+      //console.log(res);
+      //setModalVisibleAddItem(false);
     });
 
     /*
