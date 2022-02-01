@@ -8,6 +8,7 @@ import NavMenuComponent, {
 } from '../../components/common/NavMenu';
 import NewOrderGrocery from '../../components/NewOrder/Grocery';
 import NewOrderMedicine from '../../components/NewOrder/Medicine';
+import Service  from "../../components/NewOrder/Service/Index"
 import OrderItemsComponent from '../../components/OrderItems';
 
 const NewOrder = ({}) => {
@@ -30,7 +31,8 @@ const NewOrder = ({}) => {
       OrderScreen = OrderItemsComponent;
       break;
     case 'medicine':
-      OrderScreen = NewOrderMedicine;
+      OrderScreen = Service
+      // OrderScreen = NewOrderMedicine;
       //OrderScreen = NewOrderGrocery;
       break;
     case 'vegetable':
